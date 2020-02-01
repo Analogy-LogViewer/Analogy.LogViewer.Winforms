@@ -1,0 +1,812 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>Resources\Analogy_logo1.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Analogy.Program</StartupObject>
+    <FileUpgradeFlags />
+    <UpgradeBackupLocation />
+    <SccAuxPath>SAK</SccAuxPath>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PlatformToolset>v120</PlatformToolset>
+    <PublishUrl>http://localhost/LogViewer/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <AssemblyTitle>Analogy Log Viewer</AssemblyTitle>
+    <Company>Lior Banai</Company>
+    <Product>Analogy Log Viewer</Product>
+    <Description>Modern Log Viewer and analyzer.</Description>
+    <Copyright>Copyright @ Lior Banai 2019</Copyright>
+    <AssemblyVersion>4.1.9.0</AssemblyVersion>
+    <FileVersion>4.1.9.0</FileVersion>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>1591;1573;0419;1607</NoWarn>
+    <PlatformToolset>v120</PlatformToolset>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <ConfigurationOverrideFile />
+    <DocumentationFile />
+    <NoStdLib>false</NoStdLib>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <ConfigurationOverrideFile />
+    <DocumentationFile>bin\$(Configuration)\Analogy.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <Version>4.1.9</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.Syncfusion</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.Syncfusion</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Syncfusion.Core.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Core.WinForms.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Data.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Data.WinForms.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Grid.Base.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Grid.Windows.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.GridCommon.WinForms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.GridConverter.Windows.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.GridHelperClasses.Windows.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfDataGrid.WinForms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGridConverter.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfDataGridConverter.WinForms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.SfInput.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfInput.WinForms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfListView.WinForms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Shared.Base.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Shared.Windows.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SpellChecker.Base.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Tools.Base.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Tools.Windows.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.TreeMap.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.TreeMap.Windows.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.XlsIO.Base.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Forms\AboutDataSourceBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AboutDataSourceBox.Designer.cs">
+      <DependentUpon>AboutDataSourceBox.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AnalogyAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AnalogyAboutBox.Designer.cs">
+      <DependentUpon>AnalogyAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AnalogyExclude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AnalogyExclude.Designer.cs">
+      <DependentUpon>AnalogyExclude.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AnalogyExcludeMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AnalogyExcludeMessage.Designer.cs">
+      <DependentUpon>AnalogyExcludeMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AnalogyOTAClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AnalogyOTAClient.Designer.cs">
+      <DependentUpon>AnalogyOTAClient.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\UserSettingsDataProvidersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UserSettingsDataProvidersForm.Designer.cs">
+      <DependentUpon>UserSettingsDataProvidersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\AnalogyColumnsMatcherUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\AnalogyColumnsMatcherUC.Designer.cs">
+      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\DirectoryListing - Copy.Designer.cs">
+      <DependentUpon>DirectoryListing.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\DirectoryListing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\DirectoryListing.Designer.cs">
+      <DependentUpon>DirectoryListing.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\FilePoolingLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\FilePoolingLog.Designer.cs">
+      <DependentUpon>FilePoolingLog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AnalogyOTAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AnalogyOTAForm.Designer.cs">
+      <DependentUpon>AnalogyOTAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ChangeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ChangeLog.Designer.cs">
+      <DependentUpon>ChangeLog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\CombineFilesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\CombineFilesUC.Designer.cs">
+      <DependentUpon>CombineFilesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ExtensionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ExtensionsForm.Designer.cs">
+      <DependentUpon>ExtensionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\ExtensionsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\ExtensionsUC.Designer.cs">
+      <DependentUpon>ExtensionsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\FileSystemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\FileSystemUC.Designer.cs">
+      <DependentUpon>FileSystemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\FolderTreeViewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\FolderTreeViewUC.Designer.cs">
+      <DependentUpon>FolderTreeViewUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\FormCombineFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormCombineFiles.Designer.cs">
+      <DependentUpon>FormCombineFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\FormMessageDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormMessageDetails.Designer.cs">
+      <DependentUpon>FormMessageDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\ClientServerLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\ClientServerLog.Designer.cs">
+      <DependentUpon>ClientServerLog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\BookmarkLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\BookmarkLog.Designer.cs">
+      <DependentUpon>BookmarkLog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\OfflineLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\OfflineLog.Designer.cs">
+      <DependentUpon>OfflineLog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\OnlineLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\OnlineLog.Designer.cs">
+      <DependentUpon>OnlineLog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\OTALogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\OTALogs.Designer.cs">
+      <DependentUpon>OTALogs.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\FilesOperationsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\FilesOperationsUC.Designer.cs">
+      <DependentUpon>FilesOperationsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ProcessNameAndID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ProcessNameAndID.Designer.cs">
+      <DependentUpon>ProcessNameAndID.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\SearchInFilesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\SearchInFilesUC.Designer.cs">
+      <DependentUpon>SearchInFilesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\FileComparerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FileComparerForm.Designer.cs">
+      <DependentUpon>FileComparerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\LogsComparerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\LogsComparerUC.Designer.cs">
+      <DependentUpon>LogsComparerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\UCLogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UCLogs.Designer.cs">
+      <DependentUpon>UCLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\UCMessageDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UCMessageDetails.Designer.cs">
+      <DependentUpon>UCMessageDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\UserSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UserSettingsForm.Designer.cs">
+      <DependentUpon>UserSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\WindowsEventLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\WindowsEventLog.designer.cs">
+      <DependentUpon>WindowsEventLog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ClientServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ClientServerForm.Designer.cs">
+      <DependentUpon>ClientServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\LogGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\LogGridForm.Designer.cs">
+      <DependentUpon>LogGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\WindowsEventLogsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\WindowsEventLogsForm.Designer.cs">
+      <DependentUpon>WindowsEventLogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\WindowsEventLogsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\WindowsEventLogsUC.Designer.cs">
+      <DependentUpon>WindowsEventLogsUC.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\iis.jpg" />
+    <None Include="Resources\rss.jpg" />
+    <None Include="Resources\kama.jpg" />
+    <None Include="Resources\iqon.jpg" />
+    <None Include="Resources\Mirada_Icon.jpg" />
+    <None Include="Resources\log4net32x32.png" />
+    <None Include="Resources\xml32x32.png" />
+    <None Include="Resources\jsonfile32x32.png" />
+    <None Include="Resources\serilog32x32.png" />
+    <None Include="Resources\serilog.png" />
+    <None Include="Resources\nlog.png" />
+    <None Include="Resources\FilePooling_32x32.png" />
+    <None Include="Resources\FilePooling_16x16.png" />
+    <EmbeddedResource Update="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\UserSettingsDataProvidersForm.resx">
+      <DependentUpon>UserSettingsDataProvidersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\AnalogyColumnsMatcherUC.resx">
+      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\DirectoryListing - Copy.resx">
+      <DependentUpon>DirectoryListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\DirectoryListing.resx">
+      <DependentUpon>DirectoryListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\FilePoolingLog.resx">
+      <DependentUpon>FilePoolingLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\WindowsEventLogsForm.resx">
+      <DependentUpon>WindowsEventLogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\WindowsEventLogsUC.resx">
+      <DependentUpon>WindowsEventLogsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\About_32x32.png" />
+    <None Include="Resources\About_16x16.png" />
+    <None Include="Resources\TwoColumns.png" />
+    <None Include="Resources\ServerMode_32x32.png" />
+    <None Include="Resources\ServerMode_16x16.png" />
+    <None Include="Resources\OperatingSystem_32x32.png" />
+    <None Include="Resources\OperatingSystem_16x16.png" />
+    <None Include="Resources\RichEditBookmark_32x32.png" />
+    <None Include="Resources\RecentlyUse_32x32.png" />
+    <None Include="Resources\RecentlyUse_16x16.png" />
+    <None Include="Resources\FitNone_16x16.png" />
+    <None Include="Resources\Delete_16x16.png" />
+    <None Include="Resources\Iqon_Spectral32x32.jpg" />
+    <None Include="Resources\IncreaseFontSize_16x16.png" />
+    <None Include="Resources\DecreaseFontSize_16x16.png" />
+    <None Include="Resources\Mirada_Icon2.jpg" />
+    <None Include="Resources\Iqon_Spectral.jpg" />
+    <None Include="Resources\Miradaa_Icon.jpg" />
+    <None Include="Resources\iqon.png" />
+    <EmbeddedResource Update="Forms\AboutDataSourceBox.resx">
+      <DependentUpon>AboutDataSourceBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\Copy_16x16.png" />
+    <None Include="Resources\Database_on.png" />
+    <None Include="Resources\Database_off.png" />
+    <None Include="Resources\NotOk_32x32.png" />
+    <None Include="Resources\OK_32x32.png" />
+    <None Include="Resources\First_32x32.png" />
+    <None Include="Resources\First_16x16.png" />
+    <None Include="Resources\Media_32x32.png" />
+    <None Include="Resources\Media_16x16.png" />
+    <None Include="Resources\working.gif" />
+    <None Include="Resources\Article_32x32.png" />
+    <None Include="Resources\Article_16x16.png" />
+    <None Include="Resources\ChartsShowLegend_32x32.png" />
+    <None Include="Resources\ChartsShowLegend_16x16.png" />
+    <None Include="Resources\RowIndex_32x32.png" />
+    <None Include="Resources\RowIndex_16x16.png" />
+    <None Include="Resources\PageSetup_32x32.png" />
+    <None Include="Resources\PageSetup_16x16.png" />
+    <None Include="Resources\Action_OpenFile_32x32.png" />
+    <None Include="Resources\Action_OpenFile_16x16.png" />
+    <None Include="Resources\Save_16x16.png" />
+    <None Include="Resources\AddFile_32x32.png" />
+    <None Include="Resources\AddFile_16x16.png" />
+    <None Include="Resources\Time2_32x32.png" />
+    <None Include="Resources\Time2_16x16.png" />
+    <None Include="Resources\Radio_32x32.png" />
+    <None Include="Resources\Radio_16x16.png" />
+    <None Include="Resources\IDE_32x32.png" />
+    <None Include="Resources\IDE_16x16.png" />
+    <None Include="Resources\Properties_32x32.png" />
+    <None Include="Resources\Properties_16x16.png" />
+    <None Include="Resources\Wizard_32x32.png" />
+    <EmbeddedResource Update="Forms\ExtensionsForm.resx">
+      <DependentUpon>ExtensionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\ExtensionsUC.resx">
+      <DependentUpon>ExtensionsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\FormMessageDetails.resx">
+      <DependentUpon>FormMessageDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\Bar_32x32.png" />
+    <None Include="Resources\3DColumn_32x32.png" />
+    <None Include="Resources\3DClusteredColumn_32x32.png" />
+    <None Include="Resources\Sutotal_32x32.png" />
+    <None Include="Resources\ArrangeGroups_32x32.png" />
+    <None Include="Resources\ThreeColumns.png" />
+    <None Include="Resources\Lookup&amp;Reference_32x32.png" />
+    <None Include="Resources\LocalColorScheme_32x32.png" />
+    <None Include="Resources\IndentIncrease_16x16.png" />
+    <None Include="Resources\EditComment_16x16.png" />
+    <None Include="Resources\RichEditBookmark_16x16.png" />
+    <EmbeddedResource Update="UserControls\CombineFilesUC.resx">
+      <DependentUpon>CombineFilesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\FileSystemUC.resx">
+      <DependentUpon>FileSystemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\FolderTreeViewUC.resx">
+      <DependentUpon>FolderTreeViewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\FormCombineFiles.resx">
+      <DependentUpon>FormCombineFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\ClientServerLog.resx">
+      <DependentUpon>ClientServerLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\BookmarkLog.resx">
+      <DependentUpon>BookmarkLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\OfflineLog.resx">
+      <DependentUpon>OfflineLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\OnlineLog.resx">
+      <DependentUpon>OnlineLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\OTALogs.resx">
+      <DependentUpon>OTALogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\FilesOperationsUC.resx">
+      <DependentUpon>FilesOperationsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\SearchInFilesUC.resx">
+      <DependentUpon>SearchInFilesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\FileComparerForm.resx">
+      <DependentUpon>FileComparerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\LogsComparerUC.resx">
+      <DependentUpon>LogsComparerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\UCLogs.resx">
+      <DependentUpon>UCLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\UCMessageDetails.resx">
+      <DependentUpon>UCMessageDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\UserSettingsForm.resx">
+      <DependentUpon>UserSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\WindowsEventLog.resx">
+      <DependentUpon>WindowsEventLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ClientServerForm.resx">
+      <DependentUpon>ClientServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\LogGridForm.resx">
+      <DependentUpon>LogGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\Info_16x16.png" />
+    <None Include="Resources\Download_32x32.png" />
+    <None Include="Resources\Open2_32x32.png" />
+    <None Include="Resources\ClearFilter_16x16.png" />
+    <None Include="Resources\logIcon.png" />
+    <None Include="Resources\Send_16x16.png" />
+    <None Include="Resources\Paste_16x16.png" />
+    <None Include="Resources\DeleteList_32x32.png" />
+    <None Include="Resources\PieLabelsDataLabels_32x32.png" />
+    <None Include="Resources\Insert_32x32.png" />
+    <None Include="Resources\Clear_32x32.png" />
+    <None Include="Resources\Clear_16x16.png" />
+    <None Include="Resources\openFile.png" />
+    <None Include="Resources\FullscreenBlue16.png" />
+    <None Include="Resources\crossMark.png" />
+    <None Include="Resources\checkOK.png" />
+    <None Include="Resources\EMAIL.png" />
+    <None Include="Resources\share.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\LogConfig.png" />
+    <None Include="Resources\ServerON.png" />
+    <None Include="Resources\serverOff.png" />
+    <None Include="Resources\databasearchitecture.png" />
+    <None Include="Resources\pause2.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\Clear.png" />
+    <None Include="Resources\upload1.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\json.png" />
+    <None Include="Resources\restart.jpg" />
+    <EmbeddedResource Update="Forms\AnalogyAboutBox.resx">
+      <DependentUpon>AnalogyAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\AnalogyExclude.resx">
+      <DependentUpon>AnalogyExclude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\AnalogyExcludeMessage.resx">
+      <DependentUpon>AnalogyExcludeMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\AnalogyOTAClient.resx">
+      <DependentUpon>AnalogyOTAClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\AnalogyOTAForm.resx">
+      <DependentUpon>AnalogyOTAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ChangeLog.resx">
+      <DependentUpon>ChangeLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ProcessNameAndID.resx">
+      <DependentUpon>ProcessNameAndID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Utils.resx">
+      <DependentUpon>Utils.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Analogy.DataProviders.Extensions" Version="1.0.2" />
+    <PackageReference Include="Analogy.LogViewer.Example" Version="1.0.8" />
+    <PackageReference Include="Analogy.LogViewer.IISLogsProvider" Version="1.0.1" />
+    <PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.1.7.1" />
+    <PackageReference Include="Analogy.LogViewer.KafkaProvider" Version="1.0.0" />
+    <PackageReference Include="Analogy.LogViewer.NLogProvider" Version="1.0.1" />
+    <PackageReference Include="Analogy.LogViewer.RSSReader" Version="1.0.1" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Analogy_icon1_16x16.ico" />
+    <Content Include="Resources\Analogy_logo1.ico" />
+    <Content Include="Icons\Analogy_icon1.ico" />
+    <Content Include="Icons\Analogy_icon1_16x16.ico" />
+    <Content Include="Icons\Analogy_Icon2.ico" />
+    <Content Include="Icons\Analogy_Icon2_16x16.ico" />
+    <None Include="Resources\List_32x32.png" />
+    <None Include="Resources\List_16x16.png" />
+    <None Include="Resources\DifferentOddEvenPages_32x32.png" />
+    <None Include="Resources\DifferentOddEvenPages_16x16.png" />
+    <None Include="Resources\RefreshAllPivotTable_32x32.png" />
+    <None Include="Resources\RefreshAllPivotTable_16x16.png" />
+    <None Include="Resources\ReapplyFilter_32x32.png" />
+    <None Include="Resources\ReapplyFilter_16x16.png" />
+    <None Include="Resources\AddNewDataSource_32x32.png" />
+    <None Include="Resources\AddNewDataSource_16x16.png" />
+    <None Include="Resources\MultipleMasterFilter_32x32.png" />
+    <None Include="Resources\MultipleMasterFilter_16x16.png" />
+    <None Include="Resources\StackedLine_32x32.png" />
+    <None Include="Resources\StackedLine_16x16.png" />
+    <None Include="Resources\FlowLayout_32x32.png" />
+    <None Include="Resources\FlowLayout_16x16.png" />
+    <None Include="Resources\Web_32x32.png" />
+    <None Include="Resources\Web_16x16.png" />
+    <None Include="Resources\Text_32x32.png" />
+    <None Include="Resources\Text_16x16.png" />
+    <None Include="Resources\Statistical_32x32.png" />
+    <None Include="Resources\Statistical_16x16.png" />
+    <None Include="Resources\RecentlyUse_32x321.png" />
+    <None Include="Resources\RecentlyUse_16x161.png" />
+    <None Include="Resources\MoreFunctions_32x32.png" />
+    <None Include="Resources\MoreFunctions_16x16.png" />
+    <None Include="Resources\Math&amp;Trig_32x32.png" />
+    <None Include="Resources\Math&amp;Trig_16x16.png" />
+    <None Include="Resources\Lookup&amp;Reference_32x321.png" />
+    <None Include="Resources\Lookup&amp;Reference_16x16.png" />
+    <None Include="Resources\Logical_32x32.png" />
+    <None Include="Resources\Logical_16x16.png" />
+    <None Include="Resources\Information_32x32.png" />
+    <None Include="Resources\Information_16x16.png" />
+    <None Include="Resources\Financial_32x32.png" />
+    <None Include="Resources\Financial_16x16.png" />
+    <None Include="Resources\Engineering_32x32.png" />
+    <None Include="Resources\Engineering_16x16.png" />
+    <None Include="Resources\Date&amp;Time_32x32.png" />
+    <None Include="Resources\Date&amp;Time_16x16.png" />
+    <None Include="Resources\Cube_32x32.png" />
+    <None Include="Resources\Cube_16x16.png" />
+    <None Include="Resources\Compatibility_32x32.png" />
+    <None Include="Resources\Compatibility_16x16.png" />
+    <None Include="Resources\AutoSum_32x32.png" />
+    <None Include="Resources\AutoSum_16x16.png" />
+    <None Include="Resources\Palette_32x32.png" />
+    <None Include="Resources\Palette_16x16.png" />
+    <None Include="Resources\FilterByArgument_Chart_32x32.png" />
+    <None Include="Resources\FilterByArgument_Chart_16x16.png" />
+    <None Include="Resources\Filter_32x32.png" />
+    <None Include="Resources\Filter_16x16.png" />
+    <None Include="Resources\ExportToXLS_32x32.png" />
+    <None Include="Resources\ExportToXLS_16x16.png" />
+    <None Include="Resources\ExportToCSV_32x32.png" />
+    <None Include="Resources\ExportToCSV_16x16.png" />
+    <None Include="Resources\Export_32x32.png" />
+    <None Include="Resources\Export_16x16.png" />
+    <None Include="Resources\Stop_32x32.png" />
+    <None Include="Resources\Stop_16x16.png" />
+    <None Include="Resources\Record_32x32.png" />
+    <None Include="Resources\Record_16x16.png" />
+    <None Include="Resources\Prev_32x32.png" />
+    <None Include="Resources\Prev_16x16.png" />
+    <None Include="Resources\Play_32x32.png" />
+    <None Include="Resources\Play_16x16.png" />
+    <None Include="Resources\Pause_32x32.png" />
+    <None Include="Resources\Pause_16x16.png" />
+    <None Include="Resources\Next_32x32.png" />
+    <None Include="Resources\Next_16x16.png" />
+    <None Include="Resources\MoveUp_32x32.png" />
+    <None Include="Resources\MoveUp_16x16.png" />
+    <None Include="Resources\MoveDown_32x32.png" />
+    <None Include="Resources\MoveDown_16x16.png" />
+    <None Include="Resources\Last_32x32.png" />
+    <None Include="Resources\Last_16x16.png" />
+    <None Include="Resources\First_32x321.png" />
+    <None Include="Resources\First_16x161.png" />
+    <None Include="Resources\DoublePrev_32x32.png" />
+    <None Include="Resources\DoublePrev_16x16.png" />
+    <None Include="Resources\DoubleNext_32x32.png" />
+    <None Include="Resources\DoubleNext_16x16.png" />
+    <None Include="Resources\DoubleLast_32x32.png" />
+    <None Include="Resources\DoubleLast_16x16.png" />
+    <None Include="Resources\DoubleFirst_32x32.png" />
+    <None Include="Resources\DoubleFirst_16x16.png" />
+    <None Include="Resources\Warning_32x32.png" />
+    <None Include="Resources\Warning_16x16.png" />
+    <None Include="Resources\Error_32x32.png" />
+    <None Include="Resources\Error_16x16.png" />
+    <None Include="Resources\Search1.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Rename.png" />
+    <None Include="Resources\Quick Access.png" />
+    <None Include="Resources\Properties.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Open Settings.png" />
+    <None Include="Resources\NavigationPane.png" />
+    <None Include="Resources\Map Network Drive.png" />
+    <None Include="Resources\Icon-9.png" />
+    <None Include="Resources\Icon-6.png" />
+    <None Include="Resources\Add a network location.png" />
+    <None Include="Resources\Accessmedia.png" />
+    <None Include="Resources\__Video.png" />
+    <None Include="Resources\__Pictures.png" />
+    <None Include="Resources\__Music.png" />
+    <None Include="Resources\__Local Disk%28d%29.png" />
+    <None Include="Resources\__Local Disk%28c%29.png" />
+    <None Include="Resources\__DVD RW drive.png" />
+    <None Include="Resources\__Download.png" />
+    <None Include="Resources\__Document.png" />
+    <None Include="Resources\__Desktop.png" />
+    <None Include="Resources\SingleMasterFilter_32x32.png" />
+    <None Include="Resources\SingleMasterFilter_16x16.png" />
+    <None Include="Resources\KamaMedical.jpg" />
+    <None Include="Resources\Philips.png" />
+    <None Include="Resources\AnalogyPhilips.png" />
+    <None Include="Resources\AnalogyWindows128x128.png" />
+    <None Include="Resources\Analogy_With_kafka.png" />
+    <None Include="Resources\AnalogyNlog128x1281.jpg" />
+    <None Include="Resources\AnalogyNlog128x128.jpg" />
+    <None Include="Resources\AnalogyNlog.png" />
+    <None Include="Resources\AnalogyIIS128x128.jpg" />
+    <None Include="Resources\AnalogyRSS.jpg" />
+    <None Include="Resources\AnalogyNlog.jpg" />
+    <None Include="Resources\Analogy_Icon2.ico" />
+    <None Include="Resources\Analogy_icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Forms\Form1.Designer.cs" />
+  </ItemGroup>
+</Project>
