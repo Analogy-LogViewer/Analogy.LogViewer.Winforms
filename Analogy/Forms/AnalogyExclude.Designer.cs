@@ -150,9 +150,9 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel PnlBottom;
-        private Syncfusion.WinForms.Controls.SfButton sBtnCancel;
-        private Syncfusion.WinForms.Controls.SfButton sBtnOk;
-        private Syncfusion.WinForms.Controls.SfButton simpleButton2;
+        private System.Windows.Forms.Button sBtnCancel;
+        private System.Windows.Forms.Button sBtnOk;
+        private System.Windows.Forms.Button simpleButton2;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

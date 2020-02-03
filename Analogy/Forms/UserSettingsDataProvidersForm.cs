@@ -56,12 +56,11 @@ namespace Analogy
         {
             foreach (IAnalogyDataProviderSettings settings in FactoriesManager.Instance.GetProvidersSettings())
             {
-                TabPageAdv tab = new TabPageAdv();
+                TabPage tab = new TabPage();
                 tab.Text = settings.Title;
                 UserControl uc = settings.DataProviderSettings;
                 tab.Controls.Add(uc);
-                tab.Image = settings.Icon;
-                tab.ImageSize=new Size(32,32);
+
                 uc.Dock = DockStyle.Fill;
                 tabControlAdv1.TabPages.Add(tab);
             }

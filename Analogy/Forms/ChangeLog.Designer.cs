@@ -104,6 +104,6 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.RichTextBox rtxtbChangeLog;
-        private Syncfusion.WinForms.Controls.SfButton sBtnOk;
+        private System.Windows.Forms.Button sBtnOk;
     }
 }

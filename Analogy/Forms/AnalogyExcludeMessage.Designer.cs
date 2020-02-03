@@ -89,7 +89,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtbMessage;
-        private Syncfusion.WinForms.Controls.SfButton sBtnOk;
-        private Syncfusion.WinForms.Controls.SfButton sBtnCancel;
+        private System.Windows.Forms.Button sBtnOk;
+        private System.Windows.Forms.Button sBtnCancel;
     }
 }

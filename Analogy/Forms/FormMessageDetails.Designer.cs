@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMessageDetails));
             this.spltCMain = new System.Windows.Forms.SplitContainer();
-            this.btnClose = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.spltCMain)).BeginInit();
             this.spltCMain.Panel2.SuspendLayout();
             this.spltCMain.SuspendLayout();
@@ -85,6 +85,6 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer spltCMain;
-        private Syncfusion.WinForms.Controls.SfButton btnClose;
+        private System.Windows.Forms.Button btnClose;
     }
 }

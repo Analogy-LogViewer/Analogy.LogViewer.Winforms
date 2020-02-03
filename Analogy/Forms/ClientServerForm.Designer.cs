@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientServerForm));
-            this.sBtnAdd = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnAdd = new System.Windows.Forms.Button();
             this.txtbPath = new System.Windows.Forms.TextBox();
-            this.sBtnTest = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnTest = new System.Windows.Forms.Button();
             this.rBtnNetwork = new System.Windows.Forms.RadioButton();
             this.rBtnLocal = new System.Windows.Forms.RadioButton();
             this.txtDisplayName = new System.Windows.Forms.TextBox();
-            this.lblPath = new Syncfusion.Windows.Forms.Tools.GradientLabel();
-            this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
+            this.lblPath = new System.Windows.Forms.Label();
+            this.gradientLabel1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // sBtnAdd
@@ -101,11 +101,6 @@
             // 
             // lblPath
             // 
-            this.lblPath.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.lblPath.BeforeTouchSize = new System.Drawing.Size(120, 22);
-            this.lblPath.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
             this.lblPath.Location = new System.Drawing.Point(1, 56);
             this.lblPath.Name = "lblPath";
             this.lblPath.Size = new System.Drawing.Size(120, 22);
@@ -115,11 +110,6 @@
             // 
             // gradientLabel1
             // 
-            this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.gradientLabel1.BeforeTouchSize = new System.Drawing.Size(120, 22);
-            this.gradientLabel1.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
             this.gradientLabel1.Location = new System.Drawing.Point(1, 87);
             this.gradientLabel1.Name = "gradientLabel1";
             this.gradientLabel1.Size = new System.Drawing.Size(120, 22);
@@ -153,13 +143,13 @@
 
         #endregion
 
-        private Syncfusion.WinForms.Controls.SfButton sBtnAdd;
+        private System.Windows.Forms.Button sBtnAdd;
         private System.Windows.Forms.TextBox txtbPath;
-        private Syncfusion.WinForms.Controls.SfButton sBtnTest;
+        private System.Windows.Forms.Button sBtnTest;
         private System.Windows.Forms.RadioButton rBtnNetwork;
         private System.Windows.Forms.RadioButton rBtnLocal;
         private System.Windows.Forms.TextBox txtDisplayName;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel lblPath;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
+        private System.Windows.Forms.Label lblPath;
+        private System.Windows.Forms.Label gradientLabel1;
     }
 }

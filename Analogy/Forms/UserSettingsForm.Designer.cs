@@ -31,36 +31,36 @@ namespace Analogy
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSettingsForm));
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection11 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection11 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection11 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection12 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection12 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection12 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection13 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection13 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection13 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection14 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection14 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection14 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection15 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection15 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection15 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection16 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection16 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection16 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection17 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection17 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection17 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection18 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection18 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection18 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection19 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection19 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection19 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection20 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection20 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection20 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection1 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection1 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection2 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection2 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection2 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection3 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection3 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection3 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection4 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection4 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection4 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection5 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection5 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection5 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection6 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection6 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection6 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection7 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection7 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection7 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection8 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection8 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection8 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection9 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection9 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection9 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection10 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection10 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection10 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             this.nudPageLength = new System.Windows.Forms.NumericUpDown();
             this.btnDeleteHighlight = new Syncfusion.WinForms.Controls.SfButton();
             this.sbtnAddHighlight = new Syncfusion.WinForms.Controls.SfButton();
@@ -500,7 +500,7 @@ namespace Analogy
             this.btnClearStatistics.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClearStatistics.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnClearStatistics.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearStatistics.Location = new System.Drawing.Point(528, 72);
+            this.btnClearStatistics.Location = new System.Drawing.Point(392, 72);
             this.btnClearStatistics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClearStatistics.Name = "btnClearStatistics";
             this.btnClearStatistics.Size = new System.Drawing.Size(110, 33);
@@ -517,13 +517,13 @@ namespace Analogy
             this.clExtensionslItems.Location = new System.Drawing.Point(3, 44);
             this.clExtensionslItems.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.clExtensionslItems.Name = "clExtensionslItems";
-            this.clExtensionslItems.Size = new System.Drawing.Size(631, 463);
+            this.clExtensionslItems.Size = new System.Drawing.Size(495, 463);
             this.clExtensionslItems.TabIndex = 6;
             // 
             // nudRecent
             // 
             this.nudRecent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudRecent.Location = new System.Drawing.Point(531, 18);
+            this.nudRecent.Location = new System.Drawing.Point(395, 18);
             this.nudRecent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudRecent.Maximum = new decimal(new int[] {
             20,
@@ -538,7 +538,7 @@ namespace Analogy
             // nudIdleTime
             // 
             this.nudIdleTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudIdleTime.Location = new System.Drawing.Point(326, 58);
+            this.nudIdleTime.Location = new System.Drawing.Point(190, 58);
             this.nudIdleTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nudIdleTime.Maximum = new decimal(new int[] {
             100000000,
@@ -674,20 +674,20 @@ namespace Analogy
             // 
             // tbFileCaching
             // 
-            activeStateCollection11.Text = "Use Caching of loaded Files";
-            this.tbFileCaching.ActiveState = activeStateCollection11;
+            activeStateCollection1.Text = "Use Caching of loaded Files";
+            this.tbFileCaching.ActiveState = activeStateCollection1;
             this.tbFileCaching.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbFileCaching.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbFileCaching.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection11.Text = "Don\'t use Caching of loaded Files";
-            this.tbFileCaching.InactiveState = inactiveStateCollection11;
+            inactiveStateCollection1.Text = "Don\'t use Caching of loaded Files";
+            this.tbFileCaching.InactiveState = inactiveStateCollection1;
             this.tbFileCaching.Location = new System.Drawing.Point(6, 28);
             this.tbFileCaching.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbFileCaching.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbFileCaching.Name = "tbFileCaching";
             this.tbFileCaching.Size = new System.Drawing.Size(769, 31);
-            this.tbFileCaching.Slider = sliderCollection11;
+            this.tbFileCaching.Slider = sliderCollection1;
             this.tbFileCaching.TabIndex = 17;
             this.tbFileCaching.Text = "Don\'t remember last opened Data provider on startup";
             // 
@@ -735,95 +735,95 @@ namespace Analogy
             // 
             // tbHistory
             // 
-            activeStateCollection12.Text = "Show history of cleared Messages";
-            this.tbHistory.ActiveState = activeStateCollection12;
+            activeStateCollection2.Text = "Show history of cleared Messages";
+            this.tbHistory.ActiveState = activeStateCollection2;
             this.tbHistory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbHistory.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbHistory.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection12.Text = "Don\'t show history of cleared Messages";
-            this.tbHistory.InactiveState = inactiveStateCollection12;
+            inactiveStateCollection2.Text = "Don\'t show history of cleared Messages";
+            this.tbHistory.InactiveState = inactiveStateCollection2;
             this.tbHistory.Location = new System.Drawing.Point(6, 186);
             this.tbHistory.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbHistory.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbHistory.Name = "tbHistory";
             this.tbHistory.Size = new System.Drawing.Size(769, 31);
-            this.tbHistory.Slider = sliderCollection12;
+            this.tbHistory.Slider = sliderCollection2;
             this.tbHistory.TabIndex = 16;
             this.tbHistory.Text = "Don\'t remember last opened Data provider on startup";
             // 
             // tbAutoComplete
             // 
-            activeStateCollection13.Text = "Save excluded filtering text for next startup";
-            this.tbAutoComplete.ActiveState = activeStateCollection13;
+            activeStateCollection3.Text = "Save excluded filtering text for next startup";
+            this.tbAutoComplete.ActiveState = activeStateCollection3;
             this.tbAutoComplete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbAutoComplete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbAutoComplete.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection13.Text = "Don\'t save auto completion List";
-            this.tbAutoComplete.InactiveState = inactiveStateCollection13;
+            inactiveStateCollection3.Text = "Don\'t save auto completion List";
+            this.tbAutoComplete.InactiveState = inactiveStateCollection3;
             this.tbAutoComplete.Location = new System.Drawing.Point(6, 145);
             this.tbAutoComplete.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbAutoComplete.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbAutoComplete.Name = "tbAutoComplete";
             this.tbAutoComplete.Size = new System.Drawing.Size(769, 31);
-            this.tbAutoComplete.Slider = sliderCollection13;
+            this.tbAutoComplete.Slider = sliderCollection3;
             this.tbAutoComplete.TabIndex = 15;
             this.tbAutoComplete.Text = "Don\'t remember last opened Data provider on startup";
             // 
             // tbErrorLevelAsDefault
             // 
-            activeStateCollection14.Text = "Start logs with Error and Critical  level as default filtering";
-            this.tbErrorLevelAsDefault.ActiveState = activeStateCollection14;
+            activeStateCollection4.Text = "Start logs with Error and Critical  level as default filtering";
+            this.tbErrorLevelAsDefault.ActiveState = activeStateCollection4;
             this.tbErrorLevelAsDefault.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbErrorLevelAsDefault.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbErrorLevelAsDefault.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection14.Text = "Don\'t filter logs on Load";
-            this.tbErrorLevelAsDefault.InactiveState = inactiveStateCollection14;
+            inactiveStateCollection4.Text = "Don\'t filter logs on Load";
+            this.tbErrorLevelAsDefault.InactiveState = inactiveStateCollection4;
             this.tbErrorLevelAsDefault.Location = new System.Drawing.Point(6, 104);
             this.tbErrorLevelAsDefault.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbErrorLevelAsDefault.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbErrorLevelAsDefault.Name = "tbErrorLevelAsDefault";
             this.tbErrorLevelAsDefault.Size = new System.Drawing.Size(769, 31);
-            this.tbErrorLevelAsDefault.Slider = sliderCollection14;
+            this.tbErrorLevelAsDefault.Slider = sliderCollection4;
             this.tbErrorLevelAsDefault.TabIndex = 14;
             // 
             // tbDataTimeAscendDescend
             // 
-            activeStateCollection15.Text = "Default sort is by descending date (new messages are at the top)";
-            this.tbDataTimeAscendDescend.ActiveState = activeStateCollection15;
+            activeStateCollection5.Text = "Default sort is by descending date (new messages are at the top)";
+            this.tbDataTimeAscendDescend.ActiveState = activeStateCollection5;
             this.tbDataTimeAscendDescend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbDataTimeAscendDescend.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbDataTimeAscendDescend.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection15.Text = "Default sort is by ascending date (new messages are at the bottom)";
-            this.tbDataTimeAscendDescend.InactiveState = inactiveStateCollection15;
+            inactiveStateCollection5.Text = "Default sort is by ascending date (new messages are at the bottom)";
+            this.tbDataTimeAscendDescend.InactiveState = inactiveStateCollection5;
             this.tbDataTimeAscendDescend.Location = new System.Drawing.Point(6, 63);
             this.tbDataTimeAscendDescend.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbDataTimeAscendDescend.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbDataTimeAscendDescend.Name = "tbDataTimeAscendDescend";
             this.tbDataTimeAscendDescend.Size = new System.Drawing.Size(769, 31);
-            this.tbDataTimeAscendDescend.Slider = sliderCollection15;
+            this.tbDataTimeAscendDescend.Slider = sliderCollection5;
             this.tbDataTimeAscendDescend.TabIndex = 13;
             this.tbDataTimeAscendDescend.Text = "Don\'t remember last opened Data provider on startup";
             // 
             // tbFilteringLastEntries
             // 
-            activeStateCollection16.Text = "Remember last filters Input";
-            this.tbFilteringLastEntries.ActiveState = activeStateCollection16;
+            activeStateCollection6.Text = "Remember last filters Input";
+            this.tbFilteringLastEntries.ActiveState = activeStateCollection6;
             this.tbFilteringLastEntries.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbFilteringLastEntries.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbFilteringLastEntries.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection16.Text = "Don\'t Remember last filters Input";
-            this.tbFilteringLastEntries.InactiveState = inactiveStateCollection16;
+            inactiveStateCollection6.Text = "Don\'t Remember last filters Input";
+            this.tbFilteringLastEntries.InactiveState = inactiveStateCollection6;
             this.tbFilteringLastEntries.Location = new System.Drawing.Point(6, 22);
             this.tbFilteringLastEntries.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbFilteringLastEntries.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbFilteringLastEntries.Name = "tbFilteringLastEntries";
             this.tbFilteringLastEntries.Size = new System.Drawing.Size(769, 31);
-            this.tbFilteringLastEntries.Slider = sliderCollection16;
+            this.tbFilteringLastEntries.Slider = sliderCollection6;
             this.tbFilteringLastEntries.TabIndex = 13;
             // 
             // tabPageAdv2
@@ -1124,7 +1124,7 @@ namespace Analogy
             this.sfBtnHighlightColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.sfBtnHighlightColor.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.sfBtnHighlightColor.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfBtnHighlightColor.Location = new System.Drawing.Point(701, 322);
+            this.sfBtnHighlightColor.Location = new System.Drawing.Point(565, 322);
             this.sfBtnHighlightColor.Name = "sfBtnHighlightColor";
             this.sfBtnHighlightColor.Size = new System.Drawing.Size(80, 22);
             this.sfBtnHighlightColor.TabIndex = 29;
@@ -1134,10 +1134,10 @@ namespace Analogy
             // 
             this.tbHighlightColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlightColor.BeforeTouchSize = new System.Drawing.Size(480, 22);
+            this.tbHighlightColor.BeforeTouchSize = new System.Drawing.Size(344, 22);
             this.tbHighlightColor.Location = new System.Drawing.Point(215, 322);
             this.tbHighlightColor.Name = "tbHighlightColor";
-            this.tbHighlightColor.Size = new System.Drawing.Size(480, 22);
+            this.tbHighlightColor.Size = new System.Drawing.Size(344, 22);
             this.tbHighlightColor.TabIndex = 28;
             // 
             // lblHighlightColor
@@ -1534,20 +1534,20 @@ namespace Analogy
             // 
             // tbUserStatistics
             // 
-            activeStateCollection17.Text = "User Statistics are enabled";
-            this.tbUserStatistics.ActiveState = activeStateCollection17;
+            activeStateCollection7.Text = "User Statistics are enabled";
+            this.tbUserStatistics.ActiveState = activeStateCollection7;
             this.tbUserStatistics.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbUserStatistics.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbUserStatistics.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection17.Text = "User Statistics are disabled";
-            this.tbUserStatistics.InactiveState = inactiveStateCollection17;
+            inactiveStateCollection7.Text = "User Statistics are disabled";
+            this.tbUserStatistics.InactiveState = inactiveStateCollection7;
             this.tbUserStatistics.Location = new System.Drawing.Point(5, 8);
             this.tbUserStatistics.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbUserStatistics.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbUserStatistics.Name = "tbUserStatistics";
-            this.tbUserStatistics.Size = new System.Drawing.Size(633, 31);
-            this.tbUserStatistics.Slider = sliderCollection17;
+            this.tbUserStatistics.Size = new System.Drawing.Size(497, 31);
+            this.tbUserStatistics.Slider = sliderCollection7;
             this.tbUserStatistics.TabIndex = 14;
             // 
             // tabPageAdv5
@@ -1566,20 +1566,20 @@ namespace Analogy
             // 
             // tbExtensionsStartup
             // 
-            activeStateCollection18.Text = "Load following Extensions at startup:";
-            this.tbExtensionsStartup.ActiveState = activeStateCollection18;
+            activeStateCollection8.Text = "Load following Extensions at startup:";
+            this.tbExtensionsStartup.ActiveState = activeStateCollection8;
             this.tbExtensionsStartup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbExtensionsStartup.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbExtensionsStartup.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection18.Text = "No Startup extensions";
-            this.tbExtensionsStartup.InactiveState = inactiveStateCollection18;
+            inactiveStateCollection8.Text = "No Startup extensions";
+            this.tbExtensionsStartup.InactiveState = inactiveStateCollection8;
             this.tbExtensionsStartup.Location = new System.Drawing.Point(3, 0);
             this.tbExtensionsStartup.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbExtensionsStartup.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbExtensionsStartup.Name = "tbExtensionsStartup";
-            this.tbExtensionsStartup.Size = new System.Drawing.Size(633, 31);
-            this.tbExtensionsStartup.Slider = sliderCollection18;
+            this.tbExtensionsStartup.Size = new System.Drawing.Size(497, 31);
+            this.tbExtensionsStartup.Slider = sliderCollection8;
             this.tbExtensionsStartup.TabIndex = 15;
             // 
             // tabPageAdv6
@@ -1674,20 +1674,20 @@ namespace Analogy
             // 
             // tbIdleMode
             // 
-            activeStateCollection19.Text = "Idle mode: ignore incoming messages when user is idle";
-            this.tbIdleMode.ActiveState = activeStateCollection19;
+            activeStateCollection9.Text = "Idle mode: ignore incoming messages when user is idle";
+            this.tbIdleMode.ActiveState = activeStateCollection9;
             this.tbIdleMode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbIdleMode.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbIdleMode.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection19.Text = "Don\'t enable idle mode";
-            this.tbIdleMode.InactiveState = inactiveStateCollection19;
+            inactiveStateCollection9.Text = "Don\'t enable idle mode";
+            this.tbIdleMode.InactiveState = inactiveStateCollection9;
             this.tbIdleMode.Location = new System.Drawing.Point(3, 5);
             this.tbIdleMode.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbIdleMode.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbIdleMode.Name = "tbIdleMode";
-            this.tbIdleMode.Size = new System.Drawing.Size(633, 31);
-            this.tbIdleMode.Slider = sliderCollection19;
+            this.tbIdleMode.Size = new System.Drawing.Size(497, 31);
+            this.tbIdleMode.Slider = sliderCollection9;
             this.tbIdleMode.TabIndex = 18;
             // 
             // label12
@@ -1743,19 +1743,19 @@ namespace Analogy
             // 
             // tbRememberLastOpenedDataProvider
             // 
-            activeStateCollection20.Text = "Remember last opened Data provider on startup and switch to it after restart";
-            this.tbRememberLastOpenedDataProvider.ActiveState = activeStateCollection20;
+            activeStateCollection10.Text = "Remember last opened Data provider on startup and switch to it after restart";
+            this.tbRememberLastOpenedDataProvider.ActiveState = activeStateCollection10;
             this.tbRememberLastOpenedDataProvider.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbRememberLastOpenedDataProvider.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbRememberLastOpenedDataProvider.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection20.Text = "Don\'t remember last opened Data provider on startup";
-            this.tbRememberLastOpenedDataProvider.InactiveState = inactiveStateCollection20;
+            inactiveStateCollection10.Text = "Don\'t remember last opened Data provider on startup";
+            this.tbRememberLastOpenedDataProvider.InactiveState = inactiveStateCollection10;
             this.tbRememberLastOpenedDataProvider.Location = new System.Drawing.Point(0, 50);
             this.tbRememberLastOpenedDataProvider.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbRememberLastOpenedDataProvider.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbRememberLastOpenedDataProvider.Name = "tbRememberLastOpenedDataProvider";
             this.tbRememberLastOpenedDataProvider.Size = new System.Drawing.Size(774, 31);
-            this.tbRememberLastOpenedDataProvider.Slider = sliderCollection20;
+            this.tbRememberLastOpenedDataProvider.Slider = sliderCollection10;
             this.tbRememberLastOpenedDataProvider.TabIndex = 12;
             this.tbRememberLastOpenedDataProvider.Text = "Don\'t remember last opened Data provider on startup";
             // 
