@@ -43,24 +43,6 @@ namespace Analogy
             Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection4 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
             Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection4 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
             Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection4 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection5 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection5 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection5 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection6 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection6 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection6 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection7 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection7 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection7 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection8 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection8 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection8 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection9 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection9 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection9 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection10 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection10 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection10 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             this.nudPageLength = new System.Windows.Forms.NumericUpDown();
             this.btnDeleteHighlight = new Syncfusion.WinForms.Controls.SfButton();
             this.sbtnAddHighlight = new Syncfusion.WinForms.Controls.SfButton();
@@ -94,16 +76,7 @@ namespace Analogy
             this.btnDataProviderCustomSettings = new Syncfusion.WinForms.Controls.SfButton();
             this.tabControlMain = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tabPageAdv1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.gbFilteringSettingsFiles = new System.Windows.Forms.GroupBox();
-            this.tbFileCaching = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.gbFilteringSettings = new System.Windows.Forms.GroupBox();
-            this.cbSearchAlsoInSourceAndModule = new Syncfusion.Windows.Forms.Tools.CheckBoxAdv();
-            this.cbPaging = new Syncfusion.Windows.Forms.Tools.CheckBoxAdv();
-            this.tbHistory = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.tbAutoComplete = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.tbErrorLevelAsDefault = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.tbDataTimeAscendDescend = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.tbFilteringLastEntries = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.tabPageAdv2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.tabControlAdv2 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tabPageAdv10 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
@@ -189,22 +162,21 @@ namespace Analogy
             this.label6 = new System.Windows.Forms.Label();
             this.tabPageAdv16 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.tbFilteringLastEntries = new System.Windows.Forms.CheckBox();
+            this.tbDataTimeAscendDescend = new System.Windows.Forms.CheckBox();
+            this.tbErrorLevelAsDefault = new System.Windows.Forms.CheckBox();
+            this.tbAutoComplete = new System.Windows.Forms.CheckBox();
+            this.tbHistory = new System.Windows.Forms.CheckBox();
+            this.cbPaging = new System.Windows.Forms.CheckBox();
+            this.cbSearchAlsoInSourceAndModule = new System.Windows.Forms.CheckBox();
+            this.tbFileCaching = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudPageLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRecent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudIdleTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControlMain)).BeginInit();
             this.tabControlMain.SuspendLayout();
             this.tabPageAdv1.SuspendLayout();
-            this.gbFilteringSettingsFiles.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbFileCaching)).BeginInit();
             this.gbFilteringSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbSearchAlsoInSourceAndModule)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbPaging)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbHistory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbAutoComplete)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbErrorLevelAsDefault)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDataTimeAscendDescend)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbFilteringLastEntries)).BeginInit();
             this.tabPageAdv2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv2)).BeginInit();
             this.tabControlAdv2.SuspendLayout();
@@ -257,7 +229,7 @@ namespace Analogy
             // nudPageLength
             // 
             this.nudPageLength.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudPageLength.Location = new System.Drawing.Point(597, 228);
+            this.nudPageLength.Location = new System.Drawing.Point(597, 165);
             this.nudPageLength.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nudPageLength.Maximum = new decimal(new int[] {
             1874919424,
@@ -500,7 +472,7 @@ namespace Analogy
             this.btnClearStatistics.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClearStatistics.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnClearStatistics.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearStatistics.Location = new System.Drawing.Point(392, 72);
+            this.btnClearStatistics.Location = new System.Drawing.Point(256, 72);
             this.btnClearStatistics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClearStatistics.Name = "btnClearStatistics";
             this.btnClearStatistics.Size = new System.Drawing.Size(110, 33);
@@ -517,13 +489,13 @@ namespace Analogy
             this.clExtensionslItems.Location = new System.Drawing.Point(3, 44);
             this.clExtensionslItems.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.clExtensionslItems.Name = "clExtensionslItems";
-            this.clExtensionslItems.Size = new System.Drawing.Size(495, 463);
+            this.clExtensionslItems.Size = new System.Drawing.Size(359, 463);
             this.clExtensionslItems.TabIndex = 6;
             // 
             // nudRecent
             // 
             this.nudRecent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudRecent.Location = new System.Drawing.Point(395, 18);
+            this.nudRecent.Location = new System.Drawing.Point(259, 18);
             this.nudRecent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudRecent.Maximum = new decimal(new int[] {
             20,
@@ -538,7 +510,7 @@ namespace Analogy
             // nudIdleTime
             // 
             this.nudIdleTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudIdleTime.Location = new System.Drawing.Point(190, 58);
+            this.nudIdleTime.Location = new System.Drawing.Point(54, 58);
             this.nudIdleTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nudIdleTime.Maximum = new decimal(new int[] {
             100000000,
@@ -566,7 +538,7 @@ namespace Analogy
             this.chkLstDataProviderStatus.Location = new System.Drawing.Point(0, 81);
             this.chkLstDataProviderStatus.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.chkLstDataProviderStatus.Name = "chkLstDataProviderStatus";
-            this.chkLstDataProviderStatus.Size = new System.Drawing.Size(774, 402);
+            this.chkLstDataProviderStatus.Size = new System.Drawing.Size(774, 431);
             this.chkLstDataProviderStatus.TabIndex = 10;
             // 
             // chkLstItemRealTimeDataSources
@@ -577,7 +549,7 @@ namespace Analogy
             this.chkLstItemRealTimeDataSources.Location = new System.Drawing.Point(0, 50);
             this.chkLstItemRealTimeDataSources.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.chkLstItemRealTimeDataSources.Name = "chkLstItemRealTimeDataSources";
-            this.chkLstItemRealTimeDataSources.Size = new System.Drawing.Size(774, 433);
+            this.chkLstItemRealTimeDataSources.Size = new System.Drawing.Size(774, 462);
             this.chkLstItemRealTimeDataSources.TabIndex = 8;
             this.chkLstItemRealTimeDataSources.SelectedIndexChanged += new System.EventHandler(this.ChkLstItemRealTimeDataSources_SelectedIndexChanged);
             // 
@@ -649,7 +621,6 @@ namespace Analogy
             // 
             // tabPageAdv1
             // 
-            this.tabPageAdv1.Controls.Add(this.gbFilteringSettingsFiles);
             this.tabPageAdv1.Controls.Add(this.gbFilteringSettings);
             this.tabPageAdv1.Image = global::Analogy.Properties.Resources.MultipleMasterFilter_32x32;
             this.tabPageAdv1.ImageSize = new System.Drawing.Size(32, 32);
@@ -661,170 +632,24 @@ namespace Analogy
             this.tabPageAdv1.Text = "Filtering and Interactions";
             this.tabPageAdv1.ThemesEnabled = true;
             // 
-            // gbFilteringSettingsFiles
-            // 
-            this.gbFilteringSettingsFiles.Controls.Add(this.tbFileCaching);
-            this.gbFilteringSettingsFiles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbFilteringSettingsFiles.Location = new System.Drawing.Point(0, 296);
-            this.gbFilteringSettingsFiles.Name = "gbFilteringSettingsFiles";
-            this.gbFilteringSettingsFiles.Size = new System.Drawing.Size(781, 222);
-            this.gbFilteringSettingsFiles.TabIndex = 6;
-            this.gbFilteringSettingsFiles.TabStop = false;
-            this.gbFilteringSettingsFiles.Text = "Files";
-            // 
-            // tbFileCaching
-            // 
-            activeStateCollection1.Text = "Use Caching of loaded Files";
-            this.tbFileCaching.ActiveState = activeStateCollection1;
-            this.tbFileCaching.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbFileCaching.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbFileCaching.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection1.Text = "Don\'t use Caching of loaded Files";
-            this.tbFileCaching.InactiveState = inactiveStateCollection1;
-            this.tbFileCaching.Location = new System.Drawing.Point(6, 28);
-            this.tbFileCaching.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbFileCaching.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbFileCaching.Name = "tbFileCaching";
-            this.tbFileCaching.Size = new System.Drawing.Size(769, 31);
-            this.tbFileCaching.Slider = sliderCollection1;
-            this.tbFileCaching.TabIndex = 17;
-            this.tbFileCaching.Text = "Don\'t remember last opened Data provider on startup";
-            // 
             // gbFilteringSettings
             // 
-            this.gbFilteringSettings.Controls.Add(this.cbSearchAlsoInSourceAndModule);
             this.gbFilteringSettings.Controls.Add(this.cbPaging);
+            this.gbFilteringSettings.Controls.Add(this.tbFileCaching);
+            this.gbFilteringSettings.Controls.Add(this.cbSearchAlsoInSourceAndModule);
             this.gbFilteringSettings.Controls.Add(this.tbHistory);
             this.gbFilteringSettings.Controls.Add(this.tbAutoComplete);
-            this.gbFilteringSettings.Controls.Add(this.nudPageLength);
             this.gbFilteringSettings.Controls.Add(this.tbErrorLevelAsDefault);
             this.gbFilteringSettings.Controls.Add(this.tbDataTimeAscendDescend);
             this.gbFilteringSettings.Controls.Add(this.tbFilteringLastEntries);
-            this.gbFilteringSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbFilteringSettings.Controls.Add(this.nudPageLength);
+            this.gbFilteringSettings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbFilteringSettings.Location = new System.Drawing.Point(0, 0);
             this.gbFilteringSettings.Name = "gbFilteringSettings";
-            this.gbFilteringSettings.Size = new System.Drawing.Size(781, 296);
+            this.gbFilteringSettings.Size = new System.Drawing.Size(781, 518);
             this.gbFilteringSettings.TabIndex = 5;
             this.gbFilteringSettings.TabStop = false;
             this.gbFilteringSettings.Text = "Filtering, search and interaction of messages area";
-            // 
-            // cbSearchAlsoInSourceAndModule
-            // 
-            this.cbSearchAlsoInSourceAndModule.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbSearchAlsoInSourceAndModule.BeforeTouchSize = new System.Drawing.Size(771, 23);
-            this.cbSearchAlsoInSourceAndModule.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
-            this.cbSearchAlsoInSourceAndModule.Location = new System.Drawing.Point(6, 256);
-            this.cbSearchAlsoInSourceAndModule.Name = "cbSearchAlsoInSourceAndModule";
-            this.cbSearchAlsoInSourceAndModule.Size = new System.Drawing.Size(771, 23);
-            this.cbSearchAlsoInSourceAndModule.TabIndex = 18;
-            this.cbSearchAlsoInSourceAndModule.Text = "Search text also in Source and Module/Process columns";
-            // 
-            // cbPaging
-            // 
-            this.cbPaging.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbPaging.BeforeTouchSize = new System.Drawing.Size(576, 23);
-            this.cbPaging.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
-            this.cbPaging.Location = new System.Drawing.Point(6, 227);
-            this.cbPaging.Name = "cbPaging";
-            this.cbPaging.Size = new System.Drawing.Size(576, 23);
-            this.cbPaging.TabIndex = 17;
-            this.cbPaging.Text = "Enable Paging (number of rows per page):";
-            // 
-            // tbHistory
-            // 
-            activeStateCollection2.Text = "Show history of cleared Messages";
-            this.tbHistory.ActiveState = activeStateCollection2;
-            this.tbHistory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHistory.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbHistory.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection2.Text = "Don\'t show history of cleared Messages";
-            this.tbHistory.InactiveState = inactiveStateCollection2;
-            this.tbHistory.Location = new System.Drawing.Point(6, 186);
-            this.tbHistory.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbHistory.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbHistory.Name = "tbHistory";
-            this.tbHistory.Size = new System.Drawing.Size(769, 31);
-            this.tbHistory.Slider = sliderCollection2;
-            this.tbHistory.TabIndex = 16;
-            this.tbHistory.Text = "Don\'t remember last opened Data provider on startup";
-            // 
-            // tbAutoComplete
-            // 
-            activeStateCollection3.Text = "Save excluded filtering text for next startup";
-            this.tbAutoComplete.ActiveState = activeStateCollection3;
-            this.tbAutoComplete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbAutoComplete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAutoComplete.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection3.Text = "Don\'t save auto completion List";
-            this.tbAutoComplete.InactiveState = inactiveStateCollection3;
-            this.tbAutoComplete.Location = new System.Drawing.Point(6, 145);
-            this.tbAutoComplete.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbAutoComplete.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbAutoComplete.Name = "tbAutoComplete";
-            this.tbAutoComplete.Size = new System.Drawing.Size(769, 31);
-            this.tbAutoComplete.Slider = sliderCollection3;
-            this.tbAutoComplete.TabIndex = 15;
-            this.tbAutoComplete.Text = "Don\'t remember last opened Data provider on startup";
-            // 
-            // tbErrorLevelAsDefault
-            // 
-            activeStateCollection4.Text = "Start logs with Error and Critical  level as default filtering";
-            this.tbErrorLevelAsDefault.ActiveState = activeStateCollection4;
-            this.tbErrorLevelAsDefault.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbErrorLevelAsDefault.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbErrorLevelAsDefault.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection4.Text = "Don\'t filter logs on Load";
-            this.tbErrorLevelAsDefault.InactiveState = inactiveStateCollection4;
-            this.tbErrorLevelAsDefault.Location = new System.Drawing.Point(6, 104);
-            this.tbErrorLevelAsDefault.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbErrorLevelAsDefault.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbErrorLevelAsDefault.Name = "tbErrorLevelAsDefault";
-            this.tbErrorLevelAsDefault.Size = new System.Drawing.Size(769, 31);
-            this.tbErrorLevelAsDefault.Slider = sliderCollection4;
-            this.tbErrorLevelAsDefault.TabIndex = 14;
-            // 
-            // tbDataTimeAscendDescend
-            // 
-            activeStateCollection5.Text = "Default sort is by descending date (new messages are at the top)";
-            this.tbDataTimeAscendDescend.ActiveState = activeStateCollection5;
-            this.tbDataTimeAscendDescend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDataTimeAscendDescend.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbDataTimeAscendDescend.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection5.Text = "Default sort is by ascending date (new messages are at the bottom)";
-            this.tbDataTimeAscendDescend.InactiveState = inactiveStateCollection5;
-            this.tbDataTimeAscendDescend.Location = new System.Drawing.Point(6, 63);
-            this.tbDataTimeAscendDescend.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbDataTimeAscendDescend.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbDataTimeAscendDescend.Name = "tbDataTimeAscendDescend";
-            this.tbDataTimeAscendDescend.Size = new System.Drawing.Size(769, 31);
-            this.tbDataTimeAscendDescend.Slider = sliderCollection5;
-            this.tbDataTimeAscendDescend.TabIndex = 13;
-            this.tbDataTimeAscendDescend.Text = "Don\'t remember last opened Data provider on startup";
-            // 
-            // tbFilteringLastEntries
-            // 
-            activeStateCollection6.Text = "Remember last filters Input";
-            this.tbFilteringLastEntries.ActiveState = activeStateCollection6;
-            this.tbFilteringLastEntries.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbFilteringLastEntries.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbFilteringLastEntries.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection6.Text = "Don\'t Remember last filters Input";
-            this.tbFilteringLastEntries.InactiveState = inactiveStateCollection6;
-            this.tbFilteringLastEntries.Location = new System.Drawing.Point(6, 22);
-            this.tbFilteringLastEntries.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbFilteringLastEntries.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbFilteringLastEntries.Name = "tbFilteringLastEntries";
-            this.tbFilteringLastEntries.Size = new System.Drawing.Size(769, 31);
-            this.tbFilteringLastEntries.Slider = sliderCollection6;
-            this.tbFilteringLastEntries.TabIndex = 13;
             // 
             // tabPageAdv2
             // 
@@ -889,7 +714,7 @@ namespace Analogy
             // 
             this.tbHighlighColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlighColor.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbHighlighColor.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlighColor.Location = new System.Drawing.Point(202, 102);
             this.tbHighlighColor.Name = "tbHighlighColor";
             this.tbHighlighColor.Size = new System.Drawing.Size(428, 22);
@@ -920,7 +745,7 @@ namespace Analogy
             // 
             this.tbHighlightEquals.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlightEquals.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbHighlightEquals.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlightEquals.Location = new System.Drawing.Point(202, 71);
             this.tbHighlightEquals.Name = "tbHighlightEquals";
             this.tbHighlightEquals.Size = new System.Drawing.Size(560, 22);
@@ -930,7 +755,7 @@ namespace Analogy
             // 
             this.tbHighlightContains.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlightContains.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbHighlightContains.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlightContains.Location = new System.Drawing.Point(202, 38);
             this.tbHighlightContains.Name = "tbHighlightContains";
             this.tbHighlightContains.Size = new System.Drawing.Size(560, 22);
@@ -988,7 +813,7 @@ namespace Analogy
             // 
             this.tbModulesFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbModulesFilter.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbModulesFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbModulesFilter.Location = new System.Drawing.Point(226, 93);
             this.tbModulesFilter.Name = "tbModulesFilter";
             this.tbModulesFilter.Size = new System.Drawing.Size(536, 22);
@@ -998,7 +823,7 @@ namespace Analogy
             // 
             this.tbSourcesFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSourcesFilter.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbSourcesFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbSourcesFilter.Location = new System.Drawing.Point(227, 65);
             this.tbSourcesFilter.Name = "tbSourcesFilter";
             this.tbSourcesFilter.Size = new System.Drawing.Size(536, 22);
@@ -1008,7 +833,7 @@ namespace Analogy
             // 
             this.tbExcludeFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbExcludeFilter.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbExcludeFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbExcludeFilter.Location = new System.Drawing.Point(227, 37);
             this.tbExcludeFilter.Name = "tbExcludeFilter";
             this.tbExcludeFilter.Size = new System.Drawing.Size(536, 22);
@@ -1018,7 +843,7 @@ namespace Analogy
             // 
             this.tbIncludeTextFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbIncludeTextFilter.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbIncludeTextFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbIncludeTextFilter.Location = new System.Drawing.Point(227, 9);
             this.tbIncludeTextFilter.Name = "tbIncludeTextFilter";
             this.tbIncludeTextFilter.Size = new System.Drawing.Size(536, 22);
@@ -1052,7 +877,7 @@ namespace Analogy
             // 
             this.tbModulesAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbModulesAlert.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbModulesAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbModulesAlert.Location = new System.Drawing.Point(227, 98);
             this.tbModulesAlert.Name = "tbModulesAlert";
             this.tbModulesAlert.Size = new System.Drawing.Size(536, 22);
@@ -1062,7 +887,7 @@ namespace Analogy
             // 
             this.tbSourcesAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSourcesAlert.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbSourcesAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbSourcesAlert.Location = new System.Drawing.Point(227, 68);
             this.tbSourcesAlert.Name = "tbSourcesAlert";
             this.tbSourcesAlert.Size = new System.Drawing.Size(536, 22);
@@ -1072,7 +897,7 @@ namespace Analogy
             // 
             this.tbExcludeAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbExcludeAlert.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbExcludeAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbExcludeAlert.Location = new System.Drawing.Point(227, 38);
             this.tbExcludeAlert.Name = "tbExcludeAlert";
             this.tbExcludeAlert.Size = new System.Drawing.Size(536, 22);
@@ -1082,7 +907,7 @@ namespace Analogy
             // 
             this.tbIncludeTextAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbIncludeTextAlert.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbIncludeTextAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbIncludeTextAlert.Location = new System.Drawing.Point(227, 10);
             this.tbIncludeTextAlert.Name = "tbIncludeTextAlert";
             this.tbIncludeTextAlert.Size = new System.Drawing.Size(536, 22);
@@ -1124,7 +949,7 @@ namespace Analogy
             this.sfBtnHighlightColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.sfBtnHighlightColor.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.sfBtnHighlightColor.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfBtnHighlightColor.Location = new System.Drawing.Point(565, 322);
+            this.sfBtnHighlightColor.Location = new System.Drawing.Point(429, 322);
             this.sfBtnHighlightColor.Name = "sfBtnHighlightColor";
             this.sfBtnHighlightColor.Size = new System.Drawing.Size(80, 22);
             this.sfBtnHighlightColor.TabIndex = 29;
@@ -1134,10 +959,10 @@ namespace Analogy
             // 
             this.tbHighlightColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlightColor.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbHighlightColor.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlightColor.Location = new System.Drawing.Point(215, 322);
             this.tbHighlightColor.Name = "tbHighlightColor";
-            this.tbHighlightColor.Size = new System.Drawing.Size(344, 22);
+            this.tbHighlightColor.Size = new System.Drawing.Size(208, 22);
             this.tbHighlightColor.TabIndex = 28;
             // 
             // lblHighlightColor
@@ -1312,7 +1137,7 @@ namespace Analogy
             // 
             this.tbLogLevelAnalogyInformation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelAnalogyInformation.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelAnalogyInformation.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelAnalogyInformation.Location = new System.Drawing.Point(215, 274);
             this.tbLogLevelAnalogyInformation.Name = "tbLogLevelAnalogyInformation";
             this.tbLogLevelAnalogyInformation.Size = new System.Drawing.Size(480, 22);
@@ -1322,7 +1147,7 @@ namespace Analogy
             // 
             this.tbLogLevelCritical.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelCritical.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelCritical.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelCritical.Location = new System.Drawing.Point(215, 246);
             this.tbLogLevelCritical.Name = "tbLogLevelCritical";
             this.tbLogLevelCritical.Size = new System.Drawing.Size(480, 22);
@@ -1348,7 +1173,7 @@ namespace Analogy
             // 
             this.tbLogLevelError.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelError.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelError.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelError.Location = new System.Drawing.Point(215, 218);
             this.tbLogLevelError.Name = "tbLogLevelError";
             this.tbLogLevelError.Size = new System.Drawing.Size(480, 22);
@@ -1358,7 +1183,7 @@ namespace Analogy
             // 
             this.tbLogLevelWarning.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelWarning.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelWarning.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelWarning.Location = new System.Drawing.Point(215, 190);
             this.tbLogLevelWarning.Name = "tbLogLevelWarning";
             this.tbLogLevelWarning.Size = new System.Drawing.Size(480, 22);
@@ -1384,7 +1209,7 @@ namespace Analogy
             // 
             this.tbLogLevelEvent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelEvent.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelEvent.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelEvent.Location = new System.Drawing.Point(215, 162);
             this.tbLogLevelEvent.Name = "tbLogLevelEvent";
             this.tbLogLevelEvent.Size = new System.Drawing.Size(480, 22);
@@ -1394,7 +1219,7 @@ namespace Analogy
             // 
             this.tbLogLevelDebug.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelDebug.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelDebug.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelDebug.Location = new System.Drawing.Point(215, 134);
             this.tbLogLevelDebug.Name = "tbLogLevelDebug";
             this.tbLogLevelDebug.Size = new System.Drawing.Size(480, 22);
@@ -1420,7 +1245,7 @@ namespace Analogy
             // 
             this.tbLogLevelVerbose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelVerbose.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelVerbose.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelVerbose.Location = new System.Drawing.Point(215, 106);
             this.tbLogLevelVerbose.Name = "tbLogLevelVerbose";
             this.tbLogLevelVerbose.Size = new System.Drawing.Size(480, 22);
@@ -1430,7 +1255,7 @@ namespace Analogy
             // 
             this.tbLogLevelTrace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelTrace.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelTrace.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelTrace.Location = new System.Drawing.Point(215, 78);
             this.tbLogLevelTrace.Name = "tbLogLevelTrace";
             this.tbLogLevelTrace.Size = new System.Drawing.Size(480, 22);
@@ -1456,7 +1281,7 @@ namespace Analogy
             // 
             this.tbLogLevelDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelDisabled.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelDisabled.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelDisabled.Location = new System.Drawing.Point(215, 50);
             this.tbLogLevelDisabled.Name = "tbLogLevelDisabled";
             this.tbLogLevelDisabled.Size = new System.Drawing.Size(480, 22);
@@ -1466,7 +1291,7 @@ namespace Analogy
             // 
             this.tbLogLevelUnknown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelUnknown.BeforeTouchSize = new System.Drawing.Size(344, 22);
+            this.tbLogLevelUnknown.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelUnknown.Location = new System.Drawing.Point(215, 22);
             this.tbLogLevelUnknown.Name = "tbLogLevelUnknown";
             this.tbLogLevelUnknown.Size = new System.Drawing.Size(480, 22);
@@ -1534,20 +1359,20 @@ namespace Analogy
             // 
             // tbUserStatistics
             // 
-            activeStateCollection7.Text = "User Statistics are enabled";
-            this.tbUserStatistics.ActiveState = activeStateCollection7;
+            activeStateCollection1.Text = "User Statistics are enabled";
+            this.tbUserStatistics.ActiveState = activeStateCollection1;
             this.tbUserStatistics.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbUserStatistics.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbUserStatistics.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection7.Text = "User Statistics are disabled";
-            this.tbUserStatistics.InactiveState = inactiveStateCollection7;
+            inactiveStateCollection1.Text = "User Statistics are disabled";
+            this.tbUserStatistics.InactiveState = inactiveStateCollection1;
             this.tbUserStatistics.Location = new System.Drawing.Point(5, 8);
             this.tbUserStatistics.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbUserStatistics.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbUserStatistics.Name = "tbUserStatistics";
-            this.tbUserStatistics.Size = new System.Drawing.Size(497, 31);
-            this.tbUserStatistics.Slider = sliderCollection7;
+            this.tbUserStatistics.Size = new System.Drawing.Size(361, 31);
+            this.tbUserStatistics.Slider = sliderCollection1;
             this.tbUserStatistics.TabIndex = 14;
             // 
             // tabPageAdv5
@@ -1566,20 +1391,20 @@ namespace Analogy
             // 
             // tbExtensionsStartup
             // 
-            activeStateCollection8.Text = "Load following Extensions at startup:";
-            this.tbExtensionsStartup.ActiveState = activeStateCollection8;
+            activeStateCollection2.Text = "Load following Extensions at startup:";
+            this.tbExtensionsStartup.ActiveState = activeStateCollection2;
             this.tbExtensionsStartup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbExtensionsStartup.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbExtensionsStartup.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection8.Text = "No Startup extensions";
-            this.tbExtensionsStartup.InactiveState = inactiveStateCollection8;
+            inactiveStateCollection2.Text = "No Startup extensions";
+            this.tbExtensionsStartup.InactiveState = inactiveStateCollection2;
             this.tbExtensionsStartup.Location = new System.Drawing.Point(3, 0);
             this.tbExtensionsStartup.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbExtensionsStartup.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbExtensionsStartup.Name = "tbExtensionsStartup";
-            this.tbExtensionsStartup.Size = new System.Drawing.Size(497, 31);
-            this.tbExtensionsStartup.Slider = sliderCollection8;
+            this.tbExtensionsStartup.Size = new System.Drawing.Size(361, 31);
+            this.tbExtensionsStartup.Slider = sliderCollection2;
             this.tbExtensionsStartup.TabIndex = 15;
             // 
             // tabPageAdv6
@@ -1674,20 +1499,20 @@ namespace Analogy
             // 
             // tbIdleMode
             // 
-            activeStateCollection9.Text = "Idle mode: ignore incoming messages when user is idle";
-            this.tbIdleMode.ActiveState = activeStateCollection9;
+            activeStateCollection3.Text = "Idle mode: ignore incoming messages when user is idle";
+            this.tbIdleMode.ActiveState = activeStateCollection3;
             this.tbIdleMode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbIdleMode.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbIdleMode.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection9.Text = "Don\'t enable idle mode";
-            this.tbIdleMode.InactiveState = inactiveStateCollection9;
+            inactiveStateCollection3.Text = "Don\'t enable idle mode";
+            this.tbIdleMode.InactiveState = inactiveStateCollection3;
             this.tbIdleMode.Location = new System.Drawing.Point(3, 5);
             this.tbIdleMode.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbIdleMode.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbIdleMode.Name = "tbIdleMode";
-            this.tbIdleMode.Size = new System.Drawing.Size(497, 31);
-            this.tbIdleMode.Slider = sliderCollection9;
+            this.tbIdleMode.Size = new System.Drawing.Size(361, 31);
+            this.tbIdleMode.Slider = sliderCollection3;
             this.tbIdleMode.TabIndex = 18;
             // 
             // label12
@@ -1733,29 +1558,29 @@ namespace Analogy
             this.tabPageAdv13.Controls.Add(this.gradientLabel1);
             this.tabPageAdv13.Image = null;
             this.tabPageAdv13.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv13.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv13.Location = new System.Drawing.Point(3, 2);
             this.tabPageAdv13.Name = "tabPageAdv13";
             this.tabPageAdv13.ShowCloseButton = true;
-            this.tabPageAdv13.Size = new System.Drawing.Size(774, 483);
+            this.tabPageAdv13.Size = new System.Drawing.Size(774, 512);
             this.tabPageAdv13.TabIndex = 1;
             this.tabPageAdv13.Text = "Data Providers Enable/Disable";
             this.tabPageAdv13.ThemesEnabled = true;
             // 
             // tbRememberLastOpenedDataProvider
             // 
-            activeStateCollection10.Text = "Remember last opened Data provider on startup and switch to it after restart";
-            this.tbRememberLastOpenedDataProvider.ActiveState = activeStateCollection10;
+            activeStateCollection4.Text = "Remember last opened Data provider on startup and switch to it after restart";
+            this.tbRememberLastOpenedDataProvider.ActiveState = activeStateCollection4;
             this.tbRememberLastOpenedDataProvider.Dock = System.Windows.Forms.DockStyle.Top;
             this.tbRememberLastOpenedDataProvider.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbRememberLastOpenedDataProvider.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection10.Text = "Don\'t remember last opened Data provider on startup";
-            this.tbRememberLastOpenedDataProvider.InactiveState = inactiveStateCollection10;
+            inactiveStateCollection4.Text = "Don\'t remember last opened Data provider on startup";
+            this.tbRememberLastOpenedDataProvider.InactiveState = inactiveStateCollection4;
             this.tbRememberLastOpenedDataProvider.Location = new System.Drawing.Point(0, 50);
             this.tbRememberLastOpenedDataProvider.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tbRememberLastOpenedDataProvider.MinimumSize = new System.Drawing.Size(52, 20);
             this.tbRememberLastOpenedDataProvider.Name = "tbRememberLastOpenedDataProvider";
             this.tbRememberLastOpenedDataProvider.Size = new System.Drawing.Size(774, 31);
-            this.tbRememberLastOpenedDataProvider.Slider = sliderCollection10;
+            this.tbRememberLastOpenedDataProvider.Slider = sliderCollection4;
             this.tbRememberLastOpenedDataProvider.TabIndex = 12;
             this.tbRememberLastOpenedDataProvider.Text = "Don\'t remember last opened Data provider on startup";
             // 
@@ -1782,10 +1607,10 @@ namespace Analogy
             this.tabPageAdv14.Controls.Add(this.gradientLabel2);
             this.tabPageAdv14.Image = null;
             this.tabPageAdv14.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv14.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv14.Location = new System.Drawing.Point(3, 2);
             this.tabPageAdv14.Name = "tabPageAdv14";
             this.tabPageAdv14.ShowCloseButton = true;
-            this.tabPageAdv14.Size = new System.Drawing.Size(774, 483);
+            this.tabPageAdv14.Size = new System.Drawing.Size(774, 512);
             this.tabPageAdv14.TabIndex = 2;
             this.tabPageAdv14.Text = "Real time Auto-Startup";
             this.tabPageAdv14.ThemesEnabled = true;
@@ -1814,10 +1639,10 @@ namespace Analogy
             this.tabPageAdv15.Controls.Add(this.txtbDataProviderAssociation);
             this.tabPageAdv15.Image = null;
             this.tabPageAdv15.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv15.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv15.Location = new System.Drawing.Point(3, 2);
             this.tabPageAdv15.Name = "tabPageAdv15";
             this.tabPageAdv15.ShowCloseButton = true;
-            this.tabPageAdv15.Size = new System.Drawing.Size(774, 483);
+            this.tabPageAdv15.Size = new System.Drawing.Size(774, 512);
             this.tabPageAdv15.TabIndex = 3;
             this.tabPageAdv15.Text = "Default File Associations";
             this.tabPageAdv15.ThemesEnabled = true;
@@ -1836,10 +1661,10 @@ namespace Analogy
             this.tabPageAdv16.Controls.Add(this.btnDataProviderCustomSettings);
             this.tabPageAdv16.Image = null;
             this.tabPageAdv16.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv16.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv16.Location = new System.Drawing.Point(3, 2);
             this.tabPageAdv16.Name = "tabPageAdv16";
             this.tabPageAdv16.ShowCloseButton = true;
-            this.tabPageAdv16.Size = new System.Drawing.Size(774, 483);
+            this.tabPageAdv16.Size = new System.Drawing.Size(774, 512);
             this.tabPageAdv16.TabIndex = 4;
             this.tabPageAdv16.Text = "Custom Settings";
             this.tabPageAdv16.ThemesEnabled = true;
@@ -1848,6 +1673,94 @@ namespace Analogy
             // 
             this.colorDialog1.AnyColor = true;
             this.colorDialog1.FullOpen = true;
+            // 
+            // tbFilteringLastEntries
+            // 
+            this.tbFilteringLastEntries.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbFilteringLastEntries.Location = new System.Drawing.Point(6, 27);
+            this.tbFilteringLastEntries.Name = "tbFilteringLastEntries";
+            this.tbFilteringLastEntries.Size = new System.Drawing.Size(762, 22);
+            this.tbFilteringLastEntries.TabIndex = 19;
+            this.tbFilteringLastEntries.Text = "Remember last filters Input";
+            this.tbFilteringLastEntries.UseVisualStyleBackColor = true;
+            // 
+            // tbDataTimeAscendDescend
+            // 
+            this.tbDataTimeAscendDescend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbDataTimeAscendDescend.Location = new System.Drawing.Point(6, 55);
+            this.tbDataTimeAscendDescend.Name = "tbDataTimeAscendDescend";
+            this.tbDataTimeAscendDescend.Size = new System.Drawing.Size(762, 22);
+            this.tbDataTimeAscendDescend.TabIndex = 19;
+            this.tbDataTimeAscendDescend.Text = "Default sort is by descending date (new messages are at the top)";
+            this.tbDataTimeAscendDescend.UseVisualStyleBackColor = true;
+            // 
+            // tbErrorLevelAsDefault
+            // 
+            this.tbErrorLevelAsDefault.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbErrorLevelAsDefault.Location = new System.Drawing.Point(6, 81);
+            this.tbErrorLevelAsDefault.Name = "tbErrorLevelAsDefault";
+            this.tbErrorLevelAsDefault.Size = new System.Drawing.Size(762, 22);
+            this.tbErrorLevelAsDefault.TabIndex = 19;
+            this.tbErrorLevelAsDefault.Text = "Start logs with Error and Critical  level as default filtering";
+            this.tbErrorLevelAsDefault.UseVisualStyleBackColor = true;
+            // 
+            // tbAutoComplete
+            // 
+            this.tbAutoComplete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbAutoComplete.Location = new System.Drawing.Point(6, 109);
+            this.tbAutoComplete.Name = "tbAutoComplete";
+            this.tbAutoComplete.Size = new System.Drawing.Size(762, 22);
+            this.tbAutoComplete.TabIndex = 19;
+            this.tbAutoComplete.Text = "Save excluded filtering text for next startup";
+            this.tbAutoComplete.UseVisualStyleBackColor = true;
+            // 
+            // tbHistory
+            // 
+            this.tbHistory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbHistory.Location = new System.Drawing.Point(6, 137);
+            this.tbHistory.Name = "tbHistory";
+            this.tbHistory.Size = new System.Drawing.Size(762, 22);
+            this.tbHistory.TabIndex = 19;
+            this.tbHistory.Text = "Show history of cleared Messages";
+            this.tbHistory.UseVisualStyleBackColor = true;
+            // 
+            // cbPaging
+            // 
+            this.cbPaging.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbPaging.Location = new System.Drawing.Point(6, 165);
+            this.cbPaging.Name = "cbPaging";
+            this.cbPaging.Size = new System.Drawing.Size(570, 22);
+            this.cbPaging.TabIndex = 19;
+            this.cbPaging.Text = "Enable Paging (number of rows per page):";
+            this.cbPaging.UseVisualStyleBackColor = true;
+            // 
+            // cbSearchAlsoInSourceAndModule
+            // 
+            this.cbSearchAlsoInSourceAndModule.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbSearchAlsoInSourceAndModule.Location = new System.Drawing.Point(6, 193);
+            this.cbSearchAlsoInSourceAndModule.Name = "cbSearchAlsoInSourceAndModule";
+            this.cbSearchAlsoInSourceAndModule.Size = new System.Drawing.Size(762, 22);
+            this.cbSearchAlsoInSourceAndModule.TabIndex = 19;
+            this.cbSearchAlsoInSourceAndModule.Text = "Search text also in Source and Module/Process columns";
+            this.cbSearchAlsoInSourceAndModule.UseVisualStyleBackColor = true;
+            // 
+            // tbFileCaching
+            // 
+            this.tbFileCaching.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbFileCaching.Location = new System.Drawing.Point(6, 221);
+            this.tbFileCaching.Name = "tbFileCaching";
+            this.tbFileCaching.Size = new System.Drawing.Size(762, 22);
+            this.tbFileCaching.TabIndex = 19;
+            this.tbFileCaching.Text = "Use Caching of loaded Files";
+            this.tbFileCaching.UseVisualStyleBackColor = true;
             // 
             // UserSettingsForm
             // 
@@ -1869,16 +1782,7 @@ namespace Analogy
             ((System.ComponentModel.ISupportInitialize)(this.tabControlMain)).EndInit();
             this.tabControlMain.ResumeLayout(false);
             this.tabPageAdv1.ResumeLayout(false);
-            this.gbFilteringSettingsFiles.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tbFileCaching)).EndInit();
             this.gbFilteringSettings.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cbSearchAlsoInSourceAndModule)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbPaging)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbHistory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbAutoComplete)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbErrorLevelAsDefault)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDataTimeAscendDescend)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbFilteringLastEntries)).EndInit();
             this.tabPageAdv2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv2)).EndInit();
             this.tabControlAdv2.ResumeLayout(false);
@@ -1996,15 +1900,6 @@ namespace Analogy
         private Label label6;
         private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv16;
         private GroupBox gbFilteringSettings;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbHistory;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbAutoComplete;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbErrorLevelAsDefault;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbDataTimeAscendDescend;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbFilteringLastEntries;
-        private Syncfusion.Windows.Forms.Tools.CheckBoxAdv cbSearchAlsoInSourceAndModule;
-        private Syncfusion.Windows.Forms.Tools.CheckBoxAdv cbPaging;
-        private GroupBox gbFilteringSettingsFiles;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbFileCaching;
         private Label label7;
         private ListBox lboxHighlightItems;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt tbHighlightEquals;
@@ -2069,5 +1964,13 @@ namespace Analogy
         private Label label8;
         private Syncfusion.Windows.Forms.Tools.ToggleButton tbIdleMode;
         private Label label12;
+        private CheckBox tbHistory;
+        private CheckBox tbAutoComplete;
+        private CheckBox tbErrorLevelAsDefault;
+        private CheckBox tbDataTimeAscendDescend;
+        private CheckBox tbFilteringLastEntries;
+        private CheckBox cbPaging;
+        private CheckBox cbSearchAlsoInSourceAndModule;
+        private CheckBox tbFileCaching;
     }
 }
