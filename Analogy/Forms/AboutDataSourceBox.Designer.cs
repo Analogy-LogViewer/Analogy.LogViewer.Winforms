@@ -36,10 +36,10 @@
             this.okButton = new System.Windows.Forms.Button();
             this.rtxtChangeLog = new System.Windows.Forms.RichTextBox();
             this.rtxtContributions = new System.Windows.Forms.RichTextBox();
-            this.tabControlAdv1 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
-            this.tabPageAdv1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tabPageAdv2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tabPageAdv3 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.tabControlAdv1 = new System.Windows.Forms.TabControl();
+            this.tabPageAdv1 = new System.Windows.Forms.TabPage();
+            this.tabPageAdv2 = new System.Windows.Forms.TabPage();
+            this.tabPageAdv3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).BeginInit();
             this.tabControlAdv1.SuspendLayout();
@@ -168,64 +168,49 @@
             // 
             // tabControlAdv1
             // 
-            this.tabControlAdv1.BeforeTouchSize = new System.Drawing.Size(1200, 443);
             this.tabControlAdv1.Controls.Add(this.tabPageAdv1);
             this.tabControlAdv1.Controls.Add(this.tabPageAdv2);
             this.tabControlAdv1.Controls.Add(this.tabPageAdv3);
             this.tabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlAdv1.FocusOnTabClick = false;
             this.tabControlAdv1.Location = new System.Drawing.Point(11, 11);
             this.tabControlAdv1.Name = "tabControlAdv1";
             this.tabControlAdv1.Size = new System.Drawing.Size(1200, 443);
             this.tabControlAdv1.TabIndex = 2;
-            this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMetro);
-            this.tabControlAdv1.ThemeName = "TabRendererMetro";
-            this.tabControlAdv1.ThemesEnabled = true;
             // 
             // tabPageAdv1
             // 
             this.tabPageAdv1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageAdv1.Controls.Add(this.tableLayoutPanel);
             this.tabPageAdv1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPageAdv1.Image = null;
-            this.tabPageAdv1.ImageSize = new System.Drawing.Size(20, 20);
             this.tabPageAdv1.Location = new System.Drawing.Point(3, 27);
             this.tabPageAdv1.Name = "tabPageAdv1";
-            this.tabPageAdv1.ShowCloseButton = true;
             this.tabPageAdv1.Size = new System.Drawing.Size(1193, 411);
             this.tabPageAdv1.TabIndex = 1;
             this.tabPageAdv1.Text = "About";
-            this.tabPageAdv1.ThemesEnabled = false;
             // 
             // tabPageAdv2
             // 
             this.tabPageAdv2.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageAdv2.Controls.Add(this.rtxtChangeLog);
             this.tabPageAdv2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPageAdv2.Image = null;
-            this.tabPageAdv2.ImageSize = new System.Drawing.Size(20, 20);
+
             this.tabPageAdv2.Location = new System.Drawing.Point(3, 27);
             this.tabPageAdv2.Name = "tabPageAdv2";
-            this.tabPageAdv2.ShowCloseButton = true;
             this.tabPageAdv2.Size = new System.Drawing.Size(1193, 411);
             this.tabPageAdv2.TabIndex = 2;
             this.tabPageAdv2.Text = "Change log";
-            this.tabPageAdv2.ThemesEnabled = false;
+ 
             // 
             // tabPageAdv3
             // 
             this.tabPageAdv3.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageAdv3.Controls.Add(this.rtxtContributions);
             this.tabPageAdv3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPageAdv3.Image = null;
-            this.tabPageAdv3.ImageSize = new System.Drawing.Size(20, 20);
             this.tabPageAdv3.Location = new System.Drawing.Point(3, 27);
             this.tabPageAdv3.Name = "tabPageAdv3";
-            this.tabPageAdv3.ShowCloseButton = true;
             this.tabPageAdv3.Size = new System.Drawing.Size(1193, 411);
             this.tabPageAdv3.TabIndex = 3;
             this.tabPageAdv3.Text = "Contributors";
-            this.tabPageAdv3.ThemesEnabled = false;
             // 
             // AboutDataSourceBox
             // 
@@ -267,9 +252,9 @@
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.RichTextBox rtxtContributions;
         private System.Windows.Forms.RichTextBox rtxtChangeLog;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv1;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv1;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv2;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv3;
+        private System.Windows.Forms.TabControl tabControlAdv1;
+        private System.Windows.Forms.TabPage tabPageAdv1;
+        private System.Windows.Forms.TabPage tabPageAdv2;
+        private System.Windows.Forms.TabPage tabPageAdv3;
     }
 }
