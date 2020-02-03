@@ -6,7 +6,6 @@ using System.Windows.Forms;
 using Analogy.Interfaces;
 using Analogy.Managers;
 using Analogy.Types;
-using Syncfusion.Windows.Forms.Tools;
 
 namespace Analogy
 {
@@ -49,31 +48,18 @@ namespace Analogy
         private void LoadSettings()
         {
             //Filter tab
-            tbFilteringLastEntries.ToggleState =
-                Settings.SaveSearchFilters ? ToggleButtonState.Active : ToggleButtonState.Inactive;
-            tbDataTimeAscendDescend.ToggleState =
-                Settings.DefaultDescendOrder ? ToggleButtonState.Active : ToggleButtonState.Inactive;
-            tbErrorLevelAsDefault.ToggleState =
-                Settings.StartupErrorLogLevel ? ToggleButtonState.Active : ToggleButtonState.Inactive;
-
-            tbAutoComplete.ToggleState =
-                Settings.RememberLastSearches ? ToggleButtonState.Active : ToggleButtonState.Inactive;
-
-            tbHistory.ToggleState =
-                Settings.ShowHistoryOfClearedMessages ? ToggleButtonState.Active : ToggleButtonState.Inactive;
-
-
+            tbFilteringLastEntries.Checked = Settings.SaveSearchFilters;
+            tbDataTimeAscendDescend.Checked = Settings.DefaultDescendOrder;
+            tbErrorLevelAsDefault.Checked = Settings.StartupErrorLogLevel;
+            tbAutoComplete.Checked = Settings.RememberLastSearches;
+            tbHistory.Checked = Settings.ShowHistoryOfClearedMessages;
             cbPaging.Checked = Settings.PagingEnabled;
             nudPageLength.Enabled = Settings.PagingEnabled;
-
-            tbFileCaching.ToggleState =
-                Settings.EnableFileCaching ? ToggleButtonState.Active : ToggleButtonState.Inactive;
-
+            tbFileCaching.Checked = Settings.EnableFileCaching;
             nudRecent.Value = Settings.RecentFilesCount;
-            tbUserStatistics.ToggleState =
-                Settings.EnableUserStatistics ? ToggleButtonState.Active : ToggleButtonState.Inactive;
+            tbUserStatistics.Checked = Settings.EnableUserStatistics;
             //tsSimpleMode.IsOn = Settings.SimpleMode;
-            tbExtensionsStartup.ToggleState = Settings.LoadExtensionsOnStartup ? ToggleButtonState.Active : ToggleButtonState.Inactive;
+            tbExtensionsStartup.Checked = Settings.LoadExtensionsOnStartup;
             if (Settings.PagingEnabled)
             {
                 nudPageLength.Value = Settings.PagingSize;
@@ -83,7 +69,7 @@ namespace Analogy
                 nudPageLength.Enabled = false;
             }
 
-            tbIdleMode.ToggleState = Settings.IdleMode? ToggleButtonState.Active:ToggleButtonState.Inactive;
+            tbIdleMode.Checked = Settings.IdleMode;
             nudIdleTime.Value = Settings.IdleTimeMinutes;
             var manager = ExtensionsManager.Instance;
             var extensions = manager.GetExtensions().ToList();
@@ -123,9 +109,7 @@ namespace Analogy
             //file associations:
             cbDataProviderAssociation.DataSource = Settings.FactoriesSettings;
             cbDataProviderAssociation.DisplayMember = "FactoryName";
-            tbRememberLastOpenedDataProvider.ToggleState = Settings.RememberLastOpenedDataProvider
-                ? ToggleButtonState.Active
-                : ToggleButtonState.Inactive;
+            tbRememberLastOpenedDataProvider.Checked = Settings.RememberLastOpenedDataProvider;
             lboxHighlightItems.DataSource = Settings.PreDefinedQueries.Highlights;
             lboxAlerts.DataSource = Settings.PreDefinedQueries.Alerts;
             lboxFilters.DataSource = Settings.PreDefinedQueries.Filters;
@@ -157,7 +141,7 @@ namespace Analogy
                         : DataProviderFactoryStatus.Disabled;
                 }
             }
-            Settings.RememberLastOpenedDataProvider = tbRememberLastOpenedDataProvider.ToggleState == ToggleButtonState.Active;
+            Settings.RememberLastOpenedDataProvider = tbRememberLastOpenedDataProvider.Checked;
             Settings.UpdateOrder(order);
             Settings.Save();
         }
@@ -189,25 +173,25 @@ namespace Analogy
         private void SetupEventsHandlers()
         {
             #region filter tab
-            tbFilteringLastEntries.ToggleStateChanged += (s, e) =>
+            tbFilteringLastEntries.CheckedChanged += (s, e) =>
                  {
-                     Settings.SaveSearchFilters = e.ToggleState == ToggleButtonState.Active;
+                     Settings.SaveSearchFilters = tbFilteringLastEntries.Checked;
                  };
-            tbDataTimeAscendDescend.ToggleStateChanged += (s, e) =>
+            tbDataTimeAscendDescend.CheckedChanged += (s, e) =>
             {
-                Settings.DefaultDescendOrder = e.ToggleState == ToggleButtonState.Active;
+                Settings.DefaultDescendOrder = tbDataTimeAscendDescend.Checked;
             };
-            tbErrorLevelAsDefault.ToggleStateChanged += (s, e) =>
+            tbErrorLevelAsDefault.CheckedChanged += (s, e) =>
             {
-                Settings.StartupErrorLogLevel = tbErrorLevelAsDefault.ToggleState == ToggleButtonState.Active;
+                Settings.StartupErrorLogLevel = tbErrorLevelAsDefault.Checked;
             };
-            tbAutoComplete.ToggleStateChanged += (s, e) =>
+            tbAutoComplete.CheckedChanged += (s, e) =>
             {
-                Settings.RememberLastSearches = e.ToggleState == ToggleButtonState.Active;
+                Settings.RememberLastSearches = tbAutoComplete.Checked;
             };
-            tbHistory.ToggleStateChanged += (s, e) =>
+            tbHistory.CheckedChanged += (s, e) =>
             {
-                Settings.ShowHistoryOfClearedMessages = e.ToggleState == ToggleButtonState.Active;
+                Settings.ShowHistoryOfClearedMessages = tbHistory.Checked;
             };
 
             cbPaging.CheckedChanged += (s, e) =>
@@ -217,9 +201,9 @@ namespace Analogy
             };
 
             nudPageLength.ValueChanged += (s, e) => { Settings.PagingSize = (int)nudPageLength.Value; };
-            tbFileCaching.ToggleStateChanged += (s, e) =>
+            tbFileCaching.CheckedChanged += (s, e) =>
             {
-                Settings.EnableFileCaching = e.ToggleState == ToggleButtonState.Active;
+                Settings.EnableFileCaching = tbFileCaching.Checked;
             };
             #endregion
 
@@ -335,7 +319,7 @@ namespace Analogy
                 }
             };
 
-            void SelectColor(TextBoxExt targetTextBox)
+            void SelectColor(TextBox targetTextBox)
             {
                 if (colorDialog1.ShowDialog(this) == DialogResult.OK)
                 {
@@ -358,10 +342,10 @@ namespace Analogy
 
             #region User Statistics tab
 
-            tbUserStatistics.ToggleStateChanged += (s, e) =>
+            tbUserStatistics.CheckedChanged += (s, e) =>
             {
-                EnableDisableUserStatistics(e.ToggleState == ToggleButtonState.Active);
-                Settings.EnableUserStatistics = e.ToggleState == ToggleButtonState.Active;
+                EnableDisableUserStatistics(tbUserStatistics.Checked);
+                Settings.EnableUserStatistics = tbUserStatistics.Checked;
             };
             btnClearStatistics.Click += (s, e) =>
             {
@@ -376,10 +360,10 @@ namespace Analogy
 
             #region Extensions tab
 
-            tbExtensionsStartup.ToggleStateChanged += (s, e) =>
+            tbExtensionsStartup.CheckedChanged += (s, e) =>
             {
-                Settings.LoadExtensionsOnStartup = e.ToggleState == ToggleButtonState.Active;
-                clExtensionslItems.Enabled = e.ToggleState == ToggleButtonState.Active;
+                Settings.LoadExtensionsOnStartup = tbExtensionsStartup.Checked;
+                clExtensionslItems.Enabled = tbExtensionsStartup.Checked;
             };
 
             clExtensionslItems.SelectedIndexChanged += (s, e) =>
@@ -393,7 +377,7 @@ namespace Analogy
             nudRecent.ValueChanged += (s, e) => Settings.RecentFilesCount = (int)nudRecent.Value;
 
             #region Resource Tab
-            tbIdleMode.ToggleStateChanged += (s, e) => Settings.IdleMode = e.ToggleState == ToggleButtonState.Active;
+            tbIdleMode.CheckedChanged += (s, e) => Settings.IdleMode = tbIdleMode.Checked;
             nudIdleTime.ValueChanged += (s, e) => Settings.IdleTimeMinutes = (int)nudIdleTime.Value;
 
             #endregion
@@ -416,7 +400,7 @@ namespace Analogy
             }
         }
 
- 
+
 
         private void ChkLstItemRealTimeDataSources_SelectedIndexChanged(object sender, EventArgs e)
         {
