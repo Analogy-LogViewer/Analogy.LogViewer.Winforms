@@ -44,15 +44,13 @@
             this.lblIIS = new System.Windows.Forms.LinkLabel();
             this.lblKafka = new System.Windows.Forms.LinkLabel();
             this.lblWindowsEventLogs = new System.Windows.Forms.LinkLabel();
-            this.tabControlAdv1 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
-            this.tabPageAdv1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tabPageAdv2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tabPageAdv3 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
-            this.tabPageAdv4 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.tabControlAdv1 = new System.Windows.Forms.TabControl();
+            this.tabPageAdv1 = new System.Windows.Forms.TabPage();
+            this.tabPageAdv2 = new System.Windows.Forms.TabPage();
+            this.tabPageAdv3 = new System.Windows.Forms.TabPage();
+            this.tabPageAdv4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).BeginInit();
             this.tabControlAdv1.SuspendLayout();
             this.tabPageAdv1.SuspendLayout();
             this.tabPageAdv2.SuspendLayout();
@@ -83,7 +81,7 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(1192, 409);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(1191, 414);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // logoPictureBox
@@ -94,7 +92,7 @@
             this.logoPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-            this.logoPictureBox.Size = new System.Drawing.Size(600, 401);
+            this.logoPictureBox.Size = new System.Drawing.Size(599, 406);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
@@ -102,7 +100,7 @@
             // labelProductName
             // 
             this.labelProductName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelProductName.Location = new System.Drawing.Point(614, 0);
+            this.labelProductName.Location = new System.Drawing.Point(613, 0);
             this.labelProductName.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelProductName.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelProductName.Name = "labelProductName";
@@ -114,7 +112,7 @@
             // labelVersion
             // 
             this.labelVersion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelVersion.Location = new System.Drawing.Point(614, 40);
+            this.labelVersion.Location = new System.Drawing.Point(613, 41);
             this.labelVersion.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelVersion.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelVersion.Name = "labelVersion";
@@ -126,7 +124,7 @@
             // labelCopyright
             // 
             this.labelCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCopyright.Location = new System.Drawing.Point(614, 80);
+            this.labelCopyright.Location = new System.Drawing.Point(613, 82);
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelCopyright.Name = "labelCopyright";
@@ -138,7 +136,7 @@
             // labelCompanyName
             // 
             this.labelCompanyName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCompanyName.Location = new System.Drawing.Point(614, 120);
+            this.labelCompanyName.Location = new System.Drawing.Point(613, 123);
             this.labelCompanyName.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelCompanyName.Name = "labelCompanyName";
@@ -150,13 +148,13 @@
             // textBoxDescription
             // 
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDescription.Location = new System.Drawing.Point(614, 164);
+            this.textBoxDescription.Location = new System.Drawing.Point(613, 168);
             this.textBoxDescription.Margin = new System.Windows.Forms.Padding(8, 4, 3, 4);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
             this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription.Size = new System.Drawing.Size(575, 196);
+            this.textBoxDescription.Size = new System.Drawing.Size(575, 199);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
             this.textBoxDescription.Text = "Created by Lior Banai (2017)\r\ncontact info:\r\nmail: Liorbanai@gmail.com";
@@ -165,7 +163,7 @@
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(1090, 371);
+            this.okButton.Location = new System.Drawing.Point(1089, 376);
             this.okButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(99, 34);
@@ -178,7 +176,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1192, 409);
+            this.richTextBox1.Size = new System.Drawing.Size(1191, 414);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -277,7 +275,6 @@
             // 
             // tabControlAdv1
             // 
-            this.tabControlAdv1.BeforeTouchSize = new System.Drawing.Size(1199, 443);
             this.tabControlAdv1.Controls.Add(this.tabPageAdv1);
             this.tabControlAdv1.Controls.Add(this.tabPageAdv2);
             this.tabControlAdv1.Controls.Add(this.tabPageAdv3);
@@ -285,65 +282,37 @@
             this.tabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlAdv1.Location = new System.Drawing.Point(11, 11);
             this.tabControlAdv1.Name = "tabControlAdv1";
+            this.tabControlAdv1.SelectedIndex = 0;
             this.tabControlAdv1.Size = new System.Drawing.Size(1199, 443);
             this.tabControlAdv1.TabIndex = 2;
-            this.tabControlAdv1.ThemesEnabled = true;
             // 
             // tabPageAdv1
             // 
             this.tabPageAdv1.Controls.Add(this.tableLayoutPanel);
-            this.tabPageAdv1.Image = null;
-            this.tabPageAdv1.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv1.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv1.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdv1.Name = "tabPageAdv1";
-            this.tabPageAdv1.ShowCloseButton = true;
-            this.tabPageAdv1.Size = new System.Drawing.Size(1192, 409);
+            this.tabPageAdv1.Size = new System.Drawing.Size(1191, 414);
             this.tabPageAdv1.TabIndex = 1;
             this.tabPageAdv1.Text = "About";
-            this.tabPageAdv1.ThemesEnabled = true;
             // 
             // tabPageAdv2
             // 
             this.tabPageAdv2.Controls.Add(this.richTextBox1);
-            this.tabPageAdv2.Image = null;
-            this.tabPageAdv2.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv2.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv2.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdv2.Name = "tabPageAdv2";
-            this.tabPageAdv2.ShowCloseButton = true;
-            this.tabPageAdv2.Size = new System.Drawing.Size(1192, 409);
+            this.tabPageAdv2.Size = new System.Drawing.Size(1191, 414);
             this.tabPageAdv2.TabIndex = 2;
             this.tabPageAdv2.Text = "Contributors and Credits";
-            this.tabPageAdv2.ThemesEnabled = true;
             // 
             // tabPageAdv3
             // 
-            this.tabPageAdv3.Controls.Add(this.gradientLabel1);
             this.tabPageAdv3.Controls.Add(this.lblPhilips);
             this.tabPageAdv3.Controls.Add(this.lblKama);
-            this.tabPageAdv3.Image = null;
-            this.tabPageAdv3.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv3.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv3.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdv3.Name = "tabPageAdv3";
-            this.tabPageAdv3.ShowCloseButton = true;
-            this.tabPageAdv3.Size = new System.Drawing.Size(1192, 409);
+            this.tabPageAdv3.Size = new System.Drawing.Size(1191, 414);
             this.tabPageAdv3.TabIndex = 3;
             this.tabPageAdv3.Text = "Organizations";
-            this.tabPageAdv3.ThemesEnabled = true;
-            // 
-            // gradientLabel1
-            // 
-            this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.gradientLabel1.BeforeTouchSize = new System.Drawing.Size(1192, 25);
-            this.gradientLabel1.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
-            this.gradientLabel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gradientLabel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientLabel1.Name = "gradientLabel1";
-            this.gradientLabel1.Size = new System.Drawing.Size(1192, 25);
-            this.gradientLabel1.TabIndex = 8;
-            this.gradientLabel1.Text = "Analogy Log Viewer is used by The following Origanizations:";
-            this.gradientLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPageAdv4
             // 
@@ -352,15 +321,11 @@
             this.tabPageAdv4.Controls.Add(this.lblWindowsEventLogs);
             this.tabPageAdv4.Controls.Add(this.lblIIS);
             this.tabPageAdv4.Controls.Add(this.lblKafka);
-            this.tabPageAdv4.Image = null;
-            this.tabPageAdv4.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv4.Location = new System.Drawing.Point(3, 31);
+            this.tabPageAdv4.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdv4.Name = "tabPageAdv4";
-            this.tabPageAdv4.ShowCloseButton = true;
-            this.tabPageAdv4.Size = new System.Drawing.Size(1192, 409);
+            this.tabPageAdv4.Size = new System.Drawing.Size(1191, 414);
             this.tabPageAdv4.TabIndex = 4;
             this.tabPageAdv4.Text = "Data Providers";
-            this.tabPageAdv4.ThemesEnabled = true;
             // 
             // AnalogyAboutBox
             // 
@@ -382,7 +347,6 @@
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).EndInit();
             this.tabControlAdv1.ResumeLayout(false);
             this.tabPageAdv1.ResumeLayout(false);
             this.tabPageAdv2.ResumeLayout(false);
@@ -410,11 +374,10 @@
         private System.Windows.Forms.LinkLabel lblWindowsEventLogs;
         private System.Windows.Forms.LinkLabel lblPhilips;
         private System.Windows.Forms.LinkLabel lblKama;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv1;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv1;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv2;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv3;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv4;
+        private System.Windows.Forms.TabControl tabControlAdv1;
+        private System.Windows.Forms.TabPage tabPageAdv1;
+        private System.Windows.Forms.TabPage tabPageAdv2;
+        private System.Windows.Forms.TabPage tabPageAdv3;
+        private System.Windows.Forms.TabPage tabPageAdv4;
     }
 }
