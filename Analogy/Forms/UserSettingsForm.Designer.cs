@@ -31,136 +31,120 @@ namespace Analogy
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSettingsForm));
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection1 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection1 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection2 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection2 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection2 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection3 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection3 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection3 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection4 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection4 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection4 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             this.nudPageLength = new System.Windows.Forms.NumericUpDown();
-            this.btnDeleteHighlight = new Syncfusion.WinForms.Controls.SfButton();
-            this.sbtnAddHighlight = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnDeleteHighlight = new System.Windows.Forms.Button();
+            this.sbtnAddHighlight = new System.Windows.Forms.Button();
             this.rbtnHighlightEquals = new System.Windows.Forms.RadioButton();
             this.rbtnHighlightContains = new System.Windows.Forms.RadioButton();
-            this.btnDeleteFilter = new Syncfusion.WinForms.Controls.SfButton();
-            this.btnAddFilter = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnDeleteFilter = new System.Windows.Forms.Button();
+            this.btnAddFilter = new System.Windows.Forms.Button();
             this.lblExplaination = new System.Windows.Forms.Label();
             this.lblModules = new System.Windows.Forms.Label();
             this.lblSources = new System.Windows.Forms.Label();
             this.lblExcludeMessageText = new System.Windows.Forms.Label();
             this.lblIncludeText = new System.Windows.Forms.Label();
-            this.btnDeleteAlerts = new Syncfusion.WinForms.Controls.SfButton();
-            this.btnAddAlerts = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnDeleteAlerts = new System.Windows.Forms.Button();
+            this.btnAddAlerts = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnImportColors = new Syncfusion.WinForms.Controls.SfButton();
-            this.btnExportColors = new Syncfusion.WinForms.Controls.SfButton();
-            this.btnClearStatistics = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnImportColors = new System.Windows.Forms.Button();
+            this.btnExportColors = new System.Windows.Forms.Button();
+            this.btnClearStatistics = new System.Windows.Forms.Button();
             this.clExtensionslItems = new System.Windows.Forms.CheckedListBox();
             this.nudRecent = new System.Windows.Forms.NumericUpDown();
             this.nudIdleTime = new System.Windows.Forms.NumericUpDown();
             this.chkLstDataProviderStatus = new System.Windows.Forms.CheckedListBox();
             this.chkLstItemRealTimeDataSources = new System.Windows.Forms.CheckedListBox();
             this.cbDataProviderAssociation = new System.Windows.Forms.ComboBox();
-            this.btnSetFileAssociation = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnSetFileAssociation = new System.Windows.Forms.Button();
             this.txtbDataProviderAssociation = new System.Windows.Forms.TextBox();
-            this.btnDataProviderCustomSettings = new Syncfusion.WinForms.Controls.SfButton();
-            this.tabControlMain = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
-            this.tabPageAdv1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.btnDataProviderCustomSettings = new System.Windows.Forms.Button();
+            this.tabControlMain = new System.Windows.Forms.TabControl();
+            this.TabPage1 = new System.Windows.Forms.TabPage();
             this.gbFilteringSettings = new System.Windows.Forms.GroupBox();
-            this.tabPageAdv2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tabControlAdv2 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
-            this.tabPageAdv10 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.TabPage2 = new System.Windows.Forms.TabPage();
+            this.TabControl2 = new System.Windows.Forms.TabControl();
+            this.TabPage10 = new System.Windows.Forms.TabPage();
             this.gbHighlight = new System.Windows.Forms.GroupBox();
-            this.tbHighlighColor = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.sfBtnPreDefinedSelectColor = new Syncfusion.WinForms.Controls.SfButton();
+            this.tbHighlighColor = new System.Windows.Forms.TextBox();
+            this.sfBtnPreDefinedSelectColor = new System.Windows.Forms.Button();
             this.lblHighlightColorSelection = new System.Windows.Forms.Label();
-            this.tbHighlightEquals = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbHighlightContains = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.tbHighlightEquals = new System.Windows.Forms.TextBox();
+            this.tbHighlightContains = new System.Windows.Forms.TextBox();
             this.lboxHighlightItems = new System.Windows.Forms.ListBox();
-            this.tabPageAdv11 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.TabPage11 = new System.Windows.Forms.TabPage();
             this.lboxFilters = new System.Windows.Forms.ListBox();
-            this.tbModulesFilter = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbSourcesFilter = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbExcludeFilter = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbIncludeTextFilter = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tabPageAdv12 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tbModulesAlert = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbSourcesAlert = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbExcludeAlert = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbIncludeTextAlert = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.tbModulesFilter = new System.Windows.Forms.TextBox();
+            this.tbSourcesFilter = new System.Windows.Forms.TextBox();
+            this.tbExcludeFilter = new System.Windows.Forms.TextBox();
+            this.tbIncludeTextFilter = new System.Windows.Forms.TextBox();
+            this.TabPage12 = new System.Windows.Forms.TabPage();
+            this.tbModulesAlert = new System.Windows.Forms.TextBox();
+            this.tbSourcesAlert = new System.Windows.Forms.TextBox();
+            this.tbExcludeAlert = new System.Windows.Forms.TextBox();
+            this.tbIncludeTextAlert = new System.Windows.Forms.TextBox();
             this.lboxAlerts = new System.Windows.Forms.ListBox();
-            this.tabPageAdv3 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.sfBtnHighlightColor = new Syncfusion.WinForms.Controls.SfButton();
-            this.tbHighlightColor = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.TabPage3 = new System.Windows.Forms.TabPage();
+            this.sfBtnHighlightColor = new System.Windows.Forms.Button();
+            this.tbHighlightColor = new System.Windows.Forms.TextBox();
             this.lblHighlightColor = new System.Windows.Forms.Label();
             this.gpLogLevelColors = new System.Windows.Forms.GroupBox();
-            this.sfBtnLogLevelAnalogyInformation = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelCritical = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelError = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelWarning = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelVerbose = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelEvent = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelTrace = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelDebug = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelDisabled = new Syncfusion.WinForms.Controls.SfButton();
-            this.sfBtnLogLevelUnknown = new Syncfusion.WinForms.Controls.SfButton();
-            this.tbLogLevelAnalogyInformation = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbLogLevelCritical = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.sfBtnLogLevelAnalogyInformation = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelCritical = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelError = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelWarning = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelVerbose = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelEvent = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelTrace = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelDebug = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelDisabled = new System.Windows.Forms.Button();
+            this.sfBtnLogLevelUnknown = new System.Windows.Forms.Button();
+            this.tbLogLevelAnalogyInformation = new System.Windows.Forms.TextBox();
+            this.tbLogLevelCritical = new System.Windows.Forms.TextBox();
             this.lblLogLevelAnalogyInformation = new System.Windows.Forms.Label();
             this.lblLogLevelCritical = new System.Windows.Forms.Label();
-            this.tbLogLevelError = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbLogLevelWarning = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.tbLogLevelError = new System.Windows.Forms.TextBox();
+            this.tbLogLevelWarning = new System.Windows.Forms.TextBox();
             this.lblLogLevelError = new System.Windows.Forms.Label();
             this.lblLogLevelWarning = new System.Windows.Forms.Label();
-            this.tbLogLevelEvent = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbLogLevelDebug = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.tbLogLevelEvent = new System.Windows.Forms.TextBox();
+            this.tbLogLevelDebug = new System.Windows.Forms.TextBox();
             this.lblLogLevelEvent = new System.Windows.Forms.Label();
             this.lblLogLevelDebug = new System.Windows.Forms.Label();
-            this.tbLogLevelVerbose = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbLogLevelTrace = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.tbLogLevelVerbose = new System.Windows.Forms.TextBox();
+            this.tbLogLevelTrace = new System.Windows.Forms.TextBox();
             this.lblLogLevelVerbose = new System.Windows.Forms.Label();
             this.lblLogLevelTrace = new System.Windows.Forms.Label();
-            this.tbLogLevelDisabled = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tbLogLevelUnknown = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.tbLogLevelDisabled = new System.Windows.Forms.TextBox();
+            this.tbLogLevelUnknown = new System.Windows.Forms.TextBox();
             this.lblLogLevelDisabled = new System.Windows.Forms.Label();
             this.lblLogLevelUnknown = new System.Windows.Forms.Label();
-            this.tabPageAdv4 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.TabPage4 = new System.Windows.Forms.TabPage();
             this.lblOpenedFiles = new System.Windows.Forms.Label();
             this.lblTotalTime = new System.Windows.Forms.Label();
             this.lblLaunchCount = new System.Windows.Forms.Label();
-            this.tbUserStatistics = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.tabPageAdv5 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tbExtensionsStartup = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.tabPageAdv6 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.TabPage5 = new System.Windows.Forms.TabPage();
+            this.TabPage6 = new System.Windows.Forms.TabPage();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.tabPageAdv7 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.TabPage7 = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
-            this.tabPageAdv8 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tbIdleMode = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.TabPage8 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
-            this.tabPageAdv9 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tabControlAdv3 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
-            this.tabPageAdv13 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tbRememberLastOpenedDataProvider = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
-            this.tabPageAdv14 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.gradientLabel2 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
-            this.tabPageAdv15 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.TabPage9 = new System.Windows.Forms.TabPage();
+            this.TabControl3 = new System.Windows.Forms.TabControl();
+            this.TabPage13 = new System.Windows.Forms.TabPage();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.TabPage14 = new System.Windows.Forms.TabPage();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.TabPage15 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
-            this.tabPageAdv16 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.TabPage16 = new System.Windows.Forms.TabPage();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tbFilteringLastEntries = new System.Windows.Forms.CheckBox();
             this.tbDataTimeAscendDescend = new System.Windows.Forms.CheckBox();
@@ -170,32 +154,36 @@ namespace Analogy
             this.cbPaging = new System.Windows.Forms.CheckBox();
             this.cbSearchAlsoInSourceAndModule = new System.Windows.Forms.CheckBox();
             this.tbFileCaching = new System.Windows.Forms.CheckBox();
+            this.tbUserStatistics = new System.Windows.Forms.CheckBox();
+            this.tbExtensionsStartup = new System.Windows.Forms.CheckBox();
+            this.tbIdleMode = new System.Windows.Forms.CheckBox();
+            this.tbRememberLastOpenedDataProvider = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudPageLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRecent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudIdleTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControlMain)).BeginInit();
             this.tabControlMain.SuspendLayout();
-            this.tabPageAdv1.SuspendLayout();
+            this.TabPage1.SuspendLayout();
             this.gbFilteringSettings.SuspendLayout();
-            this.tabPageAdv2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv2)).BeginInit();
-            this.tabControlAdv2.SuspendLayout();
-            this.tabPageAdv10.SuspendLayout();
+            this.TabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TabControl2)).BeginInit();
+            this.TabControl2.SuspendLayout();
+            this.TabPage10.SuspendLayout();
             this.gbHighlight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlighColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlightEquals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlightContains)).BeginInit();
-            this.tabPageAdv11.SuspendLayout();
+            this.TabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbModulesFilter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSourcesFilter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbExcludeFilter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIncludeTextFilter)).BeginInit();
-            this.tabPageAdv12.SuspendLayout();
+            this.TabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbModulesAlert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSourcesAlert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbExcludeAlert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIncludeTextAlert)).BeginInit();
-            this.tabPageAdv3.SuspendLayout();
+            this.TabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlightColor)).BeginInit();
             this.gpLogLevelColors.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbLogLevelAnalogyInformation)).BeginInit();
@@ -208,22 +196,18 @@ namespace Analogy
             ((System.ComponentModel.ISupportInitialize)(this.tbLogLevelTrace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLogLevelDisabled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLogLevelUnknown)).BeginInit();
-            this.tabPageAdv4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUserStatistics)).BeginInit();
-            this.tabPageAdv5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbExtensionsStartup)).BeginInit();
-            this.tabPageAdv6.SuspendLayout();
-            this.tabPageAdv7.SuspendLayout();
-            this.tabPageAdv8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbIdleMode)).BeginInit();
-            this.tabPageAdv9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv3)).BeginInit();
-            this.tabControlAdv3.SuspendLayout();
-            this.tabPageAdv13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbRememberLastOpenedDataProvider)).BeginInit();
-            this.tabPageAdv14.SuspendLayout();
-            this.tabPageAdv15.SuspendLayout();
-            this.tabPageAdv16.SuspendLayout();
+            this.TabPage4.SuspendLayout();
+            this.TabPage5.SuspendLayout();
+            this.TabPage6.SuspendLayout();
+            this.TabPage7.SuspendLayout();
+            this.TabPage8.SuspendLayout();
+            this.TabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TabControl3)).BeginInit();
+            this.TabControl3.SuspendLayout();
+            this.TabPage13.SuspendLayout();
+            this.TabPage14.SuspendLayout();
+            this.TabPage15.SuspendLayout();
+            this.TabPage16.SuspendLayout();
             this.SuspendLayout();
             // 
             // nudPageLength
@@ -256,7 +240,7 @@ namespace Analogy
             this.btnDeleteHighlight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteHighlight.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnDeleteHighlight.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteHighlight.Location = new System.Drawing.Point(645, 482);
+            this.btnDeleteHighlight.Location = new System.Drawing.Point(645, 453);
             this.btnDeleteHighlight.Name = "btnDeleteHighlight";
             this.btnDeleteHighlight.Size = new System.Drawing.Size(126, 27);
             this.btnDeleteHighlight.TabIndex = 7;
@@ -305,7 +289,7 @@ namespace Analogy
             this.btnDeleteFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteFilter.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnDeleteFilter.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteFilter.Location = new System.Drawing.Point(637, 478);
+            this.btnDeleteFilter.Location = new System.Drawing.Point(637, 449);
             this.btnDeleteFilter.Name = "btnDeleteFilter";
             this.btnDeleteFilter.Size = new System.Drawing.Size(126, 27);
             this.btnDeleteFilter.TabIndex = 38;
@@ -376,7 +360,7 @@ namespace Analogy
             this.btnDeleteAlerts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteAlerts.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnDeleteAlerts.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteAlerts.Location = new System.Drawing.Point(637, 478);
+            this.btnDeleteAlerts.Location = new System.Drawing.Point(637, 449);
             this.btnDeleteAlerts.Name = "btnDeleteAlerts";
             this.btnDeleteAlerts.Size = new System.Drawing.Size(126, 27);
             this.btnDeleteAlerts.TabIndex = 46;
@@ -472,7 +456,7 @@ namespace Analogy
             this.btnClearStatistics.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClearStatistics.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnClearStatistics.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearStatistics.Location = new System.Drawing.Point(256, 72);
+            this.btnClearStatistics.Location = new System.Drawing.Point(655, 72);
             this.btnClearStatistics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClearStatistics.Name = "btnClearStatistics";
             this.btnClearStatistics.Size = new System.Drawing.Size(110, 33);
@@ -489,7 +473,7 @@ namespace Analogy
             this.clExtensionslItems.Location = new System.Drawing.Point(3, 44);
             this.clExtensionslItems.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.clExtensionslItems.Name = "clExtensionslItems";
-            this.clExtensionslItems.Size = new System.Drawing.Size(359, 463);
+            this.clExtensionslItems.Size = new System.Drawing.Size(767, 463);
             this.clExtensionslItems.TabIndex = 6;
             // 
             // nudRecent
@@ -510,7 +494,7 @@ namespace Analogy
             // nudIdleTime
             // 
             this.nudIdleTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudIdleTime.Location = new System.Drawing.Point(54, 58);
+            this.nudIdleTime.Location = new System.Drawing.Point(322, 49);
             this.nudIdleTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nudIdleTime.Maximum = new decimal(new int[] {
             100000000,
@@ -535,10 +519,10 @@ namespace Analogy
             // 
             this.chkLstDataProviderStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chkLstDataProviderStatus.FormattingEnabled = true;
-            this.chkLstDataProviderStatus.Location = new System.Drawing.Point(0, 81);
+            this.chkLstDataProviderStatus.Location = new System.Drawing.Point(0, 72);
             this.chkLstDataProviderStatus.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.chkLstDataProviderStatus.Name = "chkLstDataProviderStatus";
-            this.chkLstDataProviderStatus.Size = new System.Drawing.Size(774, 431);
+            this.chkLstDataProviderStatus.Size = new System.Drawing.Size(774, 411);
             this.chkLstDataProviderStatus.TabIndex = 10;
             // 
             // chkLstItemRealTimeDataSources
@@ -549,7 +533,7 @@ namespace Analogy
             this.chkLstItemRealTimeDataSources.Location = new System.Drawing.Point(0, 50);
             this.chkLstItemRealTimeDataSources.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.chkLstItemRealTimeDataSources.Name = "chkLstItemRealTimeDataSources";
-            this.chkLstItemRealTimeDataSources.Size = new System.Drawing.Size(774, 462);
+            this.chkLstItemRealTimeDataSources.Size = new System.Drawing.Size(774, 433);
             this.chkLstItemRealTimeDataSources.TabIndex = 8;
             this.chkLstItemRealTimeDataSources.SelectedIndexChanged += new System.EventHandler(this.ChkLstItemRealTimeDataSources_SelectedIndexChanged);
             // 
@@ -601,36 +585,29 @@ namespace Analogy
             // tabControlMain
             // 
             this.tabControlMain.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.tabControlMain.BeforeTouchSize = new System.Drawing.Size(985, 525);
-            this.tabControlMain.Controls.Add(this.tabPageAdv1);
-            this.tabControlMain.Controls.Add(this.tabPageAdv2);
-            this.tabControlMain.Controls.Add(this.tabPageAdv3);
-            this.tabControlMain.Controls.Add(this.tabPageAdv4);
-            this.tabControlMain.Controls.Add(this.tabPageAdv5);
-            this.tabControlMain.Controls.Add(this.tabPageAdv6);
-            this.tabControlMain.Controls.Add(this.tabPageAdv7);
-            this.tabControlMain.Controls.Add(this.tabPageAdv8);
-            this.tabControlMain.Controls.Add(this.tabPageAdv9);
+            this.tabControlMain.Controls.Add(this.TabPage1);
+            this.tabControlMain.Controls.Add(this.TabPage2);
+            this.tabControlMain.Controls.Add(this.TabPage3);
+            this.tabControlMain.Controls.Add(this.TabPage4);
+            this.tabControlMain.Controls.Add(this.TabPage5);
+            this.tabControlMain.Controls.Add(this.TabPage6);
+            this.tabControlMain.Controls.Add(this.TabPage7);
+            this.tabControlMain.Controls.Add(this.TabPage8);
+            this.tabControlMain.Controls.Add(this.TabPage9);
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
-            this.tabControlMain.RotateTextWhenVertical = true;
             this.tabControlMain.Size = new System.Drawing.Size(985, 525);
             this.tabControlMain.TabIndex = 1;
-            this.tabControlMain.ThemesEnabled = true;
             // 
-            // tabPageAdv1
+            // TabPage1
             // 
-            this.tabPageAdv1.Controls.Add(this.gbFilteringSettings);
-            this.tabPageAdv1.Image = global::Analogy.Properties.Resources.MultipleMasterFilter_32x32;
-            this.tabPageAdv1.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv1.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv1.Name = "tabPageAdv1";
-            this.tabPageAdv1.ShowCloseButton = true;
-            this.tabPageAdv1.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv1.TabIndex = 1;
-            this.tabPageAdv1.Text = "Filtering and Interactions";
-            this.tabPageAdv1.ThemesEnabled = true;
+            this.TabPage1.Controls.Add(this.gbFilteringSettings);
+            this.TabPage1.Location = new System.Drawing.Point(199, 3);
+            this.TabPage1.Name = "TabPage1";
+            this.TabPage1.Size = new System.Drawing.Size(781, 518);
+            this.TabPage1.TabIndex = 1;
+            this.TabPage1.Text = "Filtering and Interactions";
             // 
             // gbFilteringSettings
             // 
@@ -651,46 +628,36 @@ namespace Analogy
             this.gbFilteringSettings.TabStop = false;
             this.gbFilteringSettings.Text = "Filtering, search and interaction of messages area";
             // 
-            // tabPageAdv2
+            // TabPage2
             // 
-            this.tabPageAdv2.Controls.Add(this.tabControlAdv2);
-            this.tabPageAdv2.Image = global::Analogy.Properties.Resources.FilterByArgument_Chart_32x32;
-            this.tabPageAdv2.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv2.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv2.Name = "tabPageAdv2";
-            this.tabPageAdv2.ShowCloseButton = true;
-            this.tabPageAdv2.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv2.TabIndex = 2;
-            this.tabPageAdv2.Text = "Pre-Defined Queries";
-            this.tabPageAdv2.ThemesEnabled = true;
+            this.TabPage2.Controls.Add(this.TabControl2);
+            this.TabPage2.Location = new System.Drawing.Point(199, 3);
+            this.TabPage2.Name = "TabPage2";
+            this.TabPage2.Size = new System.Drawing.Size(781, 518);
+            this.TabPage2.TabIndex = 2;
+            this.TabPage2.Text = "Pre-Defined Queries";
             // 
-            // tabControlAdv2
+            // TabControl2
             // 
-            this.tabControlAdv2.BeforeTouchSize = new System.Drawing.Size(781, 518);
-            this.tabControlAdv2.Controls.Add(this.tabPageAdv10);
-            this.tabControlAdv2.Controls.Add(this.tabPageAdv11);
-            this.tabControlAdv2.Controls.Add(this.tabPageAdv12);
-            this.tabControlAdv2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlAdv2.Location = new System.Drawing.Point(0, 0);
-            this.tabControlAdv2.Name = "tabControlAdv2";
-            this.tabControlAdv2.Size = new System.Drawing.Size(781, 518);
-            this.tabControlAdv2.TabIndex = 0;
-            this.tabControlAdv2.ThemesEnabled = true;
+            this.TabControl2.Controls.Add(this.TabPage10);
+            this.TabControl2.Controls.Add(this.TabPage11);
+            this.TabControl2.Controls.Add(this.TabPage12);
+            this.TabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControl2.Location = new System.Drawing.Point(0, 0);
+            this.TabControl2.Name = "TabControl2";
+            this.TabControl2.Size = new System.Drawing.Size(781, 518);
+            this.TabControl2.TabIndex = 0;
             // 
-            // tabPageAdv10
+            // TabPage10
             // 
-            this.tabPageAdv10.Controls.Add(this.gbHighlight);
-            this.tabPageAdv10.Controls.Add(this.lboxHighlightItems);
-            this.tabPageAdv10.Controls.Add(this.btnDeleteHighlight);
-            this.tabPageAdv10.Image = null;
-            this.tabPageAdv10.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv10.Location = new System.Drawing.Point(3, 2);
-            this.tabPageAdv10.Name = "tabPageAdv10";
-            this.tabPageAdv10.ShowCloseButton = true;
-            this.tabPageAdv10.Size = new System.Drawing.Size(774, 512);
-            this.tabPageAdv10.TabIndex = 1;
-            this.tabPageAdv10.Text = "Color Highlighting";
-            this.tabPageAdv10.ThemesEnabled = true;
+            this.TabPage10.Controls.Add(this.gbHighlight);
+            this.TabPage10.Controls.Add(this.lboxHighlightItems);
+            this.TabPage10.Controls.Add(this.btnDeleteHighlight);
+            this.TabPage10.Location = new System.Drawing.Point(3, 31);
+            this.TabPage10.Name = "TabPage10";
+            this.TabPage10.Size = new System.Drawing.Size(774, 483);
+            this.TabPage10.TabIndex = 1;
+            this.TabPage10.Text = "Color Highlighting";
             // 
             // gbHighlight
             // 
@@ -714,7 +681,6 @@ namespace Analogy
             // 
             this.tbHighlighColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlighColor.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlighColor.Location = new System.Drawing.Point(202, 102);
             this.tbHighlighColor.Name = "tbHighlighColor";
             this.tbHighlighColor.Size = new System.Drawing.Size(428, 22);
@@ -745,7 +711,6 @@ namespace Analogy
             // 
             this.tbHighlightEquals.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlightEquals.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlightEquals.Location = new System.Drawing.Point(202, 71);
             this.tbHighlightEquals.Name = "tbHighlightEquals";
             this.tbHighlightEquals.Size = new System.Drawing.Size(560, 22);
@@ -755,7 +720,6 @@ namespace Analogy
             // 
             this.tbHighlightContains.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlightContains.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlightContains.Location = new System.Drawing.Point(202, 38);
             this.tbHighlightContains.Name = "tbHighlightContains";
             this.tbHighlightContains.Size = new System.Drawing.Size(560, 22);
@@ -770,32 +734,28 @@ namespace Analogy
             this.lboxHighlightItems.ItemHeight = 16;
             this.lboxHighlightItems.Location = new System.Drawing.Point(6, 206);
             this.lboxHighlightItems.Name = "lboxHighlightItems";
-            this.lboxHighlightItems.Size = new System.Drawing.Size(765, 260);
+            this.lboxHighlightItems.Size = new System.Drawing.Size(765, 228);
             this.lboxHighlightItems.TabIndex = 7;
             // 
-            // tabPageAdv11
+            // TabPage11
             // 
-            this.tabPageAdv11.Controls.Add(this.lboxFilters);
-            this.tabPageAdv11.Controls.Add(this.tbModulesFilter);
-            this.tabPageAdv11.Controls.Add(this.tbSourcesFilter);
-            this.tabPageAdv11.Controls.Add(this.tbExcludeFilter);
-            this.tabPageAdv11.Controls.Add(this.tbIncludeTextFilter);
-            this.tabPageAdv11.Controls.Add(this.btnDeleteFilter);
-            this.tabPageAdv11.Controls.Add(this.lblIncludeText);
-            this.tabPageAdv11.Controls.Add(this.btnAddFilter);
-            this.tabPageAdv11.Controls.Add(this.lblExplaination);
-            this.tabPageAdv11.Controls.Add(this.lblModules);
-            this.tabPageAdv11.Controls.Add(this.lblSources);
-            this.tabPageAdv11.Controls.Add(this.lblExcludeMessageText);
-            this.tabPageAdv11.Image = null;
-            this.tabPageAdv11.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv11.Location = new System.Drawing.Point(3, 2);
-            this.tabPageAdv11.Name = "tabPageAdv11";
-            this.tabPageAdv11.ShowCloseButton = true;
-            this.tabPageAdv11.Size = new System.Drawing.Size(774, 512);
-            this.tabPageAdv11.TabIndex = 2;
-            this.tabPageAdv11.Text = "Filters";
-            this.tabPageAdv11.ThemesEnabled = true;
+            this.TabPage11.Controls.Add(this.lboxFilters);
+            this.TabPage11.Controls.Add(this.tbModulesFilter);
+            this.TabPage11.Controls.Add(this.tbSourcesFilter);
+            this.TabPage11.Controls.Add(this.tbExcludeFilter);
+            this.TabPage11.Controls.Add(this.tbIncludeTextFilter);
+            this.TabPage11.Controls.Add(this.btnDeleteFilter);
+            this.TabPage11.Controls.Add(this.lblIncludeText);
+            this.TabPage11.Controls.Add(this.btnAddFilter);
+            this.TabPage11.Controls.Add(this.lblExplaination);
+            this.TabPage11.Controls.Add(this.lblModules);
+            this.TabPage11.Controls.Add(this.lblSources);
+            this.TabPage11.Controls.Add(this.lblExcludeMessageText);
+            this.TabPage11.Location = new System.Drawing.Point(3, 31);
+            this.TabPage11.Name = "TabPage11";
+            this.TabPage11.Size = new System.Drawing.Size(774, 483);
+            this.TabPage11.TabIndex = 2;
+            this.TabPage11.Text = "Filters";
             // 
             // lboxFilters
             // 
@@ -806,14 +766,13 @@ namespace Analogy
             this.lboxFilters.ItemHeight = 16;
             this.lboxFilters.Location = new System.Drawing.Point(5, 252);
             this.lboxFilters.Name = "lboxFilters";
-            this.lboxFilters.Size = new System.Drawing.Size(765, 196);
+            this.lboxFilters.Size = new System.Drawing.Size(765, 164);
             this.lboxFilters.TabIndex = 40;
             // 
             // tbModulesFilter
             // 
             this.tbModulesFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbModulesFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbModulesFilter.Location = new System.Drawing.Point(226, 93);
             this.tbModulesFilter.Name = "tbModulesFilter";
             this.tbModulesFilter.Size = new System.Drawing.Size(536, 22);
@@ -823,7 +782,6 @@ namespace Analogy
             // 
             this.tbSourcesFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSourcesFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbSourcesFilter.Location = new System.Drawing.Point(227, 65);
             this.tbSourcesFilter.Name = "tbSourcesFilter";
             this.tbSourcesFilter.Size = new System.Drawing.Size(536, 22);
@@ -833,7 +791,6 @@ namespace Analogy
             // 
             this.tbExcludeFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbExcludeFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbExcludeFilter.Location = new System.Drawing.Point(227, 37);
             this.tbExcludeFilter.Name = "tbExcludeFilter";
             this.tbExcludeFilter.Size = new System.Drawing.Size(536, 22);
@@ -843,41 +800,35 @@ namespace Analogy
             // 
             this.tbIncludeTextFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbIncludeTextFilter.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbIncludeTextFilter.Location = new System.Drawing.Point(227, 9);
             this.tbIncludeTextFilter.Name = "tbIncludeTextFilter";
             this.tbIncludeTextFilter.Size = new System.Drawing.Size(536, 22);
             this.tbIncludeTextFilter.TabIndex = 39;
             // 
-            // tabPageAdv12
+            // TabPage12
             // 
-            this.tabPageAdv12.Controls.Add(this.tbModulesAlert);
-            this.tabPageAdv12.Controls.Add(this.tbSourcesAlert);
-            this.tabPageAdv12.Controls.Add(this.tbExcludeAlert);
-            this.tabPageAdv12.Controls.Add(this.tbIncludeTextAlert);
-            this.tabPageAdv12.Controls.Add(this.lboxAlerts);
-            this.tabPageAdv12.Controls.Add(this.btnDeleteAlerts);
-            this.tabPageAdv12.Controls.Add(this.label4);
-            this.tabPageAdv12.Controls.Add(this.btnAddAlerts);
-            this.tabPageAdv12.Controls.Add(this.label5);
-            this.tabPageAdv12.Controls.Add(this.label1);
-            this.tabPageAdv12.Controls.Add(this.label2);
-            this.tabPageAdv12.Controls.Add(this.label3);
-            this.tabPageAdv12.Image = null;
-            this.tabPageAdv12.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv12.Location = new System.Drawing.Point(3, 2);
-            this.tabPageAdv12.Name = "tabPageAdv12";
-            this.tabPageAdv12.ShowCloseButton = true;
-            this.tabPageAdv12.Size = new System.Drawing.Size(774, 512);
-            this.tabPageAdv12.TabIndex = 3;
-            this.tabPageAdv12.Text = "Alert and Notifications";
-            this.tabPageAdv12.ThemesEnabled = true;
+            this.TabPage12.Controls.Add(this.tbModulesAlert);
+            this.TabPage12.Controls.Add(this.tbSourcesAlert);
+            this.TabPage12.Controls.Add(this.tbExcludeAlert);
+            this.TabPage12.Controls.Add(this.tbIncludeTextAlert);
+            this.TabPage12.Controls.Add(this.lboxAlerts);
+            this.TabPage12.Controls.Add(this.btnDeleteAlerts);
+            this.TabPage12.Controls.Add(this.label4);
+            this.TabPage12.Controls.Add(this.btnAddAlerts);
+            this.TabPage12.Controls.Add(this.label5);
+            this.TabPage12.Controls.Add(this.label1);
+            this.TabPage12.Controls.Add(this.label2);
+            this.TabPage12.Controls.Add(this.label3);
+            this.TabPage12.Location = new System.Drawing.Point(3, 31);
+            this.TabPage12.Name = "TabPage12";
+            this.TabPage12.Size = new System.Drawing.Size(774, 483);
+            this.TabPage12.TabIndex = 3;
+            this.TabPage12.Text = "Alert and Notifications";
             // 
             // tbModulesAlert
             // 
             this.tbModulesAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbModulesAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbModulesAlert.Location = new System.Drawing.Point(227, 98);
             this.tbModulesAlert.Name = "tbModulesAlert";
             this.tbModulesAlert.Size = new System.Drawing.Size(536, 22);
@@ -887,7 +838,6 @@ namespace Analogy
             // 
             this.tbSourcesAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSourcesAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbSourcesAlert.Location = new System.Drawing.Point(227, 68);
             this.tbSourcesAlert.Name = "tbSourcesAlert";
             this.tbSourcesAlert.Size = new System.Drawing.Size(536, 22);
@@ -897,7 +847,6 @@ namespace Analogy
             // 
             this.tbExcludeAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbExcludeAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbExcludeAlert.Location = new System.Drawing.Point(227, 38);
             this.tbExcludeAlert.Name = "tbExcludeAlert";
             this.tbExcludeAlert.Size = new System.Drawing.Size(536, 22);
@@ -907,7 +856,6 @@ namespace Analogy
             // 
             this.tbIncludeTextAlert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbIncludeTextAlert.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbIncludeTextAlert.Location = new System.Drawing.Point(227, 10);
             this.tbIncludeTextAlert.Name = "tbIncludeTextAlert";
             this.tbIncludeTextAlert.Size = new System.Drawing.Size(536, 22);
@@ -922,26 +870,22 @@ namespace Analogy
             this.lboxAlerts.ItemHeight = 16;
             this.lboxAlerts.Location = new System.Drawing.Point(5, 252);
             this.lboxAlerts.Name = "lboxAlerts";
-            this.lboxAlerts.Size = new System.Drawing.Size(758, 196);
+            this.lboxAlerts.Size = new System.Drawing.Size(758, 164);
             this.lboxAlerts.TabIndex = 47;
             // 
-            // tabPageAdv3
+            // TabPage3
             // 
-            this.tabPageAdv3.Controls.Add(this.sfBtnHighlightColor);
-            this.tabPageAdv3.Controls.Add(this.tbHighlightColor);
-            this.tabPageAdv3.Controls.Add(this.lblHighlightColor);
-            this.tabPageAdv3.Controls.Add(this.gpLogLevelColors);
-            this.tabPageAdv3.Controls.Add(this.btnImportColors);
-            this.tabPageAdv3.Controls.Add(this.btnExportColors);
-            this.tabPageAdv3.Image = global::Analogy.Properties.Resources.LocalColorScheme_32x32;
-            this.tabPageAdv3.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv3.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv3.Name = "tabPageAdv3";
-            this.tabPageAdv3.ShowCloseButton = true;
-            this.tabPageAdv3.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv3.TabIndex = 3;
-            this.tabPageAdv3.Text = "Look And Feel";
-            this.tabPageAdv3.ThemesEnabled = true;
+            this.TabPage3.Controls.Add(this.sfBtnHighlightColor);
+            this.TabPage3.Controls.Add(this.tbHighlightColor);
+            this.TabPage3.Controls.Add(this.lblHighlightColor);
+            this.TabPage3.Controls.Add(this.gpLogLevelColors);
+            this.TabPage3.Controls.Add(this.btnImportColors);
+            this.TabPage3.Controls.Add(this.btnExportColors);
+            this.TabPage3.Location = new System.Drawing.Point(199, 3);
+            this.TabPage3.Name = "TabPage3";
+            this.TabPage3.Size = new System.Drawing.Size(781, 518);
+            this.TabPage3.TabIndex = 3;
+            this.TabPage3.Text = "Look And Feel";
             // 
             // sfBtnHighlightColor
             // 
@@ -959,7 +903,6 @@ namespace Analogy
             // 
             this.tbHighlightColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbHighlightColor.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbHighlightColor.Location = new System.Drawing.Point(215, 322);
             this.tbHighlightColor.Name = "tbHighlightColor";
             this.tbHighlightColor.Size = new System.Drawing.Size(208, 22);
@@ -1137,7 +1080,6 @@ namespace Analogy
             // 
             this.tbLogLevelAnalogyInformation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelAnalogyInformation.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelAnalogyInformation.Location = new System.Drawing.Point(215, 274);
             this.tbLogLevelAnalogyInformation.Name = "tbLogLevelAnalogyInformation";
             this.tbLogLevelAnalogyInformation.Size = new System.Drawing.Size(480, 22);
@@ -1147,7 +1089,6 @@ namespace Analogy
             // 
             this.tbLogLevelCritical.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelCritical.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelCritical.Location = new System.Drawing.Point(215, 246);
             this.tbLogLevelCritical.Name = "tbLogLevelCritical";
             this.tbLogLevelCritical.Size = new System.Drawing.Size(480, 22);
@@ -1173,7 +1114,6 @@ namespace Analogy
             // 
             this.tbLogLevelError.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelError.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelError.Location = new System.Drawing.Point(215, 218);
             this.tbLogLevelError.Name = "tbLogLevelError";
             this.tbLogLevelError.Size = new System.Drawing.Size(480, 22);
@@ -1183,7 +1123,6 @@ namespace Analogy
             // 
             this.tbLogLevelWarning.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelWarning.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelWarning.Location = new System.Drawing.Point(215, 190);
             this.tbLogLevelWarning.Name = "tbLogLevelWarning";
             this.tbLogLevelWarning.Size = new System.Drawing.Size(480, 22);
@@ -1209,7 +1148,6 @@ namespace Analogy
             // 
             this.tbLogLevelEvent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelEvent.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelEvent.Location = new System.Drawing.Point(215, 162);
             this.tbLogLevelEvent.Name = "tbLogLevelEvent";
             this.tbLogLevelEvent.Size = new System.Drawing.Size(480, 22);
@@ -1219,7 +1157,6 @@ namespace Analogy
             // 
             this.tbLogLevelDebug.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelDebug.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelDebug.Location = new System.Drawing.Point(215, 134);
             this.tbLogLevelDebug.Name = "tbLogLevelDebug";
             this.tbLogLevelDebug.Size = new System.Drawing.Size(480, 22);
@@ -1245,7 +1182,6 @@ namespace Analogy
             // 
             this.tbLogLevelVerbose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelVerbose.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelVerbose.Location = new System.Drawing.Point(215, 106);
             this.tbLogLevelVerbose.Name = "tbLogLevelVerbose";
             this.tbLogLevelVerbose.Size = new System.Drawing.Size(480, 22);
@@ -1255,7 +1191,6 @@ namespace Analogy
             // 
             this.tbLogLevelTrace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelTrace.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelTrace.Location = new System.Drawing.Point(215, 78);
             this.tbLogLevelTrace.Name = "tbLogLevelTrace";
             this.tbLogLevelTrace.Size = new System.Drawing.Size(480, 22);
@@ -1281,7 +1216,6 @@ namespace Analogy
             // 
             this.tbLogLevelDisabled.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelDisabled.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelDisabled.Location = new System.Drawing.Point(215, 50);
             this.tbLogLevelDisabled.Name = "tbLogLevelDisabled";
             this.tbLogLevelDisabled.Size = new System.Drawing.Size(480, 22);
@@ -1291,7 +1225,6 @@ namespace Analogy
             // 
             this.tbLogLevelUnknown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLogLevelUnknown.BeforeTouchSize = new System.Drawing.Size(208, 22);
             this.tbLogLevelUnknown.Location = new System.Drawing.Point(215, 22);
             this.tbLogLevelUnknown.Name = "tbLogLevelUnknown";
             this.tbLogLevelUnknown.Size = new System.Drawing.Size(480, 22);
@@ -1313,22 +1246,18 @@ namespace Analogy
             this.lblLogLevelUnknown.TabIndex = 0;
             this.lblLogLevelUnknown.Text = "Unknown:";
             // 
-            // tabPageAdv4
+            // TabPage4
             // 
-            this.tabPageAdv4.Controls.Add(this.btnClearStatistics);
-            this.tabPageAdv4.Controls.Add(this.lblOpenedFiles);
-            this.tabPageAdv4.Controls.Add(this.lblTotalTime);
-            this.tabPageAdv4.Controls.Add(this.lblLaunchCount);
-            this.tabPageAdv4.Controls.Add(this.tbUserStatistics);
-            this.tabPageAdv4.Image = global::Analogy.Properties.Resources.Statistical_32x32;
-            this.tabPageAdv4.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv4.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv4.Name = "tabPageAdv4";
-            this.tabPageAdv4.ShowCloseButton = true;
-            this.tabPageAdv4.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv4.TabIndex = 4;
-            this.tabPageAdv4.Text = "User Statistics";
-            this.tabPageAdv4.ThemesEnabled = true;
+            this.TabPage4.Controls.Add(this.tbUserStatistics);
+            this.TabPage4.Controls.Add(this.btnClearStatistics);
+            this.TabPage4.Controls.Add(this.lblOpenedFiles);
+            this.TabPage4.Controls.Add(this.lblTotalTime);
+            this.TabPage4.Controls.Add(this.lblLaunchCount);
+            this.TabPage4.Location = new System.Drawing.Point(199, 3);
+            this.TabPage4.Name = "TabPage4";
+            this.TabPage4.Size = new System.Drawing.Size(781, 518);
+            this.TabPage4.TabIndex = 4;
+            this.TabPage4.Text = "User Statistics";
             // 
             // lblOpenedFiles
             // 
@@ -1357,71 +1286,27 @@ namespace Analogy
             this.lblLaunchCount.TabIndex = 15;
             this.lblLaunchCount.Text = "Number of Analogy Launches: 0";
             // 
-            // tbUserStatistics
+            // TabPage5
             // 
-            activeStateCollection1.Text = "User Statistics are enabled";
-            this.tbUserStatistics.ActiveState = activeStateCollection1;
-            this.tbUserStatistics.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbUserStatistics.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbUserStatistics.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection1.Text = "User Statistics are disabled";
-            this.tbUserStatistics.InactiveState = inactiveStateCollection1;
-            this.tbUserStatistics.Location = new System.Drawing.Point(5, 8);
-            this.tbUserStatistics.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbUserStatistics.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbUserStatistics.Name = "tbUserStatistics";
-            this.tbUserStatistics.Size = new System.Drawing.Size(361, 31);
-            this.tbUserStatistics.Slider = sliderCollection1;
-            this.tbUserStatistics.TabIndex = 14;
+            this.TabPage5.Controls.Add(this.tbExtensionsStartup);
+            this.TabPage5.Controls.Add(this.clExtensionslItems);
+            this.TabPage5.Location = new System.Drawing.Point(199, 3);
+            this.TabPage5.Name = "TabPage5";
+            this.TabPage5.Size = new System.Drawing.Size(781, 518);
+            this.TabPage5.TabIndex = 5;
+            this.TabPage5.Text = "Extensions";
             // 
-            // tabPageAdv5
+            // TabPage6
             // 
-            this.tabPageAdv5.Controls.Add(this.tbExtensionsStartup);
-            this.tabPageAdv5.Controls.Add(this.clExtensionslItems);
-            this.tabPageAdv5.Image = global::Analogy.Properties.Resources.Wizard_32x32;
-            this.tabPageAdv5.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv5.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv5.Name = "tabPageAdv5";
-            this.tabPageAdv5.ShowCloseButton = true;
-            this.tabPageAdv5.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv5.TabIndex = 5;
-            this.tabPageAdv5.Text = "Extensions";
-            this.tabPageAdv5.ThemesEnabled = true;
-            // 
-            // tbExtensionsStartup
-            // 
-            activeStateCollection2.Text = "Load following Extensions at startup:";
-            this.tbExtensionsStartup.ActiveState = activeStateCollection2;
-            this.tbExtensionsStartup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbExtensionsStartup.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbExtensionsStartup.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection2.Text = "No Startup extensions";
-            this.tbExtensionsStartup.InactiveState = inactiveStateCollection2;
-            this.tbExtensionsStartup.Location = new System.Drawing.Point(3, 0);
-            this.tbExtensionsStartup.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbExtensionsStartup.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbExtensionsStartup.Name = "tbExtensionsStartup";
-            this.tbExtensionsStartup.Size = new System.Drawing.Size(361, 31);
-            this.tbExtensionsStartup.Slider = sliderCollection2;
-            this.tbExtensionsStartup.TabIndex = 15;
-            // 
-            // tabPageAdv6
-            // 
-            this.tabPageAdv6.Controls.Add(this.label11);
-            this.tabPageAdv6.Controls.Add(this.label10);
-            this.tabPageAdv6.Controls.Add(this.label9);
-            this.tabPageAdv6.Controls.Add(this.label8);
-            this.tabPageAdv6.Image = global::Analogy.Properties.Resources.FlowLayout_32x32;
-            this.tabPageAdv6.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv6.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv6.Name = "tabPageAdv6";
-            this.tabPageAdv6.ShowCloseButton = true;
-            this.tabPageAdv6.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv6.TabIndex = 6;
-            this.tabPageAdv6.Text = "Shortcuts";
-            this.tabPageAdv6.ThemesEnabled = true;
+            this.TabPage6.Controls.Add(this.label11);
+            this.TabPage6.Controls.Add(this.label10);
+            this.TabPage6.Controls.Add(this.label9);
+            this.TabPage6.Controls.Add(this.label8);
+            this.TabPage6.Location = new System.Drawing.Point(199, 3);
+            this.TabPage6.Name = "TabPage6";
+            this.TabPage6.Size = new System.Drawing.Size(781, 518);
+            this.TabPage6.TabIndex = 6;
+            this.TabPage6.Text = "Shortcuts";
             // 
             // label11
             // 
@@ -1459,19 +1344,15 @@ namespace Analogy
             this.label8.TabIndex = 16;
             this.label8.Text = "Go to include filter textbox: Ctrl + F";
             // 
-            // tabPageAdv7
+            // TabPage7
             // 
-            this.tabPageAdv7.Controls.Add(this.label7);
-            this.tabPageAdv7.Controls.Add(this.nudRecent);
-            this.tabPageAdv7.Image = global::Analogy.Properties.Resources.RecentlyUse_32x32;
-            this.tabPageAdv7.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv7.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv7.Name = "tabPageAdv7";
-            this.tabPageAdv7.ShowCloseButton = true;
-            this.tabPageAdv7.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv7.TabIndex = 7;
-            this.tabPageAdv7.Text = "Most Recently Used";
-            this.tabPageAdv7.ThemesEnabled = true;
+            this.TabPage7.Controls.Add(this.label7);
+            this.TabPage7.Controls.Add(this.nudRecent);
+            this.TabPage7.Location = new System.Drawing.Point(199, 3);
+            this.TabPage7.Name = "TabPage7";
+            this.TabPage7.Size = new System.Drawing.Size(781, 518);
+            this.TabPage7.TabIndex = 7;
+            this.TabPage7.Text = "Most Recently Used";
             // 
             // label7
             // 
@@ -1482,170 +1363,102 @@ namespace Analogy
             this.label7.TabIndex = 4;
             this.label7.Text = "Number of recent files to keep:";
             // 
-            // tabPageAdv8
+            // TabPage8
             // 
-            this.tabPageAdv8.Controls.Add(this.tbIdleMode);
-            this.tabPageAdv8.Controls.Add(this.label12);
-            this.tabPageAdv8.Controls.Add(this.nudIdleTime);
-            this.tabPageAdv8.Image = global::Analogy.Properties.Resources.StackedLine_32x32;
-            this.tabPageAdv8.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv8.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv8.Name = "tabPageAdv8";
-            this.tabPageAdv8.ShowCloseButton = true;
-            this.tabPageAdv8.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv8.TabIndex = 8;
-            this.tabPageAdv8.Text = "Resources Usage";
-            this.tabPageAdv8.ThemesEnabled = true;
-            // 
-            // tbIdleMode
-            // 
-            activeStateCollection3.Text = "Idle mode: ignore incoming messages when user is idle";
-            this.tbIdleMode.ActiveState = activeStateCollection3;
-            this.tbIdleMode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbIdleMode.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbIdleMode.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection3.Text = "Don\'t enable idle mode";
-            this.tbIdleMode.InactiveState = inactiveStateCollection3;
-            this.tbIdleMode.Location = new System.Drawing.Point(3, 5);
-            this.tbIdleMode.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbIdleMode.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbIdleMode.Name = "tbIdleMode";
-            this.tbIdleMode.Size = new System.Drawing.Size(361, 31);
-            this.tbIdleMode.Slider = sliderCollection3;
-            this.tbIdleMode.TabIndex = 18;
+            this.TabPage8.Controls.Add(this.tbIdleMode);
+            this.TabPage8.Controls.Add(this.label12);
+            this.TabPage8.Controls.Add(this.nudIdleTime);
+            this.TabPage8.Location = new System.Drawing.Point(199, 3);
+            this.TabPage8.Name = "TabPage8";
+            this.TabPage8.Size = new System.Drawing.Size(781, 518);
+            this.TabPage8.TabIndex = 8;
+            this.TabPage8.Text = "Resources Usage";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(10, 63);
+            this.label12.Location = new System.Drawing.Point(3, 49);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(229, 17);
             this.label12.TabIndex = 17;
             this.label12.Text = "Idle time (in minutes) of no activity :";
             // 
-            // tabPageAdv9
+            // TabPage9
             // 
-            this.tabPageAdv9.Controls.Add(this.tabControlAdv3);
-            this.tabPageAdv9.Image = global::Analogy.Properties.Resources.Analogy_Icon2;
-            this.tabPageAdv9.ImageSize = new System.Drawing.Size(32, 32);
-            this.tabPageAdv9.Location = new System.Drawing.Point(199, 3);
-            this.tabPageAdv9.Name = "tabPageAdv9";
-            this.tabPageAdv9.ShowCloseButton = true;
-            this.tabPageAdv9.Size = new System.Drawing.Size(781, 518);
-            this.tabPageAdv9.TabIndex = 9;
-            this.tabPageAdv9.Text = "Data Providers";
-            this.tabPageAdv9.ThemesEnabled = true;
+            this.TabPage9.Controls.Add(this.TabControl3);
+            this.TabPage9.Location = new System.Drawing.Point(199, 3);
+            this.TabPage9.Name = "TabPage9";
+            this.TabPage9.Size = new System.Drawing.Size(781, 518);
+            this.TabPage9.TabIndex = 9;
+            this.TabPage9.Text = "Data Providers";
             // 
-            // tabControlAdv3
+            // TabControl3
             // 
-            this.tabControlAdv3.BeforeTouchSize = new System.Drawing.Size(781, 518);
-            this.tabControlAdv3.Controls.Add(this.tabPageAdv13);
-            this.tabControlAdv3.Controls.Add(this.tabPageAdv14);
-            this.tabControlAdv3.Controls.Add(this.tabPageAdv15);
-            this.tabControlAdv3.Controls.Add(this.tabPageAdv16);
-            this.tabControlAdv3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlAdv3.Location = new System.Drawing.Point(0, 0);
-            this.tabControlAdv3.Name = "tabControlAdv3";
-            this.tabControlAdv3.Size = new System.Drawing.Size(781, 518);
-            this.tabControlAdv3.TabIndex = 0;
-            this.tabControlAdv3.ThemesEnabled = true;
+            this.TabControl3.Controls.Add(this.TabPage13);
+            this.TabControl3.Controls.Add(this.TabPage14);
+            this.TabControl3.Controls.Add(this.TabPage15);
+            this.TabControl3.Controls.Add(this.TabPage16);
+            this.TabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControl3.Location = new System.Drawing.Point(0, 0);
+            this.TabControl3.Name = "TabControl3";
+            this.TabControl3.Size = new System.Drawing.Size(781, 518);
+            this.TabControl3.TabIndex = 0;
             // 
-            // tabPageAdv13
+            // TabPage13
             // 
-            this.tabPageAdv13.Controls.Add(this.chkLstDataProviderStatus);
-            this.tabPageAdv13.Controls.Add(this.tbRememberLastOpenedDataProvider);
-            this.tabPageAdv13.Controls.Add(this.gradientLabel1);
-            this.tabPageAdv13.Image = null;
-            this.tabPageAdv13.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv13.Location = new System.Drawing.Point(3, 2);
-            this.tabPageAdv13.Name = "tabPageAdv13";
-            this.tabPageAdv13.ShowCloseButton = true;
-            this.tabPageAdv13.Size = new System.Drawing.Size(774, 512);
-            this.tabPageAdv13.TabIndex = 1;
-            this.tabPageAdv13.Text = "Data Providers Enable/Disable";
-            this.tabPageAdv13.ThemesEnabled = true;
+            this.TabPage13.Controls.Add(this.chkLstDataProviderStatus);
+            this.TabPage13.Controls.Add(this.tbRememberLastOpenedDataProvider);
+            this.TabPage13.Controls.Add(this.Label1);
+            this.TabPage13.Location = new System.Drawing.Point(3, 31);
+            this.TabPage13.Name = "TabPage13";
+            this.TabPage13.Size = new System.Drawing.Size(774, 483);
+            this.TabPage13.TabIndex = 1;
+            this.TabPage13.Text = "Data Providers Enable/Disable";
             // 
-            // tbRememberLastOpenedDataProvider
+            // Label1
             // 
-            activeStateCollection4.Text = "Remember last opened Data provider on startup and switch to it after restart";
-            this.tbRememberLastOpenedDataProvider.ActiveState = activeStateCollection4;
-            this.tbRememberLastOpenedDataProvider.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbRememberLastOpenedDataProvider.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbRememberLastOpenedDataProvider.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection4.Text = "Don\'t remember last opened Data provider on startup";
-            this.tbRememberLastOpenedDataProvider.InactiveState = inactiveStateCollection4;
-            this.tbRememberLastOpenedDataProvider.Location = new System.Drawing.Point(0, 50);
-            this.tbRememberLastOpenedDataProvider.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tbRememberLastOpenedDataProvider.MinimumSize = new System.Drawing.Size(52, 20);
-            this.tbRememberLastOpenedDataProvider.Name = "tbRememberLastOpenedDataProvider";
-            this.tbRememberLastOpenedDataProvider.Size = new System.Drawing.Size(774, 31);
-            this.tbRememberLastOpenedDataProvider.Slider = sliderCollection4;
-            this.tbRememberLastOpenedDataProvider.TabIndex = 12;
-            this.tbRememberLastOpenedDataProvider.Text = "Don\'t remember last opened Data provider on startup";
-            // 
-            // gradientLabel1
-            // 
-            this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.gradientLabel1.BeforeTouchSize = new System.Drawing.Size(774, 50);
-            this.gradientLabel1.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
-            this.gradientLabel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gradientLabel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientLabel1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
-            this.gradientLabel1.Name = "gradientLabel1";
-            this.gradientLabel1.Size = new System.Drawing.Size(774, 50);
-            this.gradientLabel1.TabIndex = 13;
-            this.gradientLabel1.Text = "Status (enable/ disabled) of data providers. Re-enabling  a provider will take af" +
+            this.Label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Label1.Location = new System.Drawing.Point(0, 0);
+            this.Label1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(774, 50);
+            this.Label1.TabIndex = 13;
+            this.Label1.Text = "Status (enable/ disabled) of data providers. Re-enabling  a provider will take af" +
     "fect after restarting of the application";
-            this.gradientLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabPageAdv14
+            // TabPage14
             // 
-            this.tabPageAdv14.Controls.Add(this.chkLstItemRealTimeDataSources);
-            this.tabPageAdv14.Controls.Add(this.gradientLabel2);
-            this.tabPageAdv14.Image = null;
-            this.tabPageAdv14.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv14.Location = new System.Drawing.Point(3, 2);
-            this.tabPageAdv14.Name = "tabPageAdv14";
-            this.tabPageAdv14.ShowCloseButton = true;
-            this.tabPageAdv14.Size = new System.Drawing.Size(774, 512);
-            this.tabPageAdv14.TabIndex = 2;
-            this.tabPageAdv14.Text = "Real time Auto-Startup";
-            this.tabPageAdv14.ThemesEnabled = true;
+            this.TabPage14.Controls.Add(this.chkLstItemRealTimeDataSources);
+            this.TabPage14.Controls.Add(this.Label2);
+            this.TabPage14.Location = new System.Drawing.Point(3, 31);
+            this.TabPage14.Name = "TabPage14";
+            this.TabPage14.Size = new System.Drawing.Size(774, 483);
+            this.TabPage14.TabIndex = 2;
+            this.TabPage14.Text = "Real time Auto-Startup";
             // 
-            // gradientLabel2
+            // Label2
             // 
-            this.gradientLabel2.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.gradientLabel2.BeforeTouchSize = new System.Drawing.Size(774, 50);
-            this.gradientLabel2.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
-            this.gradientLabel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gradientLabel2.Location = new System.Drawing.Point(0, 0);
-            this.gradientLabel2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
-            this.gradientLabel2.Name = "gradientLabel2";
-            this.gradientLabel2.Size = new System.Drawing.Size(774, 50);
-            this.gradientLabel2.TabIndex = 14;
-            this.gradientLabel2.Text = "Load the following real time data sources at startup:";
-            this.gradientLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Label2.Location = new System.Drawing.Point(0, 0);
+            this.Label2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(774, 50);
+            this.Label2.TabIndex = 14;
+            this.Label2.Text = "Load the following real time data sources at startup:";
+            this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tabPageAdv15
+            // TabPage15
             // 
-            this.tabPageAdv15.Controls.Add(this.label6);
-            this.tabPageAdv15.Controls.Add(this.btnSetFileAssociation);
-            this.tabPageAdv15.Controls.Add(this.cbDataProviderAssociation);
-            this.tabPageAdv15.Controls.Add(this.txtbDataProviderAssociation);
-            this.tabPageAdv15.Image = null;
-            this.tabPageAdv15.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv15.Location = new System.Drawing.Point(3, 2);
-            this.tabPageAdv15.Name = "tabPageAdv15";
-            this.tabPageAdv15.ShowCloseButton = true;
-            this.tabPageAdv15.Size = new System.Drawing.Size(774, 512);
-            this.tabPageAdv15.TabIndex = 3;
-            this.tabPageAdv15.Text = "Default File Associations";
-            this.tabPageAdv15.ThemesEnabled = true;
+            this.TabPage15.Controls.Add(this.label6);
+            this.TabPage15.Controls.Add(this.btnSetFileAssociation);
+            this.TabPage15.Controls.Add(this.cbDataProviderAssociation);
+            this.TabPage15.Controls.Add(this.txtbDataProviderAssociation);
+            this.TabPage15.Location = new System.Drawing.Point(3, 31);
+            this.TabPage15.Name = "TabPage15";
+            this.TabPage15.Size = new System.Drawing.Size(774, 483);
+            this.TabPage15.TabIndex = 3;
+            this.TabPage15.Text = "Default File Associations";
             // 
             // label6
             // 
@@ -1656,18 +1469,14 @@ namespace Analogy
             this.label6.TabIndex = 5;
             this.label6.Text = "File Types (use , as seperator. eg: *.log,*.nlog)):";
             // 
-            // tabPageAdv16
+            // TabPage16
             // 
-            this.tabPageAdv16.Controls.Add(this.btnDataProviderCustomSettings);
-            this.tabPageAdv16.Image = null;
-            this.tabPageAdv16.ImageSize = new System.Drawing.Size(20, 20);
-            this.tabPageAdv16.Location = new System.Drawing.Point(3, 2);
-            this.tabPageAdv16.Name = "tabPageAdv16";
-            this.tabPageAdv16.ShowCloseButton = true;
-            this.tabPageAdv16.Size = new System.Drawing.Size(774, 512);
-            this.tabPageAdv16.TabIndex = 4;
-            this.tabPageAdv16.Text = "Custom Settings";
-            this.tabPageAdv16.ThemesEnabled = true;
+            this.TabPage16.Controls.Add(this.btnDataProviderCustomSettings);
+            this.TabPage16.Location = new System.Drawing.Point(3, 31);
+            this.TabPage16.Name = "TabPage16";
+            this.TabPage16.Size = new System.Drawing.Size(774, 483);
+            this.TabPage16.TabIndex = 4;
+            this.TabPage16.Text = "Custom Settings";
             // 
             // colorDialog1
             // 
@@ -1762,6 +1571,49 @@ namespace Analogy
             this.tbFileCaching.Text = "Use Caching of loaded Files";
             this.tbFileCaching.UseVisualStyleBackColor = true;
             // 
+            // tbUserStatistics
+            // 
+            this.tbUserStatistics.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbUserStatistics.Location = new System.Drawing.Point(3, 9);
+            this.tbUserStatistics.Name = "tbUserStatistics";
+            this.tbUserStatistics.Size = new System.Drawing.Size(762, 22);
+            this.tbUserStatistics.TabIndex = 20;
+            this.tbUserStatistics.Text = "Enable User Statistics";
+            this.tbUserStatistics.UseVisualStyleBackColor = true;
+            // 
+            // tbExtensionsStartup
+            // 
+            this.tbExtensionsStartup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbExtensionsStartup.Location = new System.Drawing.Point(12, 9);
+            this.tbExtensionsStartup.Name = "tbExtensionsStartup";
+            this.tbExtensionsStartup.Size = new System.Drawing.Size(762, 22);
+            this.tbExtensionsStartup.TabIndex = 21;
+            this.tbExtensionsStartup.Text = "Enable Startup Extensions:";
+            this.tbExtensionsStartup.UseVisualStyleBackColor = true;
+            // 
+            // tbIdleMode
+            // 
+            this.tbIdleMode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbIdleMode.Location = new System.Drawing.Point(6, 9);
+            this.tbIdleMode.Name = "tbIdleMode";
+            this.tbIdleMode.Size = new System.Drawing.Size(762, 22);
+            this.tbIdleMode.TabIndex = 22;
+            this.tbIdleMode.Text = "Enable Idle Mode";
+            this.tbIdleMode.UseVisualStyleBackColor = true;
+            // 
+            // tbRememberLastOpenedDataProvider
+            // 
+            this.tbRememberLastOpenedDataProvider.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbRememberLastOpenedDataProvider.Location = new System.Drawing.Point(0, 50);
+            this.tbRememberLastOpenedDataProvider.Name = "tbRememberLastOpenedDataProvider";
+            this.tbRememberLastOpenedDataProvider.Size = new System.Drawing.Size(774, 22);
+            this.tbRememberLastOpenedDataProvider.TabIndex = 23;
+            this.tbRememberLastOpenedDataProvider.Text = "Remember last opened Data provider on startup and switch to it after restart";
+            this.tbRememberLastOpenedDataProvider.UseVisualStyleBackColor = true;
+            // 
             // UserSettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1781,31 +1633,31 @@ namespace Analogy
             ((System.ComponentModel.ISupportInitialize)(this.nudIdleTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControlMain)).EndInit();
             this.tabControlMain.ResumeLayout(false);
-            this.tabPageAdv1.ResumeLayout(false);
+            this.TabPage1.ResumeLayout(false);
             this.gbFilteringSettings.ResumeLayout(false);
-            this.tabPageAdv2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv2)).EndInit();
-            this.tabControlAdv2.ResumeLayout(false);
-            this.tabPageAdv10.ResumeLayout(false);
+            this.TabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TabControl2)).EndInit();
+            this.TabControl2.ResumeLayout(false);
+            this.TabPage10.ResumeLayout(false);
             this.gbHighlight.ResumeLayout(false);
             this.gbHighlight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlighColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlightEquals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlightContains)).EndInit();
-            this.tabPageAdv11.ResumeLayout(false);
-            this.tabPageAdv11.PerformLayout();
+            this.TabPage11.ResumeLayout(false);
+            this.TabPage11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbModulesFilter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSourcesFilter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbExcludeFilter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIncludeTextFilter)).EndInit();
-            this.tabPageAdv12.ResumeLayout(false);
-            this.tabPageAdv12.PerformLayout();
+            this.TabPage12.ResumeLayout(false);
+            this.TabPage12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbModulesAlert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSourcesAlert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbExcludeAlert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbIncludeTextAlert)).EndInit();
-            this.tabPageAdv3.ResumeLayout(false);
-            this.tabPageAdv3.PerformLayout();
+            this.TabPage3.ResumeLayout(false);
+            this.TabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbHighlightColor)).EndInit();
             this.gpLogLevelColors.ResumeLayout(false);
             this.gpLogLevelColors.PerformLayout();
@@ -1819,150 +1671,142 @@ namespace Analogy
             ((System.ComponentModel.ISupportInitialize)(this.tbLogLevelTrace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLogLevelDisabled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLogLevelUnknown)).EndInit();
-            this.tabPageAdv4.ResumeLayout(false);
-            this.tabPageAdv4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUserStatistics)).EndInit();
-            this.tabPageAdv5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tbExtensionsStartup)).EndInit();
-            this.tabPageAdv6.ResumeLayout(false);
-            this.tabPageAdv6.PerformLayout();
-            this.tabPageAdv7.ResumeLayout(false);
-            this.tabPageAdv7.PerformLayout();
-            this.tabPageAdv8.ResumeLayout(false);
-            this.tabPageAdv8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbIdleMode)).EndInit();
-            this.tabPageAdv9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv3)).EndInit();
-            this.tabControlAdv3.ResumeLayout(false);
-            this.tabPageAdv13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tbRememberLastOpenedDataProvider)).EndInit();
-            this.tabPageAdv14.ResumeLayout(false);
-            this.tabPageAdv15.ResumeLayout(false);
-            this.tabPageAdv15.PerformLayout();
-            this.tabPageAdv16.ResumeLayout(false);
+            this.TabPage4.ResumeLayout(false);
+            this.TabPage4.PerformLayout();
+            this.TabPage5.ResumeLayout(false);
+            this.TabPage6.ResumeLayout(false);
+            this.TabPage6.PerformLayout();
+            this.TabPage7.ResumeLayout(false);
+            this.TabPage7.PerformLayout();
+            this.TabPage8.ResumeLayout(false);
+            this.TabPage8.PerformLayout();
+            this.TabPage9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TabControl3)).EndInit();
+            this.TabControl3.ResumeLayout(false);
+            this.TabPage13.ResumeLayout(false);
+            this.TabPage14.ResumeLayout(false);
+            this.TabPage15.ResumeLayout(false);
+            this.TabPage15.PerformLayout();
+            this.TabPage16.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.NumericUpDown nudRecent;
-        private Syncfusion.WinForms.Controls.SfButton btnClearStatistics;
+        private System.Windows.Forms.Button btnClearStatistics;
         private System.Windows.Forms.CheckedListBox clExtensionslItems;
         private System.Windows.Forms.NumericUpDown nudPageLength;
         private System.Windows.Forms.NumericUpDown nudIdleTime;
         private System.Windows.Forms.CheckedListBox chkLstItemRealTimeDataSources;
-        private Syncfusion.WinForms.Controls.SfButton btnImportColors;
-        private Syncfusion.WinForms.Controls.SfButton btnExportColors;
+        private System.Windows.Forms.Button btnImportColors;
+        private System.Windows.Forms.Button btnExportColors;
         private System.Windows.Forms.CheckedListBox chkLstDataProviderStatus;
-        private Syncfusion.WinForms.Controls.SfButton btnDataProviderCustomSettings;
-        private Syncfusion.WinForms.Controls.SfButton btnSetFileAssociation;
+        private System.Windows.Forms.Button btnDataProviderCustomSettings;
+        private System.Windows.Forms.Button btnSetFileAssociation;
         private System.Windows.Forms.TextBox txtbDataProviderAssociation;
         private System.Windows.Forms.ComboBox cbDataProviderAssociation;
         private System.Windows.Forms.RadioButton rbtnHighlightEquals;
         private System.Windows.Forms.RadioButton rbtnHighlightContains;
-        private Syncfusion.WinForms.Controls.SfButton btnDeleteHighlight;
-        private Syncfusion.WinForms.Controls.SfButton sbtnAddHighlight;
-        private Syncfusion.WinForms.Controls.SfButton btnDeleteFilter;
-        private Syncfusion.WinForms.Controls.SfButton btnAddFilter;
+        private System.Windows.Forms.Button btnDeleteHighlight;
+        private System.Windows.Forms.Button sbtnAddHighlight;
+        private System.Windows.Forms.Button btnDeleteFilter;
+        private System.Windows.Forms.Button btnAddFilter;
         private System.Windows.Forms.Label lblExplaination;
         private System.Windows.Forms.Label lblModules;
         private System.Windows.Forms.Label lblSources;
         private System.Windows.Forms.Label lblExcludeMessageText;
         private System.Windows.Forms.Label lblIncludeText;
-        private Syncfusion.WinForms.Controls.SfButton btnDeleteAlerts;
-        private Syncfusion.WinForms.Controls.SfButton btnAddAlerts;
+        private System.Windows.Forms.Button btnDeleteAlerts;
+        private System.Windows.Forms.Button btnAddAlerts;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlMain;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv1;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv2;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv3;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv4;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv5;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv6;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv7;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv8;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv9;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv2;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv10;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv11;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv12;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv3;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv13;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbRememberLastOpenedDataProvider;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv14;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel2;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv15;
+        private System.Windows.Forms.TabControl tabControlMain;
+        private System.Windows.Forms.TabPage TabPage1;
+        private System.Windows.Forms.TabPage TabPage2;
+        private System.Windows.Forms.TabPage TabPage3;
+        private System.Windows.Forms.TabPage TabPage4;
+        private System.Windows.Forms.TabPage TabPage5;
+        private System.Windows.Forms.TabPage TabPage6;
+        private System.Windows.Forms.TabPage TabPage7;
+        private System.Windows.Forms.TabPage TabPage8;
+        private System.Windows.Forms.TabPage TabPage9;
+        private System.Windows.Forms.TabControl TabControl2;
+        private System.Windows.Forms.TabPage TabPage10;
+        private System.Windows.Forms.TabPage TabPage11;
+        private System.Windows.Forms.TabPage TabPage12;
+        private System.Windows.Forms.TabControl TabControl3;
+        private System.Windows.Forms.TabPage TabPage13;
+        private System.Windows.Forms.Label Label1;
+        private System.Windows.Forms.TabPage TabPage14;
+        private System.Windows.Forms.Label Label2;
+        private System.Windows.Forms.TabPage TabPage15;
         private Label label6;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv16;
+        private System.Windows.Forms.TabPage TabPage16;
         private GroupBox gbFilteringSettings;
         private Label label7;
         private ListBox lboxHighlightItems;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbHighlightEquals;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbHighlightContains;
+        private System.Windows.Forms.TextBox tbHighlightEquals;
+        private System.Windows.Forms.TextBox tbHighlightContains;
         private GroupBox gbHighlight;
         private Label lblHighlightColorSelection;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbHighlighColor;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnPreDefinedSelectColor;
+        private System.Windows.Forms.TextBox tbHighlighColor;
+        private System.Windows.Forms.Button sfBtnPreDefinedSelectColor;
         private ColorDialog colorDialog1;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbModulesFilter;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbSourcesFilter;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbExcludeFilter;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbIncludeTextFilter;
+        private System.Windows.Forms.TextBox tbModulesFilter;
+        private System.Windows.Forms.TextBox tbSourcesFilter;
+        private System.Windows.Forms.TextBox tbExcludeFilter;
+        private System.Windows.Forms.TextBox tbIncludeTextFilter;
         private ListBox lboxFilters;
         private ListBox lboxAlerts;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbModulesAlert;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbSourcesAlert;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbExcludeAlert;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbIncludeTextAlert;
+        private System.Windows.Forms.TextBox tbModulesAlert;
+        private System.Windows.Forms.TextBox tbSourcesAlert;
+        private System.Windows.Forms.TextBox tbExcludeAlert;
+        private System.Windows.Forms.TextBox tbIncludeTextAlert;
         private GroupBox gpLogLevelColors;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelAnalogyInformation;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelCritical;
+        private System.Windows.Forms.TextBox tbLogLevelAnalogyInformation;
+        private System.Windows.Forms.TextBox tbLogLevelCritical;
         private Label lblLogLevelAnalogyInformation;
         private Label lblLogLevelCritical;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelError;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelWarning;
+        private System.Windows.Forms.TextBox tbLogLevelError;
+        private System.Windows.Forms.TextBox tbLogLevelWarning;
         private Label lblLogLevelError;
         private Label lblLogLevelWarning;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelEvent;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelDebug;
+        private System.Windows.Forms.TextBox tbLogLevelEvent;
+        private System.Windows.Forms.TextBox tbLogLevelDebug;
         private Label lblLogLevelEvent;
         private Label lblLogLevelDebug;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelVerbose;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelTrace;
+        private System.Windows.Forms.TextBox tbLogLevelVerbose;
+        private System.Windows.Forms.TextBox tbLogLevelTrace;
         private Label lblLogLevelVerbose;
         private Label lblLogLevelTrace;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelDisabled;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbLogLevelUnknown;
+        private System.Windows.Forms.TextBox tbLogLevelDisabled;
+        private System.Windows.Forms.TextBox tbLogLevelUnknown;
         private Label lblLogLevelDisabled;
         private Label lblLogLevelUnknown;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbHighlightColor;
+        private System.Windows.Forms.TextBox tbHighlightColor;
         private Label lblHighlightColor;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelVerbose;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelTrace;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelDisabled;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelUnknown;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnHighlightColor;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelAnalogyInformation;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelCritical;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelError;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelWarning;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelEvent;
-        private Syncfusion.WinForms.Controls.SfButton sfBtnLogLevelDebug;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbUserStatistics;
+        private System.Windows.Forms.Button sfBtnLogLevelVerbose;
+        private System.Windows.Forms.Button sfBtnLogLevelTrace;
+        private System.Windows.Forms.Button sfBtnLogLevelDisabled;
+        private System.Windows.Forms.Button sfBtnLogLevelUnknown;
+        private System.Windows.Forms.Button sfBtnHighlightColor;
+        private System.Windows.Forms.Button sfBtnLogLevelAnalogyInformation;
+        private System.Windows.Forms.Button sfBtnLogLevelCritical;
+        private System.Windows.Forms.Button sfBtnLogLevelError;
+        private System.Windows.Forms.Button sfBtnLogLevelWarning;
+        private System.Windows.Forms.Button sfBtnLogLevelEvent;
+        private System.Windows.Forms.Button sfBtnLogLevelDebug;
         private Label lblOpenedFiles;
         private Label lblTotalTime;
         private Label lblLaunchCount;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbExtensionsStartup;
         private Label label11;
         private Label label10;
         private Label label9;
         private Label label8;
-        private Syncfusion.Windows.Forms.Tools.ToggleButton tbIdleMode;
         private Label label12;
         private CheckBox tbHistory;
         private CheckBox tbAutoComplete;
@@ -1972,5 +1816,9 @@ namespace Analogy
         private CheckBox cbPaging;
         private CheckBox cbSearchAlsoInSourceAndModule;
         private CheckBox tbFileCaching;
+        private CheckBox tbUserStatistics;
+        private CheckBox tbExtensionsStartup;
+        private CheckBox tbIdleMode;
+        private CheckBox tbRememberLastOpenedDataProvider;
     }
 }
