@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnalogyExcludeMessage));
             this.txtbMessage = new System.Windows.Forms.TextBox();
-            this.sBtnOk = new Syncfusion.WinForms.Controls.SfButton();
-            this.sBtnCancel = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnOk = new System.Windows.Forms.Button();
+            this.sBtnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbMessage

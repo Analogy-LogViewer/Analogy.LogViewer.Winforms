@@ -33,7 +33,7 @@ namespace Analogy
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FolderTreeViewUC));
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtbFolder = new System.Windows.Forms.TextBox();
-            this.btnOpenFolder = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnOpenFolder = new System.Windows.Forms.Button();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.toolStripTop = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.tsBtnRootDrive = new System.Windows.Forms.ToolStripButton();
@@ -149,7 +149,7 @@ namespace Analogy
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtbFolder;
         private System.Windows.Forms.ImageList imageList;
-        private Syncfusion.WinForms.Controls.SfButton btnOpenFolder;
+        private System.Windows.Forms.Button btnOpenFolder;
         private DirectoryListing directoryListing;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripTop;
         private System.Windows.Forms.ToolStripButton tsBtnRootDrive;

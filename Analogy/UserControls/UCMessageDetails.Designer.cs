@@ -47,14 +47,14 @@
             this.lbID = new System.Windows.Forms.Label();
             this.lblIndex = new System.Windows.Forms.Label();
             this.rtxtbIndex = new System.Windows.Forms.RichTextBox();
-            this.btnNext = new Syncfusion.WinForms.Controls.SfButton();
-            this.btnPrev = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrev = new System.Windows.Forms.Button();
             this.txtbLineNumber = new System.Windows.Forms.RichTextBox();
             this.lblLineNumber = new System.Windows.Forms.Label();
             this.rtxtbDataSource = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.sBtnCopy = new Syncfusion.WinForms.Controls.SfButton();
-            this.simpleButton1 = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnCopy = new System.Windows.Forms.Button();
+            this.simpleButton1 = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -415,14 +415,14 @@
         private System.Windows.Forms.Label lbID;
         private System.Windows.Forms.Label lblIndex;
         private System.Windows.Forms.RichTextBox rtxtbIndex;
-        private Syncfusion.WinForms.Controls.SfButton btnNext;
-        private Syncfusion.WinForms.Controls.SfButton btnPrev;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.RichTextBox txtbLineNumber;
         private System.Windows.Forms.Label lblLineNumber;
         private System.Windows.Forms.RichTextBox rtxtbDataSource;
         private System.Windows.Forms.Label label4;
-        private Syncfusion.WinForms.Controls.SfButton sBtnCopy;
-        private Syncfusion.WinForms.Controls.SfButton simpleButton1;
+        private System.Windows.Forms.Button sBtnCopy;
+        private System.Windows.Forms.Button simpleButton1;
         private System.Windows.Forms.RichTextBox txtID;
         private System.Windows.Forms.Label label5;
     }

@@ -32,9 +32,9 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.rtboxLeft = new System.Windows.Forms.RichTextBox();
             this.lblFileLeft = new System.Windows.Forms.Label();
-            this.sBtnLeft = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnLeft = new System.Windows.Forms.Button();
             this.lblFileRight = new System.Windows.Forms.Label();
-            this.simpleButtonRight = new Syncfusion.WinForms.Controls.SfButton();
+            this.simpleButtonRight = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -153,7 +153,7 @@
         private System.Windows.Forms.RichTextBox rtboxLeft;
         private System.Windows.Forms.Label lblFileLeft;
         private System.Windows.Forms.Label lblFileRight;
-        private Syncfusion.WinForms.Controls.SfButton sBtnLeft;
-        private Syncfusion.WinForms.Controls.SfButton simpleButtonRight;
+        private System.Windows.Forms.Button sBtnLeft;
+        private System.Windows.Forms.Button simpleButtonRight;
     }
 }

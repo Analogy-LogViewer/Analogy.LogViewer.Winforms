@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeLog));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.rtxtbChangeLog = new System.Windows.Forms.RichTextBox();
-            this.sBtnOk = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();

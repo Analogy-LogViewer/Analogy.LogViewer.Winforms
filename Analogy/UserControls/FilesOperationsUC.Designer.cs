@@ -31,9 +31,9 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblStatus = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.btnAbort = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnAbort = new System.Windows.Forms.Button();
             this.richTextBoxFound = new System.Windows.Forms.RichTextBox();
-            this.splitContainerAdv1 = new Syncfusion.Windows.Forms.Tools.SplitContainerAdv();
+            this.splitContainerAdv1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv1)).BeginInit();
             this.splitContainerAdv1.Panel1.SuspendLayout();
             this.splitContainerAdv1.Panel2.SuspendLayout();
@@ -141,8 +141,8 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private Syncfusion.WinForms.Controls.SfButton btnAbort;
+        private System.Windows.Forms.Button btnAbort;
         private System.Windows.Forms.RichTextBox richTextBoxFound;
-        private Syncfusion.Windows.Forms.Tools.SplitContainerAdv splitContainerAdv1;
+        private System.Windows.Forms.SplitContainer splitContainerAdv1;
     }
 }

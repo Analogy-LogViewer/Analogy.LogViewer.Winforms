@@ -32,8 +32,8 @@
             this.fileSystemUC1 = new Analogy.FileSystemUC();
             this.processFilesUC1 = new Analogy.FilesOperationsUC();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.sBtnSave = new Syncfusion.WinForms.Controls.SfButton();
-            this.sBtnCombined = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnSave = new System.Windows.Forms.Button();
+            this.sBtnCombined = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -165,7 +165,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private FilesOperationsUC processFilesUC1;
-        private Syncfusion.WinForms.Controls.SfButton sBtnSave;
-        private Syncfusion.WinForms.Controls.SfButton sBtnCombined;
+        private System.Windows.Forms.Button sBtnSave;
+        private System.Windows.Forms.Button sBtnCombined;
     }
 }

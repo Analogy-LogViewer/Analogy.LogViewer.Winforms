@@ -35,7 +35,7 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblExtension = new System.Windows.Forms.Label();
             this.lblType = new System.Windows.Forms.Label();
-            this.sBtnLoad = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnLoad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -160,6 +160,6 @@
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label lblExtension;
         private System.Windows.Forms.Label lblType;
-        private Syncfusion.WinForms.Controls.SfButton sBtnLoad;
+        private System.Windows.Forms.Button sBtnLoad;
     }
 }

@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnalogyExclude));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.simpleButton2 = new Syncfusion.WinForms.Controls.SfButton();
+            this.simpleButton2 = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.PnlBottom = new System.Windows.Forms.Panel();
-            this.sBtnCancel = new Syncfusion.WinForms.Controls.SfButton();
-            this.sBtnOk = new Syncfusion.WinForms.Controls.SfButton();
+            this.sBtnCancel = new System.Windows.Forms.Button();
+            this.sBtnOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();

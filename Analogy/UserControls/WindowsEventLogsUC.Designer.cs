@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.lstSelected = new System.Windows.Forms.ListBox();
-            this.btnRemove = new Syncfusion.WinForms.Controls.SfButton();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.lstAvailable = new System.Windows.Forms.ListBox();
-            this.btnAdd = new Syncfusion.WinForms.Controls.SfButton();
-            this.lblLaunchCount = new Syncfusion.Windows.Forms.Tools.GradientLabel();
-            this.splitContainerAdv1 = new Syncfusion.Windows.Forms.Tools.SplitContainerAdv();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lblLaunchCount = new System.Windows.Forms.Label();
+            this.splitContainerAdv1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv1)).BeginInit();
             this.splitContainerAdv1.Panel1.SuspendLayout();
             this.splitContainerAdv1.Panel2.SuspendLayout();
@@ -140,11 +140,11 @@
 
         #endregion
         private System.Windows.Forms.ListBox lstSelected;
-        private Syncfusion.WinForms.Controls.SfButton btnRemove;
+        private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.ListBox lstAvailable;
-        private Syncfusion.WinForms.Controls.SfButton btnAdd;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel lblLaunchCount;
-        private Syncfusion.Windows.Forms.Tools.SplitContainerAdv splitContainerAdv1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblLaunchCount;
+        private System.Windows.Forms.SplitContainer splitContainerAdv1;
      
     }
 }

@@ -32,13 +32,13 @@ namespace Analogy.UserControls
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnalogyColumnsMatcherUC));
             this.lstBAnalogyColumns = new System.Windows.Forms.ListBox();
-            this.gradientLabel2 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
-            this.sBtnMoveUp = new Syncfusion.WinForms.Controls.SfButton();
-            this.sBtnMoveDown = new Syncfusion.WinForms.Controls.SfButton();
+            this.gradientLabel2 = new System.Windows.Forms.Label();
+            this.sBtnMoveUp = new System.Windows.Forms.Button();
+            this.sBtnMoveDown = new System.Windows.Forms.Button();
             this.lstBoxItems = new System.Windows.Forms.ListBox();
-            this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
-            this.scMain = new Syncfusion.Windows.Forms.Tools.SplitContainerAdv();
-            this.splitContainerAdv1 = new Syncfusion.Windows.Forms.Tools.SplitContainerAdv();
+            this.gradientLabel1 = new System.Windows.Forms.Label();
+            this.scMain = new System.Windows.Forms.SplitContainer();
+            this.splitContainerAdv1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.scMain)).BeginInit();
             this.splitContainerAdv1.Panel1.SuspendLayout();
             this.splitContainerAdv1.Panel2.SuspendLayout();
@@ -84,11 +84,6 @@ namespace Analogy.UserControls
             // 
             // gradientLabel2
             // 
-            this.gradientLabel2.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.gradientLabel2.BeforeTouchSize = new System.Drawing.Size(263, 39);
-            this.gradientLabel2.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
             this.gradientLabel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gradientLabel2.Location = new System.Drawing.Point(77, 0);
             this.gradientLabel2.Name = "gradientLabel2";
@@ -104,12 +99,11 @@ namespace Analogy.UserControls
             this.sBtnMoveUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sBtnMoveUp.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sBtnMoveUp.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.sBtnMoveUp.ImageSize = new System.Drawing.Size(30, 30);
             this.sBtnMoveUp.Location = new System.Drawing.Point(0, 0);
             this.sBtnMoveUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sBtnMoveUp.Name = "sBtnMoveUp";
             this.sBtnMoveUp.Size = new System.Drawing.Size(77, 237);
-            this.sBtnMoveUp.Style.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.sBtnMoveUp.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.sBtnMoveUp.TabIndex = 2;
             this.sBtnMoveUp.Text = "Up";
             this.sBtnMoveUp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -224,13 +218,13 @@ namespace Analogy.UserControls
         }
 
         #endregion
-        private Syncfusion.WinForms.Controls.SfButton sBtnMoveUp;
-        private Syncfusion.WinForms.Controls.SfButton sBtnMoveDown;
+        private System.Windows.Forms.Button sBtnMoveUp;
+        private System.Windows.Forms.Button sBtnMoveDown;
         private ListBox lstBAnalogyColumns;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel2;
+        private System.Windows.Forms.Label gradientLabel2;
         private ListBox lstBoxItems;
-        private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
-        private Syncfusion.Windows.Forms.Tools.SplitContainerAdv scMain;
-        private Syncfusion.Windows.Forms.Tools.SplitContainerAdv splitContainerAdv1;
+        private System.Windows.Forms.Label gradientLabel1;
+        private System.Windows.Forms.SplitContainer scMain;
+        private System.Windows.Forms.SplitContainer splitContainerAdv1;
     }
 }
