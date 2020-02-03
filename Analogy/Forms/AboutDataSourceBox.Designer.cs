@@ -41,7 +41,6 @@
             this.tabPageAdv2 = new System.Windows.Forms.TabPage();
             this.tabPageAdv3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).BeginInit();
             this.tabControlAdv1.SuspendLayout();
             this.tabPageAdv1.SuspendLayout();
             this.tabPageAdv2.SuspendLayout();
@@ -70,7 +69,7 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(1193, 411);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(1192, 414);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // labelProductName
@@ -80,7 +79,7 @@
             this.labelProductName.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelProductName.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(1182, 21);
+            this.labelProductName.Size = new System.Drawing.Size(1181, 21);
             this.labelProductName.TabIndex = 19;
             this.labelProductName.Text = "Product Name";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -92,7 +91,7 @@
             this.labelVersion.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelVersion.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(1182, 21);
+            this.labelVersion.Size = new System.Drawing.Size(1181, 21);
             this.labelVersion.TabIndex = 0;
             this.labelVersion.Text = "Version";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -104,7 +103,7 @@
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(1182, 21);
+            this.labelCopyright.Size = new System.Drawing.Size(1181, 21);
             this.labelCopyright.TabIndex = 21;
             this.labelCopyright.Text = "Copyright";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -116,7 +115,7 @@
             this.labelCompanyName.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
             this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 21);
             this.labelCompanyName.Name = "labelCompanyName";
-            this.labelCompanyName.Size = new System.Drawing.Size(1182, 21);
+            this.labelCompanyName.Size = new System.Drawing.Size(1181, 21);
             this.labelCompanyName.TabIndex = 22;
             this.labelCompanyName.Text = "Company Name";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,7 +129,7 @@
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
             this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription.Size = new System.Drawing.Size(1182, 197);
+            this.textBoxDescription.Size = new System.Drawing.Size(1181, 199);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
             this.textBoxDescription.Text = "Created by Lior Banai (2017)\r\ncontact info:\r\nmail:  LiorBanai@gmail.com";
@@ -139,7 +138,7 @@
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(1091, 373);
+            this.okButton.Location = new System.Drawing.Point(1090, 376);
             this.okButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(99, 34);
@@ -152,7 +151,7 @@
             this.rtxtChangeLog.Location = new System.Drawing.Point(0, 0);
             this.rtxtChangeLog.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtxtChangeLog.Name = "rtxtChangeLog";
-            this.rtxtChangeLog.Size = new System.Drawing.Size(1193, 411);
+            this.rtxtChangeLog.Size = new System.Drawing.Size(1192, 414);
             this.rtxtChangeLog.TabIndex = 1;
             this.rtxtChangeLog.Text = "";
             // 
@@ -162,7 +161,7 @@
             this.rtxtContributions.Location = new System.Drawing.Point(0, 0);
             this.rtxtContributions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtxtContributions.Name = "rtxtContributions";
-            this.rtxtContributions.Size = new System.Drawing.Size(1193, 411);
+            this.rtxtContributions.Size = new System.Drawing.Size(1192, 414);
             this.rtxtContributions.TabIndex = 0;
             this.rtxtContributions.Text = "";
             // 
@@ -174,6 +173,7 @@
             this.tabControlAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlAdv1.Location = new System.Drawing.Point(11, 11);
             this.tabControlAdv1.Name = "tabControlAdv1";
+            this.tabControlAdv1.SelectedIndex = 0;
             this.tabControlAdv1.Size = new System.Drawing.Size(1200, 443);
             this.tabControlAdv1.TabIndex = 2;
             // 
@@ -182,9 +182,9 @@
             this.tabPageAdv1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageAdv1.Controls.Add(this.tableLayoutPanel);
             this.tabPageAdv1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPageAdv1.Location = new System.Drawing.Point(3, 27);
+            this.tabPageAdv1.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdv1.Name = "tabPageAdv1";
-            this.tabPageAdv1.Size = new System.Drawing.Size(1193, 411);
+            this.tabPageAdv1.Size = new System.Drawing.Size(1192, 414);
             this.tabPageAdv1.TabIndex = 1;
             this.tabPageAdv1.Text = "About";
             // 
@@ -193,22 +193,20 @@
             this.tabPageAdv2.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageAdv2.Controls.Add(this.rtxtChangeLog);
             this.tabPageAdv2.ForeColor = System.Drawing.SystemColors.ControlText;
-
-            this.tabPageAdv2.Location = new System.Drawing.Point(3, 27);
+            this.tabPageAdv2.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdv2.Name = "tabPageAdv2";
-            this.tabPageAdv2.Size = new System.Drawing.Size(1193, 411);
+            this.tabPageAdv2.Size = new System.Drawing.Size(1192, 414);
             this.tabPageAdv2.TabIndex = 2;
             this.tabPageAdv2.Text = "Change log";
- 
             // 
             // tabPageAdv3
             // 
             this.tabPageAdv3.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageAdv3.Controls.Add(this.rtxtContributions);
             this.tabPageAdv3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPageAdv3.Location = new System.Drawing.Point(3, 27);
+            this.tabPageAdv3.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdv3.Name = "tabPageAdv3";
-            this.tabPageAdv3.Size = new System.Drawing.Size(1193, 411);
+            this.tabPageAdv3.Size = new System.Drawing.Size(1192, 414);
             this.tabPageAdv3.TabIndex = 3;
             this.tabPageAdv3.Text = "Contributors";
             // 
@@ -232,7 +230,6 @@
             this.Load += new System.EventHandler(this.AboutDataSourceBox_Load);
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).EndInit();
             this.tabControlAdv1.ResumeLayout(false);
             this.tabPageAdv1.ResumeLayout(false);
             this.tabPageAdv2.ResumeLayout(false);
