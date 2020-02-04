@@ -41,19 +41,6 @@ namespace Analogy
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCLogs));
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn25 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridDateTimeColumn gridDateTimeColumn3 = new Syncfusion.WinForms.DataGrid.GridDateTimeColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn26 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn27 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn28 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn29 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn30 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn31 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn32 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn33 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn34 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn35 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn36 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.cmsMessageOperation = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiClearLog = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiREmoveAllPreviousMessages = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +66,7 @@ namespace Analogy
             this.tsmiDecreaseFont = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbHighlights = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.cbHighlights = new System.Windows.Forms.ComboBox();
             this.sbtnMoreHighlight = new System.Windows.Forms.Button();
             this.pnlButtonsHighlight = new System.Windows.Forms.Panel();
             this.btnPageFirst = new System.Windows.Forms.Button();
@@ -2001,11 +1988,11 @@ namespace Analogy
         private System.Windows.Forms.DataGridView sfDataGridBookmarks;
         private System.Windows.Forms.ToolStripButton tsBtnBookmarkClear;
         private System.Windows.Forms.ToolStripButton tsBtnBookmarkGoToOriginal;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt tbMessageInfo;
-        private Syncfusion.WinForms.Input.SfDateTimeEdit deOlderThanFilter;
-        private Syncfusion.WinForms.Input.SfDateTimeEdit deNewerThanFilter;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlMain;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageLogs;
+        private System.Windows.Forms.RichTextBox tbMessageInfo;
+        private System.Windows.Forms.DateTimePicker deOlderThanFilter;
+        private System.Windows.Forms.DateTimePicker deNewerThanFilter;
+        private System.Windows.Forms.TabControl tabControlMain;
+        private System.Windows.Forms.TabPage tabPageLogs;
         private System.Windows.Forms.ToolStrip tsTop;
         private System.Windows.Forms.ToolStripButton tsTopClear;
         private System.Windows.Forms.ToolStripDropDownButton tsddbSave;
@@ -2024,8 +2011,8 @@ namespace Analogy
         private System.Windows.Forms.ToolStripButton tsBDataVisualizer;
         public Syncfusion.Windows.Forms.Tools.ToolStripCheckBox tsTopPauseRefresh;
         public Syncfusion.Windows.Forms.Tools.ToolStripCheckBox tsTopAutoScrollToLast;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tcBottom;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageMessageInfo;
-        private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageBookmarks;
+        private System.Windows.Forms.TabControl tcBottom;
+        private System.Windows.Forms.TabPage tabPageMessageInfo;
+        private System.Windows.Forms.TabPage tabPageBookmarks;
     }
 }
