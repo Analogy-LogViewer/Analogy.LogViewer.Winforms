@@ -86,11 +86,7 @@
             // 
             // lblLaunchCount
             // 
-            this.lblLaunchCount.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.lblLaunchCount.BeforeTouchSize = new System.Drawing.Size(848, 29);
-            this.lblLaunchCount.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
+
             this.lblLaunchCount.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblLaunchCount.Location = new System.Drawing.Point(0, 0);
             this.lblLaunchCount.Name = "lblLaunchCount";
@@ -101,7 +97,6 @@
             // 
             // splitContainerAdv1
             // 
-            this.splitContainerAdv1.BeforeTouchSize = 7;
             this.splitContainerAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerAdv1.Location = new System.Drawing.Point(0, 29);
             this.splitContainerAdv1.Name = "splitContainerAdv1";
@@ -119,7 +114,6 @@
             this.splitContainerAdv1.SplitterDistance = 364;
             this.splitContainerAdv1.TabIndex = 5;
             this.splitContainerAdv1.Text = "splitContainerAdv1";
-            this.splitContainerAdv1.ThemeName = "None";
             // 
             // WindowsEventLogsUC
             // 

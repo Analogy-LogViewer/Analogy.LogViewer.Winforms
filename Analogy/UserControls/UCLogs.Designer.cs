@@ -1,4 +1,6 @@
-﻿namespace Analogy
+﻿using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class UCLogs
     {
@@ -554,11 +556,6 @@
             // 
             // lblPageNumber
             // 
-            this.lblPageNumber.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.lblPageNumber.BeforeTouchSize = new System.Drawing.Size(118, 26);
-            this.lblPageNumber.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
             this.lblPageNumber.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblPageNumber.Location = new System.Drawing.Point(272, 0);
             this.lblPageNumber.Name = "lblPageNumber";
@@ -780,7 +777,7 @@
             this.btnModules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModules.Name = "btnModules";
             this.btnModules.Size = new System.Drawing.Size(26, 25);
-            this.btnModules.Style.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnModules.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnModules.TabIndex = 24;
             // 
             // sbtnUndockPerProcess
@@ -853,7 +850,7 @@
             this.btnSources.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSources.Name = "btnSources";
             this.btnSources.Size = new System.Drawing.Size(26, 25);
-            this.btnSources.Style.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnSources.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnSources.TabIndex = 24;
             // 
             // chkbSources
@@ -922,7 +919,7 @@
             this.btnTextExclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTextExclude.Name = "btnTextExclude";
             this.btnTextExclude.Size = new System.Drawing.Size(26, 25);
-            this.btnTextExclude.Style.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnTextExclude.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnTextExclude.TabIndex = 20;
             // 
             // sBtnMostCommon
@@ -996,7 +993,7 @@
             this.btnTextInclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTextInclude.Name = "btnTextInclude";
             this.btnTextInclude.Size = new System.Drawing.Size(26, 25);
-            this.btnTextInclude.Style.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnTextInclude.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnTextInclude.TabIndex = 20;
             // 
             // chkbIncludeText
@@ -1033,7 +1030,7 @@
             this.sbtnPreDefinedFilters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sbtnPreDefinedFilters.Name = "sbtnPreDefinedFilters";
             this.sbtnPreDefinedFilters.Size = new System.Drawing.Size(26, 25);
-            this.sbtnPreDefinedFilters.Style.Image = global::Analogy.Properties.Resources.SingleMasterFilter_16x16;
+            this.sbtnPreDefinedFilters.Image = global::Analogy.Properties.Resources.SingleMasterFilter_16x16;
             this.sbtnPreDefinedFilters.TabIndex = 21;
             this.sbtnPreDefinedFilters.Click += new System.EventHandler(this.sbtnPreDefinedFilters_Click);
             // 
@@ -1350,11 +1347,6 @@
             // lblTotalMessagesAlert
             // 
             this.lblTotalMessagesAlert.AutoSize = true;
-            this.lblTotalMessagesAlert.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.Red);
-            this.lblTotalMessagesAlert.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.lblTotalMessagesAlert.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
             this.lblTotalMessagesAlert.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTotalMessagesAlert.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalMessagesAlert.Location = new System.Drawing.Point(126, 0);
@@ -1367,11 +1359,7 @@
             // lblTotalMessages
             // 
             this.lblTotalMessages.AutoSize = true;
-            this.lblTotalMessages.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.lblTotalMessages.BeforeTouchSize = new System.Drawing.Size(126, 21);
-            this.lblTotalMessages.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
+
             this.lblTotalMessages.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTotalMessages.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalMessages.Location = new System.Drawing.Point(0, 0);
@@ -1393,17 +1381,15 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.btnCancel.Size = new System.Drawing.Size(221, 23);
-            this.btnCancel.Style.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel Processing";
             this.btnCancel.Visible = false;
             // 
             // splitContainerMain
             // 
-            this.splitContainerMain.BeforeTouchSize = 13;
             this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerMain.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel2;
-            this.splitContainerMain.HotExpandLine = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.splitContainerMain.FixedPanel = FixedPanel.Panel2;
             this.splitContainerMain.Location = new System.Drawing.Point(0, 27);
             this.splitContainerMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainerMain.Name = "splitContainerMain";
@@ -1411,7 +1397,6 @@
             // 
             // splitContainerMain.Panel1
             // 
-            this.splitContainerMain.Panel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.White, System.Drawing.Color.White);
             this.splitContainerMain.Panel1.Controls.Add(this.pnlMessages);
             this.splitContainerMain.Panel1.Controls.Add(this.panel1);
             this.splitContainerMain.Panel1.Controls.Add(this.pnlTopFiltering);
@@ -1419,16 +1404,13 @@
             // 
             // splitContainerMain.Panel2
             // 
-            this.splitContainerMain.Panel2.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.White, System.Drawing.Color.White);
             this.splitContainerMain.Panel2.Controls.Add(this.tcBottom);
             this.splitContainerMain.Panel2.Text = "Panel2";
             this.splitContainerMain.Size = new System.Drawing.Size(1270, 533);
             this.splitContainerMain.SplitterDistance = 309;
             this.splitContainerMain.SplitterWidth = 13;
-            this.splitContainerMain.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Metro;
             this.splitContainerMain.TabIndex = 21;
             this.splitContainerMain.Text = "splitContainerControl1";
-            this.splitContainerMain.ThemeName = "Metro";
             // 
             // pnlMessages
             // 

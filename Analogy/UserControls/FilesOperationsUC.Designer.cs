@@ -99,7 +99,6 @@
             this.splitContainerAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainerAdv1.BeforeTouchSize = 7;
             this.splitContainerAdv1.Location = new System.Drawing.Point(13, 40);
             this.splitContainerAdv1.Name = "splitContainerAdv1";
             this.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -115,7 +114,6 @@
             this.splitContainerAdv1.SplitterDistance = 77;
             this.splitContainerAdv1.TabIndex = 9;
             this.splitContainerAdv1.Text = "splitContainerAdv1";
-            this.splitContainerAdv1.ThemeName = "None";
             // 
             // FilesOperationsUC
             // 

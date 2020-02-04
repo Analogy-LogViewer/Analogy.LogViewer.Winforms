@@ -575,7 +575,7 @@ namespace Analogy
                 cbExclude.Text = Settings.ExcludedText;
             }
 
-            splitContainerMain.CollapsedPanel = CollapsedPanel.Panel2;
+            splitContainerMain.Panel2Collapsed = true;
             if (Settings.StartupErrorLogLevel)
                 rbErrorCritical.Checked = true;
 
@@ -1264,7 +1264,6 @@ namespace Analogy
 
             _bookmarkedMessages.Rows.Add(dtr);
             _bookmarkedMessages.AcceptChanges();
-            splitContainerMain.CollapsedPanel = CollapsedPanel.None;
             tcBottom.SelectedTab = tabPageBookmarks;
             if (persists)
                 BookmarkPersistManager.Instance.AddBookmarkedMessage(message, dataprovider);

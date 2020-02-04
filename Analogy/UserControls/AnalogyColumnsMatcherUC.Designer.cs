@@ -117,12 +117,11 @@ namespace Analogy.UserControls
             this.sBtnMoveDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sBtnMoveDown.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sBtnMoveDown.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.sBtnMoveDown.ImageSize = new System.Drawing.Size(30, 30);
             this.sBtnMoveDown.Location = new System.Drawing.Point(0, 0);
             this.sBtnMoveDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sBtnMoveDown.Name = "sBtnMoveDown";
             this.sBtnMoveDown.Size = new System.Drawing.Size(77, 239);
-            this.sBtnMoveDown.Style.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.sBtnMoveDown.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.sBtnMoveDown.TabIndex = 3;
             this.sBtnMoveDown.Text = "Down";
             this.sBtnMoveDown.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -140,11 +139,6 @@ namespace Analogy.UserControls
             // 
             // gradientLabel1
             // 
-            this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(247))))), System.Drawing.Color.LightCyan);
-            this.gradientLabel1.BeforeTouchSize = new System.Drawing.Size(341, 39);
-            this.gradientLabel1.BorderSides = ((System.Windows.Forms.Border3DSide)((((System.Windows.Forms.Border3DSide.Left | System.Windows.Forms.Border3DSide.Top) 
-            | System.Windows.Forms.Border3DSide.Right) 
-            | System.Windows.Forms.Border3DSide.Bottom)));
             this.gradientLabel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gradientLabel1.Location = new System.Drawing.Point(0, 0);
             this.gradientLabel1.Name = "gradientLabel1";
@@ -155,7 +149,6 @@ namespace Analogy.UserControls
             // 
             // scMain
             // 
-            this.scMain.BeforeTouchSize = 7;
             this.scMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scMain.Location = new System.Drawing.Point(0, 0);
             this.scMain.Name = "scMain";
@@ -174,11 +167,9 @@ namespace Analogy.UserControls
             this.scMain.SplitterDistance = 340;
             this.scMain.TabIndex = 11;
             this.scMain.Text = "splitContainerAdv1";
-            this.scMain.ThemeName = "None";
             // 
             // splitContainerAdv1
             // 
-            this.splitContainerAdv1.BeforeTouchSize = 7;
             this.splitContainerAdv1.Dock = System.Windows.Forms.DockStyle.Left;
             this.splitContainerAdv1.Location = new System.Drawing.Point(0, 0);
             this.splitContainerAdv1.Name = "splitContainerAdv1";
@@ -195,7 +186,6 @@ namespace Analogy.UserControls
             this.splitContainerAdv1.SplitterDistance = 237;
             this.splitContainerAdv1.TabIndex = 13;
             this.splitContainerAdv1.Text = "splitContainerAdv1";
-            this.splitContainerAdv1.ThemeName = "None";
             // 
             // AnalogyColumnsMatcherUC
             // 
