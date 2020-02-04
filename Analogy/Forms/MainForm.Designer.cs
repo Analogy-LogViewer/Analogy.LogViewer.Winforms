@@ -60,12 +60,12 @@ namespace Analogy
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.ribbonControlMain = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.tstitmAnalogy = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.tseAnalogyBuiltInProviders = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.tseAnalogyBuiltInProviders = new System.Windows.Forms.ToolStrip();
             this.tsbtnAnalogyOpenFolder = new System.Windows.Forms.ToolStripButton();
             this.tsbtnAnalogyOpenFiles = new System.Windows.Forms.ToolStripButton();
             this.tsbtnAnalogyRecentlyOpenFiles = new System.Windows.Forms.ToolStripDropDownButton();
             this.tstiSettings = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
             this.tsbSettingsFiltering = new System.Windows.Forms.ToolStripButton();
             this.tsbSettingsPreDefined = new System.Windows.Forms.ToolStripButton();
             this.tsbSettingsLookAndFeel = new System.Windows.Forms.ToolStripButton();
@@ -184,12 +184,11 @@ namespace Analogy
             // 
             // tseAnalogyBuiltInProviders
             // 
-            this.superAccelerator1.SetCollapsedDropDownAccelerator(this.tseAnalogyBuiltInProviders, null);
+            
             this.tseAnalogyBuiltInProviders.Dock = System.Windows.Forms.DockStyle.None;
             this.tseAnalogyBuiltInProviders.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.tseAnalogyBuiltInProviders.ForeColor = System.Drawing.Color.MidnightBlue;
             this.tseAnalogyBuiltInProviders.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.tseAnalogyBuiltInProviders.Image = null;
             this.tseAnalogyBuiltInProviders.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tseAnalogyBuiltInProviders.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbtnAnalogyOpenFolder,
@@ -197,7 +196,6 @@ namespace Analogy
             this.tsbtnAnalogyRecentlyOpenFiles});
             this.tseAnalogyBuiltInProviders.Location = new System.Drawing.Point(0, 1);
             this.tseAnalogyBuiltInProviders.Name = "tseAnalogyBuiltInProviders";
-            this.tseAnalogyBuiltInProviders.Office12Mode = false;
             this.tseAnalogyBuiltInProviders.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.tseAnalogyBuiltInProviders.Size = new System.Drawing.Size(269, 124);
             this.tseAnalogyBuiltInProviders.TabIndex = 0;
@@ -253,12 +251,10 @@ namespace Analogy
             // toolStripEx1
             // 
             this.toolStripEx1.AutoSize = false;
-            this.superAccelerator1.SetCollapsedDropDownAccelerator(this.toolStripEx1, null);
             this.toolStripEx1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStripEx1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.toolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStripEx1.Image = null;
             this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbSettingsFiltering,
@@ -273,7 +269,6 @@ namespace Analogy
             this.tsbSettingsCustomDataProviders});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.Size = new System.Drawing.Size(1001, 124);
             this.toolStripEx1.TabIndex = 0;
             // 
@@ -1040,13 +1035,13 @@ namespace Analogy
         private System.Windows.Forms.ToolStripStatusLabel tsslIdleMessage;
         private System.Windows.Forms.ToolStripStatusLabel tsslFileCaching;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem tstitmAnalogy;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx tseAnalogyBuiltInProviders;
+        private System.Windows.Forms.ToolStrip tseAnalogyBuiltInProviders;
         private System.Windows.Forms.ToolStripButton tsbtnAnalogyOpenFolder;
         private System.Windows.Forms.ToolStripButton tsbtnAnalogyOpenFiles;
         private System.Windows.Forms.ToolStripDropDownButton tsbtnAnalogyRecentlyOpenFiles;
         private System.Windows.Forms.Timer TmrAutoConnect;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem tstiSettings;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx1;
+        private System.Windows.Forms.ToolStrip toolStripEx1;
         private System.Windows.Forms.ToolStripButton tsbSettingsFiltering;
         private System.Windows.Forms.ToolStripButton tsbSettingsPreDefined;
         private System.Windows.Forms.ToolStripButton tsbSettingsLookAndFeel;

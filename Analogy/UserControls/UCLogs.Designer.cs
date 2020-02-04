@@ -54,19 +54,6 @@ namespace Analogy
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn34 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn35 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn36 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn1 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridDateTimeColumn gridDateTimeColumn1 = new Syncfusion.WinForms.DataGrid.GridDateTimeColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn2 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn3 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn4 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn9 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn10 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn11 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn12 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.cmsMessageOperation = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiClearLog = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiREmoveAllPreviousMessages = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,22 +98,22 @@ namespace Analogy
             this.chkDateNewerThan = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.spltcProcessesModule = new System.Windows.Forms.SplitContainer();
-            this.cbModule = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.cbModule = new System.Windows.Forms.ComboBox();
             this.btnModules = new System.Windows.Forms.Button();
             this.sbtnUndockPerProcess = new System.Windows.Forms.Button();
             this.chkbModules = new System.Windows.Forms.CheckBox();
             this.spltcSources = new System.Windows.Forms.SplitContainer();
-            this.cbSource = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.cbSource = new System.Windows.Forms.ComboBox();
             this.btnSources = new System.Windows.Forms.Button();
             this.chkbSources = new System.Windows.Forms.CheckBox();
             this.pboxInfoExclude = new System.Windows.Forms.PictureBox();
             this.spltTextExclude = new System.Windows.Forms.SplitContainer();
-            this.cbExclude = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.cbExclude = new System.Windows.Forms.ComboBox();
             this.btnTextExclude = new System.Windows.Forms.Button();
             this.sBtnMostCommon = new System.Windows.Forms.Button();
             this.chkExclude = new System.Windows.Forms.CheckBox();
             this.spltText = new System.Windows.Forms.SplitContainer();
-            this.cbInclude = new Syncfusion.WinForms.ListView.SfComboBox();
+            this.cbInclude = new System.Windows.Forms.ComboBox();
             this.btnTextInclude = new System.Windows.Forms.Button();
             this.chkbIncludeText = new System.Windows.Forms.CheckBox();
             this.pboxInfo = new System.Windows.Forms.PictureBox();
@@ -138,10 +125,10 @@ namespace Analogy
             this.rbTrace = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rbAllLevel = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.tbMessageInfo = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.tsMessageInfo = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.tsMessageInfo = new System.Windows.Forms.ToolStrip();
             this.tsBtnMessageInfoCopy = new System.Windows.Forms.ToolStripButton();
             this.sfDataGridBookmarks = new Syncfusion.WinForms.DataGrid.SfDataGrid();
-            this.tsBookmark = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.tsBookmark = new System.Windows.Forms.ToolStrip();
             this.tsBtnBookmarkCopySingle = new System.Windows.Forms.ToolStripButton();
             this.tsBtnBookmarkCopyAll = new System.Windows.Forms.ToolStripButton();
             this.tsBtnBookmarkClear = new System.Windows.Forms.ToolStripButton();
@@ -155,7 +142,7 @@ namespace Analogy
             this.btnCancel = new System.Windows.Forms.Button();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
             this.pnlMessages = new System.Windows.Forms.Panel();
-            this.sfDataGridMain = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.sfDataGridMain = new System.Windows.Forms.DataGridView();
             this.tcBottom = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tabPageMessageInfo = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.tabPageBookmarks = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
@@ -182,7 +169,7 @@ namespace Analogy
             this.contextMenuStripFilters = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tabControlMain = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tabPageLogs = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tsTop = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.tsTop = new System.Windows.Forms.ToolStrip();
             this.tsTopClear = new System.Windows.Forms.ToolStripButton();
             this.tsTopPauseRefresh = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
             this.tsTopAutoScrollToLast = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
@@ -654,7 +641,7 @@ namespace Analogy
             // 
             // spltcDateFiltering
             // 
-            this.spltcDateFiltering.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.spltcDateFiltering.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.spltcDateFiltering.Location = new System.Drawing.Point(3, 124);
             this.spltcDateFiltering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -735,7 +722,7 @@ namespace Analogy
             // 
             // spltcProcessesModule
             // 
-            this.spltcProcessesModule.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.spltcProcessesModule.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.spltcProcessesModule.Location = new System.Drawing.Point(8, 94);
             this.spltcProcessesModule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -762,10 +749,7 @@ namespace Analogy
             this.cbModule.Name = "cbModule";
             this.cbModule.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.cbModule.Size = new System.Drawing.Size(454, 25);
-            this.cbModule.Style.EditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbModule.Style.ReadOnlyEditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbModule.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbModule.Style.TokenStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbModule.TabIndex = 27;
             // 
             // btnModules
@@ -808,7 +792,7 @@ namespace Analogy
             // 
             // spltcSources
             // 
-            this.spltcSources.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.spltcSources.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.spltcSources.Location = new System.Drawing.Point(8, 65);
             this.spltcSources.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -835,10 +819,7 @@ namespace Analogy
             this.cbSource.Name = "cbSource";
             this.cbSource.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.cbSource.Size = new System.Drawing.Size(784, 25);
-            this.cbSource.Style.EditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSource.Style.ReadOnlyEditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSource.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbSource.Style.TokenStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSource.TabIndex = 27;
             // 
             // btnSources
@@ -877,7 +858,7 @@ namespace Analogy
             // 
             // spltTextExclude
             // 
-            this.spltTextExclude.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.spltTextExclude.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.spltTextExclude.Location = new System.Drawing.Point(8, 37);
             this.spltTextExclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -904,10 +885,7 @@ namespace Analogy
             this.cbExclude.Name = "cbExclude";
             this.cbExclude.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.cbExclude.Size = new System.Drawing.Size(782, 25);
-            this.cbExclude.Style.EditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbExclude.Style.ReadOnlyEditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbExclude.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbExclude.Style.TokenStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbExclude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbExclude.TabIndex = 27;
             // 
             // btnTextExclude
@@ -950,7 +928,7 @@ namespace Analogy
             // 
             // spltText
             // 
-            this.spltText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.spltText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.spltText.Location = new System.Drawing.Point(8, 7);
             this.spltText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -978,10 +956,7 @@ namespace Analogy
             this.cbInclude.Name = "cbInclude";
             this.cbInclude.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.cbInclude.Size = new System.Drawing.Size(891, 25);
-            this.cbInclude.Style.EditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbInclude.Style.ReadOnlyEditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbInclude.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbInclude.Style.TokenStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbInclude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbInclude.TabIndex = 26;
             // 
             // btnTextInclude
@@ -1132,17 +1107,13 @@ namespace Analogy
             // tsMessageInfo
             // 
             this.tsMessageInfo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.tsMessageInfo.Image = null;
             this.tsMessageInfo.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsMessageInfo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsBtnMessageInfoCopy});
             this.tsMessageInfo.Location = new System.Drawing.Point(0, 0);
             this.tsMessageInfo.Name = "tsMessageInfo";
-            this.tsMessageInfo.ShowCaption = false;
-            this.tsMessageInfo.ShowLauncher = false;
             this.tsMessageInfo.Size = new System.Drawing.Size(1267, 27);
             this.tsMessageInfo.TabIndex = 4;
-            this.tsMessageInfo.ThemeName = "Default";
             // 
             // tsBtnMessageInfoCopy
             // 
@@ -1258,7 +1229,6 @@ namespace Analogy
             // tsBookmark
             // 
             this.tsBookmark.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.tsBookmark.Image = null;
             this.tsBookmark.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsBookmark.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsBtnBookmarkCopySingle,
@@ -1267,11 +1237,8 @@ namespace Analogy
             this.tsBtnBookmarkGoToOriginal});
             this.tsBookmark.Location = new System.Drawing.Point(0, 0);
             this.tsBookmark.Name = "tsBookmark";
-            this.tsBookmark.ShowCaption = false;
-            this.tsBookmark.ShowLauncher = false;
             this.tsBookmark.Size = new System.Drawing.Size(1267, 27);
             this.tsBookmark.TabIndex = 5;
-            this.tsBookmark.ThemeName = "Default";
             // 
             // tsBtnBookmarkCopySingle
             // 
@@ -1424,105 +1391,32 @@ namespace Analogy
             // sfDataGridMain
             // 
             this.sfDataGridMain.AccessibleName = "Table";
-            this.sfDataGridMain.AllowDraggingColumns = true;
-            this.sfDataGridMain.AllowEditing = false;
-            this.sfDataGridMain.AllowResizingColumns = true;
-            this.sfDataGridMain.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.ColumnHeader;
-            gridTextColumn1.AllowDragging = true;
-            gridTextColumn1.AllowEditing = false;
-            gridTextColumn1.AllowResizing = true;
-            gridTextColumn1.HeaderText = "Data Source/File Name";
-            gridTextColumn1.MappingName = "DataProvider";
-            gridDateTimeColumn1.AllowDragging = true;
-            gridDateTimeColumn1.AllowEditing = false;
-            gridDateTimeColumn1.AllowResizing = true;
-            gridDateTimeColumn1.Format = "yyyy.MM.dd HH:mm:ss.ff";
-            gridDateTimeColumn1.HeaderText = "Date";
-            gridDateTimeColumn1.MappingName = "Date";
-            gridDateTimeColumn1.MaxDateTime = new System.DateTime(9999, 12, 31, 23, 59, 59, 999);
-            gridDateTimeColumn1.Pattern = Syncfusion.WinForms.Input.Enums.DateTimePattern.Custom;
-            gridTextColumn2.AllowDragging = true;
-            gridTextColumn2.AllowEditing = false;
-            gridTextColumn2.AllowResizing = true;
-            gridTextColumn2.HeaderText = "Time Differenace";
-            gridTextColumn2.MappingName = "TimeDiff";
-            gridTextColumn2.Visible = false;
-            gridTextColumn3.AllowDragging = true;
-            gridTextColumn3.AllowEditing = false;
-            gridTextColumn3.AllowResizing = true;
-            gridTextColumn3.HeaderText = "Text";
-            gridTextColumn3.MappingName = "Text";
-            gridTextColumn4.AllowDragging = true;
-            gridTextColumn4.AllowEditing = false;
-            gridTextColumn4.AllowResizing = true;
-            gridTextColumn4.HeaderText = "Source";
-            gridTextColumn4.MappingName = "Source";
-            gridTextColumn5.AllowDragging = true;
-            gridTextColumn5.AllowEditing = false;
-            gridTextColumn5.AllowResizing = true;
-            gridTextColumn5.HeaderText = "Level";
-            gridTextColumn5.MappingName = "Level";
-            gridTextColumn6.AllowDragging = true;
-            gridTextColumn6.AllowEditing = false;
-            gridTextColumn6.AllowResizing = true;
-            gridTextColumn6.HeaderText = "Class";
-            gridTextColumn6.MappingName = "Class";
-            gridTextColumn7.AllowDragging = true;
-            gridTextColumn7.AllowEditing = false;
-            gridTextColumn7.AllowResizing = true;
-            gridTextColumn7.HeaderText = "Category";
-            gridTextColumn7.MappingName = "Category";
-            gridTextColumn8.AllowDragging = true;
-            gridTextColumn8.AllowEditing = false;
-            gridTextColumn8.AllowResizing = true;
-            gridTextColumn8.HeaderText = "User";
-            gridTextColumn8.MappingName = "User";
-            gridTextColumn9.AllowDragging = true;
-            gridTextColumn9.AllowEditing = false;
-            gridTextColumn9.AllowResizing = true;
-            gridTextColumn9.HeaderText = "Module";
-            gridTextColumn9.MappingName = "Module";
-            gridTextColumn10.AllowDragging = true;
-            gridTextColumn10.AllowEditing = false;
-            gridTextColumn10.AllowResizing = true;
-            gridTextColumn10.HeaderText = "Object";
-            gridTextColumn10.MappingName = "Object";
-            gridTextColumn10.Visible = false;
-            gridTextColumn11.AllowDragging = true;
-            gridTextColumn11.AllowEditing = false;
-            gridTextColumn11.AllowResizing = true;
-            gridTextColumn11.HeaderText = "Process ID";
-            gridTextColumn11.MappingName = "ProcessID";
-            gridTextColumn12.AllowDragging = true;
-            gridTextColumn12.AllowEditing = false;
-            gridTextColumn12.AllowResizing = true;
-            gridTextColumn12.HeaderText = "Thread id";
-            gridTextColumn12.MappingName = "ThreadID";
-            this.sfDataGridMain.Columns.Add(gridTextColumn1);
-            this.sfDataGridMain.Columns.Add(gridDateTimeColumn1);
-            this.sfDataGridMain.Columns.Add(gridTextColumn2);
-            this.sfDataGridMain.Columns.Add(gridTextColumn3);
-            this.sfDataGridMain.Columns.Add(gridTextColumn4);
-            this.sfDataGridMain.Columns.Add(gridTextColumn5);
-            this.sfDataGridMain.Columns.Add(gridTextColumn6);
-            this.sfDataGridMain.Columns.Add(gridTextColumn7);
-            this.sfDataGridMain.Columns.Add(gridTextColumn8);
-            this.sfDataGridMain.Columns.Add(gridTextColumn9);
-            this.sfDataGridMain.Columns.Add(gridTextColumn10);
-            this.sfDataGridMain.Columns.Add(gridTextColumn11);
-            this.sfDataGridMain.Columns.Add(gridTextColumn12);
+            this.sfDataGridMain.AllowUserToAddRows = false;
+            this.sfDataGridMain.AllowUserToDeleteRows = false;
+            this.sfDataGridMain.AllowUserToResizeColumns = true;
+            this.sfDataGridMain.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+          
+            this.sfDataGridMain.Columns.Add("DataProvider", "Data Source/File Name");
+            this.sfDataGridMain.Columns.Add("Date", "Date");
+            this.sfDataGridMain.Columns.Add("TimeDiff", "Time Differenace");
+            this.sfDataGridMain.Columns.Add("Text", "Text");
+            this.sfDataGridMain.Columns.Add("Source", "Source");
+            this.sfDataGridMain.Columns.Add("Level", "Level");
+            this.sfDataGridMain.Columns.Add("Class", "Class");
+            this.sfDataGridMain.Columns.Add("Category", "Category");
+            this.sfDataGridMain.Columns.Add("User", "User");
+            this.sfDataGridMain.Columns.Add("Module", "Module");
+            this.sfDataGridMain.Columns.Add("Object", "Object");
+            this.sfDataGridMain.Columns.Add("ProcessID", "Process ID");
+            this.sfDataGridMain.Columns.Add("ThreadID", "Thread ID");
             this.sfDataGridMain.ContextMenuStrip = this.cmsMessageOperation;
             this.sfDataGridMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sfDataGridMain.Location = new System.Drawing.Point(0, 0);
             this.sfDataGridMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridMain.Name = "sfDataGridMain";
-            this.sfDataGridMain.PreviewRowHeight = 35;
-            this.sfDataGridMain.RowHeight = 20;
-            this.sfDataGridMain.ShowRowHeader = true;
             this.sfDataGridMain.Size = new System.Drawing.Size(1270, 130);
             this.sfDataGridMain.TabIndex = 5;
             this.sfDataGridMain.Text = "sfDataGridMain";
-            this.sfDataGridMain.UsePLINQ = true;
             this.sfDataGridMain.StyleChanged += new System.EventHandler(this.sfDataGridMain_StyleChanged);
             // 
             // tcBottom
@@ -1767,7 +1661,6 @@ namespace Analogy
             // tsTop
             // 
             this.tsTop.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.tsTop.Image = null;
             this.tsTop.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsTopClear,
@@ -1778,15 +1671,10 @@ namespace Analogy
             this.tsbScreenshot,
             this.tsddbExport,
             this.tsBDataVisualizer});
-            this.tsTop.LauncherStyle = Syncfusion.Windows.Forms.Tools.LauncherStyle.Office12;
             this.tsTop.Location = new System.Drawing.Point(0, 0);
             this.tsTop.Name = "tsTop";
-            this.tsTop.Office12Mode = false;
-            this.tsTop.ShowCaption = false;
-            this.tsTop.ShowLauncher = false;
             this.tsTop.Size = new System.Drawing.Size(1270, 27);
             this.tsTop.TabIndex = 5;
-            this.tsTop.ThemeName = "Default";
             // 
             // tsTopClear
             // 
@@ -2089,12 +1977,12 @@ namespace Analogy
         private System.Windows.Forms.Button sbtnMoreHighlight;
         private System.Windows.Forms.Button sbtnPreDefinedFilters;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripFilters;
-        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGridMain;
-        private Syncfusion.WinForms.ListView.SfComboBox cbInclude;
+        private System.Windows.Forms.DataGridView sfDataGridMain;
+        private System.Windows.Forms.ComboBox cbInclude;
         private System.Windows.Forms.Panel pnlMessages;
-        private Syncfusion.WinForms.ListView.SfComboBox cbExclude;
-        private Syncfusion.WinForms.ListView.SfComboBox cbModule;
-        private Syncfusion.WinForms.ListView.SfComboBox cbSource;
+        private System.Windows.Forms.ComboBox cbExclude;
+        private System.Windows.Forms.ComboBox cbModule;
+        private System.Windows.Forms.ComboBox cbSource;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rbAllLevel;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rbVerbose;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rbDebug;
@@ -2105,9 +1993,9 @@ namespace Analogy
         private System.Windows.Forms.Label lblTotalMessagesAlert;
         private System.Windows.Forms.Label lblTotalMessages;
         private Syncfusion.WinForms.ListView.SfComboBox cbHighlights;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx tsMessageInfo;
+        private System.Windows.Forms.ToolStrip tsMessageInfo;
         private System.Windows.Forms.ToolStripButton tsBtnMessageInfoCopy;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx tsBookmark;
+        private System.Windows.Forms.ToolStrip tsBookmark;
         private System.Windows.Forms.ToolStripButton tsBtnBookmarkCopySingle;
         private System.Windows.Forms.ToolStripButton tsBtnBookmarkCopyAll;
         private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGridBookmarks;
@@ -2118,7 +2006,7 @@ namespace Analogy
         private Syncfusion.WinForms.Input.SfDateTimeEdit deNewerThanFilter;
         private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlMain;
         private Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageLogs;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx tsTop;
+        private System.Windows.Forms.ToolStrip tsTop;
         private System.Windows.Forms.ToolStripButton tsTopClear;
         private System.Windows.Forms.ToolStripDropDownButton tsddbSave;
         private System.Windows.Forms.ToolStripMenuItem tsmiSaveFullLog;

@@ -38,16 +38,16 @@
             this.spltMain = new System.Windows.Forms.SplitContainer();
             this.splcLeft = new System.Windows.Forms.SplitContainer();
             this.lBoxSources = new System.Windows.Forms.ListBox();
-            this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
             this.tsBtnAdd = new System.Windows.Forms.ToolStripButton();
             this.tsBtnRemove = new System.Windows.Forms.ToolStripButton();
             this.lBoxFiles = new System.Windows.Forms.ListBox();
-            this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripEx2 = new System.Windows.Forms.ToolStrip();
             this.tsBtnOpenFolder = new System.Windows.Forms.ToolStripButton();
             this.tsBtnRefresh = new System.Windows.Forms.ToolStripButton();
             this.tsBtnDelete = new System.Windows.Forms.ToolStripButton();
-            this.checkBoxSelectionMode = new Syncfusion.Windows.Forms.Tools.CheckBoxAdv();
-            this.checkBoxRecursiveLoad = new Syncfusion.Windows.Forms.Tools.CheckBoxAdv();
+            this.checkBoxSelectionMode = new System.Windows.Forms.CheckBox();
+            this.checkBoxRecursiveLoad = new System.Windows.Forms.CheckBox();
             this.ucLogs1 = new Analogy.UCLogs();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.imageListBottom = new System.Windows.Forms.ImageList(this.components);
@@ -122,14 +122,12 @@
             // toolStripEx1
             // 
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx1.Image = null;
-            this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
+          this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsBtnAdd,
             this.tsBtnRemove});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 0);
             this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.toolStripEx1.Size = new System.Drawing.Size(376, 27);
             this.toolStripEx1.TabIndex = 4;
@@ -164,7 +162,6 @@
             // toolStripEx2
             // 
             this.toolStripEx2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx2.Image = null;
             this.toolStripEx2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsBtnOpenFolder,
@@ -172,7 +169,6 @@
             this.tsBtnDelete});
             this.toolStripEx2.Location = new System.Drawing.Point(0, 38);
             this.toolStripEx2.Name = "toolStripEx2";
-            this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.toolStripEx2.Size = new System.Drawing.Size(376, 27);
             this.toolStripEx2.TabIndex = 9;
@@ -205,11 +201,9 @@
             // 
             // checkBoxSelectionMode
             // 
-            this.checkBoxSelectionMode.BeforeTouchSize = new System.Drawing.Size(376, 19);
             this.checkBoxSelectionMode.Checked = true;
             this.checkBoxSelectionMode.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxSelectionMode.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkBoxSelectionMode.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.checkBoxSelectionMode.Location = new System.Drawing.Point(0, 19);
             this.checkBoxSelectionMode.Name = "checkBoxSelectionMode";
             this.checkBoxSelectionMode.Size = new System.Drawing.Size(376, 19);
@@ -218,11 +212,9 @@
             // 
             // checkBoxRecursiveLoad
             // 
-            this.checkBoxRecursiveLoad.BeforeTouchSize = new System.Drawing.Size(376, 19);
             this.checkBoxRecursiveLoad.Checked = true;
             this.checkBoxRecursiveLoad.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxRecursiveLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkBoxRecursiveLoad.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.checkBoxRecursiveLoad.Location = new System.Drawing.Point(0, 0);
             this.checkBoxRecursiveLoad.Name = "checkBoxRecursiveLoad";
             this.checkBoxRecursiveLoad.Size = new System.Drawing.Size(376, 19);
@@ -317,16 +309,16 @@
         private System.Windows.Forms.SplitContainer splcLeft;
         private System.Windows.Forms.ImageList imageListBottom;
         private UCLogs ucLogs1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx1;
+        private System.Windows.Forms.ToolStrip toolStripEx1;
         private System.Windows.Forms.ToolStripButton tsBtnAdd;
         private System.Windows.Forms.ToolStripButton tsBtnRemove;
         private System.Windows.Forms.ListBox lBoxSources;
         private System.Windows.Forms.ListBox lBoxFiles;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx2;
+        private System.Windows.Forms.ToolStrip toolStripEx2;
         private System.Windows.Forms.ToolStripButton tsBtnOpenFolder;
         private System.Windows.Forms.ToolStripButton tsBtnRefresh;
         private System.Windows.Forms.ToolStripButton tsBtnDelete;
-        private Syncfusion.Windows.Forms.Tools.CheckBoxAdv checkBoxSelectionMode;
-        private Syncfusion.Windows.Forms.Tools.CheckBoxAdv checkBoxRecursiveLoad;
+        private System.Windows.Forms.CheckBox checkBoxSelectionMode;
+        private System.Windows.Forms.CheckBox checkBoxRecursiveLoad;
     }
 }

@@ -39,7 +39,7 @@ namespace Analogy
             this.spltMain = new System.Windows.Forms.SplitContainer();
             this.splcLeft = new System.Windows.Forms.SplitContainer();
             this.lBoxSources = new System.Windows.Forms.ListBox();
-            this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
             this.btnManageList = new System.Windows.Forms.ToolStripButton();
             this.ucLogs1 = new Analogy.UCLogs();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
@@ -105,13 +105,11 @@ namespace Analogy
             // toolStripEx1
             // 
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx1.Image = null;
             this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnManageList});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 0);
             this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.toolStripEx1.Size = new System.Drawing.Size(376, 27);
             this.toolStripEx1.TabIndex = 8;
@@ -209,7 +207,7 @@ namespace Analogy
         private System.Windows.Forms.ImageList imageListBottom;
         private UCLogs ucLogs1;
         private System.Windows.Forms.ListBox lBoxSources;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx1;
+        private System.Windows.Forms.ToolStrip toolStripEx1;
         private System.Windows.Forms.ToolStripButton btnManageList;
     }
 }

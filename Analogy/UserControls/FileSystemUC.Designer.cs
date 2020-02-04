@@ -32,9 +32,9 @@
             this.splcLeft = new System.Windows.Forms.SplitContainer();
             this.tvFolderUC = new Analogy.FolderTreeViewUC();
             this.lBoxFiles = new System.Windows.Forms.ListBox();
-            this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
             this.btnOpen = new System.Windows.Forms.ToolStripButton();
-            this.checkBoxRecursiveLoad = new Syncfusion.Windows.Forms.Tools.CheckBoxAdv();
+            this.checkBoxRecursiveLoad = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splcLeft)).BeginInit();
             this.splcLeft.Panel1.SuspendLayout();
             this.splcLeft.Panel2.SuspendLayout();
@@ -87,13 +87,11 @@
             // toolStripEx1
             // 
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx1.Image = null;
             this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnOpen});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 19);
             this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.toolStripEx1.Size = new System.Drawing.Size(523, 27);
             this.toolStripEx1.TabIndex = 10;
@@ -109,11 +107,9 @@
             // 
             // checkBoxRecursiveLoad
             // 
-            this.checkBoxRecursiveLoad.BeforeTouchSize = new System.Drawing.Size(523, 19);
             this.checkBoxRecursiveLoad.Checked = true;
             this.checkBoxRecursiveLoad.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxRecursiveLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkBoxRecursiveLoad.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.checkBoxRecursiveLoad.Location = new System.Drawing.Point(0, 0);
             this.checkBoxRecursiveLoad.Name = "checkBoxRecursiveLoad";
             this.checkBoxRecursiveLoad.Size = new System.Drawing.Size(523, 19);
@@ -146,8 +142,8 @@
         private System.Windows.Forms.SplitContainer splcLeft;
         private FolderTreeViewUC tvFolderUC;
         private System.Windows.Forms.ListBox lBoxFiles;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx1;
+        private System.Windows.Forms.ToolStrip toolStripEx1;
         private System.Windows.Forms.ToolStripButton btnOpen;
-        private Syncfusion.Windows.Forms.Tools.CheckBoxAdv checkBoxRecursiveLoad;
+        private System.Windows.Forms.CheckBox checkBoxRecursiveLoad;
     }
 }

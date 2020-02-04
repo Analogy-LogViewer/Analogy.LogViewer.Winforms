@@ -35,7 +35,7 @@ namespace Analogy
             this.txtbFolder = new System.Windows.Forms.TextBox();
             this.btnOpenFolder = new System.Windows.Forms.Button();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.toolStripTop = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripTop = new System.Windows.Forms.ToolStrip();
             this.tsBtnRootDrive = new System.Windows.Forms.ToolStripButton();
             this.directoryListing = new Analogy.DirectoryListing();
             this.panel2.SuspendLayout();
@@ -92,16 +92,12 @@ namespace Analogy
             // toolStripTop
             // 
             this.toolStripTop.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripTop.Image = null;
             this.toolStripTop.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsBtnRootDrive});
             this.toolStripTop.Location = new System.Drawing.Point(0, 23);
             this.toolStripTop.Name = "toolStripTop";
-            this.toolStripTop.Office12Mode = false;
             this.toolStripTop.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripTop.ShowCaption = false;
-            this.toolStripTop.ShowLauncher = false;
             this.toolStripTop.Size = new System.Drawing.Size(444, 27);
             this.toolStripTop.TabIndex = 7;
             this.toolStripTop.Text = "toolStripEx1";
@@ -151,7 +147,7 @@ namespace Analogy
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Button btnOpenFolder;
         private DirectoryListing directoryListing;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripTop;
+        private System.Windows.Forms.ToolStrip toolStripTop;
         private System.Windows.Forms.ToolStripButton tsBtnRootDrive;
     }
 }

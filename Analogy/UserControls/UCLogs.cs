@@ -140,7 +140,7 @@ namespace Analogy
             };
             //include combobox
             //cbInclude. txtbInclude.SelectAll();
-            cbInclude.TextBox.TextChanged += async (s, e) =>
+            cbInclude.TextChanged += async (s, e) =>
              {
                  if (OldTextInclude.Equals(cbInclude.Text)) return;
                  OldTextInclude = cbInclude.Text;
@@ -165,7 +165,7 @@ namespace Analogy
                 }
             };
 
-            cbExclude.TextBox.TextChanged += async (s, e) =>
+            cbExclude.TextChanged += async (s, e) =>
             {
                 if (OldTextExclude.Equals(cbExclude.Text)) return;
                 Settings.ExcludedText = cbExclude.Text;
@@ -189,7 +189,7 @@ namespace Analogy
                 }
             };
 
-            cbSource.TextBox.TextChanged += async (s, e) =>
+            cbSource.TextChanged += async (s, e) =>
             {
                 if (string.IsNullOrEmpty(cbSource.Text))
                 {
@@ -205,7 +205,7 @@ namespace Analogy
                 Settings.SourceText = cbSource.Text;
             };
 
-            cbModule.TextBox.TextChanged += async (s, e) =>
+            cbModule.TextChanged += async (s, e) =>
             {
                 if (string.IsNullOrEmpty(cbModule.Text))
                 {
@@ -221,10 +221,10 @@ namespace Analogy
                 Settings.ModuleText = cbModule.Text;
             };
 
-            btnTextInclude.Click += (s, e) => cbInclude.TextBox.Text = "";
-            btnTextExclude.Click += (s, e) => cbExclude.TextBox.Text = "";
-            btnSources.Click += (s, e) => cbSource.TextBox.Text = "";
-            btnModules.Click += (s, e) => cbModule.TextBox.Text = "";
+            btnTextInclude.Click += (s, e) => cbInclude.Text = "";
+            btnTextExclude.Click += (s, e) => cbExclude.Text = "";
+            btnSources.Click += (s, e) => cbSource.Text = "";
+            btnModules.Click += (s, e) => cbModule.Text = "";
             btnCancel.Click += (s, e) =>
             {
                 cancellationTokenSource.Cancel(false);
@@ -256,7 +256,7 @@ namespace Analogy
             //         sfDataGridMain.TableControl.VerticalScroll.Value = (int)scrollValue;
             //     }
             // };
-            //sfDataGridMain.SelectionChanging += (s, e) => { };
+           
 
             sfDataGridMain.QueryRowStyle += (s, e) =>
             {
@@ -600,13 +600,7 @@ namespace Analogy
                 var columns = extension.GetColumnsInfo();
                 foreach (AnalogyColumnInfo column in columns)
                 {
-                    var gridColumn = new Syncfusion.WinForms.DataGrid.GridColumn();
-                    gridColumn.HeaderText = column.ColumnCaption;
-                    gridColumn.MappingName = column.ColumnName;
-                    //todo:index?
-                    //gridColumn.index = ExtensionManager.GetIndexForExtension(extension);
-                    sfDataGridMain.Columns.Add(gridColumn);
-                    gridColumn.Visible = true;
+                    sfDataGridMain.Columns.Add(column.ColumnName, column.ColumnCaption);
                 }
 
             }
@@ -952,10 +946,10 @@ namespace Analogy
                     lockSlim.EnterWriteLock();
                     try
                     {
-                        sfDataGridMain.BeginUpdate();
+                        sfDataGridMain.BeginEdit(true);
                         _messageData.AcceptChanges();
                         RefreshUIMessagesCount();
-                        sfDataGridMain.EndUpdate();
+                        sfDataGridMain.EndEdit();
                     }
                     finally
                     {
@@ -1335,7 +1329,7 @@ namespace Analogy
 
 
                 lockSlim.EnterWriteLock();
-                sfDataGridMain.BeginUpdate();
+                sfDataGridMain.BeginEdit(true);
                 foreach (DataRow row in _messageData.Rows)
                 {
                     AnalogyLogMessage message = (AnalogyLogMessage)row["Object"];
@@ -1343,7 +1337,7 @@ namespace Analogy
                     row["TimeDiff"] = message.Date.Subtract(diffStartTime).ToString();
                 }
 
-                sfDataGridMain.EndUpdate();
+                sfDataGridMain.EndEdit();
                 AcceptChanges(true);
             }
             finally

@@ -33,7 +33,7 @@
             this.spltMain = new System.Windows.Forms.SplitContainer();
             this.ucLogs1 = new Analogy.UCLogs();
             this.listBoxClearHistory = new System.Windows.Forms.ListBox();
-            this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
             this.btnClear = new System.Windows.Forms.ToolStripButton();
             this.btnHide = new System.Windows.Forms.ToolStripButton();
             this.tsPrimary.SuspendLayout();
@@ -124,14 +124,12 @@
             // toolStripEx1
             // 
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx1.Image = null;
             this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnClear,
             this.btnHide});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 0);
             this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.toolStripEx1.Size = new System.Drawing.Size(202, 27);
             this.toolStripEx1.TabIndex = 8;
@@ -186,7 +184,7 @@
         private UCLogs ucLogs1;
         private System.Windows.Forms.SplitContainer spltMain;
         private System.Windows.Forms.ListBox listBoxClearHistory;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx1;
+        private System.Windows.Forms.ToolStrip toolStripEx1;
         private System.Windows.Forms.ToolStripButton btnClear;
         private System.Windows.Forms.ToolStripButton btnHide;
     }
