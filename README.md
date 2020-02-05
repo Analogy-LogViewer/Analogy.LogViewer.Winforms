@@ -1,4 +1,6 @@
 # Analogy.LogViewer.Winforms
+**WIP - Not yet ready for use**
+
 Basic winforms Implementation (no third parties UI libraries usage like DevExpress/Syncfusion)
 The other versions are
 1. DevExpress (V19.1.8) in the repo: https://github.com/Analogy-LogViewer/Analogy.LogViewer
