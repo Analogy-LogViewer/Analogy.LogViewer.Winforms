@@ -79,9 +79,9 @@ namespace Analogy
             this.spltFilteringBoth = new System.Windows.Forms.SplitContainer();
             this.pnlFilteringLeft = new System.Windows.Forms.Panel();
             this.spltcDateFiltering = new System.Windows.Forms.SplitContainer();
-            this.deOlderThanFilter = new Syncfusion.WinForms.Input.SfDateTimeEdit();
+            this.deOlderThanFilter = new System.Windows.Forms.DateTimePicker();
             this.chkDateOlderThan = new System.Windows.Forms.CheckBox();
-            this.deNewerThanFilter = new Syncfusion.WinForms.Input.SfDateTimeEdit();
+            this.deNewerThanFilter = new System.Windows.Forms.DateTimePicker();
             this.chkDateNewerThan = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.spltcProcessesModule = new System.Windows.Forms.SplitContainer();
@@ -105,16 +105,16 @@ namespace Analogy
             this.chkbIncludeText = new System.Windows.Forms.CheckBox();
             this.pboxInfo = new System.Windows.Forms.PictureBox();
             this.sbtnPreDefinedFilters = new System.Windows.Forms.Button();
-            this.rbVerbose = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rbDebug = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rbWarning = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rbErrorCritical = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rbTrace = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rbAllLevel = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.tbMessageInfo = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.rbVerbose = new System.Windows.Forms.RadioButton();
+            this.rbDebug = new System.Windows.Forms.RadioButton();
+            this.rbWarning = new System.Windows.Forms.RadioButton();
+            this.rbErrorCritical = new System.Windows.Forms.RadioButton();
+            this.rbTrace = new System.Windows.Forms.RadioButton();
+            this.rbAllLevel = new System.Windows.Forms.RadioButton();
+            this.tbMessageInfo = new System.Windows.Forms.RichTextBox();
             this.tsMessageInfo = new System.Windows.Forms.ToolStrip();
             this.tsBtnMessageInfoCopy = new System.Windows.Forms.ToolStripButton();
-            this.sfDataGridBookmarks = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.sfDataGridBookmarks = new System.Windows.Forms.DataGridView();
             this.tsBookmark = new System.Windows.Forms.ToolStrip();
             this.tsBtnBookmarkCopySingle = new System.Windows.Forms.ToolStripButton();
             this.tsBtnBookmarkCopyAll = new System.Windows.Forms.ToolStripButton();
@@ -130,9 +130,9 @@ namespace Analogy
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
             this.pnlMessages = new System.Windows.Forms.Panel();
             this.sfDataGridMain = new System.Windows.Forms.DataGridView();
-            this.tcBottom = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
-            this.tabPageMessageInfo = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.tabPageBookmarks = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.tcBottom = new System.Windows.Forms.TabControl();
+            this.tabPageMessageInfo = new System.Windows.Forms.TabPage();
+            this.tabPageBookmarks = new System.Windows.Forms.TabPage();
             this.cmsBookmarked = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiCalcDiffBookmark = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiBookmarkDateFilterNewer = new System.Windows.Forms.ToolStripMenuItem();
@@ -154,12 +154,10 @@ namespace Analogy
             this.tsmiIncreaseFontBookmark = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDecreaseFontBookmark = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStripFilters = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tabControlMain = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
-            this.tabPageLogs = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.tabControlMain = new System.Windows.Forms.TabControl();
+            this.tabPageLogs = new System.Windows.Forms.TabPage();
             this.tsTop = new System.Windows.Forms.ToolStrip();
             this.tsTopClear = new System.Windows.Forms.ToolStripButton();
-            this.tsTopPauseRefresh = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
-            this.tsTopAutoScrollToLast = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
             this.tsddbSave = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsmiSaveFullLog = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSaveFullLogDataProvider = new System.Windows.Forms.ToolStripMenuItem();
@@ -468,10 +466,7 @@ namespace Analogy
             this.cbHighlights.Name = "cbHighlights";
             this.cbHighlights.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.cbHighlights.Size = new System.Drawing.Size(384, 26);
-            this.cbHighlights.Style.EditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHighlights.Style.ReadOnlyEditorStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHighlights.Style.TokenStyle.CloseButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbHighlights.Style.TokenStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHighlights.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHighlights.TabIndex = 44;
             // 
             // sbtnMoreHighlight
@@ -650,10 +645,9 @@ namespace Analogy
             // deOlderThanFilter
             // 
             this.deOlderThanFilter.Cursor = System.Windows.Forms.Cursors.Default;
-            this.deOlderThanFilter.DateTimeEditingMode = Syncfusion.WinForms.Input.Enums.DateTimeEditingMode.Mask;
-            this.deOlderThanFilter.DateTimePattern = Syncfusion.WinForms.Input.Enums.DateTimePattern.Custom;
             this.deOlderThanFilter.Dock = System.Windows.Forms.DockStyle.Left;
-            this.deOlderThanFilter.Format = "yyyy.MM.dd HH:mm:ss";
+            this.deOlderThanFilter.Format = DateTimePickerFormat.Custom;
+            this.deOlderThanFilter.CustomFormat= "yyyy.MM.dd HH:mm:ss";
             this.deOlderThanFilter.Location = new System.Drawing.Point(662, 0);
             this.deOlderThanFilter.Name = "deOlderThanFilter";
             this.deOlderThanFilter.Size = new System.Drawing.Size(269, 25);
@@ -675,10 +669,10 @@ namespace Analogy
             // deNewerThanFilter
             // 
             this.deNewerThanFilter.Cursor = System.Windows.Forms.Cursors.Default;
-            this.deNewerThanFilter.DateTimeEditingMode = Syncfusion.WinForms.Input.Enums.DateTimeEditingMode.Mask;
-            this.deNewerThanFilter.DateTimePattern = Syncfusion.WinForms.Input.Enums.DateTimePattern.Custom;
             this.deNewerThanFilter.Dock = System.Windows.Forms.DockStyle.Left;
-            this.deNewerThanFilter.Format = "yyyy.MM.dd HH:mm:ss";
+            this.deNewerThanFilter.Format = DateTimePickerFormat.Custom;
+            this.deNewerThanFilter.CustomFormat= "yyyy.MM.dd HH:mm:ss";
+            ;
             this.deNewerThanFilter.Location = new System.Drawing.Point(265, 0);
             this.deNewerThanFilter.Name = "deNewerThanFilter";
             this.deNewerThanFilter.Size = new System.Drawing.Size(269, 25);
@@ -998,11 +992,8 @@ namespace Analogy
             // 
             // rbVerbose
             // 
-            this.rbVerbose.BeforeTouchSize = new System.Drawing.Size(184, 20);
             this.rbVerbose.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbVerbose.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.rbVerbose.Location = new System.Drawing.Point(0, 100);
-            this.rbVerbose.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(91)))));
             this.rbVerbose.Name = "rbVerbose";
             this.rbVerbose.Size = new System.Drawing.Size(184, 20);
             this.rbVerbose.TabIndex = 28;
@@ -1011,11 +1002,8 @@ namespace Analogy
             // 
             // rbDebug
             // 
-            this.rbDebug.BeforeTouchSize = new System.Drawing.Size(184, 20);
             this.rbDebug.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbDebug.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.rbDebug.Location = new System.Drawing.Point(0, 80);
-            this.rbDebug.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(91)))));
             this.rbDebug.Name = "rbDebug";
             this.rbDebug.Size = new System.Drawing.Size(184, 20);
             this.rbDebug.TabIndex = 27;
@@ -1024,11 +1012,8 @@ namespace Analogy
             // 
             // rbWarning
             // 
-            this.rbWarning.BeforeTouchSize = new System.Drawing.Size(184, 20);
             this.rbWarning.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbWarning.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.rbWarning.Location = new System.Drawing.Point(0, 60);
-            this.rbWarning.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(91)))));
             this.rbWarning.Name = "rbWarning";
             this.rbWarning.Size = new System.Drawing.Size(184, 20);
             this.rbWarning.TabIndex = 26;
@@ -1037,11 +1022,8 @@ namespace Analogy
             // 
             // rbErrorCritical
             // 
-            this.rbErrorCritical.BeforeTouchSize = new System.Drawing.Size(184, 20);
             this.rbErrorCritical.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbErrorCritical.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.rbErrorCritical.Location = new System.Drawing.Point(0, 40);
-            this.rbErrorCritical.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(91)))));
             this.rbErrorCritical.Name = "rbErrorCritical";
             this.rbErrorCritical.Size = new System.Drawing.Size(184, 20);
             this.rbErrorCritical.TabIndex = 25;
@@ -1050,11 +1032,8 @@ namespace Analogy
             // 
             // rbTrace
             // 
-            this.rbTrace.BeforeTouchSize = new System.Drawing.Size(184, 20);
             this.rbTrace.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbTrace.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.rbTrace.Location = new System.Drawing.Point(0, 20);
-            this.rbTrace.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(91)))));
             this.rbTrace.Name = "rbTrace";
             this.rbTrace.Size = new System.Drawing.Size(184, 20);
             this.rbTrace.TabIndex = 24;
@@ -1063,12 +1042,9 @@ namespace Analogy
             // 
             // rbAllLevel
             // 
-            this.rbAllLevel.BeforeTouchSize = new System.Drawing.Size(184, 20);
             this.rbAllLevel.Checked = true;
             this.rbAllLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbAllLevel.ImageCheckBoxSize = new System.Drawing.Size(16, 16);
             this.rbAllLevel.Location = new System.Drawing.Point(0, 0);
-            this.rbAllLevel.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(91)))));
             this.rbAllLevel.Name = "rbAllLevel";
             this.rbAllLevel.Size = new System.Drawing.Size(184, 20);
             this.rbAllLevel.TabIndex = 23;
@@ -1077,7 +1053,6 @@ namespace Analogy
             // tbMessageInfo
             // 
             this.tbMessageInfo.BackColor = System.Drawing.Color.White;
-            this.tbMessageInfo.BeforeTouchSize = new System.Drawing.Size(1267, 154);
             this.tbMessageInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbMessageInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbMessageInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -1086,10 +1061,9 @@ namespace Analogy
             this.tbMessageInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbMessageInfo.Multiline = true;
             this.tbMessageInfo.Name = "tbMessageInfo";
-            this.tbMessageInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMessageInfo.ScrollBars = RichTextBoxScrollBars.Vertical;
             this.tbMessageInfo.Size = new System.Drawing.Size(1267, 154);
             this.tbMessageInfo.TabIndex = 14;
-            this.tbMessageInfo.ThemeName = "";
             // 
             // tsMessageInfo
             // 
@@ -1113,105 +1087,29 @@ namespace Analogy
             // sfDataGridBookmarks
             // 
             this.sfDataGridBookmarks.AccessibleName = "Table";
-            this.sfDataGridBookmarks.AllowDraggingColumns = true;
-            this.sfDataGridBookmarks.AllowEditing = false;
-            this.sfDataGridBookmarks.AllowResizingColumns = true;
-            this.sfDataGridBookmarks.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.ColumnHeader;
-            gridTextColumn25.AllowDragging = true;
-            gridTextColumn25.AllowEditing = false;
-            gridTextColumn25.AllowResizing = true;
-            gridTextColumn25.HeaderText = "Data Source/File Name";
-            gridTextColumn25.MappingName = "DataProvider";
-            gridDateTimeColumn3.AllowDragging = true;
-            gridDateTimeColumn3.AllowEditing = false;
-            gridDateTimeColumn3.AllowResizing = true;
-            gridDateTimeColumn3.Format = "yyyy.MM.dd HH:mm:ss.ff";
-            gridDateTimeColumn3.HeaderText = "Date";
-            gridDateTimeColumn3.MappingName = "Date";
-            gridDateTimeColumn3.MaxDateTime = new System.DateTime(9999, 12, 31, 23, 59, 59, 999);
-            gridDateTimeColumn3.Pattern = Syncfusion.WinForms.Input.Enums.DateTimePattern.Custom;
-            gridTextColumn26.AllowDragging = true;
-            gridTextColumn26.AllowEditing = false;
-            gridTextColumn26.AllowResizing = true;
-            gridTextColumn26.HeaderText = "Time Differenace";
-            gridTextColumn26.MappingName = "TimeDiff";
-            gridTextColumn26.Visible = false;
-            gridTextColumn27.AllowDragging = true;
-            gridTextColumn27.AllowEditing = false;
-            gridTextColumn27.AllowResizing = true;
-            gridTextColumn27.HeaderText = "Text";
-            gridTextColumn27.MappingName = "Text";
-            gridTextColumn28.AllowDragging = true;
-            gridTextColumn28.AllowEditing = false;
-            gridTextColumn28.AllowResizing = true;
-            gridTextColumn28.HeaderText = "Source";
-            gridTextColumn28.MappingName = "Source";
-            gridTextColumn29.AllowDragging = true;
-            gridTextColumn29.AllowEditing = false;
-            gridTextColumn29.AllowResizing = true;
-            gridTextColumn29.HeaderText = "Level";
-            gridTextColumn29.MappingName = "Level";
-            gridTextColumn30.AllowDragging = true;
-            gridTextColumn30.AllowEditing = false;
-            gridTextColumn30.AllowResizing = true;
-            gridTextColumn30.HeaderText = "Class";
-            gridTextColumn30.MappingName = "Class";
-            gridTextColumn31.AllowDragging = true;
-            gridTextColumn31.AllowEditing = false;
-            gridTextColumn31.AllowResizing = true;
-            gridTextColumn31.HeaderText = "Category";
-            gridTextColumn31.MappingName = "Category";
-            gridTextColumn32.AllowDragging = true;
-            gridTextColumn32.AllowEditing = false;
-            gridTextColumn32.AllowResizing = true;
-            gridTextColumn32.HeaderText = "User";
-            gridTextColumn32.MappingName = "User";
-            gridTextColumn33.AllowDragging = true;
-            gridTextColumn33.AllowEditing = false;
-            gridTextColumn33.AllowResizing = true;
-            gridTextColumn33.HeaderText = "Module";
-            gridTextColumn33.MappingName = "Module";
-            gridTextColumn34.AllowDragging = true;
-            gridTextColumn34.AllowEditing = false;
-            gridTextColumn34.AllowResizing = true;
-            gridTextColumn34.HeaderText = "Object";
-            gridTextColumn34.MappingName = "Object";
-            gridTextColumn34.Visible = false;
-            gridTextColumn35.AllowDragging = true;
-            gridTextColumn35.AllowEditing = false;
-            gridTextColumn35.AllowResizing = true;
-            gridTextColumn35.HeaderText = "Process ID";
-            gridTextColumn35.MappingName = "ProcessID";
-            gridTextColumn36.AllowDragging = true;
-            gridTextColumn36.AllowEditing = false;
-            gridTextColumn36.AllowResizing = true;
-            gridTextColumn36.HeaderText = "Thread id";
-            gridTextColumn36.MappingName = "ThreadID";
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn25);
-            this.sfDataGridBookmarks.Columns.Add(gridDateTimeColumn3);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn26);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn27);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn28);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn29);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn30);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn31);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn32);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn33);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn34);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn35);
-            this.sfDataGridBookmarks.Columns.Add(gridTextColumn36);
+            this.sfDataGridBookmarks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+
+            this.sfDataGridBookmarks.Columns.Add("DataProvider", "Data Source/File Name");
+            this.sfDataGridBookmarks.Columns.Add("Date", "Date");
+            this.sfDataGridBookmarks.Columns.Add("TimeDiff", "Time Differenace");
+            this.sfDataGridBookmarks.Columns.Add("Text", "Text");
+            this.sfDataGridBookmarks.Columns.Add("Source", "Source");
+            this.sfDataGridBookmarks.Columns.Add("Level", "Level");
+            this.sfDataGridBookmarks.Columns.Add("Class", "Class");
+            this.sfDataGridBookmarks.Columns.Add("Category", "Category");
+            this.sfDataGridBookmarks.Columns.Add("User", "User");
+            this.sfDataGridBookmarks.Columns.Add("Module", "Module");
+            this.sfDataGridBookmarks.Columns.Add("Object","Object");
+            this.sfDataGridBookmarks.Columns.Add("ProcessID", "Process ID");
+            this.sfDataGridBookmarks.Columns.Add("ThreadID", "Thread ID");
             this.sfDataGridBookmarks.ContextMenuStrip = this.cmsMessageOperation;
             this.sfDataGridBookmarks.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sfDataGridBookmarks.Location = new System.Drawing.Point(0, 27);
             this.sfDataGridBookmarks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridBookmarks.Name = "sfDataGridBookmarks";
-            this.sfDataGridBookmarks.PreviewRowHeight = 35;
-            this.sfDataGridBookmarks.RowHeight = 20;
-            this.sfDataGridBookmarks.ShowRowHeader = true;
             this.sfDataGridBookmarks.Size = new System.Drawing.Size(1267, 154);
             this.sfDataGridBookmarks.TabIndex = 6;
             this.sfDataGridBookmarks.Text = "Bookmarks";
-            this.sfDataGridBookmarks.UsePLINQ = true;
             // 
             // tsBookmark
             // 
@@ -1408,7 +1306,6 @@ namespace Analogy
             // 
             // tcBottom
             // 
-            this.tcBottom.BeforeTouchSize = new System.Drawing.Size(1270, 211);
             this.tcBottom.Controls.Add(this.tabPageMessageInfo);
             this.tcBottom.Controls.Add(this.tabPageBookmarks);
             this.tcBottom.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1421,29 +1318,21 @@ namespace Analogy
             // 
             this.tabPageMessageInfo.Controls.Add(this.tbMessageInfo);
             this.tabPageMessageInfo.Controls.Add(this.tsMessageInfo);
-            this.tabPageMessageInfo.Image = null;
-            this.tabPageMessageInfo.ImageSize = new System.Drawing.Size(20, 20);
             this.tabPageMessageInfo.Location = new System.Drawing.Point(1, 29);
             this.tabPageMessageInfo.Name = "tabPageMessageInfo";
-            this.tabPageMessageInfo.ShowCloseButton = true;
             this.tabPageMessageInfo.Size = new System.Drawing.Size(1267, 181);
             this.tabPageMessageInfo.TabIndex = 1;
             this.tabPageMessageInfo.Text = "Message Info";
-            this.tabPageMessageInfo.ThemesEnabled = false;
             // 
             // tabPageBookmarks
             // 
             this.tabPageBookmarks.Controls.Add(this.sfDataGridBookmarks);
             this.tabPageBookmarks.Controls.Add(this.tsBookmark);
-            this.tabPageBookmarks.Image = null;
-            this.tabPageBookmarks.ImageSize = new System.Drawing.Size(20, 20);
             this.tabPageBookmarks.Location = new System.Drawing.Point(1, 29);
             this.tabPageBookmarks.Name = "tabPageBookmarks";
-            this.tabPageBookmarks.ShowCloseButton = true;
             this.tabPageBookmarks.Size = new System.Drawing.Size(1267, 181);
             this.tabPageBookmarks.TabIndex = 2;
             this.tabPageBookmarks.Text = "Bookmarks";
-            this.tabPageBookmarks.ThemesEnabled = false;
             // 
             // cmsBookmarked
             // 
@@ -1621,29 +1510,23 @@ namespace Analogy
             // 
             // tabControlMain
             // 
-            this.tabControlMain.BeforeTouchSize = new System.Drawing.Size(1277, 618);
             this.tabControlMain.Controls.Add(this.tabPageLogs);
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.Size = new System.Drawing.Size(1277, 618);
             this.tabControlMain.TabIndex = 27;
-            this.tabControlMain.ThemesEnabled = true;
             // 
             // tabPageLogs
             // 
             this.tabPageLogs.Controls.Add(this.splitContainerMain);
             this.tabPageLogs.Controls.Add(this.pnlBottom);
             this.tabPageLogs.Controls.Add(this.tsTop);
-            this.tabPageLogs.Image = null;
-            this.tabPageLogs.ImageSize = new System.Drawing.Size(20, 20);
             this.tabPageLogs.Location = new System.Drawing.Point(3, 31);
             this.tabPageLogs.Name = "tabPageLogs";
-            this.tabPageLogs.ShowCloseButton = true;
             this.tabPageLogs.Size = new System.Drawing.Size(1270, 583);
             this.tabPageLogs.TabIndex = 1;
             this.tabPageLogs.Text = "Logs";
-            this.tabPageLogs.ThemesEnabled = true;
             // 
             // tsTop
             // 
@@ -1651,8 +1534,6 @@ namespace Analogy
             this.tsTop.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsTopClear,
-            this.tsTopPauseRefresh,
-            this.tsTopAutoScrollToLast,
             this.tsddbSave,
             this.tsddbUndock,
             this.tsbScreenshot,
@@ -1670,20 +1551,6 @@ namespace Analogy
             this.tsTopClear.Name = "tsTopClear";
             this.tsTopClear.Size = new System.Drawing.Size(96, 24);
             this.tsTopClear.Text = "Clear Log";
-            // 
-            // tsTopPauseRefresh
-            // 
-            this.tsTopPauseRefresh.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsTopPauseRefresh.Name = "tsTopPauseRefresh";
-            this.tsTopPauseRefresh.Size = new System.Drawing.Size(145, 24);
-            this.tsTopPauseRefresh.Text = "Pause Refreshing:";
-            // 
-            // tsTopAutoScrollToLast
-            // 
-            this.tsTopAutoScrollToLast.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsTopAutoScrollToLast.Name = "tsTopAutoScrollToLast";
-            this.tsTopAutoScrollToLast.Size = new System.Drawing.Size(179, 24);
-            this.tsTopAutoScrollToLast.Text = "Auto scroll to last row:";
             // 
             // tsddbSave
             // 
@@ -2009,8 +1876,6 @@ namespace Analogy
         private System.Windows.Forms.ToolStripDropDownButton tsddbExport;
         private System.Windows.Forms.ToolStripMenuItem tsmiExportExcel;
         private System.Windows.Forms.ToolStripButton tsBDataVisualizer;
-        public Syncfusion.Windows.Forms.Tools.ToolStripCheckBox tsTopPauseRefresh;
-        public Syncfusion.Windows.Forms.Tools.ToolStripCheckBox tsTopAutoScrollToLast;
         private System.Windows.Forms.TabControl tcBottom;
         private System.Windows.Forms.TabPage tabPageMessageInfo;
         private System.Windows.Forms.TabPage tabPageBookmarks;

@@ -33,10 +33,10 @@ namespace Analogy
         /// </summary>
         private void InitializeComponent()
         {
-            Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdvStyleInfo treeNodeAdvStyleInfo1 = new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdvStyleInfo();
-            Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdvSubItemStyleInfo treeNodeAdvSubItemStyleInfo1 = new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdvSubItemStyleInfo();
-            Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdvStyleInfo treeColumnAdvStyleInfo1 = new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdvStyleInfo();
-            this.multiColumnTreeView1 = new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView();
+            System.Windows.Forms.MultiColumnTreeView.TreeNodeAdvStyleInfo treeNodeAdvStyleInfo1 = new System.Windows.Forms.MultiColumnTreeView.TreeNodeAdvStyleInfo();
+            System.Windows.Forms.MultiColumnTreeView.TreeNodeAdvSubItemStyleInfo treeNodeAdvSubItemStyleInfo1 = new System.Windows.Forms.MultiColumnTreeView.TreeNodeAdvSubItemStyleInfo();
+            System.Windows.Forms.MultiColumnTreeView.TreeColumnAdvStyleInfo treeColumnAdvStyleInfo1 = new System.Windows.Forms.MultiColumnTreeView.TreeColumnAdvStyleInfo();
+            this.multiColumnTreeView1 = new System.Windows.Forms.MultiColumnTreeView.MultiColumnTreeView();
             ((System.ComponentModel.ISupportInitialize)(this.multiColumnTreeView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,10 +64,10 @@ namespace Analogy
             treeColumnAdvStyleInfo1.AreaBackground = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))));
             treeColumnAdvStyleInfo1.Background = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225))))));
             treeColumnAdvStyleInfo1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
-            this.multiColumnTreeView1.BaseStylePairs.AddRange(new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.StyleNamePair[] {
-            new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.StyleNamePair("Standard", treeNodeAdvStyleInfo1),
-            new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.StyleNamePair("Standard - SubItem", treeNodeAdvSubItemStyleInfo1),
-            new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.StyleNamePair("Standard - Column", treeColumnAdvStyleInfo1)});
+            this.multiColumnTreeView1.BaseStylePairs.AddRange(new System.Windows.Forms.MultiColumnTreeView.StyleNamePair[] {
+            new System.Windows.Forms.MultiColumnTreeView.StyleNamePair("Standard", treeNodeAdvStyleInfo1),
+            new System.Windows.Forms.MultiColumnTreeView.StyleNamePair("Standard - SubItem", treeNodeAdvSubItemStyleInfo1),
+            new System.Windows.Forms.MultiColumnTreeView.StyleNamePair("Standard - Column", treeColumnAdvStyleInfo1)});
             this.multiColumnTreeView1.BeforeTouchSize = new System.Drawing.Size(521, 312);
             this.multiColumnTreeView1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.multiColumnTreeView1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
@@ -95,7 +95,7 @@ namespace Analogy
             this.multiColumnTreeView1.SelectedNodeBackground = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197))))));
             this.multiColumnTreeView1.SelectedNodeForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.multiColumnTreeView1.Size = new System.Drawing.Size(521, 312);
-            this.multiColumnTreeView1.Style = Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnVisualStyle.Office2016Colorful;
+            this.multiColumnTreeView1.Style = System.Windows.Forms.MultiColumnTreeView.MultiColumnVisualStyle.Office2016Colorful;
             this.multiColumnTreeView1.TabIndex = 4;
             this.multiColumnTreeView1.Text = "MultiColumnTreeViewDemo.csmultiColumnTreeView1";
             this.multiColumnTreeView1.ThemeName = "Office2016Colorful";
@@ -113,9 +113,9 @@ namespace Analogy
             this.multiColumnTreeView1.VScrollPos = -13;
 
 
-            treeColumnAdv1 = new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdv();
-            treeColumnAdv2 = new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdv();
-            treeColumnAdv3 = new Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdv();
+            treeColumnAdv1 = new System.Windows.Forms.MultiColumnTreeView.TreeColumnAdv();
+            treeColumnAdv2 = new System.Windows.Forms.MultiColumnTreeView.TreeColumnAdv();
+            treeColumnAdv3 = new System.Windows.Forms.MultiColumnTreeView.TreeColumnAdv();
 
             treeColumnAdv1.HelpText = "Name";
             treeColumnAdv1.Highlighted = false;
@@ -136,7 +136,7 @@ namespace Analogy
             treeColumnAdv3.Background = new BrushInfo(GradientStyle.Vertical, SystemColors.Highlight, SystemColors.Highlight);
             treeColumnAdv3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            multiColumnTreeView1.AutoSizeMode = Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.AutoSizeMode.Fill;
+            multiColumnTreeView1.AutoSizeMode = System.Windows.Forms.MultiColumnTreeView.AutoSizeMode.Fill;
 
             treeColumnAdv1.BorderStyle = BorderStyle.FixedSingle;
             treeColumnAdv2.BorderStyle = BorderStyle.FixedSingle;
@@ -157,9 +157,9 @@ namespace Analogy
         }
 
         #endregion
-        private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView multiColumnTreeView1;
-       private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdv treeColumnAdv1;
-       private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdv treeColumnAdv2;
-       private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeColumnAdv treeColumnAdv3;
+        private System.Windows.Forms.MultiColumnTreeView.MultiColumnTreeView multiColumnTreeView1;
+       private System.Windows.Forms.MultiColumnTreeView.TreeColumnAdv treeColumnAdv1;
+       private System.Windows.Forms.MultiColumnTreeView.TreeColumnAdv treeColumnAdv2;
+       private System.Windows.Forms.MultiColumnTreeView.TreeColumnAdv treeColumnAdv3;
     }
 }

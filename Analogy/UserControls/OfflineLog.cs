@@ -94,8 +94,9 @@ namespace Analogy
             fileListing.SortLastChanged(SortOrder.Descending);
             folderTreeViewUC1.FolderChanged += FolderTreeViewUC1_FolderChanged;
             spltMain.Panel1Collapsed = false;
-            ucLogs1.tsTopPauseRefresh.Visible = false;
-            ucLogs1.tsTopAutoScrollToLast.Visible = false;
+            //todo
+            //ucLogs1.tsTopPauseRefresh.Visible = false;
+            //ucLogs1.tsTopAutoScrollToLast.Visible = false;
             if (extrenalFiles.Any())
             {
                 if (File.Exists(extrenalFiles.First()))

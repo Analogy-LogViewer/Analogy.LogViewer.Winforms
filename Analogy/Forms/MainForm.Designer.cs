@@ -37,34 +37,34 @@ namespace Analogy
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo1 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo2 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo3 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo4 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo5 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo6 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo7 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo8 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo9 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo10 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo11 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem5 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem6 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem7 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toolStripGalleryItem8 = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-            Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo12 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo1 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo2 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo3 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo4 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo5 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo6 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo7 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo8 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo9 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo10 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolTipInfo toolTipInfo11 = new System.Windows.Forms.ToolTipInfo();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem1 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem2 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem3 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem4 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem5 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem6 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem7 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem8 = new System.Windows.Forms.ToolStripGalleryItem();
+            System.Windows.Forms.ToolTipInfo toolTipInfo12 = new System.Windows.Forms.ToolTipInfo();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.ribbonControlMain = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
-            this.tstitmAnalogy = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+            this.ribbonControlMain = new System.Windows.Forms.RibbonControlAdv();
+            this.tstitmAnalogy = new System.Windows.Forms.ToolStripTabItem();
             this.tseAnalogyBuiltInProviders = new System.Windows.Forms.ToolStrip();
             this.tsbtnAnalogyOpenFolder = new System.Windows.Forms.ToolStripButton();
             this.tsbtnAnalogyOpenFiles = new System.Windows.Forms.ToolStripButton();
             this.tsbtnAnalogyRecentlyOpenFiles = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tstiSettings = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+            this.tstiSettings = new System.Windows.Forms.ToolStripTabItem();
             this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
             this.tsbSettingsFiltering = new System.Windows.Forms.ToolStripButton();
             this.tsbSettingsPreDefined = new System.Windows.Forms.ToolStripButton();
@@ -79,8 +79,8 @@ namespace Analogy
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+            this.toolStripTabItem1 = new System.Windows.Forms.ToolStripTabItem();
+            this.toolStripTabItem2 = new System.Windows.Forms.ToolStripTabItem();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.fsfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fsfToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +89,7 @@ namespace Analogy
             this.discconectNetworkDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripPanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+            this.toolStripPanelItem1 = new System.Windows.Forms.ToolStripPanelItem();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
@@ -98,19 +98,19 @@ namespace Analogy
             this.expandToOpenFoldersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showAllFoldersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showLibrariesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripPanelItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+            this.toolStripPanelItem2 = new System.Windows.Forms.ToolStripPanelItem();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripGallery1 = new Syncfusion.Windows.Forms.Tools.ToolStripGallery();
+            this.toolStripGallery1 = new System.Windows.Forms.ToolStripGallery();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TreeViewImageList = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.superAccelerator1 = new Syncfusion.Windows.Forms.Tools.SuperAccelerator(this);
+            this.superAccelerator1 = new System.Windows.Forms.SuperAccelerator(this);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.bannerTextProvider1 = new Syncfusion.Windows.Forms.BannerTextProvider(this.components);
-            this.superToolTip1 = new Syncfusion.Windows.Forms.Tools.SuperToolTip(this);
-            this.dockingManager1 = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components);
-            this.MainStatusStrip = new Syncfusion.Windows.Forms.Tools.StatusStripEx();
+            this.superToolTip1 = new System.Windows.Forms.SuperToolTip(this);
+            this.dockingManager1 = new System.Windows.Forms.DockingManager(this.components);
+            this.MainStatusStrip = new System.Windows.Forms.StatusStripEx();
             this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslIdleMessage = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslMemoryUsage = new System.Windows.Forms.ToolStripStatusLabel();
@@ -142,9 +142,9 @@ namespace Analogy
             this.ribbonControlMain.MenuButtonWidth = 56;
             this.ribbonControlMain.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.ribbonControlMain.Name = "ribbonControlMain";
-            this.ribbonControlMain.Office2013ColorScheme = Syncfusion.Windows.Forms.Tools.Office2013ColorScheme.DarkGray;
-            this.ribbonControlMain.Office2016ColorScheme = Syncfusion.Windows.Forms.Tools.Office2016ColorScheme.DarkGray;
-            this.ribbonControlMain.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Managed;
+            this.ribbonControlMain.Office2013ColorScheme = System.Windows.Forms.Office2013ColorScheme.DarkGray;
+            this.ribbonControlMain.Office2016ColorScheme = System.Windows.Forms.Office2016ColorScheme.DarkGray;
+            this.ribbonControlMain.OfficeColorScheme = System.Windows.Forms.ToolStripEx.ColorScheme.Managed;
             // 
             // ribbonControlMain.OfficeMenu
             // 
@@ -153,8 +153,8 @@ namespace Analogy
             this.ribbonControlMain.OfficeMenu.ShowItemToolTips = true;
             this.ribbonControlMain.OfficeMenu.Size = new System.Drawing.Size(12, 65);
             this.ribbonControlMain.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ribbonControlMain.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
-            this.ribbonControlMain.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2013;
+            this.ribbonControlMain.RibbonHeaderImage = System.Windows.Forms.RibbonHeaderImage.None;
+            this.ribbonControlMain.RibbonStyle = System.Windows.Forms.RibbonStyle.Office2013;
             this.ribbonControlMain.SelectedTab = this.tstitmAnalogy;
             this.ribbonControlMain.ShowLauncher = false;
             this.ribbonControlMain.ShowRibbonDisplayOptionButton = false;
@@ -755,7 +755,7 @@ namespace Analogy
             this.superAccelerator1.SetAccelerator(this.toolStripGallery1, "L");
             this.toolStripGallery1.AutoSize = false;
             this.toolStripGallery1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.toolStripGallery1.BorderStyle = Syncfusion.Windows.Forms.Tools.ToolstripGalleryBorderStyle.None;
+            this.toolStripGallery1.BorderStyle = System.Windows.Forms.ToolstripGalleryBorderStyle.None;
             this.toolStripGallery1.CaptionText = "";
             this.toolStripGallery1.CheckOnClick = true;
             this.toolStripGallery1.Dimensions = new System.Drawing.Size(3, 3);
@@ -802,7 +802,7 @@ namespace Analogy
             this.toolStripGallery1.ItemTextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolStripGallery1.Margin = new System.Windows.Forms.Padding(0, 4, 0, 1);
             this.toolStripGallery1.Name = "toolStripGallery1";
-            this.toolStripGallery1.ScrollerType = Syncfusion.Windows.Forms.Tools.ToolStripGalleryScrollerType.Compact;
+            this.toolStripGallery1.ScrollerType = System.Windows.Forms.ToolStripGalleryScrollerType.Compact;
             this.toolStripGallery1.ShowToolTip = true;
             this.toolStripGallery1.Size = new System.Drawing.Size(321, 64);
             this.toolStripGallery1.Text = "toolStripGallery1";
@@ -887,7 +887,7 @@ namespace Analogy
             this.dockingManager1.AutoHideTabForeColor = System.Drawing.Color.Empty;
             this.dockingManager1.CloseTabOnMiddleClick = false;
             this.dockingManager1.DockLayoutStream = ((System.IO.MemoryStream)(resources.GetObject("dockingManager1.DockLayoutStream")));
-            this.dockingManager1.DragProviderStyle = Syncfusion.Windows.Forms.Tools.DragProviderStyle.Office2016Colorful;
+            this.dockingManager1.DragProviderStyle = System.Windows.Forms.DragProviderStyle.Office2016Colorful;
             this.dockingManager1.HostControl = this;
             this.dockingManager1.MetroButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dockingManager1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(158)))), ((int)(((byte)(218)))));
@@ -896,11 +896,11 @@ namespace Analogy
             this.dockingManager1.ThemeName = "Office2016Colorful";
             this.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
             this.dockingManager1.NewDockStateEndLoad += new System.EventHandler(this.DockingManager1_NewDockStateEndLoad);
-            this.dockingManager1.CaptionButtons.Add(new Syncfusion.Windows.Forms.Tools.CaptionButton(Syncfusion.Windows.Forms.Tools.CaptionButtonType.Close, "CloseButton"));
-            this.dockingManager1.CaptionButtons.Add(new Syncfusion.Windows.Forms.Tools.CaptionButton(Syncfusion.Windows.Forms.Tools.CaptionButtonType.Pin, "PinButton"));
-            this.dockingManager1.CaptionButtons.Add(new Syncfusion.Windows.Forms.Tools.CaptionButton(Syncfusion.Windows.Forms.Tools.CaptionButtonType.Maximize, "MaximizeButton"));
-            this.dockingManager1.CaptionButtons.Add(new Syncfusion.Windows.Forms.Tools.CaptionButton(Syncfusion.Windows.Forms.Tools.CaptionButtonType.Restore, "RestoreButton"));
-            this.dockingManager1.CaptionButtons.Add(new Syncfusion.Windows.Forms.Tools.CaptionButton(Syncfusion.Windows.Forms.Tools.CaptionButtonType.Menu, "MenuButton"));
+            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Close, "CloseButton"));
+            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Pin, "PinButton"));
+            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Maximize, "MaximizeButton"));
+            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Restore, "RestoreButton"));
+            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Menu, "MenuButton"));
             // 
             // MainStatusStrip
             // 
@@ -916,7 +916,7 @@ namespace Analogy
             this.MainStatusStrip.Location = new System.Drawing.Point(1, 502);
             this.MainStatusStrip.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(206)))), ((int)(((byte)(255)))));
             this.MainStatusStrip.Name = "MainStatusStrip";
-            this.MainStatusStrip.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Managed;
+            this.MainStatusStrip.OfficeColorScheme = System.Windows.Forms.ToolStripEx.ColorScheme.Managed;
             this.MainStatusStrip.Size = new System.Drawing.Size(1151, 26);
             this.MainStatusStrip.TabIndex = 6;
             // 
@@ -993,31 +993,31 @@ namespace Analogy
 
         #endregion
 
-        private Syncfusion.Windows.Forms.Tools.RibbonControlAdv ribbonControlMain;
-        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem2;
+        private System.Windows.Forms.RibbonControlAdv ribbonControlMain;
+        private System.Windows.Forms.ToolStripTabItem toolStripTabItem1;
+        private System.Windows.Forms.ToolStripTabItem toolStripTabItem2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem1;
+        private System.Windows.Forms.ToolStripPanelItem toolStripPanelItem1;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripButton toolStripButton7;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton4;
-        private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem toolStripPanelItem2;
+        private System.Windows.Forms.ToolStripPanelItem toolStripPanelItem2;
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Windows.Forms.ToolStripButton toolStripButton9;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ImageList TreeViewImageList;
         private System.Windows.Forms.ImageList imageList2;
-        private Syncfusion.Windows.Forms.Tools.SuperAccelerator superAccelerator1;
+        private System.Windows.Forms.SuperAccelerator superAccelerator1;
         private System.Windows.Forms.ImageList imageList3;
         private Syncfusion.Windows.Forms.BannerTextProvider bannerTextProvider1;
-        private Syncfusion.Windows.Forms.Tools.SuperToolTip superToolTip1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripGallery toolStripGallery1;
+        private System.Windows.Forms.SuperToolTip superToolTip1;
+        private System.Windows.Forms.ToolStripGallery toolStripGallery1;
         private System.Windows.Forms.ToolStripMenuItem fsfToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fsfToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButtonEx1;
@@ -1028,19 +1028,19 @@ namespace Analogy
         private System.Windows.Forms.ToolStripMenuItem expandToOpenFoldersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showAllFoldersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showLibrariesToolStripMenuItem;
-        private Syncfusion.Windows.Forms.Tools.DockingManager dockingManager1;
-        private Syncfusion.Windows.Forms.Tools.StatusStripEx MainStatusStrip;
+        private System.Windows.Forms.DockingManager dockingManager1;
+        private System.Windows.Forms.StatusStripEx MainStatusStrip;
         private System.Windows.Forms.ToolStripStatusLabel tsslMemoryUsage;
         private System.Windows.Forms.ToolStripStatusLabel tsslblError;
         private System.Windows.Forms.ToolStripStatusLabel tsslIdleMessage;
         private System.Windows.Forms.ToolStripStatusLabel tsslFileCaching;
-        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem tstitmAnalogy;
+        private System.Windows.Forms.ToolStripTabItem tstitmAnalogy;
         private System.Windows.Forms.ToolStrip tseAnalogyBuiltInProviders;
         private System.Windows.Forms.ToolStripButton tsbtnAnalogyOpenFolder;
         private System.Windows.Forms.ToolStripButton tsbtnAnalogyOpenFiles;
         private System.Windows.Forms.ToolStripDropDownButton tsbtnAnalogyRecentlyOpenFiles;
         private System.Windows.Forms.Timer TmrAutoConnect;
-        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem tstiSettings;
+        private System.Windows.Forms.ToolStripTabItem tstiSettings;
         private System.Windows.Forms.ToolStrip toolStripEx1;
         private System.Windows.Forms.ToolStripButton tsbSettingsFiltering;
         private System.Windows.Forms.ToolStripButton tsbSettingsPreDefined;

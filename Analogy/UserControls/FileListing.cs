@@ -7,7 +7,7 @@ using System.Linq;
 using Analogy.Interfaces;
 using Analogy.Types;
 using Syncfusion.Data.Extensions;
-using Syncfusion.Windows.Forms.Tools.MultiColumnTreeView;
+using System.Windows.Forms.MultiColumnTreeView;
 
 
 namespace Analogy

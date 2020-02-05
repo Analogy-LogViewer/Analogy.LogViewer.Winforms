@@ -15,7 +15,6 @@ using System.Windows.Forms;
 using Analogy.DataSources;
 using Analogy.Interfaces;
 using Analogy.Types;
-using Syncfusion.Windows.Forms.Tools.Enums;
 using Syncfusion.WinForms.DataGrid.Serialization;
 
 namespace Analogy
@@ -133,9 +132,9 @@ namespace Analogy
                 chkDateOlderThan.Checked = true;
                 await FilterHasChanged();
             };
-            cbHighlights.TextBox.KeyUp += async (s, e) =>
+            cbHighlights.KeyUp += async (s, e) =>
             {
-                chkbHighlight.Checked = !string.IsNullOrEmpty(cbHighlights.TextBox.Text);
+                chkbHighlight.Checked = !string.IsNullOrEmpty(cbHighlights.Text);
                 await FilterHasChanged(); //todo-refresh noly style
             };
             //include combobox
@@ -144,7 +143,7 @@ namespace Analogy
              {
                  if (OldTextInclude.Equals(cbInclude.Text)) return;
                  OldTextInclude = cbInclude.Text;
-                 cbHighlights.TextBox.Text = cbInclude.Text;
+                 cbHighlights.Text = cbInclude.Text;
                  if (string.IsNullOrEmpty(cbInclude.Text))
                  {
                      chkbIncludeText.Checked = false;
@@ -265,7 +264,7 @@ namespace Analogy
                     var data = e.RowData;
                     e.Style.BackColor = Settings.ColorSettings.GetColorForLogLevel(message.Level);
                     string text = message.Text;
-                    if (chkbHighlight.Checked && FilterCriteriaObject.Match(text, cbHighlights.TextBox.Text, PreDefinedQueryType.Contains))
+                    if (chkbHighlight.Checked && FilterCriteriaObject.Match(text, cbHighlights.Text, PreDefinedQueryType.Contains))
                     {
                         e.Style.BackColor = Settings.ColorSettings.GetHighlightColor();
                     }
@@ -281,8 +280,9 @@ namespace Analogy
             };
             sfDataGridMain.CellClick += (s, e) =>
             {
-                if (tsTopAutoScrollToLast.Checked)
-                    tsTopAutoScrollToLast.Checked = false;
+                //todo
+                //if (tsTopAutoScrollToLast.Checked)
+                //    tsTopAutoScrollToLast.Checked = false;
 
                 var selectedItems = sfDataGridMain.SelectedItems.Cast<DataRowView>().ToList();
                 if (!selectedItems.Any()) return;
@@ -346,12 +346,12 @@ namespace Analogy
 
             #region Radio buttons log level
 
-            rbAllLevel.CheckChanged += async (s, e) => { await FilterHasChanged(); };
-            rbErrorCritical.CheckChanged += async (s, e) => { await FilterHasChanged(); };
-            rbDebug.CheckChanged += async (s, e) => { await FilterHasChanged(); };
-            rbVerbose.CheckChanged += async (s, e) => { await FilterHasChanged(); };
-            rbWarning.CheckChanged += async (s, e) => { await FilterHasChanged(); };
-            rbTrace.CheckChanged += async (s, e) => { await FilterHasChanged(); };
+            rbAllLevel.CheckedChanged += async (s, e) => { await FilterHasChanged(); };
+            rbErrorCritical.CheckedChanged += async (s, e) => { await FilterHasChanged(); };
+            rbDebug.CheckedChanged += async (s, e) => { await FilterHasChanged(); };
+            rbVerbose.CheckedChanged += async (s, e) => { await FilterHasChanged(); };
+            rbWarning.CheckedChanged += async (s, e) => { await FilterHasChanged(); };
+            rbTrace.CheckedChanged += async (s, e) => { await FilterHasChanged(); };
             #endregion
 
             #region toolstrip menus
@@ -988,8 +988,8 @@ namespace Analogy
 
         private void FilterResults()
         {
-            _filterCriteria.NewerThan = chkDateNewerThan.Checked && deNewerThanFilter.Value.HasValue ? deNewerThanFilter.Value.Value : DateTime.MinValue;
-            _filterCriteria.OlderThan = chkDateOlderThan.Checked && deOlderThanFilter.Value.HasValue ? deOlderThanFilter.Value.Value : DateTime.MaxValue;
+            _filterCriteria.NewerThan = chkDateNewerThan.Checked ? deNewerThanFilter.Value : DateTime.MinValue;
+            _filterCriteria.OlderThan = chkDateOlderThan.Checked  ?deOlderThanFilter.Value : DateTime.MaxValue;
             _filterCriteria.TextInclude = chkbIncludeText.Checked ? cbInclude.Text : string.Empty;
             _filterCriteria.TextExclude = chkExclude.Checked ? cbExclude.Text + "|" + string.Join("|", _excludeMostCommon) : string.Empty;
 

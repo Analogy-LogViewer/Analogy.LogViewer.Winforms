@@ -7,7 +7,7 @@ using System.Linq;
 using Analogy.Interfaces;
 using Analogy.Types;
 using Syncfusion.Data.Extensions;
-using Syncfusion.Windows.Forms.Tools.MultiColumnTreeView;
+using System.Windows.Forms.MultiColumnTreeView;
 
 
 namespace Analogy
@@ -70,16 +70,16 @@ namespace Analogy
 
                 foreach (DirectoryInfo dirinfo in subDir)
                 {
-                    TreeNodeAdvSubItem subitem1 = new TreeNodeAdvSubItem();
-                    TreeNodeAdvSubItem subitem2 = new TreeNodeAdvSubItem();
+                    TreeNode subitem1 = new TreeNode();
+                    TreeNode subitem2 = new TreeNode();
                     subitem1.Text = dirinfo.FullName;
                     subitem1.HelpText = subitem1.Text;
 
                     subitem2.Text = dirinfo.LastWriteTime.ToString();
                     subitem2.HelpText = subitem2.Text;
 
-                    TreeNodeAdv node = new TreeNodeAdv(dirinfo.Name);
-                    node.SubItems.AddRange(new[] { subitem1, subitem2 });
+                    TreeNode node = new TreeNode(dirinfo.Name);
+                    node.Nodes.AddRange(new[] { subitem1, subitem2 });
                     e.Node.Nodes.Add(node);
                 }
             }
