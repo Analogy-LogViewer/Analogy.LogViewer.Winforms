@@ -99,7 +99,8 @@ namespace Analogy
             if (string.IsNullOrEmpty(folder) || !Directory.Exists(folder)) return;
             SelectedPath = folder;
             txtbFolder.Text = folder;
-            directoryListing.SetPath(folder, dataProvider);
+            //todo
+            //directoryListing.SetPath(folder, dataProvider);
         }
     }
 

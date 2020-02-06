@@ -115,6 +115,19 @@ namespace Analogy
             this.tsMessageInfo = new System.Windows.Forms.ToolStrip();
             this.tsBtnMessageInfoCopy = new System.Windows.Forms.ToolStripButton();
             this.sfDataGridBookmarks = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tsBookmark = new System.Windows.Forms.ToolStrip();
             this.tsBtnBookmarkCopySingle = new System.Windows.Forms.ToolStripButton();
             this.tsBtnBookmarkCopyAll = new System.Windows.Forms.ToolStripButton();
@@ -146,19 +159,6 @@ namespace Analogy
             this.tcBottom = new System.Windows.Forms.TabControl();
             this.tabPageMessageInfo = new System.Windows.Forms.TabPage();
             this.tabPageBookmarks = new System.Windows.Forms.TabPage();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmsBookmarked = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiCalcDiffBookmark = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiBookmarkDateFilterNewer = new System.Windows.Forms.ToolStripMenuItem();
@@ -463,7 +463,7 @@ namespace Analogy
             this.panel1.Controls.Add(this.pnlButtonsHighlight);
             this.panel1.Controls.Add(this.chkbHighlight);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 273);
+            this.panel1.Location = new System.Drawing.Point(0, 264);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1269, 26);
@@ -1058,7 +1058,7 @@ namespace Analogy
             this.tbMessageInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbMessageInfo.Name = "tbMessageInfo";
             this.tbMessageInfo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.tbMessageInfo.Size = new System.Drawing.Size(1261, 171);
+            this.tbMessageInfo.Size = new System.Drawing.Size(1261, 180);
             this.tbMessageInfo.TabIndex = 14;
             this.tbMessageInfo.Text = "";
             // 
@@ -1106,9 +1106,99 @@ namespace Analogy
             this.sfDataGridBookmarks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridBookmarks.Name = "sfDataGridBookmarks";
             this.sfDataGridBookmarks.RowHeadersWidth = 51;
-            this.sfDataGridBookmarks.Size = new System.Drawing.Size(949, 477);
+            this.sfDataGridBookmarks.Size = new System.Drawing.Size(1261, 180);
             this.sfDataGridBookmarks.TabIndex = 6;
             this.sfDataGridBookmarks.Text = "Bookmarks";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "Data Source/File Name";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 183;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "Date";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 67;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "Time Differenace";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 145;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.HeaderText = "Text";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Width = 64;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.HeaderText = "Source";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Width = 82;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.HeaderText = "Level";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.Width = 71;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.HeaderText = "Class";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.Width = 71;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.HeaderText = "Category";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.Width = 94;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.HeaderText = "User";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.Width = 67;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.HeaderText = "Module";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.Width = 83;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.HeaderText = "Object";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.Width = 78;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.HeaderText = "Process ID";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.Width = 105;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.HeaderText = "Thread ID";
+            this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             // 
             // tsBookmark
             // 
@@ -1121,7 +1211,7 @@ namespace Analogy
             this.tsBtnBookmarkGoToOriginal});
             this.tsBookmark.Location = new System.Drawing.Point(0, 0);
             this.tsBookmark.Name = "tsBookmark";
-            this.tsBookmark.Size = new System.Drawing.Size(949, 27);
+            this.tsBookmark.Size = new System.Drawing.Size(1261, 27);
             this.tsBookmark.TabIndex = 5;
             // 
             // tsBtnBookmarkCopySingle
@@ -1257,7 +1347,7 @@ namespace Analogy
             this.splitContainerMain.Panel2.Controls.Add(this.tcBottom);
             this.splitContainerMain.Panel2.Text = "Panel2";
             this.splitContainerMain.Size = new System.Drawing.Size(1269, 539);
-            this.splitContainerMain.SplitterDistance = 299;
+            this.splitContainerMain.SplitterDistance = 290;
             this.splitContainerMain.SplitterWidth = 13;
             this.splitContainerMain.TabIndex = 21;
             this.splitContainerMain.Text = "splitContainerControl1";
@@ -1268,7 +1358,7 @@ namespace Analogy
             this.pnlMessages.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMessages.Location = new System.Drawing.Point(0, 153);
             this.pnlMessages.Name = "pnlMessages";
-            this.pnlMessages.Size = new System.Drawing.Size(1269, 120);
+            this.pnlMessages.Size = new System.Drawing.Size(1269, 111);
             this.pnlMessages.TabIndex = 7;
             // 
             // sfDataGridMain
@@ -1298,7 +1388,7 @@ namespace Analogy
             this.sfDataGridMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridMain.Name = "sfDataGridMain";
             this.sfDataGridMain.RowHeadersWidth = 51;
-            this.sfDataGridMain.Size = new System.Drawing.Size(1269, 120);
+            this.sfDataGridMain.Size = new System.Drawing.Size(1269, 111);
             this.sfDataGridMain.TabIndex = 5;
             this.sfDataGridMain.Text = "sfDataGridMain";
             this.sfDataGridMain.StyleChanged += new System.EventHandler(this.sfDataGridMain_StyleChanged);
@@ -1401,7 +1491,7 @@ namespace Analogy
             this.tcBottom.Location = new System.Drawing.Point(0, 0);
             this.tcBottom.Name = "tcBottom";
             this.tcBottom.SelectedIndex = 0;
-            this.tcBottom.Size = new System.Drawing.Size(1269, 227);
+            this.tcBottom.Size = new System.Drawing.Size(1269, 236);
             this.tcBottom.TabIndex = 7;
             // 
             // tabPageMessageInfo
@@ -1410,7 +1500,7 @@ namespace Analogy
             this.tabPageMessageInfo.Controls.Add(this.tsMessageInfo);
             this.tabPageMessageInfo.Location = new System.Drawing.Point(4, 25);
             this.tabPageMessageInfo.Name = "tabPageMessageInfo";
-            this.tabPageMessageInfo.Size = new System.Drawing.Size(1261, 198);
+            this.tabPageMessageInfo.Size = new System.Drawing.Size(1261, 207);
             this.tabPageMessageInfo.TabIndex = 1;
             this.tabPageMessageInfo.Text = "Message Info";
             // 
@@ -1420,99 +1510,9 @@ namespace Analogy
             this.tabPageBookmarks.Controls.Add(this.tsBookmark);
             this.tabPageBookmarks.Location = new System.Drawing.Point(4, 25);
             this.tabPageBookmarks.Name = "tabPageBookmarks";
-            this.tabPageBookmarks.Size = new System.Drawing.Size(949, 504);
+            this.tabPageBookmarks.Size = new System.Drawing.Size(1261, 207);
             this.tabPageBookmarks.TabIndex = 2;
             this.tabPageBookmarks.Text = "Bookmarks";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "Data Source/File Name";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 183;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 67;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.HeaderText = "Time Differenace";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 145;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.HeaderText = "Text";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 64;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.HeaderText = "Source";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 82;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.HeaderText = "Level";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 71;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.HeaderText = "Class";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.Width = 71;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.HeaderText = "Category";
-            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 94;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.HeaderText = "User";
-            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.Width = 67;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.HeaderText = "Module";
-            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.Width = 83;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.HeaderText = "Object";
-            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 78;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.HeaderText = "Process ID";
-            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.Width = 105;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.HeaderText = "Thread ID";
-            this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             // 
             // cmsBookmarked
             // 

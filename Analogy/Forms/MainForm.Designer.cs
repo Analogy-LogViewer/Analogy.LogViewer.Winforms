@@ -993,7 +993,7 @@ namespace Analogy
 
         #endregion
 
-        private System.Windows.Forms.RibbonControlAdv ribbonControlMain;
+        private RibbonControlAdv ribbonControlMain;
         private System.Windows.Forms.ToolStripTabItem toolStripTabItem1;
         private System.Windows.Forms.ToolStripTabItem toolStripTabItem2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;

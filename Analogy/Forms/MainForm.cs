@@ -14,6 +14,7 @@ using Analogy.Managers;
 using Analogy.Properties;
 using Analogy.Tools;
 using Analogy.Types;
+using Syncfusion.Windows.Forms.Tools;
 
 namespace Analogy
 {
@@ -34,7 +35,6 @@ namespace Analogy
         private bool disableOnlineDueToFileOpen;
         private UserSettingsManager settings => UserSettingsManager.UserSettings;
         private bool Initialized { get; set; }
-
         TouchStyleColorTable touch = new TouchStyleColorTable();
 
         public MainForm()

@@ -37,7 +37,6 @@ namespace Analogy
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.toolStripTop = new System.Windows.Forms.ToolStrip();
             this.tsBtnRootDrive = new System.Windows.Forms.ToolStripButton();
-            this.directoryListing = new Analogy.DirectoryListing();
             this.panel2.SuspendLayout();
             this.toolStripTop.SuspendLayout();
             this.SuspendLayout();
@@ -110,21 +109,10 @@ namespace Analogy
             this.tsBtnRootDrive.Size = new System.Drawing.Size(104, 24);
             this.tsBtnRootDrive.Text = "Root Drive";
             // 
-            // directoryListing
-            // 
-            this.directoryListing.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.directoryListing.Location = new System.Drawing.Point(0, 50);
-            this.directoryListing.Margin = new System.Windows.Forms.Padding(2);
-            this.directoryListing.Name = "directoryListing";
-            this.directoryListing.Padding = new System.Windows.Forms.Padding(10);
-            this.directoryListing.Size = new System.Drawing.Size(444, 261);
-            this.directoryListing.TabIndex = 6;
-            // 
             // FolderTreeViewUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.directoryListing);
             this.Controls.Add(this.toolStripTop);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
@@ -146,7 +134,6 @@ namespace Analogy
         private System.Windows.Forms.TextBox txtbFolder;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Button btnOpenFolder;
-        private DirectoryListing directoryListing;
         private System.Windows.Forms.ToolStrip toolStripTop;
         private System.Windows.Forms.ToolStripButton tsBtnRootDrive;
     }
