@@ -1,4 +1,4 @@
-# Analogy.LogViewer.Winforms
+# Analogy.LogViewer.Winforms [![Gitter](https://badges.gitter.im/Analogy-LogViewer/community.svg)](https://gitter.im/Analogy-LogViewer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 **WIP - Not yet ready for use**
 
 Basic winforms Implementation (no third parties UI libraries usage like DevExpress/Syncfusion)
