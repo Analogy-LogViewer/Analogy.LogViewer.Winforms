@@ -91,81 +91,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Syncfusion.Core.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Core.WinForms.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Data.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Data.WinForms.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Grid.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Grid.Base.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Grid.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Grid.Windows.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.GridCommon.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.GridCommon.WinForms.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.GridConverter.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.GridConverter.Windows.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.GridHelperClasses.Windows.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Licensing">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfDataGrid.WinForms.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.SfDataGridConverter.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfDataGridConverter.WinForms.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.SfInput.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfInput.WinForms.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.SfListView.WinForms, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SfListView.WinForms.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Shared.Base.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Shared.Windows.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.SpellChecker.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.SpellChecker.Base.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Tools.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Tools.Base.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.Tools.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.Tools.Windows.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.TreeMap.Windows, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-    <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.TreeMap.Windows.dll</HintPath>
-    <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Syncfusion.XlsIO.Base, Version=17.4460.0.39, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>D:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.4.0.39\Assemblies\4.6\Syncfusion.XlsIO.Base.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -177,39 +102,27 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Forms\AboutDataSourceBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\AboutDataSourceBox.cs" />
     <Compile Update="Forms\AboutDataSourceBox.Designer.cs">
       <DependentUpon>AboutDataSourceBox.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\AnalogyAboutBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\AnalogyAboutBox.cs" />
     <Compile Update="Forms\AnalogyAboutBox.Designer.cs">
       <DependentUpon>AnalogyAboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\AnalogyExclude.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\AnalogyExclude.cs" />
     <Compile Update="Forms\AnalogyExclude.Designer.cs">
       <DependentUpon>AnalogyExclude.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\AnalogyExcludeMessage.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\AnalogyExcludeMessage.cs" />
     <Compile Update="Forms\AnalogyExcludeMessage.Designer.cs">
       <DependentUpon>AnalogyExcludeMessage.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\AnalogyOTAClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\AnalogyOTAClient.cs" />
     <Compile Update="Forms\AnalogyOTAClient.Designer.cs">
       <DependentUpon>AnalogyOTAClient.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\UserSettingsDataProvidersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\UserSettingsDataProvidersForm.cs" />
     <Compile Update="Forms\UserSettingsDataProvidersForm.Designer.cs">
       <DependentUpon>UserSettingsDataProvidersForm.cs</DependentUpon>
     </Compile>
@@ -228,15 +141,11 @@
     <Compile Update="UserControls\FilePoolingLog.Designer.cs">
       <DependentUpon>FilePoolingLog.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\AnalogyOTAForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\AnalogyOTAForm.cs" />
     <Compile Update="Forms\AnalogyOTAForm.Designer.cs">
       <DependentUpon>AnalogyOTAForm.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\ChangeLog.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\ChangeLog.cs" />
     <Compile Update="Forms\ChangeLog.Designer.cs">
       <DependentUpon>ChangeLog.cs</DependentUpon>
     </Compile>
@@ -246,9 +155,7 @@
     <Compile Update="UserControls\CombineFilesUC.Designer.cs">
       <DependentUpon>CombineFilesUC.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\ExtensionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\ExtensionsForm.cs" />
     <Compile Update="Forms\ExtensionsForm.Designer.cs">
       <DependentUpon>ExtensionsForm.cs</DependentUpon>
     </Compile>
@@ -257,6 +164,12 @@
     </Compile>
     <Compile Update="UserControls\ExtensionsUC.Designer.cs">
       <DependentUpon>ExtensionsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserControls\FileListing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\FileSystemUC - Copy.Designer.cs">
+      <DependentUpon>FileSystemUC.cs</DependentUpon>
     </Compile>
     <Compile Update="UserControls\FileSystemUC.cs">
       <SubType>UserControl</SubType>
@@ -270,15 +183,11 @@
     <Compile Update="UserControls\FolderTreeViewUC.Designer.cs">
       <DependentUpon>FolderTreeViewUC.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\FormCombineFiles.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\FormCombineFiles.cs" />
     <Compile Update="Forms\FormCombineFiles.Designer.cs">
       <DependentUpon>FormCombineFiles.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\FormMessageDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\FormMessageDetails.cs" />
     <Compile Update="Forms\FormMessageDetails.Designer.cs">
       <DependentUpon>FormMessageDetails.cs</DependentUpon>
     </Compile>
@@ -318,9 +227,7 @@
     <Compile Update="UserControls\FilesOperationsUC.Designer.cs">
       <DependentUpon>FilesOperationsUC.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\ProcessNameAndID.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\ProcessNameAndID.cs" />
     <Compile Update="Forms\ProcessNameAndID.Designer.cs">
       <DependentUpon>ProcessNameAndID.cs</DependentUpon>
     </Compile>
@@ -334,9 +241,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Update="Forms\SearchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\SearchForm.cs" />
     <Compile Update="Forms\SearchForm.Designer.cs">
       <DependentUpon>SearchForm.cs</DependentUpon>
     </Compile>
@@ -346,9 +251,7 @@
     <Compile Update="UserControls\SearchInFilesUC.Designer.cs">
       <DependentUpon>SearchInFilesUC.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\FileComparerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\FileComparerForm.cs" />
     <Compile Update="Forms\FileComparerForm.Designer.cs">
       <DependentUpon>FileComparerForm.cs</DependentUpon>
     </Compile>
@@ -370,9 +273,7 @@
     <Compile Update="UserControls\UCMessageDetails.Designer.cs">
       <DependentUpon>UCMessageDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\UserSettingsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\UserSettingsForm.cs" />
     <Compile Update="Forms\UserSettingsForm.Designer.cs">
       <DependentUpon>UserSettingsForm.cs</DependentUpon>
     </Compile>
@@ -382,21 +283,15 @@
     <Compile Update="UserControls\WindowsEventLog.designer.cs">
       <DependentUpon>WindowsEventLog.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\ClientServerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\ClientServerForm.cs" />
     <Compile Update="Forms\ClientServerForm.Designer.cs">
       <DependentUpon>ClientServerForm.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\LogGridForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\LogGridForm.cs" />
     <Compile Update="Forms\LogGridForm.Designer.cs">
       <DependentUpon>LogGridForm.cs</DependentUpon>
     </Compile>
-    <Compile Update="Forms\WindowsEventLogsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\WindowsEventLogsForm.cs" />
     <Compile Update="Forms\WindowsEventLogsForm.Designer.cs">
       <DependentUpon>WindowsEventLogsForm.cs</DependentUpon>
     </Compile>
@@ -433,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Forms\WindowsEventLogsForm.resx">
       <DependentUpon>WindowsEventLogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserControls\FileSystemUC - Copy.resx">
+      <DependentUpon>FileSystemUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="UserControls\WindowsEventLogsUC.resx">
       <DependentUpon>WindowsEventLogsUC.cs</DependentUpon>
@@ -789,7 +687,6 @@
     <None Include="Resources\Analogy_icon1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="Forms\Form1.Designer.cs" />
     <Compile Remove="Forms\MainForm.cs" />
     <Compile Remove="Forms\MainForm.Designer.cs" />
   </ItemGroup>

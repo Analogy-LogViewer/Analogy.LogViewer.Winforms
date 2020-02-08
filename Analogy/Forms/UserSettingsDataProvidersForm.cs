@@ -4,7 +4,6 @@ using System.Linq;
 using System.Windows.Forms;
 using Analogy.DataProviders.Extensions;
 using Analogy.Managers;
-using Syncfusion.Data.Extensions;
 using System.Windows.Forms;
 
 namespace Analogy
@@ -42,7 +41,7 @@ namespace Analogy
 
         public UserSettingsDataProvidersForm(string tabName) : this()
         {
-       var tab = tabControlAdv1.TabPages.ToList<TabPage>().FirstOrDefault(t=>t.Name==tabName);
+       var tab = tabControlAdv1.TabPages.Cast<TabPage>().FirstOrDefault(t=>t.Name==tabName);
             if (tab != null)
                 _initialSelection = tab.TabIndex;
         }

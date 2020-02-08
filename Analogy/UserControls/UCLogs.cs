@@ -1,5 +1,4 @@
-﻿using Syncfusion.WinForms.DataGridConverter;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -15,7 +14,6 @@ using System.Windows.Forms;
 using Analogy.DataSources;
 using Analogy.Interfaces;
 using Analogy.Types;
-using Syncfusion.WinForms.DataGrid.Serialization;
 
 namespace Analogy
 {
@@ -257,51 +255,51 @@ namespace Analogy
             // };
            
 
-            sfDataGridMain.QueryRowStyle += (s, e) =>
-            {
-                if (e.RowIndex >= 0 && (e.RowData is DataRowView drv) && drv.Row.ItemArray[9] is AnalogyLogMessage message)
-                {
-                    var data = e.RowData;
-                    e.Style.BackColor = Settings.ColorSettings.GetColorForLogLevel(message.Level);
-                    string text = message.Text;
-                    if (chkbHighlight.Checked && FilterCriteriaObject.Match(text, cbHighlights.Text, PreDefinedQueryType.Contains))
-                    {
-                        e.Style.BackColor = Settings.ColorSettings.GetHighlightColor();
-                    }
+            //sfDataGridMain.QueryRowStyle += (s, e) =>
+            //{
+            //    if (e.RowIndex >= 0 && (e.RowData is DataRowView drv) && drv.Row.ItemArray[9] is AnalogyLogMessage message)
+            //    {
+            //        var data = e.RowData;
+            //        e.Style.BackColor = Settings.ColorSettings.GetColorForLogLevel(message.Level);
+            //        string text = message.Text;
+            //        if (chkbHighlight.Checked && FilterCriteriaObject.Match(text, cbHighlights.Text, PreDefinedQueryType.Contains))
+            //        {
+            //            e.Style.BackColor = Settings.ColorSettings.GetHighlightColor();
+            //        }
 
-                    foreach (PreDefineHighlight preDefineHighlight in Settings.PreDefinedQueries.Highlights)
-                    {
-                        if (FilterCriteriaObject.Match(text, preDefineHighlight.Text, preDefineHighlight.PreDefinedQueryType))
-                        {
-                            e.Style.BackColor = preDefineHighlight.Color;
-                        }
-                    }
-                }
-            };
+            //        foreach (PreDefineHighlight preDefineHighlight in Settings.PreDefinedQueries.Highlights)
+            //        {
+            //            if (FilterCriteriaObject.Match(text, preDefineHighlight.Text, preDefineHighlight.PreDefinedQueryType))
+            //            {
+            //                e.Style.BackColor = preDefineHighlight.Color;
+            //            }
+            //        }
+            //    }
+            //};
             sfDataGridMain.CellClick += (s, e) =>
             {
                 //todo
                 //if (tsTopAutoScrollToLast.Checked)
                 //    tsTopAutoScrollToLast.Checked = false;
 
-                var selectedItems = sfDataGridMain.SelectedItems.Cast<DataRowView>().ToList();
+                var selectedItems = sfDataGridMain.SelectedRows.Cast<DataRowView>().ToList();
                 if (!selectedItems.Any()) return;
                 DataRow dataRow = selectedItems.First().Row;
                 _currentMassage = GetMessageFromRow(dataRow);
                 if (hasAnyInPlaceExtensions)
                 {
-                    var column = sfDataGridMain.Columns[e.DataColumn.ColumnIndex];
+                    var column = sfDataGridMain.Columns[e.ColumnIndex];
                     if (column == null) return;
                     foreach (IAnalogyExtension extension in InPlaceRegisteredExtensions)
                     {
                         var columns = extension.GetColumnsInfo();
                         foreach (AnalogyColumnInfo exColumn in columns)
                         {
-                            if (column.MappingName.Equals(exColumn.ColumnName) &&
+                            if (column.Name.Equals(exColumn.ColumnName) &&
                                 column.HeaderText.Equals(exColumn.ColumnCaption))
                             {
 
-                                var cellValue = sfDataGridMain.GetSelectedCells().First().ToString();
+                                var cellValue = sfDataGridMain.SelectedCells[0].ToString();
                                 AnalogyCellClickedEventArgs argsForEx =
                                     new AnalogyCellClickedEventArgs(exColumn.ColumnName, cellValue, _currentMassage);
                                 extension.CellClicked(s, argsForEx);
@@ -380,16 +378,17 @@ namespace Analogy
             tsmiUndockView.Click += (s, e) => UndockView();
             tsmiUndockPerModule.Click += (s, e) => UndockViewPerProcess();
             tsmiExportExcel.Click += (s, e) => ExportToExcel();
-            tsTopPauseRefresh.CheckedChanged += (s, e) =>
-            {
-                _realtimeUpdate = !tsTopPauseRefresh.Checked;
-                AcceptChanges(false);
-            };
-            tsTopAutoScrollToLast.CheckedChanged += (s, e) =>
-            {
-                //todo:complete this
-                Settings.AutoScrollToLastMessage = tsTopAutoScrollToLast.Checked;
-            };
+                //todo
+            //tsTopPauseRefresh.CheckedChanged += (s, e) =>
+            //{
+            //    _realtimeUpdate = !tsTopPauseRefresh.Checked;
+            //    AcceptChanges(false);
+            //};
+            //tsTopAutoScrollToLast.CheckedChanged += (s, e) =>
+            //{
+            //    //todo:complete this
+            //    Settings.AutoScrollToLastMessage = tsTopAutoScrollToLast.Checked;
+            //};
             tsTopClear.Click += (s, e) => ClearLogs(true);
 
 
@@ -409,8 +408,8 @@ namespace Analogy
             tsBtnBookmarkCopySingle.Click += (s, e) =>
             {
                 //todo: check this
-                if (!sfDataGridBookmarks.SelectedItems.Any()) return;
-                var selectedItems = sfDataGridBookmarks.SelectedItems.Cast<DataRowView>();
+                if (sfDataGridBookmarks.SelectedRows.Count<1) return;
+                var selectedItems = sfDataGridBookmarks.SelectedRows.Cast<DataRowView>();
                 DataRow dataRow = selectedItems.First().Row;
                 AnalogyLogMessage message = GetMessageFromRow(dataRow);
                 Clipboard.SetText(message.Text);
@@ -564,9 +563,10 @@ namespace Analogy
 
             if (File.Exists(LayoutFileNameMain))
             {
+                //todo
                 using (FileStream fileStream = File.OpenRead(LayoutFileNameMain))
                 {
-                    sfDataGridMain.Deserialize(fileStream, Deserialization());
+                    //sfDataGridMain.Deserialize(fileStream, Deserialization());
                 }
             }
             if (Settings.SaveSearchFilters)
@@ -581,8 +581,7 @@ namespace Analogy
 
             //todo:font
             //LogGrid.Appearance.Row.Font = new Font(LogGrid.Appearance.Row.Font.Name, Settings.FontSize);
-
-            tsTopAutoScrollToLast.Checked = Settings.AutoScrollToLastMessage;
+            //tsTopAutoScrollToLast.Checked = Settings.AutoScrollToLastMessage;
         }
 
         private void BookmarkModeUI()
@@ -1423,10 +1422,10 @@ namespace Analogy
         private void SaveGridLayout()
         {
             try
-            {
+            {//todo
                 using (FileStream fileStream = File.Create(LayoutFileNameMain))
                 {
-                    sfDataGridMain.Serialize(fileStream, Serialization());
+                    //sfDataGridMain.Serialize(fileStream, Serialization());
                 }
             }
             catch (Exception exception)
@@ -1521,8 +1520,8 @@ namespace Analogy
 
         private (AnalogyLogMessage, string) GetMessageFromSelectedRowInGrid()
         {
-            if (!sfDataGridMain.SelectedItems.Any()) return (null, string.Empty);
-            var selectedItems = sfDataGridMain.SelectedItems.Cast<DataRowView>();
+            if (sfDataGridMain.SelectedRows.Count<1) return (null, string.Empty);
+            var selectedItems = sfDataGridMain.SelectedRows.Cast<DataRowView>();
             DataRow dataRow = selectedItems.First().Row;
             AnalogyLogMessage message = GetMessageFromRow(dataRow);
             string datasource = (string)dataRow["DataProvider"].ToString();
@@ -1601,11 +1600,12 @@ namespace Analogy
                     }
                     else
                     {
-                        var options = new ExcelExportingOptions();
-                        var excelEngine = sfDataGridMain.ExportToExcel(sfDataGridMain.View, options);
-                        var workBook = excelEngine.Excel.Workbooks[0];
-                        workBook.SaveAs(saveFileDialog.FileName);
-                        OpenFolder(saveFileDialog.FileName);
+                        //todo
+                        //var options = new ExcelExportingOptions();
+                        ////var excelEngine = sfDataGridMain.ExportToExcel(sfDataGridMain.View, options);
+                        //var workBook = excelEngine.Excel.Workbooks[0];
+                        //workBook.SaveAs(saveFileDialog.FileName);
+                        //OpenFolder(saveFileDialog.FileName);
                     }
                 }
                 if (saveFileDialog.FilterIndex == 2)
@@ -1616,11 +1616,12 @@ namespace Analogy
                     }
                     else
                     {
-                        var options = new ExcelExportingOptions();
-                        var excelEngine = sfDataGridMain.ExportToExcel(sfDataGridMain.View, options);
-                        var workBook = excelEngine.Excel.Workbooks[0];
-                        workBook.SaveAs(saveFileDialog.FileName);
-                        OpenFolder(saveFileDialog.FileName);
+                        //todo
+                        //var options = new ExcelExportingOptions();
+                        //var excelEngine = sfDataGridMain.ExportToExcel(sfDataGridMain.View, options);
+                        //var workBook = excelEngine.Excel.Workbooks[0];
+                        //workBook.SaveAs(saveFileDialog.FileName);
+                        //OpenFolder(saveFileDialog.FileName);
                     }
                 }
             }
@@ -1898,41 +1899,41 @@ namespace Analogy
             contextMenuStripFilters.Show(sbtnPreDefinedFilters.PointToScreen(sbtnPreDefinedFilters.Location));
         }
         
-        private SerializationOptions Serialization()
-        {
-            SerializationOptions serializationOptions = new SerializationOptions
-            {
-                SerializeStyle = true,
-                SerializeCaptionSummaries = true,
-                SerializeColumns = true,
-                SerializeFiltering = true,
-                SerializeGrouping = true,
-                SerializeGroupSummaries = true,
-                SerializeSorting = true,
-                SerializeStackedHeaders = true,
-                SerializeTableSummaries = true,
-                SerializeUnboundRows = true
-            };
-            return serializationOptions;
-        }
-        private DeserializationOptions Deserialization()
-        {
-            DeserializationOptions deserializationOptions = new DeserializationOptions
-            {
-                DeserializeCaptionSummary = true,
-                DeserializeColumns = true,
-                DeserializeFiltering = true,
-                DeserializeGrouping = true,
-                DeserializeGroupSummaries = true,
-                DeserializeSorting = true,
-                DeserializeStackedHeaders = true,
-                DeserializeStyle = true,
-                DeserializeTableSummaries = true,
-                DeserializeUnboundRows = true
-            };
+        //private SerializationOptions Serialization()
+        //{
+        //    SerializationOptions serializationOptions = new SerializationOptions
+        //    {
+        //        SerializeStyle = true,
+        //        SerializeCaptionSummaries = true,
+        //        SerializeColumns = true,
+        //        SerializeFiltering = true,
+        //        SerializeGrouping = true,
+        //        SerializeGroupSummaries = true,
+        //        SerializeSorting = true,
+        //        SerializeStackedHeaders = true,
+        //        SerializeTableSummaries = true,
+        //        SerializeUnboundRows = true
+        //    };
+        //    return serializationOptions;
+        //}
+        //private DeserializationOptions Deserialization()
+        //{
+        //    DeserializationOptions deserializationOptions = new DeserializationOptions
+        //    {
+        //        DeserializeCaptionSummary = true,
+        //        DeserializeColumns = true,
+        //        DeserializeFiltering = true,
+        //        DeserializeGrouping = true,
+        //        DeserializeGroupSummaries = true,
+        //        DeserializeSorting = true,
+        //        DeserializeStackedHeaders = true,
+        //        DeserializeStyle = true,
+        //        DeserializeTableSummaries = true,
+        //        DeserializeUnboundRows = true
+        //    };
 
-            return deserializationOptions;
-        }
+        //    return deserializationOptions;
+        //}
 
         private void sfDataGridMain_StyleChanged(object sender, EventArgs e)
         {
@@ -1940,7 +1941,7 @@ namespace Analogy
             {
                 using (FileStream fileStream = File.Create(LayoutFileNameMain))
                 {
-                    sfDataGridMain.Serialize(fileStream, Serialization());
+                   // sfDataGridMain.Serialize(fileStream, Serialization());
                 }
             }
             catch (Exception exception)

@@ -20,12 +20,13 @@ namespace Analogy
 
         private void SetupEventsHandlers()
         {
-            directoryListing.FolderChanged += (s, e) => FolderChanged?.Invoke(this, e);
-            tsBtnRootDrive.Click += (s, e) =>
-            {
-                if (!string.IsNullOrEmpty(txtbFolder.Text) && Directory.Exists(txtbFolder.Text))
-                    directoryListing.SetPath(Path.GetPathRoot(txtbFolder.Text), DataProvider);
-            };
+            //todo
+            //directoryListing.FolderChanged += (s, e) => FolderChanged?.Invoke(this, e);
+            //tsBtnRootDrive.Click += (s, e) =>
+            //{
+            //    if (!string.IsNullOrEmpty(txtbFolder.Text) && Directory.Exists(txtbFolder.Text))
+            //        directoryListing.SetPath(Path.GetPathRoot(txtbFolder.Text), DataProvider);
+            //};
         }
         private async void txtbFolder_KeyUp(object sender, KeyEventArgs e)
         {
@@ -41,8 +42,8 @@ namespace Analogy
         private async Task PopulateFolders(string folderText, IAnalogyOfflineDataProvider dataProvider)
         {
             if (Directory.Exists(folderText))
-            {
-                directoryListing.SetPath(folderText, dataProvider);
+            {//todo
+                //directoryListing.SetPath(folderText, dataProvider);
                 txtbFolder.Text = folderText;
                 FolderChanged?.Invoke(this, new FolderSelectionEventArgs(folderText));
             }
