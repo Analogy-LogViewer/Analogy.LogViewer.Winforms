@@ -110,13 +110,10 @@ namespace Analogy
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblError = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TmrAutoConnect = new System.Windows.Forms.Timer(this.components);
-            this.tmrStatusUpdates = new System.Windows.Forms.Timer(this.components);
-            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.tsslMemoryUsage = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslIdleMessage = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TmrAutoConnect = new System.Windows.Forms.Timer(this.components);
+            this.tmrStatusUpdates = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -134,6 +131,7 @@ namespace Analogy
             this.kryptonRibbonTab2,
             this.krtTheme,
             this.krtSettings});
+            this.ribbonControlMain.SelectedContext = null;
             this.ribbonControlMain.SelectedTab = this.RibbonTabAnalogy;
             this.ribbonControlMain.Size = new System.Drawing.Size(1083, 165);
             this.ribbonControlMain.TabIndex = 0;
@@ -648,7 +646,7 @@ namespace Analogy
             // 
             // imageListSmall
             // 
-            this.imageListSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListSmall.ImageStream")));
+            this.imageListSmall.ImageStream = (System.Windows.Forms.ImageListStreamer)global::Analogy.Properties.Resources.imageListSmall_ImageStream;
             this.imageListSmall.TransparentColor = System.Drawing.Color.Transparent;
             this.imageListSmall.Images.SetKeyName(0, "document_plain.png");
             this.imageListSmall.Images.SetKeyName(1, "preferences.png");
@@ -688,55 +686,6 @@ namespace Analogy
             this.tsslFileCaching.Size = new System.Drawing.Size(85, 20);
             this.tsslFileCaching.Text = "file caching";
             // 
-            // TmrAutoConnect
-            // 
-            this.TmrAutoConnect.Interval = 1000;
-            this.TmrAutoConnect.Tick += new System.EventHandler(this.TmrAutoConnect_Tick);
-            // 
-            // tmrStatusUpdates
-            // 
-            this.tmrStatusUpdates.Enabled = true;
-            this.tmrStatusUpdates.Interval = 1000;
-            // 
-            // imageList3
-            // 
-            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
-            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList3.Images.SetKeyName(0, "Search.png");
-            this.imageList3.Images.SetKeyName(1, "1.png");
-            this.imageList3.Images.SetKeyName(2, "2.png");
-            this.imageList3.Images.SetKeyName(3, "3.png");
-            this.imageList3.Images.SetKeyName(4, "4.png");
-            this.imageList3.Images.SetKeyName(5, "5.png");
-            this.imageList3.Images.SetKeyName(6, "6.png");
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "Icon-3.png");
-            this.imageList1.Images.SetKeyName(1, "Icon-4.png");
-            this.imageList1.Images.SetKeyName(2, "Icon-5.png");
-            this.imageList1.Images.SetKeyName(3, "Icon-6.png");
-            this.imageList1.Images.SetKeyName(4, "Icon-7.png");
-            this.imageList1.Images.SetKeyName(5, "Icon-8.png");
-            this.imageList1.Images.SetKeyName(6, "Icon-9.png");
-            this.imageList1.Images.SetKeyName(7, "Icon-10.png");
-            // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "__DVD RW drive.png");
-            this.imageList2.Images.SetKeyName(1, "__Local Disk(c).png");
-            this.imageList2.Images.SetKeyName(2, "__Local Disk(d).png");
-            this.imageList2.Images.SetKeyName(3, "__Desktop.png");
-            this.imageList2.Images.SetKeyName(4, "__Document.png");
-            this.imageList2.Images.SetKeyName(5, "__Download.png");
-            this.imageList2.Images.SetKeyName(6, "__Music.png");
-            this.imageList2.Images.SetKeyName(7, "__Pictures.png");
-            this.imageList2.Images.SetKeyName(8, "__Video.png");
-            // 
             // tsslMemoryUsage
             // 
             this.tsslMemoryUsage.Name = "tsslMemoryUsage";
@@ -749,6 +698,16 @@ namespace Analogy
             this.tsslIdleMessage.Size = new System.Drawing.Size(65, 20);
             this.tsslIdleMessage.Text = "Idle user";
             // 
+            // TmrAutoConnect
+            // 
+            this.TmrAutoConnect.Interval = 1000;
+            this.TmrAutoConnect.Tick += new System.EventHandler(this.TmrAutoConnect_Tick);
+            // 
+            // tmrStatusUpdates
+            // 
+            this.tmrStatusUpdates.Enabled = true;
+            this.tmrStatusUpdates.Interval = 1000;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -757,7 +716,6 @@ namespace Analogy
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.ribbonControlMain);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Analogy";
@@ -828,9 +786,6 @@ namespace Analogy
         private KryptonRibbonGroupButton kryptonRibbonGroupButton2;
         private KryptonRibbonGroupButton kryptonRibbonGroupButton3;
         private KryptonRibbonGroupButton kryptonRibbonGroupButton4;
-        private ImageList imageList3;
-        private ImageList imageList1;
-        private ImageList imageList2;
         private KryptonRibbonGroup kryptonRibbonGroup10;
         private KryptonRibbonGroupTriple kryptonRibbonGroupTriple10;
         private KryptonRibbonGroupButton kryptonRibbonGroupButton5;
