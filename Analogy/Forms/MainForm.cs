@@ -325,7 +325,7 @@ namespace Analogy
                 .Cast<IAnalogyOfflineDataProvider>().First();
             //if (settings.GetFactorySetting(analogy.FactoryID).Status != DataProviderFactoryStatus.Disabled)
 
-            tsbtnAnalogyOpenFolder.Click += (sender, e) => { OpenOffline(tstitmAnalogy, offlineAnalogy, offlineAnalogy.OptionalTitle, offlineAnalogy.InitialFolderFullPath); };
+            tsbtnAnalogyOpenFolder.Click += (sender, e) => { OpenOffline(RibbonTabAnalogy, offlineAnalogy, offlineAnalogy.OptionalTitle, offlineAnalogy.InitialFolderFullPath); };
             tsbtnAnalogyOpenFiles.Click += (sender, e) =>
             {
                 OpenFileDialog openFileDialog1 = new OpenFileDialog
@@ -338,7 +338,7 @@ namespace Analogy
                 {
                     OpenOffline(RibbonTabAnalogy, offlineAnalogy, offlineAnalogy.OptionalTitle, offlineAnalogy.InitialFolderFullPath,
                         openFileDialog1.FileNames);
-                    AddRecentFiles(tstitmAnalogy, tsbtnAnalogyRecentlyOpenFiles, offlineAnalogy, offlineAnalogy.OptionalTitle,
+                    AddRecentFiles(RibbonTabAnalogy, contextMenuStripRecentFiles, offlineAnalogy, offlineAnalogy.OptionalTitle,
                         openFileDialog1.FileNames.ToList());
                 }
             };
@@ -431,7 +431,7 @@ namespace Analogy
             if (factory.Title == null) return;
 
             KryptonRibbonTab ribbonPage = new KryptonRibbonTab { Text = factory.Title };
-            ribbonControlMain.Header.AddMainItem(ribbonPage);
+            ribbonControlMain.RibbonTabs.Add(ribbonPage);
             Mapping.Add(factory.FactoryID, ribbonPage);
 
             //todo:move logic to factory manager
@@ -447,11 +447,10 @@ namespace Analogy
             {
                 KryptonRibbonGroup groupActionSource = new KryptonRibbonGroup
                 {
-                    Text = actionFactory.Title,
-                    AllowMenuTextAlignment = true,
-                    AutoSize = true
+                    Tag = actionFactory.Title,
+                   
                 };
-                ribbonPage.Panel.Controls.Add(groupActionSource);
+                ribbonPage.Groups.Add(groupActionSource);
                 foreach (IAnalogyCustomAction action in actionFactory.Items)
                 {
                     ToolStripButton actionBtn = new ToolStripButton(action.Title, Resources.PageSetup_32x32)
@@ -466,10 +465,10 @@ namespace Analogy
 
             KryptonRibbonGroup groupInfoSource = new KryptonRibbonGroup
             {
-                Text = "About",
-                AutoSize = true
+                TextLine1 = "About",
+               
             };
-            ribbonPage.Panel.Controls.Add(groupInfoSource);
+            ribbonPage.Groups.Add(groupInfoSource);
             ToolStripButton aboutBtn = new ToolStripButton("Data Source Information", Resources.About_32x32)
             {
                 DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
@@ -482,8 +481,8 @@ namespace Analogy
 
         private void CreateDataSourceRibbonGroup(IAnalogyDataProvidersFactory dataSourceFactory, KryptonRibbonTab ribbonPage)
         {
-            KryptonRibbonGroup ribbonPageGroup = new KryptonRibbonGroup { Text = dataSourceFactory.Title, AutoSize = true };
-            ribbonPage.Panel.Controls.Add(ribbonPageGroup);
+            KryptonRibbonGroup ribbonPageGroup = new KryptonRibbonGroup { TextLine1 = dataSourceFactory.Title };
+            ribbonPage.Groups.Add(ribbonPageGroup);
 
             AddRealTimeDataSource(ribbonPage, dataSourceFactory, ribbonPageGroup);
             AddOfflineDataSource(ribbonPage, dataSourceFactory, ribbonPageGroup);
@@ -503,9 +502,10 @@ namespace Analogy
 
         private void AddToDockingManager(Control control, string title)
         {
-            dockingManager1.SetDockLabel(control, title);
-            dockingManager1.SetCustomCaptionButtons(control, new CaptionButtonsCollection());
-            dockingManager1.DockAsDocument(control);
+            //todo
+            //dockingManager1.SetDockLabel(control, title);
+            //dockingManager1.SetCustomCaptionButtons(control, new CaptionButtonsCollection());
+            //dockingManager1.DockAsDocument(control);
 
         }
         private void AddRealTimeDataSource(KryptonRibbonTab ribbonPage, IAnalogyDataProvidersFactory dataSourceFactory, KryptonRibbonGroup group)
@@ -582,35 +582,35 @@ namespace Analogy
                             realTime.OnDisconnected += OnRealTimeDisconnected;
                             realTime.StartReceiving();
                             onlineDataSourcesMapping.Add(onlineUC, realTime);
-                            dockingManager1.ActivateControl(onlineUC);
-                            //xtcLogs.SelectedTabPage = page;
-
-                            void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
-                            {
-                                if (arg.Control == onlineUC)
-                                {
-                                    try
-                                    {
-                                        onlineUC.Enable = false;
-                                        realTime.StopReceiving();
-                                        realTime.OnMessageReady -= OnRealTimeOnMessageReady;
-                                        realTime.OnManyMessagesReady -= OnRealTimeOnOnManyMessagesReady;
-                                        realTime.OnDisconnected -= OnRealTimeDisconnected;
-                                        //page.Controls.Remove(onlineUC);
-                                    }
-                                    catch (Exception e)
-                                    {
-                                        AnalogyLogManager.Instance.LogError(
-                                            "Error during call to Stop receiving: " + e);
-                                    }
-                                    finally
-                                    {
-                                        dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
-                                    }
-                                }
-                            }
-                            dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
-                            //xtcLogs.ControlRemoved += OnXtcLogsOnControlRemoved;
+                            
+                            //todo
+                            //dockingManager1.ActivateControl(onlineUC);
+                            //void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
+                            //{
+                            //    if (arg.Control == onlineUC)
+                            //    {
+                            //        try
+                            //        {
+                            //            onlineUC.Enable = false;
+                            //            realTime.StopReceiving();
+                            //            realTime.OnMessageReady -= OnRealTimeOnMessageReady;
+                            //            realTime.OnManyMessagesReady -= OnRealTimeOnOnManyMessagesReady;
+                            //            realTime.OnDisconnected -= OnRealTimeDisconnected;
+                            //            //page.Controls.Remove(onlineUC);
+                            //        }
+                            //        catch (Exception e)
+                            //        {
+                            //            AnalogyLogManager.Instance.LogError(
+                            //                "Error during call to Stop receiving: " + e);
+                            //        }
+                            //        finally
+                            //        {
+                            //            dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
+                            //        }
+                            //    }
+                            //}
+                            //dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
+                            ////xtcLogs.ControlRemoved += OnXtcLogsOnControlRemoved;
                             realTimeBtn.Enabled = true;
                             return true;
                         }
@@ -654,10 +654,10 @@ namespace Analogy
                 string optionalText = !string.IsNullOrEmpty(offlineAnalogy.OptionalTitle)
                     ? " for" + offlineAnalogy.OptionalTitle
                     : string.Empty;
-                KryptonRibbonGroup groupOfflineFileTools = new KryptonRibbonGroup { Text = $"Tools{optionalText}", AutoSize = true };
+                KryptonRibbonGroup groupOfflineFileTools = new KryptonRibbonGroup { TextLine1 = $"Tools{optionalText}" };
                 AddSingleOfflineDataSource(ribbonPage, offlineAnalogy, factory.Title, group, groupOfflineFileTools);
-                groupOfflineFileTools.AllowMenuTextAlignment = true;
-                ribbonPage.Panel.Controls.Add(groupOfflineFileTools);
+               // groupOfflineFileTools.AllowMenuTextAlignment = true;
+                ribbonPage.Groups.Add(groupOfflineFileTools);
 
                 //int width = 0;
 
@@ -689,7 +689,8 @@ namespace Analogy
                 offlineUC.Text = $"{offlineTitle} #{offline} ({titleOfDataSource})";
 
                 AddToDockingManager(offlineUC, offlineUC.Text);
-                dockingManager1.ActivateControl(offlineUC);
+                //todo
+                //dockingManager1.ActivateControl(offlineUC);
                 //xtcLogs.TabPages.Add(page);
                 //xtcLogs.SelectedTabPage = page;
             }
@@ -717,33 +718,34 @@ namespace Analogy
                 offline++;
                 UserControl filepoolingUC = new FilePoolingUCLogs(dataProvider, file, initialFolder);
 
-                void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
-                {
-                    if (arg.Control == filepoolingUC)
-                    {
-                        try
-                        {
-                            filepoolingUC.Dispose();
-                        }
-                        catch (Exception e)
-                        {
-                            AnalogyLogManager.Instance.LogError("Error during dispose: " + e);
-                        }
-                        finally
-                        {
-                            dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
-                        }
-                    }
-                }
+                //todo
+                //void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
+                //{
+                //    if (arg.Control == filepoolingUC)
+                //    {
+                //        try
+                //        {
+                //            filepoolingUC.Dispose();
+                //        }
+                //        catch (Exception e)
+                //        {
+                //            AnalogyLogManager.Instance.LogError("Error during dispose: " + e);
+                //        }
+                //        finally
+                //        {
+                //            dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
+                //        }
+                //    }
+                //}
 
                 filepoolingUC.Tag = ribbonPage;
                 filepoolingUC.Dock = DockStyle.Fill;
                 filepoolingUC.Text = $"{filePoolingTitle} #{filePooling} ({titleOfDataSource})";
                 AddToDockingManager(filepoolingUC, filepoolingUC.Text);
-                dockingManager1.ActivateControl(filepoolingUC);
+                //dockingManager1.ActivateControl(filepoolingUC);
                 //xtcLogs.TabPages.Add(page);
                 //xtcLogs.SelectedTabPage = page;
-                dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
+                //dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
             }
 
 
@@ -886,10 +888,10 @@ namespace Analogy
 
             KryptonRibbonGroup groupOfflineFileTools = new KryptonRibbonGroup()
             {
-                Text = $"Tools for {factoryTitle}",
-                AutoSize = true
+                TextLine1 = $"Tools for {factoryTitle}",
+              
             };
-            ribbonPage.Panel.Controls.Add(groupOfflineFileTools);
+            ribbonPage.Groups.Add(groupOfflineFileTools);
 
 
             var searchFiles = new ToolStripDropDownButton("Search in Files", Resources.Lookup_Reference_32x32)
@@ -967,7 +969,7 @@ namespace Analogy
                 page.Text = $"Client/Server logs #{offline}. {titleOfDataSource}";
 
                 AddToDockingManager(page, page.Text);
-                dockingManager1.ActivateControl(page);
+                //dockingManager1.ActivateControl(page);
                 //xtcLogs.TabPages.Add(page);
                 //xtcLogs.SelectedTabPage = page;
             }
@@ -976,30 +978,31 @@ namespace Analogy
 
                 offline++;
                 UserControl page = new FilePoolingUCLogs(offlineAnalogy, file, initialFolder);
-                void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
-                {
-                    if (arg.Control == page)
-                    {
-                        try
-                        {
-                            page.Dispose();
-                        }
-                        catch (Exception e)
-                        {
-                            AnalogyLogManager.Instance.LogError("Error during dispose: " + e);
-                        }
-                        finally
-                        {
-                            dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
-                        }
-                    }
-                }
+                //todo
+                //void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
+                //{
+                //    if (arg.Control == page)
+                //    {
+                //        try
+                //        {
+                //            page.Dispose();
+                //        }
+                //        catch (Exception e)
+                //        {
+                //            AnalogyLogManager.Instance.LogError("Error during dispose: " + e);
+                //        }
+                //        finally
+                //        {
+                //            dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
+                //        }
+                //    }
+                //}
 
                 page.Tag = ribbonPage;
                 page.Text = $"{filePoolingTitle} #{filePooling} ({titleOfDataSource})";
                 AddToDockingManager(page, page.Text);
-                dockingManager1.ActivateControl(page);
-                dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
+                //dockingManager1.ActivateControl(page);
+                //dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
                 //xtcLogs.TabPages.Add(page);
                 //xtcLogs.SelectedTabPage = page;
                 //xtcLogs.ControlRemoved += OnXtcLogsOnControlRemoved;
@@ -1189,39 +1192,39 @@ namespace Analogy
                     onlineUC.Text = $"{onlineTitle} #{online} ({title})";
 
                     AddToDockingManager(onlineUC, onlineUC.Text);
-                    dockingManager1.ActivateControl(onlineUC);
+                    //dockingManager1.ActivateControl(onlineUC);
                     realTime.OnMessageReady += OnRealTimeOnMessageReady;
                     realTime.OnManyMessagesReady += OnRealTimeOnOnManyMessagesReady;
                     realTime.OnDisconnected += OnRealTimeDisconnected;
                     realTime.StartReceiving();
                     onlineDataSourcesMapping.Add(onlineUC, realTime);
 
+                    //todo
+                    //void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
+                    //{
+                    //    if (arg.Control == onlineUC)
+                    //    {
+                    //        try
+                    //        {
+                    //            onlineUC.Enable = false;
+                    //            realTime.StopReceiving();
+                    //            realTime.OnMessageReady -= OnRealTimeOnMessageReady;
+                    //            realTime.OnManyMessagesReady -= OnRealTimeOnOnManyMessagesReady;
+                    //            realTime.OnDisconnected -= OnRealTimeDisconnected;
+                    //            //page.Controls.Remove(onlineUC);
+                    //        }
+                    //        catch (Exception e)
+                    //        {
+                    //            AnalogyLogManager.Instance.LogError("Error during call to Stop receiving: " + e);
+                    //        }
+                    //        finally
+                    //        {
+                    //            dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
+                    //        }
+                    //    }
+                    //}
 
-                    void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
-                    {
-                        if (arg.Control == onlineUC)
-                        {
-                            try
-                            {
-                                onlineUC.Enable = false;
-                                realTime.StopReceiving();
-                                realTime.OnMessageReady -= OnRealTimeOnMessageReady;
-                                realTime.OnManyMessagesReady -= OnRealTimeOnOnManyMessagesReady;
-                                realTime.OnDisconnected -= OnRealTimeDisconnected;
-                                //page.Controls.Remove(onlineUC);
-                            }
-                            catch (Exception e)
-                            {
-                                AnalogyLogManager.Instance.LogError("Error during call to Stop receiving: " + e);
-                            }
-                            finally
-                            {
-                                dockingManager1.DockVisibilityChanged -= OnXtcLogsOnControlRemoved;
-                            }
-                        }
-                    }
-
-                    dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
+                    //dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
                     realTimeBtn.Enabled = true;
                     return true;
                 }
@@ -1258,7 +1261,6 @@ namespace Analogy
             bookmarkLog.Dock = DockStyle.Fill;
             bookmarkLog.Text = $"Analogy Bookmarked logs #{offline}";
             AddToDockingManager(bookmarkLog, bookmarkLog.Text);
-            dockingManager1.ActivateControl(bookmarkLog);
         }
 
         private async Task OpenOfflineFileWithSpecificDataProvider(string[] files)
@@ -1328,11 +1330,10 @@ namespace Analogy
             offlineUC.Dock = DockStyle.Fill;
             offlineUC.Text = $"{offlineTitle} #{offline}{(title == null ? "" : $" ({title})")}";
             AddToDockingManager(offlineUC, offlineUC.Text);
-            dockingManager1.ActivateControl(offlineUC);
         }
 
 
-        private void AddRecentFiles(KryptonRibbonTab ribbonPage, ToolStripDropDownButton bar, IAnalogyOfflineDataProvider offlineAnalogy,
+        private void AddRecentFiles(KryptonRibbonTab ribbonPage, ContextMenuStrip bar, IAnalogyOfflineDataProvider offlineAnalogy,
             string title, List<string> files)
         {
 
@@ -1346,7 +1347,7 @@ namespace Analogy
                     {
                         OpenOfflineLogs(ribbonPage, new[] { file }, offlineAnalogy, title);
                     };
-                    bar.DropDownItems.Add(btn);
+                    bar.Items.Add(btn);
                 }
             }
         }

@@ -43,6 +43,10 @@ namespace Analogy
             this.tsbtnAnalogyOpenFolder = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.tsbtnAnalogyOpenFiles = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupButton1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple15 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.contextMenuStripRecentFiles = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.kryptonRibbonGroupButton8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
@@ -80,20 +84,6 @@ namespace Analogy
             this.kryptonRibbonGroupTriple6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.buttonSpecsAdd = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.buttonSpecsClear = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonDockableWorkspace = new ComponentFactory.Krypton.Docking.KryptonDockableWorkspace();
-            this.kryptonDockingManager = new ComponentFactory.Krypton.Docking.KryptonDockingManager();
-            this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
-            this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
-            this.kryptonRibbonGroupGallery1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGallery();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.tsslblError = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TmrAutoConnect = new System.Windows.Forms.Timer(this.components);
-            this.tmrStatusUpdates = new System.Windows.Forms.Timer(this.components);
-            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.krtTheme = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.krtSettings = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonGroup11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
@@ -111,6 +101,22 @@ namespace Analogy
             this.tsbSettingsDataProviders = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupTriple14 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.tsbSettingsCustomDataProviders = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonDockableWorkspace = new ComponentFactory.Krypton.Docking.KryptonDockableWorkspace();
+            this.kryptonDockingManager = new ComponentFactory.Krypton.Docking.KryptonDockingManager();
+            this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
+            this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonRibbonGroupGallery1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGallery();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tsslblError = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TmrAutoConnect = new System.Windows.Forms.Timer(this.components);
+            this.tmrStatusUpdates = new System.Windows.Forms.Timer(this.components);
+            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.tsslMemoryUsage = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslIdleMessage = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -128,8 +134,7 @@ namespace Analogy
             this.kryptonRibbonTab2,
             this.krtTheme,
             this.krtSettings});
-            this.ribbonControlMain.SelectedContext = null;
-            this.ribbonControlMain.SelectedTab = this.krtSettings;
+            this.ribbonControlMain.SelectedTab = this.RibbonTabAnalogy;
             this.ribbonControlMain.Size = new System.Drawing.Size(1083, 165);
             this.ribbonControlMain.TabIndex = 0;
             // 
@@ -144,7 +149,8 @@ namespace Analogy
             // kryptonRibbonGroup8
             // 
             this.kryptonRibbonGroup8.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
-            this.kryptonRibbonGroupTriple8});
+            this.kryptonRibbonGroupTriple8,
+            this.kryptonRibbonGroupTriple15});
             // 
             // kryptonRibbonGroupTriple8
             // 
@@ -164,6 +170,37 @@ namespace Analogy
             this.tsbtnAnalogyOpenFiles.ImageLarge = global::Analogy.Properties.Resources.Article_32x32;
             this.tsbtnAnalogyOpenFiles.ImageSmall = global::Analogy.Properties.Resources.Article_16x16;
             this.tsbtnAnalogyOpenFiles.TextLine1 = "Open Files";
+            // 
+            // kryptonRibbonGroupButton1
+            // 
+            this.kryptonRibbonGroupButton1.Visible = false;
+            // 
+            // kryptonRibbonGroupTriple15
+            // 
+            this.kryptonRibbonGroupTriple15.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton7,
+            this.kryptonRibbonGroupButton8});
+            // 
+            // kryptonRibbonGroupButton7
+            // 
+            this.kryptonRibbonGroupButton7.ContextMenuStrip = this.contextMenuStripRecentFiles;
+            this.kryptonRibbonGroupButton7.ImageLarge = global::Analogy.Properties.Resources.RecentlyUse_32x32;
+            this.kryptonRibbonGroupButton7.ImageSmall = global::Analogy.Properties.Resources.RecentlyUse_16x16;
+            this.kryptonRibbonGroupButton7.TextLine1 = "Recently Used";
+            this.kryptonRibbonGroupButton7.TextLine2 = "Files";
+            // 
+            // contextMenuStripRecentFiles
+            // 
+            this.contextMenuStripRecentFiles.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.contextMenuStripRecentFiles.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStripRecentFiles.Name = "contextMenuStripRecentFiles";
+            this.contextMenuStripRecentFiles.Size = new System.Drawing.Size(61, 4);
+            // 
+            // kryptonRibbonGroupButton8
+            // 
+            this.kryptonRibbonGroupButton8.ImageLarge = global::Analogy.Properties.Resources.RichEditBookmark_32x32;
+            this.kryptonRibbonGroupButton8.ImageSmall = global::Analogy.Properties.Resources.RichEditBookmark_16x16;
+            this.kryptonRibbonGroupButton8.TextLine1 = "Bookmarks";
             // 
             // kryptonRibbonGroup9
             // 
@@ -464,133 +501,6 @@ namespace Analogy
             this.buttonSpecsClear.TextLine2 = "ButtonSpecs";
             this.buttonSpecsClear.Click += new System.EventHandler(this.buttonSpecsClear_Click);
             // 
-            // kryptonPanel
-            // 
-            this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
-            this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel.Location = new System.Drawing.Point(0, 165);
-            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4);
-            this.kryptonPanel.Size = new System.Drawing.Size(1083, 565);
-            this.kryptonPanel.TabIndex = 1;
-            // 
-            // kryptonDockableWorkspace
-            // 
-            this.kryptonDockableWorkspace.AutoHiddenHost = false;
-            this.kryptonDockableWorkspace.CompactFlags = ((ComponentFactory.Krypton.Workspace.CompactFlags)(((ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptyCells | ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
-            | ComponentFactory.Krypton.Workspace.CompactFlags.PromoteLeafs)));
-            this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 4);
-            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
-            // 
-            // 
-            // 
-            this.kryptonDockableWorkspace.Root.UniqueName = "5594893E2F2E42885594893E2F2E4288";
-            this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
-            this.kryptonDockableWorkspace.ShowMaximizeButton = false;
-            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1075, 557);
-            this.kryptonDockableWorkspace.TabIndex = 0;
-            this.kryptonDockableWorkspace.TabStop = true;
-            // 
-            // kryptonDockingManager
-            // 
-            this.kryptonDockingManager.ShowPageContextMenu += new System.EventHandler<ComponentFactory.Krypton.Docking.ContextPageEventArgs>(this.kryptonDockingManager_ShowPageContextMenu);
-            this.kryptonDockingManager.ShowWorkspacePageContextMenu += new System.EventHandler<ComponentFactory.Krypton.Docking.ContextPageEventArgs>(this.kryptonDockingManager_ShowWorkspacePageContextMenu);
-            this.kryptonDockingManager.DockspaceAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.DockspaceEventArgs>(this.kryptonDockingManager_DockspaceAdding);
-            this.kryptonDockingManager.DockspaceCellAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.DockspaceCellEventArgs>(this.kryptonDockingManager_DockspaceCellAdding);
-            this.kryptonDockingManager.FloatspaceCellAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.FloatspaceCellEventArgs>(this.kryptonDockingManager_FloatspaceCellAdding);
-            this.kryptonDockingManager.FloatingWindowAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.FloatingWindowEventArgs>(this.kryptonDockingManager_FloatingWindowAdding);
-            // 
-            // imageListSmall
-            // 
-            this.imageListSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListSmall.ImageStream")));
-            this.imageListSmall.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListSmall.Images.SetKeyName(0, "document_plain.png");
-            this.imageListSmall.Images.SetKeyName(1, "preferences.png");
-            this.imageListSmall.Images.SetKeyName(2, "information2.png");
-            // 
-            // kryptonManager
-            // 
-            this.kryptonManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
-            // 
-            // kryptonRibbonGroupGallery1
-            // 
-            this.kryptonRibbonGroupGallery1.ImageList = null;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsslblError,
-            this.tsslFileCaching});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 730);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1083, 26);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // tsslblError
-            // 
-            this.tsslblError.Name = "tsslblError";
-            this.tsslblError.Size = new System.Drawing.Size(36, 20);
-            this.tsslblError.Text = "N/A";
-            // 
-            // tsslFileCaching
-            // 
-            this.tsslFileCaching.Name = "tsslFileCaching";
-            this.tsslFileCaching.Size = new System.Drawing.Size(85, 20);
-            this.tsslFileCaching.Text = "file caching";
-            // 
-            // TmrAutoConnect
-            // 
-            this.TmrAutoConnect.Interval = 1000;
-            // 
-            // tmrStatusUpdates
-            // 
-            this.tmrStatusUpdates.Enabled = true;
-            this.tmrStatusUpdates.Interval = 1000;
-            // 
-            // imageList3
-            // 
-            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
-            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList3.Images.SetKeyName(0, "Search.png");
-            this.imageList3.Images.SetKeyName(1, "1.png");
-            this.imageList3.Images.SetKeyName(2, "2.png");
-            this.imageList3.Images.SetKeyName(3, "3.png");
-            this.imageList3.Images.SetKeyName(4, "4.png");
-            this.imageList3.Images.SetKeyName(5, "5.png");
-            this.imageList3.Images.SetKeyName(6, "6.png");
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "Icon-3.png");
-            this.imageList1.Images.SetKeyName(1, "Icon-4.png");
-            this.imageList1.Images.SetKeyName(2, "Icon-5.png");
-            this.imageList1.Images.SetKeyName(3, "Icon-6.png");
-            this.imageList1.Images.SetKeyName(4, "Icon-7.png");
-            this.imageList1.Images.SetKeyName(5, "Icon-8.png");
-            this.imageList1.Images.SetKeyName(6, "Icon-9.png");
-            this.imageList1.Images.SetKeyName(7, "Icon-10.png");
-            // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "__DVD RW drive.png");
-            this.imageList2.Images.SetKeyName(1, "__Local Disk(c).png");
-            this.imageList2.Images.SetKeyName(2, "__Local Disk(d).png");
-            this.imageList2.Images.SetKeyName(3, "__Desktop.png");
-            this.imageList2.Images.SetKeyName(4, "__Document.png");
-            this.imageList2.Images.SetKeyName(5, "__Download.png");
-            this.imageList2.Images.SetKeyName(6, "__Music.png");
-            this.imageList2.Images.SetKeyName(7, "__Pictures.png");
-            this.imageList2.Images.SetKeyName(8, "__Video.png");
-            // 
             // krtTheme
             // 
             this.krtTheme.Text = "Theme";
@@ -689,15 +599,155 @@ namespace Analogy
             // kryptonRibbonGroupTriple14
             // 
             this.kryptonRibbonGroupTriple14.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.tsbSettingsCustomDataProviders,
-            this.kryptonRibbonGroupButton16,
-            this.kryptonRibbonGroupButton17});
+            this.tsbSettingsCustomDataProviders});
             // 
             // tsbSettingsCustomDataProviders
             // 
             this.tsbSettingsCustomDataProviders.ImageLarge = global::Analogy.Properties.Resources.Database_on;
             this.tsbSettingsCustomDataProviders.TextLine1 = "Custom Data";
             this.tsbSettingsCustomDataProviders.TextLine2 = "Providers Setings";
+            // 
+            // kryptonPanel
+            // 
+            this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
+            this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 165);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel.Name = "kryptonPanel";
+            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel.Size = new System.Drawing.Size(1083, 565);
+            this.kryptonPanel.TabIndex = 1;
+            // 
+            // kryptonDockableWorkspace
+            // 
+            this.kryptonDockableWorkspace.AutoHiddenHost = false;
+            this.kryptonDockableWorkspace.CompactFlags = ((ComponentFactory.Krypton.Workspace.CompactFlags)(((ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptyCells | ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | ComponentFactory.Krypton.Workspace.CompactFlags.PromoteLeafs)));
+            this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 4);
+            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
+            // 
+            // 
+            // 
+            this.kryptonDockableWorkspace.Root.UniqueName = "5594893E2F2E42885594893E2F2E4288";
+            this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
+            this.kryptonDockableWorkspace.ShowMaximizeButton = false;
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1075, 557);
+            this.kryptonDockableWorkspace.TabIndex = 0;
+            this.kryptonDockableWorkspace.TabStop = true;
+            // 
+            // kryptonDockingManager
+            // 
+            this.kryptonDockingManager.ShowPageContextMenu += new System.EventHandler<ComponentFactory.Krypton.Docking.ContextPageEventArgs>(this.kryptonDockingManager_ShowPageContextMenu);
+            this.kryptonDockingManager.ShowWorkspacePageContextMenu += new System.EventHandler<ComponentFactory.Krypton.Docking.ContextPageEventArgs>(this.kryptonDockingManager_ShowWorkspacePageContextMenu);
+            this.kryptonDockingManager.DockspaceAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.DockspaceEventArgs>(this.kryptonDockingManager_DockspaceAdding);
+            this.kryptonDockingManager.DockspaceCellAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.DockspaceCellEventArgs>(this.kryptonDockingManager_DockspaceCellAdding);
+            this.kryptonDockingManager.FloatspaceCellAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.FloatspaceCellEventArgs>(this.kryptonDockingManager_FloatspaceCellAdding);
+            this.kryptonDockingManager.FloatingWindowAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.FloatingWindowEventArgs>(this.kryptonDockingManager_FloatingWindowAdding);
+            // 
+            // imageListSmall
+            // 
+            this.imageListSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListSmall.ImageStream")));
+            this.imageListSmall.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListSmall.Images.SetKeyName(0, "document_plain.png");
+            this.imageListSmall.Images.SetKeyName(1, "preferences.png");
+            this.imageListSmall.Images.SetKeyName(2, "information2.png");
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
+            // 
+            // kryptonRibbonGroupGallery1
+            // 
+            this.kryptonRibbonGroupGallery1.ImageList = null;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslblError,
+            this.tsslFileCaching,
+            this.tsslMemoryUsage,
+            this.tsslIdleMessage});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 730);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1083, 26);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // tsslblError
+            // 
+            this.tsslblError.Name = "tsslblError";
+            this.tsslblError.Size = new System.Drawing.Size(36, 20);
+            this.tsslblError.Text = "N/A";
+            // 
+            // tsslFileCaching
+            // 
+            this.tsslFileCaching.Name = "tsslFileCaching";
+            this.tsslFileCaching.Size = new System.Drawing.Size(85, 20);
+            this.tsslFileCaching.Text = "file caching";
+            // 
+            // TmrAutoConnect
+            // 
+            this.TmrAutoConnect.Interval = 1000;
+            this.TmrAutoConnect.Tick += new System.EventHandler(this.TmrAutoConnect_Tick);
+            // 
+            // tmrStatusUpdates
+            // 
+            this.tmrStatusUpdates.Enabled = true;
+            this.tmrStatusUpdates.Interval = 1000;
+            // 
+            // imageList3
+            // 
+            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
+            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList3.Images.SetKeyName(0, "Search.png");
+            this.imageList3.Images.SetKeyName(1, "1.png");
+            this.imageList3.Images.SetKeyName(2, "2.png");
+            this.imageList3.Images.SetKeyName(3, "3.png");
+            this.imageList3.Images.SetKeyName(4, "4.png");
+            this.imageList3.Images.SetKeyName(5, "5.png");
+            this.imageList3.Images.SetKeyName(6, "6.png");
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Icon-3.png");
+            this.imageList1.Images.SetKeyName(1, "Icon-4.png");
+            this.imageList1.Images.SetKeyName(2, "Icon-5.png");
+            this.imageList1.Images.SetKeyName(3, "Icon-6.png");
+            this.imageList1.Images.SetKeyName(4, "Icon-7.png");
+            this.imageList1.Images.SetKeyName(5, "Icon-8.png");
+            this.imageList1.Images.SetKeyName(6, "Icon-9.png");
+            this.imageList1.Images.SetKeyName(7, "Icon-10.png");
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "__DVD RW drive.png");
+            this.imageList2.Images.SetKeyName(1, "__Local Disk(c).png");
+            this.imageList2.Images.SetKeyName(2, "__Local Disk(d).png");
+            this.imageList2.Images.SetKeyName(3, "__Desktop.png");
+            this.imageList2.Images.SetKeyName(4, "__Document.png");
+            this.imageList2.Images.SetKeyName(5, "__Download.png");
+            this.imageList2.Images.SetKeyName(6, "__Music.png");
+            this.imageList2.Images.SetKeyName(7, "__Pictures.png");
+            this.imageList2.Images.SetKeyName(8, "__Video.png");
+            // 
+            // tsslMemoryUsage
+            // 
+            this.tsslMemoryUsage.Name = "tsslMemoryUsage";
+            this.tsslMemoryUsage.Size = new System.Drawing.Size(30, 20);
+            this.tsslMemoryUsage.Text = "NA";
+            // 
+            // tsslIdleMessage
+            // 
+            this.tsslIdleMessage.Name = "tsslIdleMessage";
+            this.tsslIdleMessage.Size = new System.Drawing.Size(65, 20);
+            this.tsslIdleMessage.Text = "Idle user";
             // 
             // MainForm
             // 
@@ -711,6 +761,7 @@ namespace Analogy
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Analogy";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
@@ -800,6 +851,12 @@ namespace Analogy
         private KryptonRibbonGroupButton tsbSettingsDataProviders;
         private KryptonRibbonGroupTriple kryptonRibbonGroupTriple14;
         private KryptonRibbonGroupButton tsbSettingsCustomDataProviders;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple15;
+        private KryptonRibbonGroupButton kryptonRibbonGroupButton7;
+        private KryptonRibbonGroupButton kryptonRibbonGroupButton8;
+        private ContextMenuStrip contextMenuStripRecentFiles;
+        private ToolStripStatusLabel tsslMemoryUsage;
+        private ToolStripStatusLabel tsslIdleMessage;
     }
 }
 
