@@ -1,11 +1,13 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+
+namespace Analogy
 {
     partial class SearchForm
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.

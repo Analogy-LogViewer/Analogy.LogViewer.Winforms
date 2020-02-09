@@ -251,16 +251,16 @@ namespace Analogy
                         throw new ArgumentOutOfRangeException(nameof(type), type, null);
                 }
             }
-            else
-                switch (type)
-                {
-                    case PreDefinedQueryType.Contains:
-                        return includeTexts.All(t => rowLine.Contains(t, StringComparison.InvariantCultureIgnoreCase) && !string.IsNullOrEmpty(t));
-                    case PreDefinedQueryType.Equals:
-                        return includeTexts.All(t => rowLine.Equals(t, StringComparison.InvariantCultureIgnoreCase) && !string.IsNullOrEmpty(t));
-                    default:
-                        throw new ArgumentOutOfRangeException(nameof(type), type, null);
-                }
+
+            switch (type)
+            {
+                case PreDefinedQueryType.Contains:
+                    return includeTexts.All(t => rowLine.Contains(t, StringComparison.InvariantCultureIgnoreCase) && !string.IsNullOrEmpty(t));
+                case PreDefinedQueryType.Equals:
+                    return includeTexts.All(t => rowLine.Equals(t, StringComparison.InvariantCultureIgnoreCase) && !string.IsNullOrEmpty(t));
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
+            }
 
 
 

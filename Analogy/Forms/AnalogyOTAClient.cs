@@ -38,7 +38,7 @@ namespace Analogy
             Data = data;
         }
 
-        private void AnalogyOTAClient_Load(object sender, System.EventArgs e)
+        private void AnalogyOTAClient_Load(object sender, EventArgs e)
         {
             foreach (DataRow dataRow in Data.Rows)
             {
@@ -47,7 +47,7 @@ namespace Analogy
             }
         }
 
-        private void btnStartServer_Click(object sender, System.EventArgs e)
+        private void btnStartServer_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtbIP.Text)) return;
             if (Uri.CheckHostName(txtbIP.Text) != UriHostNameType.Unknown)

@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class ChangeLog
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -102,8 +105,8 @@
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.RichTextBox rtxtbChangeLog;
-        private System.Windows.Forms.Button sBtnOk;
+        private SplitContainer splitContainer1;
+        private RichTextBox rtxtbChangeLog;
+        private Button sBtnOk;
     }
 }

@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class FileListing
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -139,11 +142,11 @@
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer splcLeft;
+        private SplitContainer splcLeft;
         private FolderTreeViewUC tvFolderUC;
-        private System.Windows.Forms.ListBox lBoxFiles;
-        private System.Windows.Forms.ToolStrip toolStripEx1;
-        private System.Windows.Forms.ToolStripButton btnOpen;
-        private System.Windows.Forms.CheckBox checkBoxRecursiveLoad;
+        private ListBox lBoxFiles;
+        private ToolStrip toolStripEx1;
+        private ToolStripButton btnOpen;
+        private CheckBox checkBoxRecursiveLoad;
     }
 }

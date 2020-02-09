@@ -119,7 +119,7 @@ namespace Analogy
         public void SetDataSource(IAnalogyOfflineDataProvider analogyOfflineDataProvider)
         {
             offlineAnalogy = analogyOfflineDataProvider;
-            this.fileSystemUC1.DataProvider = offlineAnalogy;
+            fileSystemUC1.DataProvider = offlineAnalogy;
         }
 
 

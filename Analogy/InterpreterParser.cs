@@ -134,11 +134,9 @@ namespace Analogy
                                 result.Add(new Token(sb.ToString(), SearchType.Expression));
                                 break;
                             }
-                            else
-                            {
-                                sb.Append(text[j]);
-                                ++i;
-                            }
+
+                            sb.Append(text[j]);
+                            ++i;
                         }
                         break;
                 }

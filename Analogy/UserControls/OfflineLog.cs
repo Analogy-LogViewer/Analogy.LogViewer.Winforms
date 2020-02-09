@@ -68,7 +68,7 @@ namespace Analogy
             tsBtnSelecAll.Click += (s, e) => { fileListing.SelectAll(); };
         }
 
-        private void FolderTreeViewUC1_FolderChanged1(object sender, Types.FolderSelectionEventArgs e)
+        private void FolderTreeViewUC1_FolderChanged1(object sender, FolderSelectionEventArgs e)
         {
             throw new NotImplementedException();
         }
@@ -118,7 +118,7 @@ namespace Analogy
             fileListing.HighlightFile(data.file);
         }
 
-        private async void FolderTreeViewUC1_FolderChanged(object sender, Types.FolderSelectionEventArgs e)
+        private async void FolderTreeViewUC1_FolderChanged(object sender, FolderSelectionEventArgs e)
         {
             if (Directory.Exists(e.SelectedFolderPath))
             {

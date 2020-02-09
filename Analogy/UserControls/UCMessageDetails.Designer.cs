@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class UCMessageDetails
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -397,33 +400,33 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox txtbUser;
-        private System.Windows.Forms.RichTextBox txtbFileName;
-        private System.Windows.Forms.RichTextBox txtbMethod;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox txtbLevelValue;
-        private System.Windows.Forms.RichTextBox txtbProcessValue;
-        private System.Windows.Forms.RichTextBox txtSourceValue;
-        private System.Windows.Forms.RichTextBox txtbDateValue;
-        private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.Label lblProcess;
-        private System.Windows.Forms.Label lblSource;
-        private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.RichTextBox rtxtbText;
-        private System.Windows.Forms.Label lbID;
-        private System.Windows.Forms.Label lblIndex;
-        private System.Windows.Forms.RichTextBox rtxtbIndex;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.RichTextBox txtbLineNumber;
-        private System.Windows.Forms.Label lblLineNumber;
-        private System.Windows.Forms.RichTextBox rtxtbDataSource;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button sBtnCopy;
-        private System.Windows.Forms.Button simpleButton1;
-        private System.Windows.Forms.RichTextBox txtID;
-        private System.Windows.Forms.Label label5;
+        private RichTextBox txtbUser;
+        private RichTextBox txtbFileName;
+        private RichTextBox txtbMethod;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private RichTextBox txtbLevelValue;
+        private RichTextBox txtbProcessValue;
+        private RichTextBox txtSourceValue;
+        private RichTextBox txtbDateValue;
+        private Label lblLevel;
+        private Label lblProcess;
+        private Label lblSource;
+        private Label lblDate;
+        private RichTextBox rtxtbText;
+        private Label lbID;
+        private Label lblIndex;
+        private RichTextBox rtxtbIndex;
+        private Button btnNext;
+        private Button btnPrev;
+        private RichTextBox txtbLineNumber;
+        private Label lblLineNumber;
+        private RichTextBox rtxtbDataSource;
+        private Label label4;
+        private Button sBtnCopy;
+        private Button simpleButton1;
+        private RichTextBox txtID;
+        private Label label5;
     }
 }

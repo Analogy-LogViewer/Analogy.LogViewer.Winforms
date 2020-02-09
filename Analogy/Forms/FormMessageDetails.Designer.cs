@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class FormMessageDetails
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -84,7 +87,7 @@
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer spltCMain;
-        private System.Windows.Forms.Button btnClose;
+        private SplitContainer spltCMain;
+        private Button btnClose;
     }
 }

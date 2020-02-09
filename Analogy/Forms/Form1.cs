@@ -9,18 +9,13 @@
 // *****************************************************************************
 
 using System;
-using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Workspace;
 using ComponentFactory.Krypton.Docking;
+using ComponentFactory.Krypton.Navigator;
 using ComponentFactory.Krypton.Ribbon;
+using ComponentFactory.Krypton.Toolkit;
+using ComponentFactory.Krypton.Workspace;
 
 namespace Analogy
 {
@@ -29,7 +24,7 @@ namespace Analogy
         private int _count = 1;
         private Random _random = new Random(DateTime.Now.Millisecond);
         private NavigatorMode _mode = NavigatorMode.HeaderBarCheckButtonHeaderGroup;
-        private PaletteButtonSpecStyle[] _buttonSpecStyles = new PaletteButtonSpecStyle[]{ PaletteButtonSpecStyle.ArrowDown, PaletteButtonSpecStyle.ArrowLeft,
+        private PaletteButtonSpecStyle[] _buttonSpecStyles = { PaletteButtonSpecStyle.ArrowDown, PaletteButtonSpecStyle.ArrowLeft,
                                                                                            PaletteButtonSpecStyle.ArrowRight, PaletteButtonSpecStyle.ArrowUp,
                                                                                            PaletteButtonSpecStyle.Close, PaletteButtonSpecStyle.Context,
                                                                                            PaletteButtonSpecStyle.DropDown };
@@ -63,9 +58,9 @@ namespace Analogy
         {
             // Create new page with title and image
             KryptonPage p = new KryptonPage();
-            p.Text = name + _count.ToString();
-            p.TextTitle = name + _count.ToString();
-            p.TextDescription = name + _count.ToString();
+            p.Text = name + _count;
+            p.TextTitle = name + _count;
+            p.TextDescription = name + _count;
             p.ImageSmall = imageListSmall.Images[image];
 
             // Add the control for display inside the page
@@ -84,9 +79,9 @@ namespace Analogy
             kryptonDockingManager.ManageFloating(this);
 
             // Add initial docking pages
-            kryptonDockingManager.AddToWorkspace("Workspace", new KryptonPage[] { NewDocument(), NewDocument() });
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Right, new KryptonPage[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Bottom, new KryptonPage[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
+            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument(), NewDocument() });
+            kryptonDockingManager.AddDockspace("Control", DockingEdge.Right, new[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
+            kryptonDockingManager.AddDockspace("Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
 
             UpdateModeButtons();
         }
@@ -122,8 +117,8 @@ namespace Analogy
             // Create a set of custom menu items
             KryptonContextMenuItems customItems = new KryptonContextMenuItems();
             KryptonContextMenuSeparator customSeparator = new KryptonContextMenuSeparator();
-            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 1", new EventHandler(OnCustomMenuItem));
-            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 2", new EventHandler(OnCustomMenuItem));
+            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 1", OnCustomMenuItem);
+            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 2", OnCustomMenuItem);
             customItem1.Tag = e.Page;
             customItem2.Tag = e.Page;
             customItems.Items.AddRange(new KryptonContextMenuItemBase[] { customSeparator, customItem1, customItem2 });
@@ -137,8 +132,8 @@ namespace Analogy
             // Create a set of custom menu items
             KryptonContextMenuItems customItems = new KryptonContextMenuItems();
             KryptonContextMenuSeparator customSeparator = new KryptonContextMenuSeparator();
-            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 3", new EventHandler(OnCustomMenuItem));
-            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 4", new EventHandler(OnCustomMenuItem));
+            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 3", OnCustomMenuItem);
+            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 4", OnCustomMenuItem);
             customItem1.Tag = e.Page;
             customItem2.Tag = e.Page;
             customItems.Items.AddRange(new KryptonContextMenuItemBase[] { customSeparator, customItem1, customItem2 });

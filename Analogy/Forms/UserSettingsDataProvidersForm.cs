@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Analogy.DataProviders.Extensions;
 using Analogy.Managers;
-using System.Windows.Forms;
 
 namespace Analogy
 {

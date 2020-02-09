@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -17,12 +18,12 @@ namespace Analogy
         public AnalogyAboutBox()
         {
             InitializeComponent();
-            this.Text = string.Format("About {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = string.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription + $"{Environment.NewLine}Created by Lior Banai (2017){Environment.NewLine}Contact info:{Environment.NewLine}mail: Liorbanai@gmail.com";
+            Text = string.Format("About {0}", AssemblyTitle);
+            labelProductName.Text = AssemblyProduct;
+            labelVersion.Text = string.Format("Version {0}", AssemblyVersion);
+            labelCopyright.Text = AssemblyCopyright;
+            labelCompanyName.Text = AssemblyCompany;
+            textBoxDescription.Text = AssemblyDescription + $"{Environment.NewLine}Created by Lior Banai (2017){Environment.NewLine}Contact info:{Environment.NewLine}mail: Liorbanai@gmail.com";
 
            
         }
@@ -42,7 +43,7 @@ namespace Analogy
                         return titleAttribute.Title;
                     }
                 }
-                return System.IO.Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().CodeBase);
+                return Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().CodeBase);
             }
         }
 
@@ -101,38 +102,38 @@ namespace Analogy
         }
         #endregion
 
-        private void lblNlog_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void lblNlog_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(githubAnalogyNLog);
         }
 
-        private void lblRSS_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void lblRSS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(githubAnalogyRSSParser);
 
         }
 
-        private void lblIIS_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void lblIIS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(githubAnalogyIISParser);
         }
 
-        private void lblKafka_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void lblKafka_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(githubAnalogyKafkaProvider);
         }
 
-        private void lblPhilips_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void lblPhilips_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(philips);
         }
 
-        private void lblWindowsEventLogs_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void lblWindowsEventLogs_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(githubAnalogyWindowsEventLogs);
         }
 
-        private void lblKama_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void lblKama_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(kama);
         }

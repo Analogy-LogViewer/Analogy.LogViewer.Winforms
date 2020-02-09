@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.IO;
 using Analogy.Interfaces;
+using Newtonsoft.Json;
 
 namespace Analogy.Tools
 {
@@ -11,7 +11,7 @@ namespace Analogy.Tools
 
         public JsonFormatter(string fileName)
         {
-            this._fileName = fileName;
+            _fileName = fileName;
         }
 
         //public void WriteMessage(byte[] data)
@@ -22,14 +22,14 @@ namespace Analogy.Tools
         public void WriteMessage(AnalogyLogMessage message)
         {
             string jsonMessage;
-            this.WriteMessage(message, out jsonMessage);
+            WriteMessage(message, out jsonMessage);
         }
 
         public void WriteMessage(AnalogyLogMessage message, out string jsonMessage)
         {
             JsonDataContract jsonDataContract = new JsonDataContract(message);
             jsonMessage = JsonConvert.SerializeObject(jsonDataContract);
-            File.AppendAllText(this._fileName, jsonMessage + "\r\n");
+            File.AppendAllText(_fileName, jsonMessage + "\r\n");
         }
     }
 
@@ -52,20 +52,20 @@ namespace Analogy.Tools
 
         public JsonDataContract(AnalogyLogMessage message)
         {
-            this.id = message.ID.ToString();
-            this.dateTime = message.Date;
-            this.text = message.Text;
-            this.category = message.Category;
-            this.source = message.Source;
-            this.level = message.Level.ToString();
-            this.logClass = message.Class.ToString();
-            this.module = message.Module;
-            this.method = message.MethodName;
-            this.fileName = message.FileName;
-            this.lineNumber = message.LineNumber.ToString();
-            this.processId = message.ProcessID.ToString();
-            this.user = message.User;
-            this.host = Environment.MachineName;
+            id = message.ID.ToString();
+            dateTime = message.Date;
+            text = message.Text;
+            category = message.Category;
+            source = message.Source;
+            level = message.Level.ToString();
+            logClass = message.Class.ToString();
+            module = message.Module;
+            method = message.MethodName;
+            fileName = message.FileName;
+            lineNumber = message.LineNumber.ToString();
+            processId = message.ProcessID.ToString();
+            user = message.User;
+            host = Environment.MachineName;
         }
     }
 }

@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class SearchInFilesUC
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -138,9 +141,9 @@
 
         private FileSystemUC fileSystemUC1;
         private FilesOperationsUC processFilesUC1;
-        private System.Windows.Forms.TextBox txtbSearch;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button sBtnSearch;
+        private TextBox txtbSearch;
+        private SplitContainer splitContainer1;
+        private Panel panel1;
+        private Button sBtnSearch;
     }
 }

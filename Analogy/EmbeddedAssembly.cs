@@ -16,9 +16,7 @@ namespace Analogy
 
         public void Load()
         {
-            EmbeddedAssemblies = new Dictionary<string, string>()
-            {
-            };
+            EmbeddedAssemblies = new Dictionary<string, string>();
             foreach (var embeddedResource in EmbeddedAssemblies)
             {
 

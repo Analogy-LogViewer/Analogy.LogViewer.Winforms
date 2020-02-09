@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace Analogy.UserControls
 {
@@ -7,7 +8,7 @@ namespace Analogy.UserControls
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -208,13 +209,13 @@ namespace Analogy.UserControls
         }
 
         #endregion
-        private System.Windows.Forms.Button sBtnMoveUp;
-        private System.Windows.Forms.Button sBtnMoveDown;
+        private Button sBtnMoveUp;
+        private Button sBtnMoveDown;
         private ListBox lstBAnalogyColumns;
-        private System.Windows.Forms.Label gradientLabel2;
+        private Label gradientLabel2;
         private ListBox lstBoxItems;
-        private System.Windows.Forms.Label gradientLabel1;
-        private System.Windows.Forms.SplitContainer scMain;
-        private System.Windows.Forms.SplitContainer splitContainerAdv1;
+        private Label gradientLabel1;
+        private SplitContainer scMain;
+        private SplitContainer splitContainerAdv1;
     }
 }

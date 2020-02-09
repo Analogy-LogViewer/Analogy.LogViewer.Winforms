@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using ComponentFactory.Krypton.Toolkit;
+
+namespace Analogy
 {
     partial class ContentDocument
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -74,7 +77,7 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox richTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
+        private KryptonRichTextBox richTextBox;
+        private KryptonPanel kryptonPanel;
     }
 }

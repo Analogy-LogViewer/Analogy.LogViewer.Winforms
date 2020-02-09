@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using Analogy.Properties;
 using Analogy.Types;
 
 namespace Analogy
@@ -28,7 +29,7 @@ namespace Analogy
         private void sBtnTest_Click(object sender, EventArgs e)
         {
             var valid = TestConnection();
-            sBtnTest.Image = valid ? Properties.Resources.OK_32x32 : Properties.Resources.NotOk_32x32;
+            sBtnTest.Image = valid ? Resources.OK_32x32 : Resources.NotOk_32x32;
         }
 
         private bool TestConnection() => CheckPath(txtbPath.Text);

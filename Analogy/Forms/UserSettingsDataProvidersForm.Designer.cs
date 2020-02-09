@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class UserSettingsDataProvidersForm
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -225,18 +228,18 @@
 
         #endregion
         private WindowsEventLogsUC _windowsEventLogsUcWindowsEventLogs1;
-        private System.Windows.Forms.TabControl tabControlAdv1;
-        private System.Windows.Forms.TabPage tabPageWindowsEventLogs;
-        private System.Windows.Forms.Label gradientLabel1;
-        private System.Windows.Forms.TabPage tabPageAdv2;
-        private System.Windows.Forms.Label gradientLabel2;
-        private System.Windows.Forms.TabPage tabPageAdv3;
-        private System.Windows.Forms.Label gradientLabel3;
-        private System.Windows.Forms.TabPage tabPageAdv4;
-        private System.Windows.Forms.Label gradientLabel4;
-        private System.Windows.Forms.TabPage tabPageAdv5;
-        private System.Windows.Forms.Label gradientLabel5;
-        private System.Windows.Forms.TabPage tabPageAdv6;
-        private System.Windows.Forms.Label gradientLabel6;
+        private TabControl tabControlAdv1;
+        private TabPage tabPageWindowsEventLogs;
+        private Label gradientLabel1;
+        private TabPage tabPageAdv2;
+        private Label gradientLabel2;
+        private TabPage tabPageAdv3;
+        private Label gradientLabel3;
+        private TabPage tabPageAdv4;
+        private Label gradientLabel4;
+        private TabPage tabPageAdv5;
+        private Label gradientLabel5;
+        private TabPage tabPageAdv6;
+        private Label gradientLabel6;
     }
 }

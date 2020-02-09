@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using Analogy.Interfaces;
 
-
 namespace Analogy
 {
     public partial class AnalogyExcludeMessage : Form

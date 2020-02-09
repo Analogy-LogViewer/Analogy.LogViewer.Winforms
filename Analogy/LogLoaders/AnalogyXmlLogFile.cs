@@ -30,7 +30,7 @@ namespace Analogy.LogLoaders
             Task.Factory.StartNew(() =>
             {
                 XmlSerializer ser = new XmlSerializer(typeof(List<AnalogyLogMessage>));
-                using (FileStream fs = new FileStream(@filename, FileMode.Open))
+                using (FileStream fs = new FileStream(filename, FileMode.Open))
                 {
                     try
                     {
@@ -46,7 +46,7 @@ namespace Analogy.LogLoaders
                             Module = Process.GetCurrentProcess().ProcessName
                         };
                         AnalogyLogManager.Instance.LogErrorMessage(errMessage);
-                        return new List<AnalogyLogMessage>() { errMessage };
+                        return new List<AnalogyLogMessage> { errMessage };
                     }
 
                 }
@@ -76,7 +76,7 @@ namespace Analogy.LogLoaders
                         };
                         AnalogyLogManager.Instance.LogErrorMessage(errMessage);
                         messagesHandler.AppendMessage(errMessage, fileName);
-                        return new List<AnalogyLogMessage>() { errMessage };
+                        return new List<AnalogyLogMessage> { errMessage };
                     }
                 }
             }, token);

@@ -11,7 +11,6 @@ using Analogy.Interfaces.Factories;
 using Analogy.LogLoaders;
 using Analogy.Properties;
 
-
 namespace Analogy.DataSources
 {
 
@@ -24,7 +23,7 @@ namespace Analogy.DataSources
         public IAnalogyDataProvidersFactory DataProviders { get; }=new EventLogDataProviders();
         public IAnalogyCustomActionsFactory Actions { get; } = new EmptyActionsFactory();
         public IEnumerable<IAnalogyChangeLog> ChangeLog { get; } = CommonChangeLog.GetChangeLog();
-        public IEnumerable<string> Contributors { get; } = new List<string>() { "Lior Banai" };
+        public IEnumerable<string> Contributors { get; } = new List<string> { "Lior Banai" };
         public string About { get; } = "Analogy Built-In Windows Event Log Data Provider";
 
         public class EventLogDataProviders : IAnalogyDataProvidersFactory
@@ -79,7 +78,7 @@ namespace Analogy.DataSources
                 Date = DateTime.Now
             };
             messagesHandler.AppendMessage(m, Environment.MachineName);
-            return new List<AnalogyLogMessage>() { m };
+            return new List<AnalogyLogMessage> { m };
         }
 
         public IEnumerable<FileInfo> GetSupportedFiles(DirectoryInfo dirInfo, bool recursiveLoad)

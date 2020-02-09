@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class AnalogyAboutBox
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -358,26 +361,26 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
-        private System.Windows.Forms.PictureBox logoPictureBox;
-        private System.Windows.Forms.Label labelProductName;
-        private System.Windows.Forms.Label labelVersion;
-        private System.Windows.Forms.Label labelCopyright;
-        private System.Windows.Forms.Label labelCompanyName;
-        private System.Windows.Forms.TextBox textBoxDescription;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.LinkLabel lblNlog;
-        private System.Windows.Forms.LinkLabel lblRSS;
-        private System.Windows.Forms.LinkLabel lblIIS;
-        private System.Windows.Forms.LinkLabel lblKafka;
-        private System.Windows.Forms.LinkLabel lblWindowsEventLogs;
-        private System.Windows.Forms.LinkLabel lblPhilips;
-        private System.Windows.Forms.LinkLabel lblKama;
-        private System.Windows.Forms.TabControl tabControlAdv1;
-        private System.Windows.Forms.TabPage tabPageAdv1;
-        private System.Windows.Forms.TabPage tabPageAdv2;
-        private System.Windows.Forms.TabPage tabPageAdv3;
-        private System.Windows.Forms.TabPage tabPageAdv4;
+        private TableLayoutPanel tableLayoutPanel;
+        private PictureBox logoPictureBox;
+        private Label labelProductName;
+        private Label labelVersion;
+        private Label labelCopyright;
+        private Label labelCompanyName;
+        private TextBox textBoxDescription;
+        private Button okButton;
+        private RichTextBox richTextBox1;
+        private LinkLabel lblNlog;
+        private LinkLabel lblRSS;
+        private LinkLabel lblIIS;
+        private LinkLabel lblKafka;
+        private LinkLabel lblWindowsEventLogs;
+        private LinkLabel lblPhilips;
+        private LinkLabel lblKama;
+        private TabControl tabControlAdv1;
+        private TabPage tabPageAdv1;
+        private TabPage tabPageAdv2;
+        private TabPage tabPageAdv3;
+        private TabPage tabPageAdv4;
     }
 }

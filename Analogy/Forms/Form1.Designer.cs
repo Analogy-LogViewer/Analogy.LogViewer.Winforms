@@ -1,11 +1,17 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+using ComponentFactory.Krypton.Docking;
+using ComponentFactory.Krypton.Ribbon;
+using ComponentFactory.Krypton.Toolkit;
+
+namespace Analogy
 {
     partial class Form1
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -399,41 +405,41 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
-        private ComponentFactory.Krypton.Docking.KryptonDockableWorkspace kryptonDockableWorkspace;
-        private ComponentFactory.Krypton.Docking.KryptonDockingManager kryptonDockingManager;
-        private System.Windows.Forms.ImageList imageListSmall;
-        private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab1;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup3;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup4;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup5;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeHeaderBarHeaderGroup;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeHeaderBarGroup;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeTabGroup;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeBarGroupInside;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeBarGroupOutside;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeBarRibbonTabGroup;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeStackGroup;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeStackHeaderGroup;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab2;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton colorsRandom;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton colorsReset;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup6;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton buttonSpecsAdd;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton buttonSpecsClear;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup7;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton modeHeaderGroupTab;
+        private KryptonPanel kryptonPanel;
+        private KryptonDockableWorkspace kryptonDockableWorkspace;
+        private KryptonDockingManager kryptonDockingManager;
+        private ImageList imageListSmall;
+        private KryptonManager kryptonManager;
+        private KryptonRibbon kryptonRibbon1;
+        private KryptonRibbonTab kryptonRibbonTab1;
+        private KryptonRibbonGroup kryptonRibbonGroup2;
+        private KryptonRibbonGroup kryptonRibbonGroup3;
+        private KryptonRibbonGroup kryptonRibbonGroup4;
+        private KryptonRibbonGroup kryptonRibbonGroup5;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
+        private KryptonRibbonGroupButton modeHeaderBarHeaderGroup;
+        private KryptonRibbonGroupButton modeHeaderBarGroup;
+        private KryptonRibbonGroupButton modeTabGroup;
+        private KryptonRibbonGroupButton modeBarGroupInside;
+        private KryptonRibbonGroupButton modeBarGroupOutside;
+        private KryptonRibbonGroupButton modeBarRibbonTabGroup;
+        private KryptonRibbonGroupButton modeStackGroup;
+        private KryptonRibbonGroupButton modeStackHeaderGroup;
+        private KryptonRibbonTab kryptonRibbonTab2;
+        private KryptonRibbonGroup kryptonRibbonGroup1;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private KryptonRibbonGroupButton colorsRandom;
+        private KryptonRibbonGroupButton colorsReset;
+        private KryptonRibbonGroup kryptonRibbonGroup6;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
+        private KryptonRibbonGroupButton buttonSpecsAdd;
+        private KryptonRibbonGroupButton buttonSpecsClear;
+        private KryptonRibbonGroup kryptonRibbonGroup7;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
+        private KryptonRibbonGroupButton modeHeaderGroupTab;
     }
 }
 

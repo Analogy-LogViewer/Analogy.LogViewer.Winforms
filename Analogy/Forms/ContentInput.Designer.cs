@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using ComponentFactory.Krypton.Toolkit;
+
+namespace Analogy
 {
     partial class ContentInput
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -133,13 +136,13 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private KryptonPanel kryptonPanel;
+        private KryptonButton kryptonButton1;
+        private KryptonNumericUpDown kryptonNumericUpDown1;
+        private KryptonLabel kryptonLabel3;
+        private KryptonTextBox kryptonTextBox2;
+        private KryptonLabel kryptonLabel2;
+        private KryptonTextBox kryptonTextBox1;
+        private KryptonLabel kryptonLabel1;
     }
 }

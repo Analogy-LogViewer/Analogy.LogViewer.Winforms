@@ -1,11 +1,14 @@
-﻿namespace Analogy.Tools
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy.Tools
 {
     partial class LogsComparerUC
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -148,12 +151,12 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox rtboxRight;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.RichTextBox rtboxLeft;
-        private System.Windows.Forms.Label lblFileLeft;
-        private System.Windows.Forms.Label lblFileRight;
-        private System.Windows.Forms.Button sBtnLeft;
-        private System.Windows.Forms.Button simpleButtonRight;
+        private RichTextBox rtboxRight;
+        private SplitContainer splitContainer1;
+        private RichTextBox rtboxLeft;
+        private Label lblFileLeft;
+        private Label lblFileRight;
+        private Button sBtnLeft;
+        private Button simpleButtonRight;
     }
 }

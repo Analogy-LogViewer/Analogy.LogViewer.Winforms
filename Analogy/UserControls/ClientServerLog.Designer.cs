@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class ClientServerUCLog
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -302,23 +305,23 @@
         }
 
         #endregion
-        private System.Windows.Forms.SplitContainer spltMain;
-        private System.Windows.Forms.ImageList imageList;
-        private System.Windows.Forms.ToolStrip tsPrimary;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.SplitContainer splcLeft;
-        private System.Windows.Forms.ImageList imageListBottom;
+        private SplitContainer spltMain;
+        private ImageList imageList;
+        private ToolStrip tsPrimary;
+        private ToolStripSeparator toolStripSeparator1;
+        private SplitContainer splcLeft;
+        private ImageList imageListBottom;
         private UCLogs ucLogs1;
-        private System.Windows.Forms.ToolStrip toolStripEx1;
-        private System.Windows.Forms.ToolStripButton tsBtnAdd;
-        private System.Windows.Forms.ToolStripButton tsBtnRemove;
-        private System.Windows.Forms.ListBox lBoxSources;
-        private System.Windows.Forms.ListBox lBoxFiles;
-        private System.Windows.Forms.ToolStrip toolStripEx2;
-        private System.Windows.Forms.ToolStripButton tsBtnOpenFolder;
-        private System.Windows.Forms.ToolStripButton tsBtnRefresh;
-        private System.Windows.Forms.ToolStripButton tsBtnDelete;
-        private System.Windows.Forms.CheckBox checkBoxSelectionMode;
-        private System.Windows.Forms.CheckBox checkBoxRecursiveLoad;
+        private ToolStrip toolStripEx1;
+        private ToolStripButton tsBtnAdd;
+        private ToolStripButton tsBtnRemove;
+        private ListBox lBoxSources;
+        private ListBox lBoxFiles;
+        private ToolStrip toolStripEx2;
+        private ToolStripButton tsBtnOpenFolder;
+        private ToolStripButton tsBtnRefresh;
+        private ToolStripButton tsBtnDelete;
+        private CheckBox checkBoxSelectionMode;
+        private CheckBox checkBoxRecursiveLoad;
     }
 }

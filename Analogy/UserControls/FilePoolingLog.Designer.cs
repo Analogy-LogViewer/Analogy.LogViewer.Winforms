@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class FilePoolingUCLogs
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -177,15 +180,15 @@
         }
 
         #endregion
-        private System.Windows.Forms.ImageList imageList;
-        private System.Windows.Forms.ToolStrip tsPrimary;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ImageList imageListBottom;
+        private ImageList imageList;
+        private ToolStrip tsPrimary;
+        private ToolStripSeparator toolStripSeparator1;
+        private ImageList imageListBottom;
         private UCLogs ucLogs1;
-        private System.Windows.Forms.SplitContainer spltMain;
-        private System.Windows.Forms.ListBox listBoxClearHistory;
-        private System.Windows.Forms.ToolStrip toolStripEx1;
-        private System.Windows.Forms.ToolStripButton btnClear;
-        private System.Windows.Forms.ToolStripButton btnHide;
+        private SplitContainer spltMain;
+        private ListBox listBoxClearHistory;
+        private ToolStrip toolStripEx1;
+        private ToolStripButton btnClear;
+        private ToolStripButton btnHide;
     }
 }

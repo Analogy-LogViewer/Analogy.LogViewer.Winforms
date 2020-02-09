@@ -1,4 +1,7 @@
 ﻿
+using System.ComponentModel;
+using System.Windows.Forms;
+
 namespace Analogy
 {
     partial class WindowsEventLog
@@ -6,7 +9,7 @@ namespace Analogy
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -199,15 +202,15 @@ namespace Analogy
         }
 
         #endregion
-        private System.Windows.Forms.SplitContainer spltMain;
-        private System.Windows.Forms.ImageList imageList;
-        private System.Windows.Forms.ToolStrip tsPrimary;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.SplitContainer splcLeft;
-        private System.Windows.Forms.ImageList imageListBottom;
+        private SplitContainer spltMain;
+        private ImageList imageList;
+        private ToolStrip tsPrimary;
+        private ToolStripSeparator toolStripSeparator1;
+        private SplitContainer splcLeft;
+        private ImageList imageListBottom;
         private UCLogs ucLogs1;
-        private System.Windows.Forms.ListBox lBoxSources;
-        private System.Windows.Forms.ToolStrip toolStripEx1;
-        private System.Windows.Forms.ToolStripButton btnManageList;
+        private ListBox lBoxSources;
+        private ToolStrip toolStripEx1;
+        private ToolStripButton btnManageList;
     }
 }

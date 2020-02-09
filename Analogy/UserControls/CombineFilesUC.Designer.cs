@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class CombineFilesUC
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -160,12 +163,12 @@
 
         #endregion
         private FileSystemUC fileSystemUC1;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private SplitContainer splitContainer1;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
         private FilesOperationsUC processFilesUC1;
-        private System.Windows.Forms.Button sBtnSave;
-        private System.Windows.Forms.Button sBtnCombined;
+        private Button sBtnSave;
+        private Button sBtnCombined;
     }
 }

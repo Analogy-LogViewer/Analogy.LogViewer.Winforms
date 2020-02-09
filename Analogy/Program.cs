@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.ExceptionServices;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Analogy
@@ -46,7 +48,7 @@ namespace Analogy
 
             }
         }
-        private static void CurrentDomain_FirstChanceException(object sender, System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs e)
+        private static void CurrentDomain_FirstChanceException(object sender, FirstChanceExceptionEventArgs e)
         {
             AnalogyLogger.Intance.LogException(e.Exception, nameof(CurrentDomain_FirstChanceException), "Error: " + e);
         }
@@ -56,7 +58,7 @@ namespace Analogy
             MessageBox.Show("Error: " + e.ExceptionObject, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
+        private static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
         {
             AnalogyLogger.Intance.LogException(e.Exception, nameof(Application_ThreadException), "Error: " + e.Exception);
             MessageBox.Show("Error: " + e.Exception, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

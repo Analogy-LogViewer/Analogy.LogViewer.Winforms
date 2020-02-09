@@ -1,4 +1,7 @@
 ﻿
+using System.ComponentModel;
+using System.Windows.Forms;
+
 namespace Analogy
 {
     partial class FolderTreeViewUC
@@ -6,7 +9,7 @@ namespace Analogy
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -130,11 +133,11 @@ namespace Analogy
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtbFolder;
-        private System.Windows.Forms.ImageList imageList;
-        private System.Windows.Forms.Button btnOpenFolder;
-        private System.Windows.Forms.ToolStrip toolStripTop;
-        private System.Windows.Forms.ToolStripButton tsBtnRootDrive;
+        private Panel panel2;
+        private TextBox txtbFolder;
+        private ImageList imageList;
+        private Button btnOpenFolder;
+        private ToolStrip toolStripTop;
+        private ToolStripButton tsBtnRootDrive;
     }
 }

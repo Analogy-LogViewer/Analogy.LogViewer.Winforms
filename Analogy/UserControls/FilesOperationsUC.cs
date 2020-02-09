@@ -48,7 +48,7 @@ namespace Analogy
         {
             InitializeComponent();
             TextMessages = new List<string>();
-            ProgressReporter = new Progress<AnalogyProgressReport>((value) =>
+            ProgressReporter = new Progress<AnalogyProgressReport>(value =>
             {
                 string status = $"{value.Prefix}:{value.FinishedProcessing}";
                 TextMessages.Add(status);

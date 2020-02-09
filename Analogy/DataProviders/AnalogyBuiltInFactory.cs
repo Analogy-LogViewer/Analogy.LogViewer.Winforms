@@ -84,22 +84,20 @@ namespace Analogy.DataSources
                 var messages = await logFile.ReadFromFile(fileName, token, messagesHandler);
                 return messages;
             }
-            else
+
+            AnalogyLogMessage m = new AnalogyLogMessage
             {
-                AnalogyLogMessage m = new AnalogyLogMessage
-                {
-                    Text = $"Unsupported file: {fileName}. Skipping file",
-                    Level = AnalogyLogLevel.Critical,
-                    Source = "Analogy",
-                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName,
-                    ProcessID = System.Diagnostics.Process.GetCurrentProcess().Id,
-                    Class = AnalogyLogClass.General,
-                    User = Environment.UserName,
-                    Date = DateTime.Now
-                };
-                messagesHandler.AppendMessage(m, Environment.MachineName);
-                return new List<AnalogyLogMessage>() { m };
-            }
+                Text = $"Unsupported file: {fileName}. Skipping file",
+                Level = AnalogyLogLevel.Critical,
+                Source = "Analogy",
+                Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName,
+                ProcessID = System.Diagnostics.Process.GetCurrentProcess().Id,
+                Class = AnalogyLogClass.General,
+                User = Environment.UserName,
+                Date = DateTime.Now
+            };
+            messagesHandler.AppendMessage(m, Environment.MachineName);
+            return new List<AnalogyLogMessage> { m };
         }
 
         public IEnumerable<FileInfo> GetSupportedFiles(DirectoryInfo dirInfo, bool recursiveLoad)
@@ -164,7 +162,7 @@ namespace Analogy.DataSources
 
         public AnalogyCustomActionFactory()
         {
-            Items = new List<IAnalogyCustomAction>() { new AnalogyCustomAction()/*,new AnalogyDataProvidersCustomAction()*/ };
+            Items = new List<IAnalogyCustomAction> { new AnalogyCustomAction()/*,new AnalogyDataProvidersCustomAction()*/ };
         }
     }
 

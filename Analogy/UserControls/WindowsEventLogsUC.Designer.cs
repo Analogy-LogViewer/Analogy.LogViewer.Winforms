@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class WindowsEventLogsUC
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -133,12 +136,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListBox lstSelected;
-        private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.ListBox lstAvailable;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label lblLaunchCount;
-        private System.Windows.Forms.SplitContainer splitContainerAdv1;
+        private ListBox lstSelected;
+        private Button btnRemove;
+        private ListBox lstAvailable;
+        private Button btnAdd;
+        private Label lblLaunchCount;
+        private SplitContainer splitContainerAdv1;
      
     }
 }

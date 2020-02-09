@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ServiceModel;
 using System.Windows.Forms;
+using Analogy.Properties;
 
 namespace Analogy
 {
@@ -39,9 +40,8 @@ namespace Analogy
         {
             if (!EnableOTA)
             {
-                MessageBox.Show(Properties.Resources.FeatureDisable, Application.ProductName, MessageBoxButtons.OK,
+                MessageBox.Show(Resources.FeatureDisable, Application.ProductName, MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-                return;
             }
             //if (!ReceiveingInProgress)
             //{

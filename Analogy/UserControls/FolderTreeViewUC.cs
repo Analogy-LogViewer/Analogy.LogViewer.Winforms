@@ -96,7 +96,7 @@ namespace Analogy
 
         public void SetFolder(string folder, IAnalogyOfflineDataProvider dataProvider)
         {
-            this.DataProvider = dataProvider;
+            DataProvider = dataProvider;
             if (string.IsNullOrEmpty(folder) || !Directory.Exists(folder)) return;
             SelectedPath = folder;
             txtbFolder.Text = folder;

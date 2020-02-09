@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
@@ -35,7 +36,7 @@ namespace Analogy
                         return titleAttribute.Title;
                     }
                 }
-                return System.IO.Path.GetFileNameWithoutExtension(_factoryAssembly.CodeBase);
+                return Path.GetFileNameWithoutExtension(_factoryAssembly.CodeBase);
             }
         }
 
@@ -95,12 +96,12 @@ namespace Analogy
 
         private void AboutDataSourceBox_Load(object sender, EventArgs e)
         {
-            this.Text = $"About {AssemblyTitle}";
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = $"Version {AssemblyVersion}";
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = $"{AssemblyDescription}{Environment.NewLine}{_factory.About}";
+            Text = $"About {AssemblyTitle}";
+            labelProductName.Text = AssemblyProduct;
+            labelVersion.Text = $"Version {AssemblyVersion}";
+            labelCopyright.Text = AssemblyCopyright;
+            labelCompanyName.Text = AssemblyCompany;
+            textBoxDescription.Text = $"{AssemblyDescription}{Environment.NewLine}{_factory.About}";
             rtxtChangeLog.Text = string.Join(Environment.NewLine,
                 _factory.ChangeLog.OrderByDescending(c => c.Date).Select(cl => $"{cl.Date.ToShortDateString()}: {cl.ChangeInformation} ({cl.Name})"));
             rtxtContributions.Text = string.Join(Environment.NewLine, _factory.Contributors);

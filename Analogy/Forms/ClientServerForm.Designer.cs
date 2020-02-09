@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class ClientServerForm
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -143,13 +146,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button sBtnAdd;
-        private System.Windows.Forms.TextBox txtbPath;
-        private System.Windows.Forms.Button sBtnTest;
-        private System.Windows.Forms.RadioButton rBtnNetwork;
-        private System.Windows.Forms.RadioButton rBtnLocal;
-        private System.Windows.Forms.TextBox txtDisplayName;
-        private System.Windows.Forms.Label lblPath;
-        private System.Windows.Forms.Label gradientLabel1;
+        private Button sBtnAdd;
+        private TextBox txtbPath;
+        private Button sBtnTest;
+        private RadioButton rBtnNetwork;
+        private RadioButton rBtnLocal;
+        private TextBox txtDisplayName;
+        private Label lblPath;
+        private Label gradientLabel1;
     }
 }

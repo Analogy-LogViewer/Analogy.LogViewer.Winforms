@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using Analogy.Interfaces;
 
@@ -21,7 +22,7 @@ namespace Analogy
                 ucLogs1.FilterResults(processOrModule);
         }
 
-        private void XtraFormLogGrid_Load(object sender, System.EventArgs e)
+        private void XtraFormLogGrid_Load(object sender, EventArgs e)
         {
             if (DesignMode) return;
             ucLogs1.AppendMessages(_messages, _dataSource);

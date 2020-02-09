@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class BookmarkLog
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -128,11 +131,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.SplitContainer spltMain;
-        private System.Windows.Forms.ImageList imageList;
-        private System.Windows.Forms.ToolStrip tsPrimary;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ImageList imageListBottom;
+        private SplitContainer spltMain;
+        private ImageList imageList;
+        private ToolStrip tsPrimary;
+        private ToolStripSeparator toolStripSeparator1;
+        private ImageList imageListBottom;
         private UCLogs ucLogs1;
     }
 }

@@ -41,7 +41,7 @@ namespace Analogy
         }
         public UserSettingsForm(string tabName) : this()
         {
-            var tab = tabControlMain.TabPages.Cast<TabPage>().SingleOrDefault<TabPage>(t => t.Name == tabName);
+            var tab = tabControlMain.TabPages.Cast<TabPage>().SingleOrDefault(t => t.Name == tabName);
             if (tab != null)
                 InitialSelection = tab.TabIndex;
         }

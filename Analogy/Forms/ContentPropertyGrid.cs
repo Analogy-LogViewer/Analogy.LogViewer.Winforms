@@ -9,16 +9,9 @@
 // *****************************************************************************
 
 using System;
-using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
 using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Workspace;
-using ComponentFactory.Krypton.Docking;
 
 namespace Analogy
 {
@@ -36,7 +29,7 @@ namespace Analogy
         protected override void Dispose(bool disposing)
         {
             // Unhook from events so this control can be garbage collected
-            KryptonManager.GlobalPaletteChanged -= new EventHandler(OnGlobalPaletteChanged);
+            KryptonManager.GlobalPaletteChanged -= OnGlobalPaletteChanged;
 
             if (disposing && (components != null))
             {
@@ -48,7 +41,7 @@ namespace Analogy
         private void ContentPropertyGrid_Load(object sender, EventArgs e)
         {
             // Hook into global palette changes
-            KryptonManager.GlobalPaletteChanged += new EventHandler(OnGlobalPaletteChanged);
+            KryptonManager.GlobalPaletteChanged += OnGlobalPaletteChanged;
 
             // Set correct initial font for the property grid
             OnGlobalPaletteChanged(null, EventArgs.Empty);

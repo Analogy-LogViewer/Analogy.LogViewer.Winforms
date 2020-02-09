@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class FilesOperationsUC
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -136,11 +139,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button btnAbort;
-        private System.Windows.Forms.RichTextBox richTextBoxFound;
-        private System.Windows.Forms.SplitContainer splitContainerAdv1;
+        private ProgressBar progressBar1;
+        private Label lblStatus;
+        private RichTextBox richTextBox1;
+        private Button btnAbort;
+        private RichTextBox richTextBoxFound;
+        private SplitContainer splitContainerAdv1;
     }
 }

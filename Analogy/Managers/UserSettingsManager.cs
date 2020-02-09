@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using Analogy.DataProviders.Extensions;
 using Analogy.Interfaces;
 using Analogy.Interfaces.DataTypes;
 using Analogy.Interfaces.Factories;
@@ -258,13 +257,11 @@ namespace Analogy
                 LastSearchesInclude.Add(text);
                 return true;
             }
-            else
-            {
-                if (LastSearchesExclude.Contains(text, StringComparison.InvariantCultureIgnoreCase))
-                    return false;
-                LastSearchesExclude.Add(text);
-                return true;
-            }
+
+            if (LastSearchesExclude.Contains(text, StringComparison.InvariantCultureIgnoreCase))
+                return false;
+            LastSearchesExclude.Add(text);
+            return true;
         }
     }
     [Serializable]

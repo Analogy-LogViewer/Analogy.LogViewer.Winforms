@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class ExtensionsForm
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -86,8 +89,8 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox rtxtbMessages;
-        private System.Windows.Forms.Button BtnLoad;
+        private RichTextBox rtxtbMessages;
+        private Button BtnLoad;
         private ExtensionsUC extensionsUC1;
     }
 }

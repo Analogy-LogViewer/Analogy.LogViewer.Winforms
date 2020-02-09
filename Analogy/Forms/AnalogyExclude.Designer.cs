@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class AnalogyExclude
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -148,11 +151,11 @@
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Panel PnlBottom;
-        private System.Windows.Forms.Button sBtnCancel;
-        private System.Windows.Forms.Button sBtnOk;
-        private System.Windows.Forms.Button simpleButton2;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private SplitContainer splitContainer1;
+        private Panel PnlBottom;
+        private Button sBtnCancel;
+        private Button sBtnOk;
+        private Button simpleButton2;
+        private CheckedListBox checkedListBox1;
     }
 }

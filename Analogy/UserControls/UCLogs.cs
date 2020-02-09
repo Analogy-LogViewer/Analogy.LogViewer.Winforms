@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
@@ -453,7 +454,7 @@ namespace Analogy
             InPlaceRegisteredExtensions = ExtensionManager.InPlaceRegisteredExtensions.ToList();
             UserControlRegisteredExtensions = ExtensionManager.UserControlRegisteredExtensions.ToList();
             InitializeExtensionsColumns();
-            ProgressReporter = new Progress<AnalogyProgressReport>((value) =>
+            ProgressReporter = new Progress<AnalogyProgressReport>(value =>
             {
                 progressBar1.Maximum = value.Total;
                 if (value.Processed < progressBar1.Maximum && value.Total > 1)
@@ -1498,7 +1499,7 @@ namespace Analogy
                 _messageData.Rows.Remove(row);
         }
 
-        private void cmsMessageOperation_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        private void cmsMessageOperation_Opening(object sender, CancelEventArgs e)
         {
             (AnalogyLogMessage message, _) = GetMessageFromSelectedRowInGrid();
             if (message != null)
@@ -1524,12 +1525,12 @@ namespace Analogy
             var selectedItems = sfDataGridMain.SelectedRows.Cast<DataRowView>();
             DataRow dataRow = selectedItems.First().Row;
             AnalogyLogMessage message = GetMessageFromRow(dataRow);
-            string datasource = (string)dataRow["DataProvider"].ToString();
+            string datasource = dataRow["DataProvider"].ToString();
             return (message, datasource);
 
         }
 
-        private void cmsBookmarked_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        private void cmsBookmarked_Opening(object sender, CancelEventArgs e)
         {
             (AnalogyLogMessage message, _) = GetMessageFromSelectedRowInGrid();
             if (message != null)
@@ -1598,30 +1599,12 @@ namespace Analogy
                     {
                         MessageBox.Show($"XLSX files are limited to 1,048,576 rows (and 16,384 columns). You have {count} rows", "Export Aborted");
                     }
-                    else
-                    {
-                        //todo
-                        //var options = new ExcelExportingOptions();
-                        ////var excelEngine = sfDataGridMain.ExportToExcel(sfDataGridMain.View, options);
-                        //var workBook = excelEngine.Excel.Workbooks[0];
-                        //workBook.SaveAs(saveFileDialog.FileName);
-                        //OpenFolder(saveFileDialog.FileName);
-                    }
                 }
                 if (saveFileDialog.FilterIndex == 2)
                 {
                     if (count > 65536)
                     {
                         MessageBox.Show($"XLS files are limited to 65,536 rows (and 256 columns). You have {count} rows", "Export Aborted");
-                    }
-                    else
-                    {
-                        //todo
-                        //var options = new ExcelExportingOptions();
-                        //var excelEngine = sfDataGridMain.ExportToExcel(sfDataGridMain.View, options);
-                        //var workBook = excelEngine.Excel.Workbooks[0];
-                        //workBook.SaveAs(saveFileDialog.FileName);
-                        //OpenFolder(saveFileDialog.FileName);
                     }
                 }
             }

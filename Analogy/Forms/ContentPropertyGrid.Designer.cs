@@ -1,11 +1,15 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
+
+namespace Analogy
 {
     partial class ContentPropertyGrid
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         #region Component Designer generated code
 
@@ -60,7 +64,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
+        private PropertyGrid propertyGrid1;
+        private KryptonPanel kryptonPanel;
     }
 }

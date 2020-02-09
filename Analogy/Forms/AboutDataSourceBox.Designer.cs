@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class AboutDataSourceBox
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -240,18 +243,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
-        private System.Windows.Forms.Label labelProductName;
-        private System.Windows.Forms.Label labelVersion;
-        private System.Windows.Forms.Label labelCopyright;
-        private System.Windows.Forms.Label labelCompanyName;
-        private System.Windows.Forms.TextBox textBoxDescription;
-        private System.Windows.Forms.Button okButton;
-        private System.Windows.Forms.RichTextBox rtxtContributions;
-        private System.Windows.Forms.RichTextBox rtxtChangeLog;
-        private System.Windows.Forms.TabControl tabControlAdv1;
-        private System.Windows.Forms.TabPage tabPageAdv1;
-        private System.Windows.Forms.TabPage tabPageAdv2;
-        private System.Windows.Forms.TabPage tabPageAdv3;
+        private TableLayoutPanel tableLayoutPanel;
+        private Label labelProductName;
+        private Label labelVersion;
+        private Label labelCopyright;
+        private Label labelCompanyName;
+        private TextBox textBoxDescription;
+        private Button okButton;
+        private RichTextBox rtxtContributions;
+        private RichTextBox rtxtChangeLog;
+        private TabControl tabControlAdv1;
+        private TabPage tabPageAdv1;
+        private TabPage tabPageAdv2;
+        private TabPage tabPageAdv3;
     }
 }

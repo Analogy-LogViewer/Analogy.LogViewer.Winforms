@@ -85,7 +85,7 @@ namespace Analogy
             throw new NotImplementedException();
         }
 
-        public void SortLastChanged(SortOrder @descending)
+        public void SortLastChanged(SortOrder descending)
         {
             throw new NotImplementedException();
         }

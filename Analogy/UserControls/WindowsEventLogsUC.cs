@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -19,13 +20,13 @@ namespace Analogy
             lstSelected.Items.AddRange(Settings.EventLogs.ToArray());
             try
             {
-                var all = System.Diagnostics.Eventing.Reader.EventLogSession.GlobalSession.GetLogNames().Where(EventLog.Exists).ToList().Except(Settings.EventLogs).ToArray();
+                var all = EventLogSession.GlobalSession.GetLogNames().Where(EventLog.Exists).ToList().Except(Settings.EventLogs).ToArray();
                 lstAvailable.Items.AddRange(all);
             }
             catch (Exception exception)
             {
                 MessageBox.Show("Error loading all logs. Make sure you are running as administrator. Error:" + exception.Message, "Error",
-                    System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

@@ -1,11 +1,14 @@
-﻿namespace Analogy
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Analogy
 {
     partial class ExtensionsUC
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -153,13 +156,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox chklItems;
-        private System.Windows.Forms.RichTextBox rtxtbMessages;
-        private System.Windows.Forms.Label lblAuthor;
-        private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.Label lblExtension;
-        private System.Windows.Forms.Label lblType;
-        private System.Windows.Forms.Button sBtnLoad;
+        private Label label1;
+        private CheckedListBox chklItems;
+        private RichTextBox rtxtbMessages;
+        private Label lblAuthor;
+        private Label lblDescription;
+        private Label lblExtension;
+        private Label lblType;
+        private Button sBtnLoad;
     }
 }
