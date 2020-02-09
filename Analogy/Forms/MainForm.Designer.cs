@@ -42,7 +42,15 @@ namespace Analogy
             this.kryptonRibbonGroupTriple8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.tsbtnAnalogyOpenFolder = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.tsbtnAnalogyOpenFiles = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonTab1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonGroup2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
@@ -83,17 +91,26 @@ namespace Analogy
             this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
             this.TmrAutoConnect = new System.Windows.Forms.Timer(this.components);
             this.tmrStatusUpdates = new System.Windows.Forms.Timer(this.components);
-            this.kryptonRibbonGroupButton1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupTriple9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroupButton2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupButton3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupButton4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.kryptonRibbonGroup10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroupButton5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.krtTheme = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.krtSettings = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.tsbSettingsFiltering = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tsbSettingsPreDefined = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tsbSettingsLookAndFeel = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.tsbSettingsUserStatistics = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tsbSettingsExtension = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tsbSettingsShortcuts = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple13 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.tsbSettingsMRU = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tsbSettingsResources = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.tsbSettingsDataProviders = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple14 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.tsbSettingsCustomDataProviders = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -108,8 +125,11 @@ namespace Analogy
             this.ribbonControlMain.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
             this.RibbonTabAnalogy,
             this.kryptonRibbonTab1,
-            this.kryptonRibbonTab2});
-            this.ribbonControlMain.SelectedTab = this.RibbonTabAnalogy;
+            this.kryptonRibbonTab2,
+            this.krtTheme,
+            this.krtSettings});
+            this.ribbonControlMain.SelectedContext = null;
+            this.ribbonControlMain.SelectedTab = this.krtSettings;
             this.ribbonControlMain.Size = new System.Drawing.Size(1083, 165);
             this.ribbonControlMain.TabIndex = 0;
             // 
@@ -150,6 +170,50 @@ namespace Analogy
             this.kryptonRibbonGroup9.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple9});
             this.kryptonRibbonGroup9.TextLine1 = "Analogy\'s Built-in tools for logs";
+            // 
+            // kryptonRibbonGroupTriple9
+            // 
+            this.kryptonRibbonGroupTriple9.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton2,
+            this.kryptonRibbonGroupButton3,
+            this.kryptonRibbonGroupButton4});
+            // 
+            // kryptonRibbonGroupButton2
+            // 
+            this.kryptonRibbonGroupButton2.ImageLarge = global::Analogy.Properties.Resources.Lookup_Reference_32x32;
+            this.kryptonRibbonGroupButton2.ImageSmall = global::Analogy.Properties.Resources.Lookup_Reference_16x16;
+            this.kryptonRibbonGroupButton2.TextLine1 = "Search";
+            this.kryptonRibbonGroupButton2.TextLine2 = "In Files";
+            // 
+            // kryptonRibbonGroupButton3
+            // 
+            this.kryptonRibbonGroupButton3.ImageLarge = global::Analogy.Properties.Resources.Sutotal_32x32;
+            this.kryptonRibbonGroupButton3.TextLine1 = "Combine";
+            this.kryptonRibbonGroupButton3.TextLine2 = "Files";
+            // 
+            // kryptonRibbonGroupButton4
+            // 
+            this.kryptonRibbonGroupButton4.ImageLarge = global::Analogy.Properties.Resources.TwoColumns;
+            this.kryptonRibbonGroupButton4.TextLine1 = "Compare";
+            this.kryptonRibbonGroupButton4.TextLine2 = "Files";
+            // 
+            // kryptonRibbonGroup10
+            // 
+            this.kryptonRibbonGroup10.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple10});
+            this.kryptonRibbonGroup10.TextLine1 = "Tools";
+            // 
+            // kryptonRibbonGroupTriple10
+            // 
+            this.kryptonRibbonGroupTriple10.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton5});
+            // 
+            // kryptonRibbonGroupButton5
+            // 
+            this.kryptonRibbonGroupButton5.ImageLarge = global::Analogy.Properties.Resources.PageSetup_32x32;
+            this.kryptonRibbonGroupButton5.ImageSmall = global::Analogy.Properties.Resources.PageSetup_16x16;
+            this.kryptonRibbonGroupButton5.TextLine1 = "Process";
+            this.kryptonRibbonGroupButton5.TextLine2 = "Identifier";
             // 
             // kryptonRibbonTab1
             // 
@@ -488,32 +552,6 @@ namespace Analogy
             this.tmrStatusUpdates.Enabled = true;
             this.tmrStatusUpdates.Interval = 1000;
             // 
-            // kryptonRibbonGroupTriple9
-            // 
-            this.kryptonRibbonGroupTriple9.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.kryptonRibbonGroupButton2,
-            this.kryptonRibbonGroupButton3,
-            this.kryptonRibbonGroupButton4});
-            // 
-            // kryptonRibbonGroupButton2
-            // 
-            this.kryptonRibbonGroupButton2.ImageLarge = global::Analogy.Properties.Resources.Lookup_Reference_32x32;
-            this.kryptonRibbonGroupButton2.ImageSmall = global::Analogy.Properties.Resources.Lookup_Reference_16x16;
-            this.kryptonRibbonGroupButton2.TextLine1 = "Search";
-            this.kryptonRibbonGroupButton2.TextLine2 = "In Files";
-            // 
-            // kryptonRibbonGroupButton3
-            // 
-            this.kryptonRibbonGroupButton3.ImageLarge = global::Analogy.Properties.Resources.Sutotal_32x32;
-            this.kryptonRibbonGroupButton3.TextLine1 = "Combine";
-            this.kryptonRibbonGroupButton3.TextLine2 = "Files";
-            // 
-            // kryptonRibbonGroupButton4
-            // 
-            this.kryptonRibbonGroupButton4.ImageLarge = global::Analogy.Properties.Resources.TwoColumns;
-            this.kryptonRibbonGroupButton4.TextLine1 = "Compare";
-            this.kryptonRibbonGroupButton4.TextLine2 = "Files";
-            // 
             // imageList3
             // 
             this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
@@ -553,23 +591,113 @@ namespace Analogy
             this.imageList2.Images.SetKeyName(7, "__Pictures.png");
             this.imageList2.Images.SetKeyName(8, "__Video.png");
             // 
-            // kryptonRibbonGroup10
+            // krtTheme
             // 
-            this.kryptonRibbonGroup10.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
-            this.kryptonRibbonGroupTriple10});
-            this.kryptonRibbonGroup10.TextLine1 = "Tools";
+            this.krtTheme.Text = "Theme";
             // 
-            // kryptonRibbonGroupTriple10
+            // krtSettings
             // 
-            this.kryptonRibbonGroupTriple10.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.kryptonRibbonGroupButton5});
+            this.krtSettings.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup11});
+            this.krtSettings.Text = "Settings";
             // 
-            // kryptonRibbonGroupButton5
+            // kryptonRibbonGroup11
             // 
-            this.kryptonRibbonGroupButton5.ImageLarge = global::Analogy.Properties.Resources.PageSetup_32x32;
-            this.kryptonRibbonGroupButton5.ImageSmall = global::Analogy.Properties.Resources.PageSetup_16x16;
-            this.kryptonRibbonGroupButton5.TextLine1 = "Process";
-            this.kryptonRibbonGroupButton5.TextLine2 = "Identifier";
+            this.kryptonRibbonGroup11.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple11,
+            this.kryptonRibbonGroupTriple12,
+            this.kryptonRibbonGroupTriple13,
+            this.kryptonRibbonGroupTriple14});
+            this.kryptonRibbonGroup11.TextLine1 = "Settings";
+            // 
+            // kryptonRibbonGroupTriple11
+            // 
+            this.kryptonRibbonGroupTriple11.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.tsbSettingsFiltering,
+            this.tsbSettingsPreDefined,
+            this.tsbSettingsLookAndFeel});
+            // 
+            // tsbSettingsFiltering
+            // 
+            this.tsbSettingsFiltering.ImageLarge = global::Analogy.Properties.Resources.ReapplyFilter_32x32;
+            this.tsbSettingsFiltering.ImageSmall = global::Analogy.Properties.Resources.ReapplyFilter_16x16;
+            this.tsbSettingsFiltering.TextLine1 = "Filtering";
+            // 
+            // tsbSettingsPreDefined
+            // 
+            this.tsbSettingsPreDefined.ImageLarge = global::Analogy.Properties.Resources.FilterByArgument_Chart_32x32;
+            this.tsbSettingsPreDefined.ImageSmall = global::Analogy.Properties.Resources.FilterByArgument_Chart_16x16;
+            this.tsbSettingsPreDefined.TextLine1 = "Pre-Defined";
+            this.tsbSettingsPreDefined.TextLine2 = "Queries";
+            // 
+            // tsbSettingsLookAndFeel
+            // 
+            this.tsbSettingsLookAndFeel.ImageLarge = global::Analogy.Properties.Resources.Palette_32x32;
+            this.tsbSettingsLookAndFeel.ImageSmall = global::Analogy.Properties.Resources.Palette_16x16;
+            this.tsbSettingsLookAndFeel.TextLine1 = "Look and Feel";
+            // 
+            // kryptonRibbonGroupTriple12
+            // 
+            this.kryptonRibbonGroupTriple12.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.tsbSettingsUserStatistics,
+            this.tsbSettingsExtension,
+            this.tsbSettingsShortcuts});
+            // 
+            // tsbSettingsUserStatistics
+            // 
+            this.tsbSettingsUserStatistics.ImageLarge = global::Analogy.Properties.Resources.Statistical_32x32;
+            this.tsbSettingsUserStatistics.ImageSmall = global::Analogy.Properties.Resources.Statistical_16x16;
+            this.tsbSettingsUserStatistics.TextLine1 = "User Statistics";
+            // 
+            // tsbSettingsExtension
+            // 
+            this.tsbSettingsExtension.ImageLarge = global::Analogy.Properties.Resources.Wizard_32x32;
+            this.tsbSettingsExtension.ImageSmall = global::Analogy.Properties.Resources.Wizard_32x32;
+            this.tsbSettingsExtension.TextLine1 = "Extensions";
+            // 
+            // tsbSettingsShortcuts
+            // 
+            this.tsbSettingsShortcuts.ImageLarge = global::Analogy.Properties.Resources.ArrangeGroups_32x32;
+            this.tsbSettingsShortcuts.TextLine1 = "Shortcuts";
+            // 
+            // kryptonRibbonGroupTriple13
+            // 
+            this.kryptonRibbonGroupTriple13.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.tsbSettingsMRU,
+            this.tsbSettingsResources,
+            this.tsbSettingsDataProviders});
+            // 
+            // tsbSettingsMRU
+            // 
+            this.tsbSettingsMRU.ImageLarge = global::Analogy.Properties.Resources.RecentlyUse_32x32;
+            this.tsbSettingsMRU.ImageSmall = global::Analogy.Properties.Resources.RecentlyUse_16x16;
+            this.tsbSettingsMRU.TextLine1 = "MRU";
+            // 
+            // tsbSettingsResources
+            // 
+            this.tsbSettingsResources.ImageLarge = global::Analogy.Properties.Resources.StackedLine_32x32;
+            this.tsbSettingsResources.ImageSmall = global::Analogy.Properties.Resources.StackedLine_16x16;
+            this.tsbSettingsResources.TextLine1 = "Resources";
+            this.tsbSettingsResources.TextLine2 = "Usage";
+            // 
+            // tsbSettingsDataProviders
+            // 
+            this.tsbSettingsDataProviders.ImageLarge = global::Analogy.Properties.Resources.Database_on;
+            this.tsbSettingsDataProviders.TextLine1 = "Data Providers";
+            this.tsbSettingsDataProviders.TextLine2 = "Settings";
+            // 
+            // kryptonRibbonGroupTriple14
+            // 
+            this.kryptonRibbonGroupTriple14.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.tsbSettingsCustomDataProviders,
+            this.kryptonRibbonGroupButton16,
+            this.kryptonRibbonGroupButton17});
+            // 
+            // tsbSettingsCustomDataProviders
+            // 
+            this.tsbSettingsCustomDataProviders.ImageLarge = global::Analogy.Properties.Resources.Database_on;
+            this.tsbSettingsCustomDataProviders.TextLine1 = "Custom Data";
+            this.tsbSettingsCustomDataProviders.TextLine2 = "Providers Setings";
             // 
             // MainForm
             // 
@@ -655,6 +783,23 @@ namespace Analogy
         private KryptonRibbonGroup kryptonRibbonGroup10;
         private KryptonRibbonGroupTriple kryptonRibbonGroupTriple10;
         private KryptonRibbonGroupButton kryptonRibbonGroupButton5;
+        private KryptonRibbonTab krtTheme;
+        private KryptonRibbonTab krtSettings;
+        private KryptonRibbonGroup kryptonRibbonGroup11;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple11;
+        private KryptonRibbonGroupButton tsbSettingsFiltering;
+        private KryptonRibbonGroupButton tsbSettingsPreDefined;
+        private KryptonRibbonGroupButton tsbSettingsLookAndFeel;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple12;
+        private KryptonRibbonGroupButton tsbSettingsUserStatistics;
+        private KryptonRibbonGroupButton tsbSettingsExtension;
+        private KryptonRibbonGroupButton tsbSettingsShortcuts;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple13;
+        private KryptonRibbonGroupButton tsbSettingsMRU;
+        private KryptonRibbonGroupButton tsbSettingsResources;
+        private KryptonRibbonGroupButton tsbSettingsDataProviders;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple14;
+        private KryptonRibbonGroupButton tsbSettingsCustomDataProviders;
     }
 }
 
