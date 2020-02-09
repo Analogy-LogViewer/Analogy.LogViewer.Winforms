@@ -1,11 +1,9 @@
-#region Copyright Syncfusion Inc. 2001-2016.
-// Copyright Syncfusion Inc. 2001-2016. All rights reserved.
-// Use of this code is subject to the terms of our license.
-// A copy of the current license can be obtained at any time by e-mailing
-// licensing@syncfusion.com. Any infringement will be prosecuted under
-// applicable laws. 
-#endregion
-using System;
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+using ComponentFactory.Krypton.Docking;
+using ComponentFactory.Krypton.Ribbon;
+using ComponentFactory.Krypton.Toolkit;
+
 namespace Analogy
 {
     partial class MainForm
@@ -13,7 +11,7 @@ namespace Analogy
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -37,955 +35,415 @@ namespace Analogy
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ToolTipInfo toolTipInfo1 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo2 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo3 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo4 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo5 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo6 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo7 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo8 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo9 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo10 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolTipInfo toolTipInfo11 = new System.Windows.Forms.ToolTipInfo();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem1 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem2 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem3 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem4 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem5 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem6 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem7 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolStripGalleryItem toolStripGalleryItem8 = new System.Windows.Forms.ToolStripGalleryItem();
-            System.Windows.Forms.ToolTipInfo toolTipInfo12 = new System.Windows.Forms.ToolTipInfo();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.ribbonControlMain = new System.Windows.Forms.RibbonControlAdv();
-            this.tstitmAnalogy = new System.Windows.Forms.ToolStripTabItem();
-            this.tseAnalogyBuiltInProviders = new System.Windows.Forms.ToolStrip();
-            this.tsbtnAnalogyOpenFolder = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnAnalogyOpenFiles = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnAnalogyRecentlyOpenFiles = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tstiSettings = new System.Windows.Forms.ToolStripTabItem();
-            this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
-            this.tsbSettingsFiltering = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsPreDefined = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsLookAndFeel = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsUserStatistics = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsExtension = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsShortcuts = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsMRU = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsResources = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsDataProviders = new System.Windows.Forms.ToolStripButton();
-            this.tsbSettingsCustomDataProviders = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTabItem1 = new System.Windows.Forms.ToolStripTabItem();
-            this.toolStripTabItem2 = new System.Windows.Forms.ToolStripTabItem();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.fsfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fsfToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSplitButtonEx1 = new System.Windows.Forms.ToolStripSplitButton();
-            this.mapNetworkDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.discconectNetworkDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripPanelItem1 = new System.Windows.Forms.ToolStripPanelItem();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.navigationPaneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.expandToOpenFoldersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showAllFoldersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showLibrariesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripPanelItem2 = new System.Windows.Forms.ToolStripPanelItem();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripGallery1 = new System.Windows.Forms.ToolStripGallery();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.TreeViewImageList = new System.Windows.Forms.ImageList(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.superAccelerator1 = new System.Windows.Forms.SuperAccelerator(this);
-            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
-            this.bannerTextProvider1 = new Syncfusion.Windows.Forms.BannerTextProvider(this.components);
-            this.superToolTip1 = new System.Windows.Forms.SuperToolTip(this);
-            this.dockingManager1 = new System.Windows.Forms.DockingManager(this.components);
-            this.MainStatusStrip = new System.Windows.Forms.StatusStripEx();
-            this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tsslIdleMessage = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tsslMemoryUsage = new System.Windows.Forms.ToolStripStatusLabel();
+            this.kryptonRibbon1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
+            this.RibbonTabAnalogy = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonTab1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.modeStackGroup = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.modeStackHeaderGroup = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.modeBarGroupOutside = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.modeBarGroupInside = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.modeTabGroup = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.modeBarRibbonTabGroup = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.modeHeaderBarGroup = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.modeHeaderBarHeaderGroup = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.modeHeaderGroupTab = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.colorsRandom = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.colorsReset = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.buttonSpecsAdd = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.buttonSpecsClear = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonDockableWorkspace = new ComponentFactory.Krypton.Docking.KryptonDockableWorkspace();
+            this.kryptonDockingManager = new ComponentFactory.Krypton.Docking.KryptonDockingManager();
+            this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
+            this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonRibbonGroupGallery1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGallery();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblError = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TmrAutoConnect = new System.Windows.Forms.Timer(this.components);
-            this.tmrStatusUpdates = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).BeginInit();
-            this.ribbonControlMain.SuspendLayout();
-            this.tstitmAnalogy.Panel.SuspendLayout();
-            this.tseAnalogyBuiltInProviders.SuspendLayout();
-            this.tstiSettings.Panel.SuspendLayout();
-            this.toolStripEx1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dockingManager1)).BeginInit();
-            this.MainStatusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
+            this.kryptonPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableWorkspace)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ribbonControlMain
-            // 
-            this.ribbonControlMain.ActivateOnFirstClick = true;
-            this.ribbonControlMain.AutoLayoutToolStrip = true;
-            this.ribbonControlMain.CaptionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonControlMain.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.ribbonControlMain.Header.AddMainItem(tstitmAnalogy);
-            this.ribbonControlMain.Header.AddMainItem(tstiSettings);
-            this.ribbonControlMain.Location = new System.Drawing.Point(1, 0);
-            this.ribbonControlMain.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControlMain.MenuButtonFont = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.ribbonControlMain.MenuButtonText = "FILE";
-            this.ribbonControlMain.MenuButtonWidth = 56;
-            this.ribbonControlMain.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ribbonControlMain.Name = "ribbonControlMain";
-            this.ribbonControlMain.Office2013ColorScheme = System.Windows.Forms.Office2013ColorScheme.DarkGray;
-            this.ribbonControlMain.Office2016ColorScheme = System.Windows.Forms.Office2016ColorScheme.DarkGray;
-            this.ribbonControlMain.OfficeColorScheme = System.Windows.Forms.ToolStripEx.ColorScheme.Managed;
-            // 
-            // ribbonControlMain.OfficeMenu
-            // 
-            this.ribbonControlMain.OfficeMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.ribbonControlMain.OfficeMenu.Name = "OfficeMenu";
-            this.ribbonControlMain.OfficeMenu.ShowItemToolTips = true;
-            this.ribbonControlMain.OfficeMenu.Size = new System.Drawing.Size(12, 65);
-            this.ribbonControlMain.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ribbonControlMain.RibbonHeaderImage = System.Windows.Forms.RibbonHeaderImage.None;
-            this.ribbonControlMain.RibbonStyle = System.Windows.Forms.RibbonStyle.Office2013;
-            this.ribbonControlMain.SelectedTab = this.tstitmAnalogy;
-            this.ribbonControlMain.ShowLauncher = false;
-            this.ribbonControlMain.ShowRibbonDisplayOptionButton = false;
-            this.ribbonControlMain.Size = new System.Drawing.Size(1155, 204);
-            this.ribbonControlMain.SystemText.QuickAccessDialogDropDownName = "Start menu";
-            this.ribbonControlMain.SystemText.RenameDisplayLabelText = "&Display Name:";
-            this.ribbonControlMain.TabIndex = 0;
-            this.ribbonControlMain.Text = "Analogy";
-            this.ribbonControlMain.ThemeName = "Office2013";
-            this.ribbonControlMain.TitleColor = System.Drawing.Color.Black;
-            // 
-            // tstitmAnalogy
-            // 
-            this.tstitmAnalogy.Name = "tstitmAnalogy";
-            // 
-            // ribbonControlMain.ribbonPanel1
-            // 
-            this.tstitmAnalogy.Panel.Controls.Add(this.tseAnalogyBuiltInProviders);
-            this.tstitmAnalogy.Panel.Name = "ribbonPanel1";
-            this.tstitmAnalogy.Panel.ScrollPosition = 0;
-            this.tstitmAnalogy.Panel.TabIndex = 4;
-            this.tstitmAnalogy.Panel.Text = "Analogy Main Tab";
-            this.tstitmAnalogy.Position = 0;
-            this.tstitmAnalogy.Size = new System.Drawing.Size(144, 39);
-            this.tstitmAnalogy.Tag = "1";
-            this.tstitmAnalogy.Text = "Analogy Main Tab";
-            // 
-            // tseAnalogyBuiltInProviders
-            // 
-            
-            this.tseAnalogyBuiltInProviders.Dock = System.Windows.Forms.DockStyle.None;
-            this.tseAnalogyBuiltInProviders.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.tseAnalogyBuiltInProviders.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.tseAnalogyBuiltInProviders.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.tseAnalogyBuiltInProviders.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.tseAnalogyBuiltInProviders.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbtnAnalogyOpenFolder,
-            this.tsbtnAnalogyOpenFiles,
-            this.tsbtnAnalogyRecentlyOpenFiles});
-            this.tseAnalogyBuiltInProviders.Location = new System.Drawing.Point(0, 1);
-            this.tseAnalogyBuiltInProviders.Name = "tseAnalogyBuiltInProviders";
-            this.tseAnalogyBuiltInProviders.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.tseAnalogyBuiltInProviders.Size = new System.Drawing.Size(269, 124);
-            this.tseAnalogyBuiltInProviders.TabIndex = 0;
-            this.tseAnalogyBuiltInProviders.Text = "Analogy Built-in Data Provider";
-            // 
-            // tsbtnAnalogyOpenFolder
-            // 
-            this.tsbtnAnalogyOpenFolder.Image = global::Analogy.Properties.Resources.Open2_32x32;
-            this.tsbtnAnalogyOpenFolder.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnAnalogyOpenFolder.Name = "tsbtnAnalogyOpenFolder";
-            this.tsbtnAnalogyOpenFolder.Size = new System.Drawing.Size(89, 102);
-            this.tsbtnAnalogyOpenFolder.Text = "Open Folder";
-            this.tsbtnAnalogyOpenFolder.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbtnAnalogyOpenFolder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbtnAnalogyOpenFiles
-            // 
-            this.tsbtnAnalogyOpenFiles.Image = global::Analogy.Properties.Resources.Article_32x32;
-            this.tsbtnAnalogyOpenFiles.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnAnalogyOpenFiles.Name = "tsbtnAnalogyOpenFiles";
-            this.tsbtnAnalogyOpenFiles.Size = new System.Drawing.Size(77, 102);
-            this.tsbtnAnalogyOpenFiles.Text = "Open Files";
-            this.tsbtnAnalogyOpenFiles.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbtnAnalogyOpenFiles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbtnAnalogyRecentlyOpenFiles
-            // 
-            this.tsbtnAnalogyRecentlyOpenFiles.Image = global::Analogy.Properties.Resources.RecentlyUse_32x32;
-            this.tsbtnAnalogyRecentlyOpenFiles.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnAnalogyRecentlyOpenFiles.Name = "tsbtnAnalogyRecentlyOpenFiles";
-            this.tsbtnAnalogyRecentlyOpenFiles.Size = new System.Drawing.Size(94, 102);
-            this.tsbtnAnalogyRecentlyOpenFiles.Text = "Recent Files";
-            this.tsbtnAnalogyRecentlyOpenFiles.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbtnAnalogyRecentlyOpenFiles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tstiSettings
-            // 
-            this.tstiSettings.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tstiSettings.Name = "tstiSettings";
-            // 
-            // ribbonControlMain.ribbonPanel2
-            // 
-            this.tstiSettings.Panel.Controls.Add(this.toolStripEx1);
-            this.tstiSettings.Panel.Name = "ribbonPanel2";
-            this.tstiSettings.Panel.ScrollPosition = 0;
-            this.tstiSettings.Panel.TabIndex = 5;
-            this.tstiSettings.Panel.Text = "Settings";
-            this.tstiSettings.Position = 1;
-            this.tstiSettings.Size = new System.Drawing.Size(82, 39);
-            this.tstiSettings.Tag = "3";
-            this.tstiSettings.Text = "Settings";
-            // 
-            // toolStripEx1
-            // 
-            this.toolStripEx1.AutoSize = false;
-            this.toolStripEx1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStripEx1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbSettingsFiltering,
-            this.tsbSettingsPreDefined,
-            this.tsbSettingsLookAndFeel,
-            this.tsbSettingsUserStatistics,
-            this.tsbSettingsExtension,
-            this.tsbSettingsShortcuts,
-            this.tsbSettingsMRU,
-            this.tsbSettingsResources,
-            this.tsbSettingsDataProviders,
-            this.tsbSettingsCustomDataProviders});
-            this.toolStripEx1.Location = new System.Drawing.Point(0, 1);
-            this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.Size = new System.Drawing.Size(1001, 124);
-            this.toolStripEx1.TabIndex = 0;
-            // 
-            // tsbSettingsFiltering
-            // 
-            this.tsbSettingsFiltering.Image = global::Analogy.Properties.Resources.Filter_32x32;
-            this.tsbSettingsFiltering.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsFiltering.Name = "tsbSettingsFiltering";
-            this.tsbSettingsFiltering.Size = new System.Drawing.Size(62, 102);
-            this.tsbSettingsFiltering.Text = "Filtering";
-            this.tsbSettingsFiltering.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsFiltering.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsPreDefined
-            // 
-            this.tsbSettingsPreDefined.Image = global::Analogy.Properties.Resources.FilterByArgument_Chart_32x32;
-            this.tsbSettingsPreDefined.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsPreDefined.Name = "tsbSettingsPreDefined";
-            this.tsbSettingsPreDefined.Size = new System.Drawing.Size(137, 102);
-            this.tsbSettingsPreDefined.Text = "Pre-Defined Queries";
-            this.tsbSettingsPreDefined.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsPreDefined.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsLookAndFeel
-            // 
-            this.tsbSettingsLookAndFeel.Image = global::Analogy.Properties.Resources.Palette_32x32;
-            this.tsbSettingsLookAndFeel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsLookAndFeel.Name = "tsbSettingsLookAndFeel";
-            this.tsbSettingsLookAndFeel.Size = new System.Drawing.Size(98, 102);
-            this.tsbSettingsLookAndFeel.Text = "Look and Feel";
-            this.tsbSettingsLookAndFeel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsLookAndFeel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsUserStatistics
-            // 
-            this.tsbSettingsUserStatistics.Image = global::Analogy.Properties.Resources.Statistical_32x32;
-            this.tsbSettingsUserStatistics.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsUserStatistics.Name = "tsbSettingsUserStatistics";
-            this.tsbSettingsUserStatistics.Size = new System.Drawing.Size(98, 102);
-            this.tsbSettingsUserStatistics.Text = "User Statistics";
-            this.tsbSettingsUserStatistics.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsUserStatistics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsExtension
-            // 
-            this.tsbSettingsExtension.Image = global::Analogy.Properties.Resources.Wizard_32x32;
-            this.tsbSettingsExtension.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsExtension.Name = "tsbSettingsExtension";
-            this.tsbSettingsExtension.Size = new System.Drawing.Size(77, 102);
-            this.tsbSettingsExtension.Text = "Extensions";
-            this.tsbSettingsExtension.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsExtension.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsShortcuts
-            // 
-            this.tsbSettingsShortcuts.Image = global::Analogy.Properties.Resources.FlowLayout_32x32;
-            this.tsbSettingsShortcuts.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsShortcuts.Name = "tsbSettingsShortcuts";
-            this.tsbSettingsShortcuts.Size = new System.Drawing.Size(71, 102);
-            this.tsbSettingsShortcuts.Text = "Shortcuts";
-            this.tsbSettingsShortcuts.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsShortcuts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsMRU
-            // 
-            this.tsbSettingsMRU.Image = global::Analogy.Properties.Resources.RecentlyUse_32x32;
-            this.tsbSettingsMRU.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsMRU.Name = "tsbSettingsMRU";
-            this.tsbSettingsMRU.Size = new System.Drawing.Size(44, 102);
-            this.tsbSettingsMRU.Text = "MRU";
-            this.tsbSettingsMRU.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsMRU.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsResources
-            // 
-            this.tsbSettingsResources.Image = global::Analogy.Properties.Resources.StackedLine_32x32;
-            this.tsbSettingsResources.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsResources.Name = "tsbSettingsResources";
-            this.tsbSettingsResources.Size = new System.Drawing.Size(110, 102);
-            this.tsbSettingsResources.Text = "Resource Usage";
-            this.tsbSettingsResources.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsResources.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsDataProviders
-            // 
-            this.tsbSettingsDataProviders.Image = global::Analogy.Properties.Resources.Database_on;
-            this.tsbSettingsDataProviders.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsDataProviders.Name = "tsbSettingsDataProviders";
-            this.tsbSettingsDataProviders.Size = new System.Drawing.Size(103, 102);
-            this.tsbSettingsDataProviders.Text = "Data Providers";
-            this.tsbSettingsDataProviders.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsDataProviders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // tsbSettingsCustomDataProviders
-            // 
-            this.tsbSettingsCustomDataProviders.Image = global::Analogy.Properties.Resources.Analogy_Icon2;
-            this.tsbSettingsCustomDataProviders.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSettingsCustomDataProviders.Name = "tsbSettingsCustomDataProviders";
-            this.tsbSettingsCustomDataProviders.Size = new System.Drawing.Size(155, 102);
-            this.tsbSettingsCustomDataProviders.Text = "Custom Data providers";
-            this.tsbSettingsCustomDataProviders.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsbSettingsCustomDataProviders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripButton1
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton1, "P");
-            this.toolStripButton1.AutoToolTip = false;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(80, 44);
-            this.toolStripButton1.Text = "Properties";
-            this.toolStripButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            toolTipInfo1.BackColor = System.Drawing.Color.White;
-            toolTipInfo1.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo1.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo1.Body.Text = "\r\nShow the properties of the selected item.\r\n";
-            toolTipInfo1.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo1.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo1.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo1.Header.Text = "Properties (Alt + Enter)";
-            this.superToolTip1.SetToolTip(this.toolStripButton1, toolTipInfo1);
-            // 
-            // toolStripButton2
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton2, "O");
-            this.toolStripButton2.AutoToolTip = false;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(49, 44);
-            this.toolStripButton2.Text = "Open";
-            this.toolStripButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            toolTipInfo2.BackColor = System.Drawing.Color.White;
-            toolTipInfo2.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo2.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo2.Body.Text = "\r\nOpen the selected file with default program.";
-            toolTipInfo2.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo2.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo2.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo2.Header.Text = "Open";
-            this.superToolTip1.SetToolTip(this.toolStripButton2, toolTipInfo2);
-            // 
-            // toolStripButton3
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton3, "R");
-            this.toolStripButton3.AutoToolTip = false;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(67, 44);
-            this.toolStripButton3.Text = "Rename";
-            this.toolStripButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            toolTipInfo3.BackColor = System.Drawing.Color.White;
-            toolTipInfo3.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo3.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo3.Body.Text = "\r\nRename the selected item.\r\n";
-            toolTipInfo3.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo3.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo3.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo3.Header.Text = "Rename (F2)";
-            this.superToolTip1.SetToolTip(this.toolStripButton3, toolTipInfo3);
-            // 
-            // toolStripTabItem1
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripTabItem1, "C");
-            this.toolStripTabItem1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem1.Name = "toolStripTabItem1";
-            // 
-            // 
-            // 
-            this.toolStripTabItem1.Panel.Name = "ribbonPanel1";
-            this.toolStripTabItem1.Panel.ScrollPosition = 0;
-            this.toolStripTabItem1.Panel.TabIndex = 2;
-            this.toolStripTabItem1.Panel.Text = "Computer";
-            this.toolStripTabItem1.Position = -1;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(97, 38);
-            this.toolStripTabItem1.Tag = "1";
-            this.toolStripTabItem1.Text = "Computer";
-            // 
-            // toolStripTabItem2
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripTabItem2, "V");
-            this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem2.Name = "toolStripTabItem2";
-            // 
-            // 
-            // 
-            this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
-            this.toolStripTabItem2.Panel.ScrollPosition = 0;
-            this.toolStripTabItem2.Panel.TabIndex = 3;
-            this.toolStripTabItem2.Panel.Text = "View";
-            this.toolStripTabItem2.Position = -1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(64, 38);
-            this.toolStripTabItem2.Tag = "2";
-            this.toolStripTabItem2.Text = "View";
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripDropDownButton1, "A");
-            this.toolStripDropDownButton1.AutoToolTip = false;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fsfToolStripMenuItem,
-            this.fsfToolStripMenuItem1});
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(71, 22);
-            this.toolStripDropDownButton1.Text = "Access \r\nMedia";
-            this.toolStripDropDownButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripDropDownButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            toolTipInfo4.BackColor = System.Drawing.Color.White;
-            toolTipInfo4.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo4.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo4.Body.Text = "\r\nConnect to or disconnect from media server.\r\n";
-            toolTipInfo4.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo4.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo4.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo4.Header.Text = "Access Media\r\n";
-            this.superToolTip1.SetToolTip(this.toolStripDropDownButton1, toolTipInfo4);
-            // 
-            // fsfToolStripMenuItem
-            // 
-            this.fsfToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fsfToolStripMenuItem.Image")));
-            this.fsfToolStripMenuItem.Name = "fsfToolStripMenuItem";
-            this.fsfToolStripMenuItem.Size = new System.Drawing.Size(301, 26);
-            this.fsfToolStripMenuItem.Text = "Connect to a media server";
-            // 
-            // fsfToolStripMenuItem1
-            // 
-            this.fsfToolStripMenuItem1.Enabled = false;
-            this.fsfToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("fsfToolStripMenuItem1.Image")));
-            this.fsfToolStripMenuItem1.Name = "fsfToolStripMenuItem1";
-            this.fsfToolStripMenuItem1.Size = new System.Drawing.Size(301, 26);
-            this.fsfToolStripMenuItem1.Text = "Discconect from a media server";
-            // 
-            // toolStripSplitButtonEx1
-            // 
-            this.toolStripSplitButtonEx1.BackColor = System.Drawing.Color.Transparent;
-            this.toolStripSplitButtonEx1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mapNetworkDriveToolStripMenuItem,
-            this.discconectNetworkDriveToolStripMenuItem});
-            this.toolStripSplitButtonEx1.Image = global::Analogy.Properties.Resources.Map_Network_Drive;
-            this.toolStripSplitButtonEx1.Name = "toolStripSplitButtonEx1";
-            this.toolStripSplitButtonEx1.Size = new System.Drawing.Size(123, 64);
-            this.toolStripSplitButtonEx1.Text = " Map network \r\n     drive";
-            this.toolStripSplitButtonEx1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripSplitButtonEx1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // mapNetworkDriveToolStripMenuItem
-            // 
-            this.mapNetworkDriveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mapNetworkDriveToolStripMenuItem.Image")));
-            this.mapNetworkDriveToolStripMenuItem.Name = "mapNetworkDriveToolStripMenuItem";
-            this.mapNetworkDriveToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
-            this.mapNetworkDriveToolStripMenuItem.Text = "Map network drive";
-            // 
-            // discconectNetworkDriveToolStripMenuItem
-            // 
-            this.discconectNetworkDriveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("discconectNetworkDriveToolStripMenuItem.Image")));
-            this.discconectNetworkDriveToolStripMenuItem.Name = "discconectNetworkDriveToolStripMenuItem";
-            this.discconectNetworkDriveToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
-            this.discconectNetworkDriveToolStripMenuItem.Text = "Disconnect network drive";
-            // 
-            // toolStripButton10
-            // 
-            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
-            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(110, 64);
-            this.toolStripButton10.Text = "Add a network\r\n drive";
-            this.toolStripButton10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripButton4
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton4, "CP");
-            this.toolStripButton4.AutoToolTip = false;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(66, 22);
-            this.toolStripButton4.Text = "Open \r\nSettings";
-            this.toolStripButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            toolTipInfo5.BackColor = System.Drawing.Color.White;
-            toolTipInfo5.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo5.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo5.Body.Text = "\r\nChange settings and customized the functionality of your computer.\r\n";
-            toolTipInfo5.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo5.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo5.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo5.Header.Text = "Open Settings\r\n";
-            this.superToolTip1.SetToolTip(this.toolStripButton4, toolTipInfo5);
-            // 
-            // toolStripPanelItem1
-            // 
-            this.toolStripPanelItem1.CausesValidation = false;
-            this.toolStripPanelItem1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripPanelItem1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton5,
-            this.toolStripButton6,
-            this.toolStripButton7});
-            this.toolStripPanelItem1.Name = "toolStripPanelItem1";
-            this.toolStripPanelItem1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.toolStripPanelItem1.Size = new System.Drawing.Size(242, 91);
-            this.toolStripPanelItem1.Text = "toolStripPanelItem1";
-            this.toolStripPanelItem1.Transparent = true;
-            // 
-            // toolStripButton5
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton5, "U");
-            this.toolStripButton5.AutoToolTip = false;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(234, 24);
-            this.toolStripButton5.Text = "Uninstall or change a program";
-            toolTipInfo6.BackColor = System.Drawing.Color.White;
-            toolTipInfo6.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo6.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo6.Body.Text = "\r\nUninstalled a program, change installed features or repair an installation.";
-            toolTipInfo6.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo6.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo6.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo6.Header.Text = "Uninstall or change a program";
-            this.superToolTip1.SetToolTip(this.toolStripButton5, toolTipInfo6);
-            // 
-            // toolStripButton6
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton6, "S");
-            this.toolStripButton6.AutoToolTip = false;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(151, 24);
-            this.toolStripButton6.Text = "System Properties";
-            toolTipInfo7.BackColor = System.Drawing.Color.White;
-            toolTipInfo7.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo7.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo7.Body.Text = "\r\nShow information about your computer, such as processor speed or amount of inst" +
-    "alled memory.\r\n";
-            toolTipInfo7.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo7.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo7.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo7.Header.Text = "System Properties";
-            this.superToolTip1.SetToolTip(this.toolStripButton6, toolTipInfo7);
-            // 
-            // toolStripButton7
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton7, "FC");
-            this.toolStripButton7.AutoToolTip = false;
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton7.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(87, 24);
-            this.toolStripButton7.Text = "Manage";
-            toolTipInfo8.BackColor = System.Drawing.Color.White;
-            toolTipInfo8.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo8.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo8.Body.Text = "\r\nManage storage,events, Task scheduling, services and more..";
-            toolTipInfo8.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo8.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo8.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo8.Header.Text = "Manage";
-            this.superToolTip1.SetToolTip(this.toolStripButton7, toolTipInfo8);
-            // 
-            // toolStripDropDownButton4
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripDropDownButton4, "NP");
-            this.toolStripDropDownButton4.AutoToolTip = false;
-            this.toolStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.navigationPaneToolStripMenuItem,
-            this.expandToOpenFoldersToolStripMenuItem,
-            this.showAllFoldersToolStripMenuItem,
-            this.showLibrariesToolStripMenuItem});
-            this.toolStripDropDownButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton4.Image")));
-            this.toolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
-            this.toolStripDropDownButton4.Padding = new System.Windows.Forms.Padding(2);
-            this.toolStripDropDownButton4.Size = new System.Drawing.Size(100, 68);
-            this.toolStripDropDownButton4.Text = "Navigation\r\nPane";
-            this.toolStripDropDownButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripDropDownButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            toolTipInfo9.BackColor = System.Drawing.Color.White;
-            toolTipInfo9.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo9.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo9.Body.Text = "\r\nChoose what to display in the navigation pane.\r\n";
-            toolTipInfo9.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo9.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo9.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo9.Header.Text = "Navigation Pane";
-            this.superToolTip1.SetToolTip(this.toolStripDropDownButton4, toolTipInfo9);
-            // 
-            // navigationPaneToolStripMenuItem
-            // 
-            this.navigationPaneToolStripMenuItem.Checked = true;
-            this.navigationPaneToolStripMenuItem.CheckOnClick = true;
-            this.navigationPaneToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.navigationPaneToolStripMenuItem.Name = "navigationPaneToolStripMenuItem";
-            this.navigationPaneToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            this.navigationPaneToolStripMenuItem.Text = "Navigation Pane";
-            // 
-            // expandToOpenFoldersToolStripMenuItem
-            // 
-            this.expandToOpenFoldersToolStripMenuItem.Name = "expandToOpenFoldersToolStripMenuItem";
-            this.expandToOpenFoldersToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            this.expandToOpenFoldersToolStripMenuItem.Text = "Expand to Open folders";
-            // 
-            // showAllFoldersToolStripMenuItem
-            // 
-            this.showAllFoldersToolStripMenuItem.Name = "showAllFoldersToolStripMenuItem";
-            this.showAllFoldersToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            this.showAllFoldersToolStripMenuItem.Text = "show all folders";
-            // 
-            // showLibrariesToolStripMenuItem
-            // 
-            this.showLibrariesToolStripMenuItem.Name = "showLibrariesToolStripMenuItem";
-            this.showLibrariesToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            this.showLibrariesToolStripMenuItem.Text = "shoow libraries";
-            // 
-            // toolStripPanelItem2
-            // 
-            this.toolStripPanelItem2.CausesValidation = false;
-            this.toolStripPanelItem2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripPanelItem2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton8,
-            this.toolStripButton9});
-            this.toolStripPanelItem2.Name = "toolStripPanelItem2";
-            this.toolStripPanelItem2.Padding = new System.Windows.Forms.Padding(8);
-            this.toolStripPanelItem2.Size = new System.Drawing.Size(139, 74);
-            this.toolStripPanelItem2.Text = "toolStripPanelItem2";
-            this.toolStripPanelItem2.Transparent = true;
-            // 
-            // toolStripButton8
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton8, "PP");
-            this.toolStripButton8.AutoToolTip = false;
-            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton8.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Padding = new System.Windows.Forms.Padding(4);
-            this.toolStripButton8.Size = new System.Drawing.Size(129, 32);
-            this.toolStripButton8.Text = "Preview pane";
-            toolTipInfo10.BackColor = System.Drawing.Color.White;
-            toolTipInfo10.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo10.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo10.Body.Text = "\r\nShow or hide the preview pane.\r\n";
-            toolTipInfo10.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo10.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo10.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo10.Header.Text = "Preview Pane(Alt + P)";
-            this.superToolTip1.SetToolTip(this.toolStripButton8, toolTipInfo10);
-            // 
-            // toolStripButton9
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripButton9, "DP");
-            this.toolStripButton9.AutoToolTip = false;
-            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Padding = new System.Windows.Forms.Padding(6);
-            this.toolStripButton9.Size = new System.Drawing.Size(128, 36);
-            this.toolStripButton9.Text = "Details pane";
-            toolTipInfo11.BackColor = System.Drawing.Color.White;
-            toolTipInfo11.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo11.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo11.Body.Text = "\r\nShow or hide the details pane.\r\n";
-            toolTipInfo11.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo11.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo11.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo11.Header.Text = "Details Pane (Alt + Shift + P)";
-            this.superToolTip1.SetToolTip(this.toolStripButton9, toolTipInfo11);
-            // 
-            // toolStripGallery1
-            // 
-            this.superAccelerator1.SetAccelerator(this.toolStripGallery1, "L");
-            this.toolStripGallery1.AutoSize = false;
-            this.toolStripGallery1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.toolStripGallery1.BorderStyle = System.Windows.Forms.ToolstripGalleryBorderStyle.None;
-            this.toolStripGallery1.CaptionText = "";
-            this.toolStripGallery1.CheckOnClick = true;
-            this.toolStripGallery1.Dimensions = new System.Drawing.Size(3, 3);
-            this.toolStripGallery1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripGallery1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.toolStripGallery1.ImageList = this.imageList1;
-            this.toolStripGallery1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripGallery1.ItemBackColor = System.Drawing.Color.Empty;
-            this.toolStripGallery1.ItemImageSize = new System.Drawing.Size(10, 10);
-            this.toolStripGallery1.ItemPadding = new System.Windows.Forms.Padding(0);
-            toolStripGalleryItem1.ImageIndex = 0;
-            toolStripGalleryItem1.Text = "Extra large icons";
-            toolStripGalleryItem1.ToolTipText = "";
-            toolStripGalleryItem2.ImageIndex = 3;
-            toolStripGalleryItem2.Text = "Large icons";
-            toolStripGalleryItem2.ToolTipText = "";
-            toolStripGalleryItem3.ImageIndex = 6;
-            toolStripGalleryItem3.Text = "Medium icons";
-            toolStripGalleryItem3.ToolTipText = "";
-            toolStripGalleryItem4.ImageIndex = 1;
-            toolStripGalleryItem4.Text = "Small icons";
-            toolStripGalleryItem4.ToolTipText = "";
-            toolStripGalleryItem5.ImageIndex = 4;
-            toolStripGalleryItem5.Text = "List";
-            toolStripGalleryItem5.ToolTipText = "";
-            toolStripGalleryItem6.ImageIndex = 7;
-            toolStripGalleryItem6.Text = "Details";
-            toolStripGalleryItem6.ToolTipText = "";
-            toolStripGalleryItem7.ImageIndex = 2;
-            toolStripGalleryItem7.Text = "Tiles";
-            toolStripGalleryItem7.ToolTipText = "";
-            toolStripGalleryItem8.ImageIndex = 5;
-            toolStripGalleryItem8.Text = "Content";
-            toolStripGalleryItem8.ToolTipText = "";
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem1);
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem2);
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem3);
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem4);
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem5);
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem6);
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem7);
-            this.toolStripGallery1.Items.Add(toolStripGalleryItem8);
-            this.toolStripGallery1.ItemSize = new System.Drawing.Size(100, 17);
-            this.toolStripGallery1.ItemTextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolStripGallery1.Margin = new System.Windows.Forms.Padding(0, 4, 0, 1);
-            this.toolStripGallery1.Name = "toolStripGallery1";
-            this.toolStripGallery1.ScrollerType = System.Windows.Forms.ToolStripGalleryScrollerType.Compact;
-            this.toolStripGallery1.ShowToolTip = true;
-            this.toolStripGallery1.Size = new System.Drawing.Size(321, 64);
-            this.toolStripGallery1.Text = "toolStripGallery1";
-            this.toolStripGallery1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            toolTipInfo12.BackColor = System.Drawing.Color.White;
-            toolTipInfo12.Body.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo12.Body.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo12.Body.Text = "\r\nChange your view.\r\n";
-            toolTipInfo12.Footer.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo12.Header.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            toolTipInfo12.Header.Size = new System.Drawing.Size(20, 20);
-            toolTipInfo12.Header.Text = "More";
-            this.superToolTip1.SetToolTip(this.toolStripGallery1, toolTipInfo12);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "Icon-3.png");
-            this.imageList1.Images.SetKeyName(1, "Icon-4.png");
-            this.imageList1.Images.SetKeyName(2, "Icon-5.png");
-            this.imageList1.Images.SetKeyName(3, "Icon-6.png");
-            this.imageList1.Images.SetKeyName(4, "Icon-7.png");
-            this.imageList1.Images.SetKeyName(5, "Icon-8.png");
-            this.imageList1.Images.SetKeyName(6, "Icon-9.png");
-            this.imageList1.Images.SetKeyName(7, "Icon-10.png");
-            // 
-            // TreeViewImageList
-            // 
-            this.TreeViewImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("TreeViewImageList.ImageStream")));
-            this.TreeViewImageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.TreeViewImageList.Images.SetKeyName(0, "Icon-1.png");
-            this.TreeViewImageList.Images.SetKeyName(1, "Icon-2.png");
-            this.TreeViewImageList.Images.SetKeyName(2, "Icon-6.png");
-            this.TreeViewImageList.Images.SetKeyName(3, "Icon-7.png");
-            this.TreeViewImageList.Images.SetKeyName(4, "Icon-8.png");
-            this.TreeViewImageList.Images.SetKeyName(5, "Icon-9.png");
-            this.TreeViewImageList.Images.SetKeyName(6, "Icon-10.png");
-            this.TreeViewImageList.Images.SetKeyName(7, "Icon-13.png");
-            this.TreeViewImageList.Images.SetKeyName(8, "small desktop.png");
-            this.TreeViewImageList.Images.SetKeyName(9, "Small document.png");
-            this.TreeViewImageList.Images.SetKeyName(10, "Small download.png");
-            this.TreeViewImageList.Images.SetKeyName(11, "Small folder.png");
-            this.TreeViewImageList.Images.SetKeyName(12, "Small pictures.png");
-            this.TreeViewImageList.Images.SetKeyName(13, "Local Disk(c).png");
-            this.TreeViewImageList.Images.SetKeyName(14, "Quick Access.png");
-            // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "__DVD RW drive.png");
-            this.imageList2.Images.SetKeyName(1, "__Local Disk(c).png");
-            this.imageList2.Images.SetKeyName(2, "__Local Disk(d).png");
-            this.imageList2.Images.SetKeyName(3, "__Desktop.png");
-            this.imageList2.Images.SetKeyName(4, "__Document.png");
-            this.imageList2.Images.SetKeyName(5, "__Download.png");
-            this.imageList2.Images.SetKeyName(6, "__Music.png");
-            this.imageList2.Images.SetKeyName(7, "__Pictures.png");
-            this.imageList2.Images.SetKeyName(8, "__Video.png");
-            // 
-            // imageList3
-            // 
-            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
-            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList3.Images.SetKeyName(0, "Search.png");
-            this.imageList3.Images.SetKeyName(1, "1.png");
-            this.imageList3.Images.SetKeyName(2, "2.png");
-            this.imageList3.Images.SetKeyName(3, "3.png");
-            this.imageList3.Images.SetKeyName(4, "4.png");
-            this.imageList3.Images.SetKeyName(5, "5.png");
-            this.imageList3.Images.SetKeyName(6, "6.png");
-            // 
-            // superToolTip1
-            // 
-            this.superToolTip1.MaxWidth = 200;
-            this.superToolTip1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(158)))), ((int)(((byte)(218)))));
-            // 
-            // dockingManager1
-            // 
-            this.dockingManager1.AnimateAutoHiddenWindow = true;
-            this.dockingManager1.AutoHideTabForeColor = System.Drawing.Color.Empty;
-            this.dockingManager1.CloseTabOnMiddleClick = false;
-            this.dockingManager1.DockLayoutStream = ((System.IO.MemoryStream)(resources.GetObject("dockingManager1.DockLayoutStream")));
-            this.dockingManager1.DragProviderStyle = System.Windows.Forms.DragProviderStyle.Office2016Colorful;
-            this.dockingManager1.HostControl = this;
-            this.dockingManager1.MetroButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dockingManager1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(158)))), ((int)(((byte)(218)))));
-            this.dockingManager1.MetroSplitterBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(159)))), ((int)(((byte)(183)))));
-            this.dockingManager1.ReduceFlickeringInRtl = false;
-            this.dockingManager1.ThemeName = "Office2016Colorful";
-            this.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
-            this.dockingManager1.NewDockStateEndLoad += new System.EventHandler(this.DockingManager1_NewDockStateEndLoad);
-            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Close, "CloseButton"));
-            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Pin, "PinButton"));
-            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Maximize, "MaximizeButton"));
-            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Restore, "RestoreButton"));
-            this.dockingManager1.CaptionButtons.Add(new System.Windows.Forms.CaptionButton(System.Windows.Forms.CaptionButtonType.Menu, "MenuButton"));
-            // 
-            // MainStatusStrip
-            // 
-            this.MainStatusStrip.BackColor = System.Drawing.Color.White;
-            this.MainStatusStrip.BeforeTouchSize = new System.Drawing.Size(1151, 26);
-            this.MainStatusStrip.CanOverrideStyle = true;
-            this.MainStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.MainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsslFileCaching,
-            this.tsslIdleMessage,
-            this.tsslMemoryUsage,
+            // kryptonRibbon1
+            // 
+            this.kryptonRibbon1.InDesignHelperMode = true;
+            this.kryptonRibbon1.Name = "kryptonRibbon1";
+            this.kryptonRibbon1.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
+            this.RibbonTabAnalogy,
+            this.kryptonRibbonTab1,
+            this.kryptonRibbonTab2});
+            this.kryptonRibbon1.SelectedContext = null;
+            this.kryptonRibbon1.SelectedTab = this.RibbonTabAnalogy;
+            this.kryptonRibbon1.Size = new System.Drawing.Size(1083, 165);
+            this.kryptonRibbon1.TabIndex = 0;
+            // 
+            // RibbonTabAnalogy
+            // 
+            this.RibbonTabAnalogy.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup8,
+            this.kryptonRibbonGroup9});
+            this.RibbonTabAnalogy.Text = "Analogy";
+            // 
+            // kryptonRibbonTab1
+            // 
+            this.kryptonRibbonTab1.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup2,
+            this.kryptonRibbonGroup3,
+            this.kryptonRibbonGroup5,
+            this.kryptonRibbonGroup4,
+            this.kryptonRibbonGroup7});
+            this.kryptonRibbonTab1.KeyTip = "C";
+            this.kryptonRibbonTab1.Text = "Cell Modes";
+            // 
+            // kryptonRibbonGroup2
+            // 
+            this.kryptonRibbonGroup2.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple5});
+            this.kryptonRibbonGroup2.KeyTipGroup = "S";
+            this.kryptonRibbonGroup2.TextLine1 = "Stack Modes";
+            // 
+            // kryptonRibbonGroupTriple5
+            // 
+            this.kryptonRibbonGroupTriple5.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.modeStackGroup,
+            this.modeStackHeaderGroup});
+            this.kryptonRibbonGroupTriple5.MaximumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple5.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            // 
+            // modeStackGroup
+            // 
+            this.modeStackGroup.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeStackGroup.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeStackGroup.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeStackGroup.KeyTip = "SG";
+            this.modeStackGroup.Tag = "StackCheckButtonGroup";
+            this.modeStackGroup.TextLine1 = "Stack - Group";
+            this.modeStackGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // modeStackHeaderGroup
+            // 
+            this.modeStackHeaderGroup.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeStackHeaderGroup.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeStackHeaderGroup.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeStackHeaderGroup.KeyTip = "SH";
+            this.modeStackHeaderGroup.Tag = "StackCheckButtonHeaderGroup";
+            this.modeStackHeaderGroup.TextLine1 = "Stack - HeaderGroup";
+            this.modeStackHeaderGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // kryptonRibbonGroup3
+            // 
+            this.kryptonRibbonGroup3.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup3.Image = global::Analogy.Properties.Resources.kryptonRibbonGroup3_Image;
+            this.kryptonRibbonGroup3.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple3});
+            this.kryptonRibbonGroup3.KeyTipGroup = "B";
+            this.kryptonRibbonGroup3.TextLine1 = "Bar Modes";
+            // 
+            // kryptonRibbonGroupTriple3
+            // 
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.modeBarGroupOutside,
+            this.modeBarGroupInside,
+            this.modeTabGroup});
+            this.kryptonRibbonGroupTriple3.MaximumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple3.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            // 
+            // modeBarGroupOutside
+            // 
+            this.modeBarGroupOutside.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeBarGroupOutside.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeBarGroupOutside.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeBarGroupOutside.KeyTip = "BO";
+            this.modeBarGroupOutside.Tag = "BarCheckButtonGroupOutside";
+            this.modeBarGroupOutside.TextLine1 = "Bar - GroupOutside";
+            this.modeBarGroupOutside.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // modeBarGroupInside
+            // 
+            this.modeBarGroupInside.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeBarGroupInside.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeBarGroupInside.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeBarGroupInside.KeyTip = "BI";
+            this.modeBarGroupInside.Tag = "BarCheckButtonGroupInside";
+            this.modeBarGroupInside.TextLine1 = "Bar - GroupInside";
+            this.modeBarGroupInside.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // modeTabGroup
+            // 
+            this.modeTabGroup.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeTabGroup.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeTabGroup.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeTabGroup.KeyTip = "BT";
+            this.modeTabGroup.Tag = "BarTabGroup";
+            this.modeTabGroup.TextLine1 = "Bar - TabGroup";
+            this.modeTabGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // kryptonRibbonGroup5
+            // 
+            this.kryptonRibbonGroup5.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup5.Image = global::Analogy.Properties.Resources.kryptonRibbonGroup5_Image;
+            this.kryptonRibbonGroup5.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple4});
+            this.kryptonRibbonGroup5.KeyTipGroup = "R";
+            this.kryptonRibbonGroup5.TextLine1 = "BarRibbon Modes";
+            // 
+            // kryptonRibbonGroupTriple4
+            // 
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.modeBarRibbonTabGroup});
+            this.kryptonRibbonGroupTriple4.MaximumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple4.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            // 
+            // modeBarRibbonTabGroup
+            // 
+            this.modeBarRibbonTabGroup.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeBarRibbonTabGroup.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeBarRibbonTabGroup.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeBarRibbonTabGroup.KeyTip = "BR";
+            this.modeBarRibbonTabGroup.Tag = "BarRibbonTabGroup";
+            this.modeBarRibbonTabGroup.TextLine1 = "BarRibbon - TabGroup";
+            this.modeBarRibbonTabGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // kryptonRibbonGroup4
+            // 
+            this.kryptonRibbonGroup4.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup4.Image = global::Analogy.Properties.Resources.kryptonRibbonGroup4_Image;
+            this.kryptonRibbonGroup4.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple2});
+            this.kryptonRibbonGroup4.KeyTipGroup = "H";
+            this.kryptonRibbonGroup4.TextLine1 = "HeaderBar Modes";
+            // 
+            // kryptonRibbonGroupTriple2
+            // 
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.modeHeaderBarGroup,
+            this.modeHeaderBarHeaderGroup});
+            this.kryptonRibbonGroupTriple2.MaximumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            this.kryptonRibbonGroupTriple2.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            // 
+            // modeHeaderBarGroup
+            // 
+            this.modeHeaderBarGroup.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeHeaderBarGroup.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeHeaderBarGroup.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeHeaderBarGroup.KeyTip = "HG";
+            this.modeHeaderBarGroup.Tag = "HeaderBarCheckButtonGroup";
+            this.modeHeaderBarGroup.TextLine1 = "HeaderBar - Group";
+            this.modeHeaderBarGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // modeHeaderBarHeaderGroup
+            // 
+            this.modeHeaderBarHeaderGroup.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
+            this.modeHeaderBarHeaderGroup.ImageLarge = global::Analogy.Properties.Resources.modeStackGroup_ImageLarge;
+            this.modeHeaderBarHeaderGroup.ImageSmall = global::Analogy.Properties.Resources.modeStackGroup_ImageSmall;
+            this.modeHeaderBarHeaderGroup.KeyTip = "HH";
+            this.modeHeaderBarHeaderGroup.Tag = "HeaderBarCheckButtonHeaderGroup";
+            this.modeHeaderBarHeaderGroup.TextLine1 = "HeaderBar - HeaderGroup";
+            this.modeHeaderBarHeaderGroup.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // kryptonRibbonGroup7
+            // 
+            this.kryptonRibbonGroup7.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup7.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple7});
+            this.kryptonRibbonGroup7.TextLine1 = "HeaderGroup Modes";
+            // 
+            // kryptonRibbonGroupTriple7
+            // 
+            this.kryptonRibbonGroupTriple7.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.modeHeaderGroupTab});
+            this.kryptonRibbonGroupTriple7.MaximumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            // 
+            // modeHeaderGroupTab
+            // 
+            this.modeHeaderGroupTab.ImageSmall = global::Analogy.Properties.Resources.modeBarRibbonTabGroup_ImageSmall;
+            this.modeHeaderGroupTab.KeyTip = "GT";
+            this.modeHeaderGroupTab.Tag = "HeaderGroupTab";
+            this.modeHeaderGroupTab.TextLine1 = "HeaderGroup - Tab";
+            this.modeHeaderGroupTab.Click += new System.EventHandler(this.kryptonRibbonModeButton_Click);
+            // 
+            // kryptonRibbonTab2
+            // 
+            this.kryptonRibbonTab2.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup1,
+            this.kryptonRibbonGroup6});
+            this.kryptonRibbonTab2.KeyTip = "A";
+            this.kryptonRibbonTab2.Text = "Actions";
+            // 
+            // kryptonRibbonGroup1
+            // 
+            this.kryptonRibbonGroup1.AllowCollapsed = false;
+            this.kryptonRibbonGroup1.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup1.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple1});
+            this.kryptonRibbonGroup1.KeyTipGroup = "C";
+            this.kryptonRibbonGroup1.TextLine1 = "Colors";
+            // 
+            // kryptonRibbonGroupTriple1
+            // 
+            this.kryptonRibbonGroupTriple1.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.colorsRandom,
+            this.colorsReset});
+            this.kryptonRibbonGroupTriple1.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Large;
+            // 
+            // colorsRandom
+            // 
+            this.colorsRandom.ImageLarge = global::Analogy.Properties.Resources.colorsRandom_ImageLarge;
+            this.colorsRandom.KeyTip = "R";
+            this.colorsRandom.TextLine1 = "Random";
+            this.colorsRandom.TextLine2 = "Page Colors";
+            this.colorsRandom.Click += new System.EventHandler(this.colorsRandom_Click);
+            // 
+            // colorsReset
+            // 
+            this.colorsReset.ImageLarge = global::Analogy.Properties.Resources.colorsReset_ImageLarge;
+            this.colorsReset.KeyTip = "S";
+            this.colorsReset.TextLine1 = "Reset";
+            this.colorsReset.TextLine2 = "Page Colors";
+            this.colorsReset.Click += new System.EventHandler(this.colorsReset_Click);
+            // 
+            // kryptonRibbonGroup6
+            // 
+            this.kryptonRibbonGroup6.AllowCollapsed = false;
+            this.kryptonRibbonGroup6.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup6.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple6});
+            this.kryptonRibbonGroup6.TextLine1 = "ButtonSpecs";
+            // 
+            // kryptonRibbonGroupTriple6
+            // 
+            this.kryptonRibbonGroupTriple6.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.buttonSpecsAdd,
+            this.buttonSpecsClear});
+            this.kryptonRibbonGroupTriple6.MinimumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Large;
+            // 
+            // buttonSpecsAdd
+            // 
+            this.buttonSpecsAdd.ImageLarge = global::Analogy.Properties.Resources.buttonSpecsAdd_ImageLarge;
+            this.buttonSpecsAdd.TextLine1 = "Add Page";
+            this.buttonSpecsAdd.TextLine2 = "ButtonSpecs";
+            this.buttonSpecsAdd.Click += new System.EventHandler(this.buttonSpecsAdd_Click);
+            // 
+            // buttonSpecsClear
+            // 
+            this.buttonSpecsClear.ImageLarge = global::Analogy.Properties.Resources.buttonSpecsClear_ImageLarge;
+            this.buttonSpecsClear.KeyTip = "C";
+            this.buttonSpecsClear.TextLine1 = "Clear Page";
+            this.buttonSpecsClear.TextLine2 = "ButtonSpecs";
+            this.buttonSpecsClear.Click += new System.EventHandler(this.buttonSpecsClear_Click);
+            // 
+            // kryptonPanel
+            // 
+            this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
+            this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 165);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel.Name = "kryptonPanel";
+            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel.Size = new System.Drawing.Size(1083, 565);
+            this.kryptonPanel.TabIndex = 1;
+            // 
+            // kryptonDockableWorkspace
+            // 
+            this.kryptonDockableWorkspace.AutoHiddenHost = false;
+            this.kryptonDockableWorkspace.CompactFlags = ((ComponentFactory.Krypton.Workspace.CompactFlags)(((ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptyCells | ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | ComponentFactory.Krypton.Workspace.CompactFlags.PromoteLeafs)));
+            this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 4);
+            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
+            // 
+            // 
+            // 
+            this.kryptonDockableWorkspace.Root.UniqueName = "5594893E2F2E42885594893E2F2E4288";
+            this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
+            this.kryptonDockableWorkspace.ShowMaximizeButton = false;
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1075, 557);
+            this.kryptonDockableWorkspace.TabIndex = 0;
+            this.kryptonDockableWorkspace.TabStop = true;
+            // 
+            // kryptonDockingManager
+            // 
+            this.kryptonDockingManager.ShowPageContextMenu += new System.EventHandler<ComponentFactory.Krypton.Docking.ContextPageEventArgs>(this.kryptonDockingManager_ShowPageContextMenu);
+            this.kryptonDockingManager.ShowWorkspacePageContextMenu += new System.EventHandler<ComponentFactory.Krypton.Docking.ContextPageEventArgs>(this.kryptonDockingManager_ShowWorkspacePageContextMenu);
+            this.kryptonDockingManager.DockspaceAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.DockspaceEventArgs>(this.kryptonDockingManager_DockspaceAdding);
+            this.kryptonDockingManager.DockspaceCellAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.DockspaceCellEventArgs>(this.kryptonDockingManager_DockspaceCellAdding);
+            this.kryptonDockingManager.FloatspaceCellAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.FloatspaceCellEventArgs>(this.kryptonDockingManager_FloatspaceCellAdding);
+            this.kryptonDockingManager.FloatingWindowAdding += new System.EventHandler<ComponentFactory.Krypton.Docking.FloatingWindowEventArgs>(this.kryptonDockingManager_FloatingWindowAdding);
+            // 
+            // imageListSmall
+            // 
+            this.imageListSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListSmall.ImageStream")));
+            this.imageListSmall.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListSmall.Images.SetKeyName(0, "document_plain.png");
+            this.imageListSmall.Images.SetKeyName(1, "preferences.png");
+            this.imageListSmall.Images.SetKeyName(2, "information2.png");
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
+            // 
+            // kryptonRibbonGroupGallery1
+            // 
+            this.kryptonRibbonGroupGallery1.ImageList = null;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslblError});
-            this.MainStatusStrip.Location = new System.Drawing.Point(1, 502);
-            this.MainStatusStrip.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(206)))), ((int)(((byte)(255)))));
-            this.MainStatusStrip.Name = "MainStatusStrip";
-            this.MainStatusStrip.OfficeColorScheme = System.Windows.Forms.ToolStripEx.ColorScheme.Managed;
-            this.MainStatusStrip.Size = new System.Drawing.Size(1151, 26);
-            this.MainStatusStrip.TabIndex = 6;
-            // 
-            // tsslFileCaching
-            // 
-            this.tsslFileCaching.IsLink = true;
-            this.tsslFileCaching.Name = "tsslFileCaching";
-            this.tsslFileCaching.Size = new System.Drawing.Size(101, 20);
-            this.tsslFileCaching.Text = "File caching is";
-            // 
-            // tsslIdleMessage
-            // 
-            this.tsslIdleMessage.Name = "tsslIdleMessage";
-            this.tsslIdleMessage.Size = new System.Drawing.Size(36, 20);
-            this.tsslIdleMessage.Text = "N/A";
-            // 
-            // tsslMemoryUsage
-            // 
-            this.tsslMemoryUsage.Name = "tsslMemoryUsage";
-            this.tsslMemoryUsage.Size = new System.Drawing.Size(36, 20);
-            this.tsslMemoryUsage.Text = "N/A";
+            this.statusStrip1.Location = new System.Drawing.Point(0, 730);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1083, 26);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // tsslblError
             // 
-            this.tsslblError.Image = global::Analogy.Properties.Resources.Warning_16x16;
             this.tsslblError.Name = "tsslblError";
-            this.tsslblError.Size = new System.Drawing.Size(67, 20);
-            this.tsslblError.Text = "Errors";
-            this.tsslblError.Visible = false;
+            this.tsslblError.Size = new System.Drawing.Size(36, 20);
+            this.tsslblError.Text = "N/A";
             // 
-            // TmrAutoConnect
-            // 
-            this.TmrAutoConnect.Interval = 1000;
-            this.TmrAutoConnect.Tick += new System.EventHandler(this.TmrAutoConnect_Tick);
-            // 
-            // tmrStatusUpdates
-            // 
-            this.tmrStatusUpdates.Enabled = true;
-            this.tmrStatusUpdates.Interval = 1000;
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1153, 529);
-            this.Controls.Add(this.MainStatusStrip);
-            this.Controls.Add(this.ribbonControlMain);
+            this.ClientSize = new System.Drawing.Size(1083, 756);
+            this.Controls.Add(this.kryptonPanel);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.kryptonRibbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(1, 0, 1, 1);
-            this.ShowApplicationIcon = false;
+            this.Name = "MainForm";
             this.Text = "Analogy";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).EndInit();
-            this.ribbonControlMain.ResumeLayout(false);
-            this.ribbonControlMain.PerformLayout();
-            this.tstitmAnalogy.Panel.ResumeLayout(false);
-            this.tstitmAnalogy.Panel.PerformLayout();
-            this.tseAnalogyBuiltInProviders.ResumeLayout(false);
-            this.tseAnalogyBuiltInProviders.PerformLayout();
-            this.tstiSettings.Panel.ResumeLayout(false);
-            this.toolStripEx1.ResumeLayout(false);
-            this.toolStripEx1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dockingManager1)).EndInit();
-            this.MainStatusStrip.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
+            this.kryptonPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableWorkspace)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -993,65 +451,47 @@ namespace Analogy
 
         #endregion
 
-        private RibbonControlAdv ribbonControlMain;
-        private System.Windows.Forms.ToolStripTabItem toolStripTabItem1;
-        private System.Windows.Forms.ToolStripTabItem toolStripTabItem2;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripPanelItem toolStripPanelItem1;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton4;
-        private System.Windows.Forms.ToolStripPanelItem toolStripPanelItem2;
-        private System.Windows.Forms.ToolStripButton toolStripButton8;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ImageList TreeViewImageList;
-        private System.Windows.Forms.ImageList imageList2;
-        private System.Windows.Forms.SuperAccelerator superAccelerator1;
-        private System.Windows.Forms.ImageList imageList3;
-        private Syncfusion.Windows.Forms.BannerTextProvider bannerTextProvider1;
-        private System.Windows.Forms.SuperToolTip superToolTip1;
-        private System.Windows.Forms.ToolStripGallery toolStripGallery1;
-        private System.Windows.Forms.ToolStripMenuItem fsfToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fsfToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripSplitButton toolStripSplitButtonEx1;
-        private System.Windows.Forms.ToolStripMenuItem mapNetworkDriveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem discconectNetworkDriveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton10;
-        private System.Windows.Forms.ToolStripMenuItem navigationPaneToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem expandToOpenFoldersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem showAllFoldersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem showLibrariesToolStripMenuItem;
-        private System.Windows.Forms.DockingManager dockingManager1;
-        private System.Windows.Forms.StatusStripEx MainStatusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel tsslMemoryUsage;
-        private System.Windows.Forms.ToolStripStatusLabel tsslblError;
-        private System.Windows.Forms.ToolStripStatusLabel tsslIdleMessage;
-        private System.Windows.Forms.ToolStripStatusLabel tsslFileCaching;
-        private System.Windows.Forms.ToolStripTabItem tstitmAnalogy;
-        private System.Windows.Forms.ToolStrip tseAnalogyBuiltInProviders;
-        private System.Windows.Forms.ToolStripButton tsbtnAnalogyOpenFolder;
-        private System.Windows.Forms.ToolStripButton tsbtnAnalogyOpenFiles;
-        private System.Windows.Forms.ToolStripDropDownButton tsbtnAnalogyRecentlyOpenFiles;
-        private System.Windows.Forms.Timer TmrAutoConnect;
-        private System.Windows.Forms.ToolStripTabItem tstiSettings;
-        private System.Windows.Forms.ToolStrip toolStripEx1;
-        private System.Windows.Forms.ToolStripButton tsbSettingsFiltering;
-        private System.Windows.Forms.ToolStripButton tsbSettingsPreDefined;
-        private System.Windows.Forms.ToolStripButton tsbSettingsLookAndFeel;
-        private System.Windows.Forms.ToolStripButton tsbSettingsUserStatistics;
-        private System.Windows.Forms.ToolStripButton tsbSettingsExtension;
-        private System.Windows.Forms.ToolStripButton tsbSettingsShortcuts;
-        private System.Windows.Forms.ToolStripButton tsbSettingsMRU;
-        private System.Windows.Forms.ToolStripButton tsbSettingsResources;
-        private System.Windows.Forms.ToolStripButton tsbSettingsDataProviders;
-        private System.Windows.Forms.ToolStripButton tsbSettingsCustomDataProviders;
-        private System.Windows.Forms.Timer tmrStatusUpdates;
+        private KryptonPanel kryptonPanel;
+        private KryptonDockableWorkspace kryptonDockableWorkspace;
+        private KryptonDockingManager kryptonDockingManager;
+        private ImageList imageListSmall;
+        private KryptonManager kryptonManager;
+        private KryptonRibbon kryptonRibbon1;
+        private KryptonRibbonTab kryptonRibbonTab1;
+        private KryptonRibbonGroup kryptonRibbonGroup2;
+        private KryptonRibbonGroup kryptonRibbonGroup3;
+        private KryptonRibbonGroup kryptonRibbonGroup4;
+        private KryptonRibbonGroup kryptonRibbonGroup5;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
+        private KryptonRibbonGroupButton modeHeaderBarHeaderGroup;
+        private KryptonRibbonGroupButton modeHeaderBarGroup;
+        private KryptonRibbonGroupButton modeTabGroup;
+        private KryptonRibbonGroupButton modeBarGroupInside;
+        private KryptonRibbonGroupButton modeBarGroupOutside;
+        private KryptonRibbonGroupButton modeBarRibbonTabGroup;
+        private KryptonRibbonGroupButton modeStackGroup;
+        private KryptonRibbonGroupButton modeStackHeaderGroup;
+        private KryptonRibbonTab kryptonRibbonTab2;
+        private KryptonRibbonGroup kryptonRibbonGroup1;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private KryptonRibbonGroupButton colorsRandom;
+        private KryptonRibbonGroupButton colorsReset;
+        private KryptonRibbonGroup kryptonRibbonGroup6;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
+        private KryptonRibbonGroupButton buttonSpecsAdd;
+        private KryptonRibbonGroupButton buttonSpecsClear;
+        private KryptonRibbonGroup kryptonRibbonGroup7;
+        private KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
+        private KryptonRibbonGroupButton modeHeaderGroupTab;
+        private KryptonRibbonTab RibbonTabAnalogy;
+        private KryptonRibbonGroup kryptonRibbonGroup8;
+        private KryptonRibbonGroup kryptonRibbonGroup9;
+        private KryptonRibbonGroupGallery kryptonRibbonGroupGallery1;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel tsslblError;
     }
 }
+

@@ -710,11 +710,4 @@
     <None Include="Resources\Analogy_Icon2.ico" />
     <None Include="Resources\Analogy_icon1.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Forms\MainForm.cs" />
-    <Compile Remove="Forms\MainForm.Designer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Remove="Forms\MainForm.resx" />
-  </ItemGroup>
 </Project>

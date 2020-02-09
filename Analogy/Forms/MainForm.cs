@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Windows.Forms;
-using System.Windows.Forms;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Analogy.DataSources;
 using Analogy.Interfaces;
 using Analogy.Interfaces.Factories;
@@ -14,16 +13,20 @@ using Analogy.Managers;
 using Analogy.Properties;
 using Analogy.Tools;
 using Analogy.Types;
-using Syncfusion.Windows.Forms.Tools;
+using ComponentFactory.Krypton.Docking;
+using ComponentFactory.Krypton.Navigator;
+using ComponentFactory.Krypton.Ribbon;
+using ComponentFactory.Krypton.Toolkit;
+using ComponentFactory.Krypton.Workspace;
 
 namespace Analogy
 {
-    public partial class MainForm : RibbonForm
+    public partial class MainForm : KryptonForm
     {
         private string filePoolingTitle = "File Pooling";
         private string offlineTitle = "Offline log";
         private string onlineTitle = "Online log";
-        private Dictionary<Guid, ToolStripTabItem> Mapping = new Dictionary<Guid, ToolStripTabItem>();
+        private Dictionary<Guid, KryptonRibbonTab> Mapping = new Dictionary<Guid, KryptonRibbonTab>();
 
         private Dictionary<OnlineUCLogs, IAnalogyRealTimeDataProvider> onlineDataSourcesMapping =
             new Dictionary<OnlineUCLogs, IAnalogyRealTimeDataProvider>();
@@ -35,50 +38,74 @@ namespace Analogy
         private bool disableOnlineDueToFileOpen;
         private UserSettingsManager settings => UserSettingsManager.UserSettings;
         private bool Initialized { get; set; }
-        TouchStyleColorTable touch = new TouchStyleColorTable();
+        private int _count = 1;
+        private Random _random = new Random(DateTime.Now.Millisecond);
+        private NavigatorMode _mode = NavigatorMode.HeaderBarCheckButtonHeaderGroup;
+        private PaletteButtonSpecStyle[] _buttonSpecStyles = { PaletteButtonSpecStyle.ArrowDown, PaletteButtonSpecStyle.ArrowLeft,
+                                                                                           PaletteButtonSpecStyle.ArrowRight, PaletteButtonSpecStyle.ArrowUp,
+                                                                                           PaletteButtonSpecStyle.Close, PaletteButtonSpecStyle.Context,
+                                                                                           PaletteButtonSpecStyle.DropDown };
 
         public MainForm()
         {
             InitializeComponent();
             AnalogyLogManager.Instance.OnNewError += (s, e) => BeginInvoke(new MethodInvoker(() => { tsslblError.Visible = true; }));
-                
-            //  ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2013;
-            touch.HeaderColor = Color.White;//ColorTranslator.FromHtml("#f5f6f7");
-            touch.ActiveToolStripTabItemBackColor = ColorTranslator.FromHtml("#f5f6f7");
-            touch.RibbonPanelBackColor = ColorTranslator.FromHtml("#f5f6f7");
-            touch.BackStageNavigationButtonBackColor = ColorTranslator.FromHtml("#1979ca");
-            touch.ToolStripBorderColor = ColorTranslator.FromHtml("#dadbdc");
-            touch.ToolstripSelectedTabItemBorder = ColorTranslator.FromHtml("#dadbdc");
-            touch.ToolstripTabItemBorder = Color.Transparent;
-            touch.ToolstripTabItemForeColor = ColorTranslator.FromHtml("#3c3c3c");
-            touch.HoverTabBackColor = ColorTranslator.FromHtml("#f5f6f7");
-            touch.BottomToolStripBackColor = ColorTranslator.FromHtml("#f5f6f7");
-            touch.ToolstripActiveTabItemForeColor = Color.Black;
-            touch.HoverTabForeColor = Color.Black;
-            touch.MinimizeButtonForeColor = Color.Black;
-            touch.MaximizeButtonForeColor = Color.Black;
-
-            ribbonControlMain.ApplyTouchStyleColorTable(touch);
-
-
-            ribbonControlMain.SelectedTab = toolStripTabItem1;
-
-            dockingManager1.EnableDocumentMode = true;
-            dockingManager1.DockTabAlignment = DockTabAlignmentStyle.Top;
-
-
+            
         }
 
-        private void DockingManager1_NewDockStateEndLoad(object sender, EventArgs e)
+        private KryptonPage NewDocument()
         {
+            KryptonPage page = NewPage("Document ", 0, new ContentDocument());
 
-            //dockingManager1.DockControl(panel1, this, DockingStyle.Bottom, 250);
-            //dockingManager1.DockControl(panel3, this, DockingStyle.Top, 250);
-            //  dockingManager1.DockControl(gradientPanel1,this,DockingStyle.Left,250);
-            //dockingManager1.DockControl(gradientPanel2, this, DockingStyle.Right, 250);
+            // Document pages cannot be docked or auto hidden
+            page.ClearFlags(KryptonPageFlags.DockingAllowAutoHidden | KryptonPageFlags.DockingAllowDocked);
+
+            return page;
         }
-        private async void MainForm_Load(object sender, EventArgs e)
+
+        private KryptonPage NewInput()
         {
+            return NewPage("Input ", 1, new ContentInput());
+        }
+
+        private KryptonPage NewPropertyGrid()
+        {
+            return NewPage("Properties ", 2, new ContentPropertyGrid());
+        }
+
+        private KryptonPage NewPage(string name, int image, Control content)
+        {
+            // Create new page with title and image
+            KryptonPage p = new KryptonPage();
+            p.Text = name + _count;
+            p.TextTitle = name + _count;
+            p.TextDescription = name + _count;
+            p.ImageSmall = imageListSmall.Images[image];
+
+            // Add the control for display inside the page
+            content.Dock = DockStyle.Fill;
+            p.Controls.Add(content);
+
+            _count++;
+            return p;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Setup docking functionality
+            KryptonDockingWorkspace w = kryptonDockingManager.ManageWorkspace(kryptonDockableWorkspace);
+            kryptonDockingManager.ManageControl(kryptonPanel, w);
+            kryptonDockingManager.ManageFloating(this);
+
+            // Add initial docking pages
+            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument(), NewDocument() });
+            kryptonDockingManager.AddDockspace("Control", DockingEdge.Right, new[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
+            kryptonDockingManager.AddDockspace("Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
+
+            UpdateModeButtons();
+
+
+
             tsslFileCaching.Text = $@"File caching is {(settings.EnableFileCaching ? "on" : "off")}";
             SetupEventHandlers();
             string[] arguments = Environment.GetCommandLineArgs();
@@ -120,7 +147,7 @@ namespace Analogy
             //};
             ribbonControlMain.MinimizePanel = UserSettingsManager.UserSettings.StartupRibbonMinimized;
 
-   
+
             await FactoriesManager.Instance.AddExternalDataSources();
 
             CreateDataSources();
@@ -165,20 +192,164 @@ namespace Analogy
             };
             if (AnalogyLogManager.Instance.HasErrorMessages || AnalogyLogManager.Instance.HasWarningMessages)
                 tsslblError.Visible = true;
-            
+        }
 
+        private void kryptonDockingManager_DockspaceAdding(object sender, DockspaceEventArgs e)
+        {
+            // Set all new dockspace controls to a larger than default size
+            e.DockspaceControl.Size = new Size(250, 250);
+        }
 
-            ribbonControlMain.MenuButtonText = "FILE";
-            ribbonControlMain.BackStageNavigationButtonStyle = BackStageNavigationButtonStyles.Office2013;
-            ribbonControlMain.QuickPanelAlignment = QuickPanelAlignment.Top;
-            touch.CloseButtonForeColor = Color.Black;
-            touch.RestoreButtonForeColor = Color.Black;
-            touch.BottomToolStripBackColor = ColorTranslator.FromHtml("#ffffff");
-            touch.QATDownArrowColor = Color.Black;
-            touch.ToolStripSpliterColor = ColorTranslator.FromHtml("#e2e3e4");
-            superAccelerator1.BackColor = ColorTranslator.FromHtml("#eaf0f8");
-            superAccelerator1.SetMenuButtonAccelerator(ribbonControlMain, "F");
+        private void kryptonDockingManager_FloatingWindowAdding(object sender, FloatingWindowEventArgs e)
+        {
+            // Set all new floating windows to a larger than default size
+            e.FloatingWindow.ClientSize = new Size(400, 400);
+        }
 
+        private void kryptonDockingManager_DockspaceCellAdding(object sender, DockspaceCellEventArgs e)
+        {
+            Console.WriteLine("DockspaceCellAdding");
+
+            // Set the correct appearance of the dockspace cell based on current settings
+            UpdateCell(e.CellControl);
+        }
+
+        private void kryptonDockingManager_FloatspaceCellAdding(object sender, FloatspaceCellEventArgs e)
+        {
+            // Set the correct appearance of the floatspace cell based on current settings
+            UpdateCell(e.CellControl);
+        }
+
+        private void kryptonDockingManager_ShowPageContextMenu(object sender, ContextPageEventArgs e)
+        {
+            // Create a set of custom menu items
+            KryptonContextMenuItems customItems = new KryptonContextMenuItems();
+            KryptonContextMenuSeparator customSeparator = new KryptonContextMenuSeparator();
+            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 1", OnCustomMenuItem);
+            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 2", OnCustomMenuItem);
+            customItem1.Tag = e.Page;
+            customItem2.Tag = e.Page;
+            customItems.Items.AddRange(new KryptonContextMenuItemBase[] { customSeparator, customItem1, customItem2 });
+
+            // Add set of custom items into the provided menu
+            e.KryptonContextMenu.Items.Add(customItems);
+        }
+
+        private void kryptonDockingManager_ShowWorkspacePageContextMenu(object sender, ContextPageEventArgs e)
+        {
+            // Create a set of custom menu items
+            KryptonContextMenuItems customItems = new KryptonContextMenuItems();
+            KryptonContextMenuSeparator customSeparator = new KryptonContextMenuSeparator();
+            KryptonContextMenuItem customItem1 = new KryptonContextMenuItem("Custom Item 3", OnCustomMenuItem);
+            KryptonContextMenuItem customItem2 = new KryptonContextMenuItem("Custom Item 4", OnCustomMenuItem);
+            customItem1.Tag = e.Page;
+            customItem2.Tag = e.Page;
+            customItems.Items.AddRange(new KryptonContextMenuItemBase[] { customSeparator, customItem1, customItem2 });
+
+            // Add set of custom items into the provided menu
+            e.KryptonContextMenu.Items.Add(customItems);
+        }
+
+        private void OnCustomMenuItem(object sender, EventArgs e)
+        {
+            KryptonContextMenuItem menuItem = (KryptonContextMenuItem)sender;
+            KryptonPage page = (KryptonPage)menuItem.Tag;
+            MessageBox.Show("Clicked menu option '" + menuItem.Text + "' for the page '" + page.Text + "'.", "Page Context Menu");
+        }
+
+        private void colorsRandom_Click(object sender, EventArgs e)
+        {
+            foreach (KryptonPage page in kryptonDockingManager.Pages)
+            {
+                page.StateNormal.Tab.Content.ShortText.Color1 = RandomColor();
+                page.StateNormal.Tab.Back.Color1 = RandomColor();
+                page.StateNormal.Tab.Back.ColorStyle = PaletteColorStyle.Solid;
+
+                page.StateNormal.RibbonTab.TabDraw.TextColor = RandomColor();
+                page.StateNormal.RibbonTab.TabDraw.BackColor1 = RandomColor();
+                page.StateNormal.RibbonTab.TabDraw.BackColor2 = RandomColor();
+
+                page.StateNormal.CheckButton.Content.ShortText.Color1 = RandomColor();
+                page.StateNormal.CheckButton.Back.Color1 = RandomColor();
+                page.StateNormal.CheckButton.Back.ColorStyle = PaletteColorStyle.Solid;
+            }
+        }
+
+        private void colorsReset_Click(object sender, EventArgs e)
+        {
+            foreach (KryptonPage page in kryptonDockingManager.Pages)
+            {
+                page.StateNormal.Tab.Content.ShortText.Color1 = Color.Empty;
+                page.StateNormal.Tab.Back.Color1 = Color.Empty;
+                page.StateNormal.Tab.Back.ColorStyle = PaletteColorStyle.Inherit;
+
+                page.StateNormal.RibbonTab.TabDraw.TextColor = Color.Empty;
+                page.StateNormal.RibbonTab.TabDraw.BackColor1 = Color.Empty;
+                page.StateNormal.RibbonTab.TabDraw.BackColor2 = Color.Empty;
+
+                page.StateNormal.CheckButton.Content.ShortText.Color1 = Color.Empty;
+                page.StateNormal.CheckButton.Back.Color1 = Color.Empty;
+                page.StateNormal.CheckButton.Back.ColorStyle = PaletteColorStyle.Inherit;
+            }
+        }
+
+        private void buttonSpecsAdd_Click(object sender, EventArgs e)
+        {
+            foreach (KryptonPage page in kryptonDockingManager.Pages)
+            {
+                // Create a button spec and make it a random style so we get a random image
+                ButtonSpecAny bs = new ButtonSpecAny();
+                bs.Type = _buttonSpecStyles[_random.Next(_buttonSpecStyles.Length)];
+                page.ButtonSpecs.Add(bs);
+            }
+        }
+
+        private void buttonSpecsClear_Click(object sender, EventArgs e)
+        {
+            foreach (KryptonPage page in kryptonDockingManager.Pages)
+                page.ButtonSpecs.Clear();
+        }
+
+        private void kryptonRibbonModeButton_Click(object sender, EventArgs e)
+        {
+            // Extract the navigator mode from the tag field of the ribbon button
+            KryptonRibbonGroupButton button = (KryptonRibbonGroupButton)sender;
+            _mode = (NavigatorMode)Enum.Parse(typeof(NavigatorMode), (string)button.Tag);
+
+            UpdateModeButtons();
+            UpdateAllCells();
+        }
+
+        private void UpdateModeButtons()
+        {
+            modeHeaderGroupTab.Checked = (_mode == NavigatorMode.HeaderGroupTab);
+            modeHeaderBarHeaderGroup.Checked = (_mode == NavigatorMode.HeaderBarCheckButtonHeaderGroup);
+            modeHeaderBarGroup.Checked = (_mode == NavigatorMode.HeaderBarCheckButtonGroup);
+            modeTabGroup.Checked = (_mode == NavigatorMode.BarTabGroup);
+            modeBarGroupInside.Checked = (_mode == NavigatorMode.BarCheckButtonGroupInside);
+            modeBarGroupOutside.Checked = (_mode == NavigatorMode.BarCheckButtonGroupOutside);
+            modeBarRibbonTabGroup.Checked = (_mode == NavigatorMode.BarRibbonTabGroup);
+            modeStackGroup.Checked = (_mode == NavigatorMode.StackCheckButtonGroup);
+            modeStackHeaderGroup.Checked = (_mode == NavigatorMode.StackCheckButtonHeaderGroup);
+        }
+
+        private void UpdateAllCells()
+        {
+            foreach (KryptonWorkspaceCell cell in kryptonDockingManager.CellsDocked)
+                UpdateCell(cell);
+
+            foreach (KryptonWorkspaceCell cell in kryptonDockingManager.CellsFloating)
+                UpdateCell(cell);
+        }
+
+        private void UpdateCell(KryptonWorkspaceCell cell)
+        {
+            cell.NavigatorMode = _mode;
+        }
+
+        private Color RandomColor()
+        {
+            return Color.FromArgb(_random.Next(255), _random.Next(255), _random.Next(255));
         }
 
         private void SetupEventHandlers()
@@ -811,7 +982,7 @@ namespace Analogy
             }
         }
 
-       private void OpenOffline(ToolStripTabItem ribbonPage, IAnalogyOfflineDataProvider offlineAnalogy,string titleOfDataSource, string initialFolder, string[] files = null)
+        private void OpenOffline(ToolStripTabItem ribbonPage, IAnalogyOfflineDataProvider offlineAnalogy, string titleOfDataSource, string initialFolder, string[] files = null)
         {
             offline++;
             UserControl page = new OfflineUCLogs(offlineAnalogy, files, initialFolder);
@@ -880,7 +1051,7 @@ namespace Analogy
                     AutoSize = true
                 };
                 group.Items.Add(localfolder);
-                localfolder.Click += (sender, e) => { OpenOffline(ribbonPage,offlineAnalogy,title, offlineAnalogy.InitialFolderFullPath); };
+                localfolder.Click += (sender, e) => { OpenOffline(ribbonPage, offlineAnalogy, title, offlineAnalogy.InitialFolderFullPath); };
             }
 
             //recent bar
@@ -912,7 +1083,7 @@ namespace Analogy
                     };
                     if (openFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        OpenOffline( ribbonPage,offlineAnalogy, title, offlineAnalogy.InitialFolderFullPath, openFileDialog1.FileNames);
+                        OpenOffline(ribbonPage, offlineAnalogy, title, offlineAnalogy.InitialFolderFullPath, openFileDialog1.FileNames);
                         AddRecentFiles(ribbonPage, recentBar, offlineAnalogy, title,
                             openFileDialog1.FileNames.ToList());
                     }
@@ -980,10 +1151,10 @@ namespace Analogy
 
             groupOfflineFileTools.Items.Add(combineFiles);
             combineFiles.Click += (sender, e) =>
-                      {
-                          var combined = new FormCombineFiles(offlineAnalogy);
-                          combined.Show(this);
-                      };
+            {
+                var combined = new FormCombineFiles(offlineAnalogy);
+                combined.Show(this);
+            };
 
 
             var compareFiles = new ToolStripButton("Compare Files", Resources.TwoColumns)
