@@ -90,7 +90,7 @@ namespace Analogy
             return p;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
             // Setup docking functionality
             KryptonDockingWorkspace w = kryptonDockingManager.ManageWorkspace(kryptonDockableWorkspace);
@@ -112,42 +112,8 @@ namespace Analogy
             disableOnlineDueToFileOpen = arguments.Length == 2;
             if (DesignMode) return;
 
-            MainStatusStrip.Text = "File caching is " + (settings.EnableFileCaching ? "on" : "off");
-            //bbtnCloseCurrentTabPage.ItemClick += (object s, ItemClickEventArgs ea) => { CloseCurrentTabPage(); };
-            //bbtnCloseAllTabPage.ItemClick += (object s, ItemClickEventArgs ea) =>
-            //{
-            //    var pages = xtcLogs.TabPages.ToList();
-            //    foreach (var page in pages)
-            //    {
-            //        if (onlineDataSourcesMapping.ContainsKey(page))
-            //        {
-            //            onlineDataSourcesMapping[page].StopReceiving();
-            //            onlineDataSourcesMapping.Remove(page);
-            //        }
-
-            //        xtcLogs.TabPages.Remove(page);
-
-            //    }
-            //};
-            //bbtnCloseOtherTabPages.ItemClick += (object s, ItemClickEventArgs ea) =>
-            //{
-            //    var pages = xtcLogs.TabPages.Where(p => p != currentContextPage).ToList();
-            //    foreach (var page in pages)
-            //    {
-            //        if (onlineDataSourcesMapping.ContainsKey(page))
-            //        {
-            //            onlineDataSourcesMapping[page].StopReceiving();
-            //            onlineDataSourcesMapping.Remove(page);
-            //        }
-
-            //        xtcLogs.TabPages.Remove(page);
-
-            //    }
-
-            //};
-            ribbonControlMain.MinimizePanel = UserSettingsManager.UserSettings.StartupRibbonMinimized;
-
-
+            ribbonControlMain.MinimizedMode = UserSettingsManager.UserSettings.StartupRibbonMinimized;
+            
             await FactoriesManager.Instance.AddExternalDataSources();
 
             CreateDataSources();

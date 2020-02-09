@@ -36,7 +36,7 @@ namespace Analogy
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.kryptonRibbon1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
+            this.ribbonControlMain = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
             this.RibbonTabAnalogy = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonGroup8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
@@ -77,25 +77,26 @@ namespace Analogy
             this.kryptonRibbonGroupGallery1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGallery();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblError = new System.Windows.Forms.ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
+            this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableWorkspace)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // kryptonRibbon1
+            // ribbonControlMain
             // 
-            this.kryptonRibbon1.InDesignHelperMode = true;
-            this.kryptonRibbon1.Name = "kryptonRibbon1";
-            this.kryptonRibbon1.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
+            this.ribbonControlMain.InDesignHelperMode = true;
+            this.ribbonControlMain.Name = "ribbonControlMain";
+            this.ribbonControlMain.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
             this.RibbonTabAnalogy,
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2});
-            this.kryptonRibbon1.SelectedContext = null;
-            this.kryptonRibbon1.SelectedTab = this.RibbonTabAnalogy;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(1083, 165);
-            this.kryptonRibbon1.TabIndex = 0;
+            this.ribbonControlMain.SelectedContext = null;
+            this.ribbonControlMain.SelectedTab = this.RibbonTabAnalogy;
+            this.ribbonControlMain.Size = new System.Drawing.Size(1083, 165);
+            this.ribbonControlMain.TabIndex = 0;
             // 
             // RibbonTabAnalogy
             // 
@@ -412,7 +413,8 @@ namespace Analogy
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsslblError});
+            this.tsslblError,
+            this.tsslFileCaching});
             this.statusStrip1.Location = new System.Drawing.Point(0, 730);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1083, 26);
@@ -425,6 +427,12 @@ namespace Analogy
             this.tsslblError.Size = new System.Drawing.Size(36, 20);
             this.tsslblError.Text = "N/A";
             // 
+            // tsslFileCaching
+            // 
+            this.tsslFileCaching.Name = "tsslFileCaching";
+            this.tsslFileCaching.Size = new System.Drawing.Size(85, 20);
+            this.tsslFileCaching.Text = "file caching";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -432,13 +440,13 @@ namespace Analogy
             this.ClientSize = new System.Drawing.Size(1083, 756);
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.kryptonRibbon1);
+            this.Controls.Add(this.ribbonControlMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Analogy";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.kryptonPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableWorkspace)).EndInit();
@@ -456,7 +464,7 @@ namespace Analogy
         private KryptonDockingManager kryptonDockingManager;
         private ImageList imageListSmall;
         private KryptonManager kryptonManager;
-        private KryptonRibbon kryptonRibbon1;
+        private KryptonRibbon ribbonControlMain;
         private KryptonRibbonTab kryptonRibbonTab1;
         private KryptonRibbonGroup kryptonRibbonGroup2;
         private KryptonRibbonGroup kryptonRibbonGroup3;
@@ -492,6 +500,7 @@ namespace Analogy
         private KryptonRibbonGroupGallery kryptonRibbonGroupGallery1;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel tsslblError;
+        private ToolStripStatusLabel tsslFileCaching;
     }
 }
 
