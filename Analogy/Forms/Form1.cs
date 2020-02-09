@@ -15,14 +15,14 @@ using System.Windows.Forms;
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Analogy;
+
 using ComponentFactory.Krypton.Toolkit;
 using ComponentFactory.Krypton.Navigator;
 using ComponentFactory.Krypton.Workspace;
 using ComponentFactory.Krypton.Docking;
 using ComponentFactory.Krypton.Ribbon;
 
-namespace DockingCustomized
+namespace Analogy
 {
     public partial class Form1 : KryptonForm
     {

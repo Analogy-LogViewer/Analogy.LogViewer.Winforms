@@ -1,4 +1,4 @@
-﻿namespace DockingCustomized
+﻿namespace Analogy
 {
     partial class Form1
     {
@@ -75,7 +75,6 @@
       // 
       this.kryptonRibbon1.InDesignHelperMode = true;
       this.kryptonRibbon1.Name = "kryptonRibbon1";
-      this.kryptonRibbon1.RibbonAppButton.AppButtonImage = ((System.Drawing.Image)(resources.GetObject("kryptonRibbon1.RibbonAppButton.AppButtonImage")));
       this.kryptonRibbon1.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2});
@@ -98,7 +97,6 @@
       // kryptonRibbonGroup2
       // 
       this.kryptonRibbonGroup2.DialogBoxLauncher = false;
-      this.kryptonRibbonGroup2.Image = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroup2.Image")));
       this.kryptonRibbonGroup2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple5});
       this.kryptonRibbonGroup2.KeyTipGroup = "S";

@@ -423,9 +423,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttonSpecsAdd_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("buttonSpecsAdd.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buttonSpecsClear_ImageLarge {
             get {
                 object obj = ResourceManager.GetObject("buttonSpecsClear.ImageLarge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonSpecsClear_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("buttonSpecsClear.ImageLarge1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,9 +533,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap colorsRandom_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("colorsRandom.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap colorsReset_ImageLarge {
             get {
                 object obj = ResourceManager.GetObject("colorsReset.ImageLarge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colorsReset_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("colorsReset.ImageLarge1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1242,9 +1282,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kryptonRibbon1_RibbonAppButton_AppButtonImage1 {
+            get {
+                object obj = ResourceManager.GetObject("kryptonRibbon1.RibbonAppButton.AppButtonImage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kryptonRibbonGroup2_Image {
             get {
                 object obj = ResourceManager.GetObject("kryptonRibbonGroup2.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kryptonRibbonGroup2_Image1 {
+            get {
+                object obj = ResourceManager.GetObject("kryptonRibbonGroup2.Image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1262,6 +1322,16 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kryptonRibbonGroup3_Image1 {
+            get {
+                object obj = ResourceManager.GetObject("kryptonRibbonGroup3.Image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kryptonRibbonGroup4_Image {
             get {
                 object obj = ResourceManager.GetObject("kryptonRibbonGroup4.Image", resourceCulture);
@@ -1272,9 +1342,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kryptonRibbonGroup4_Image1 {
+            get {
+                object obj = ResourceManager.GetObject("kryptonRibbonGroup4.Image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kryptonRibbonGroup5_Image {
             get {
                 object obj = ResourceManager.GetObject("kryptonRibbonGroup5.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kryptonRibbonGroup5_Image1 {
+            get {
+                object obj = ResourceManager.GetObject("kryptonRibbonGroup5.Image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1482,9 +1572,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeBarGroupInside_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeBarGroupInside.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeBarGroupInside_ImageSmall {
             get {
                 object obj = ResourceManager.GetObject("modeBarGroupInside.ImageSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeBarGroupInside_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeBarGroupInside.ImageSmall1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1502,9 +1612,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeBarGroupOutside_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeBarGroupOutside.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeBarGroupOutside_ImageSmall {
             get {
                 object obj = ResourceManager.GetObject("modeBarGroupOutside.ImageSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeBarGroupOutside_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeBarGroupOutside.ImageSmall1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1522,9 +1652,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeBarRibbonTabGroup_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeBarRibbonTabGroup.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeBarRibbonTabGroup_ImageSmall {
             get {
                 object obj = ResourceManager.GetObject("modeBarRibbonTabGroup.ImageSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeBarRibbonTabGroup_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeBarRibbonTabGroup.ImageSmall1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1542,9 +1692,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeHeaderBarGroup_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeHeaderBarGroup.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeHeaderBarGroup_ImageSmall {
             get {
                 object obj = ResourceManager.GetObject("modeHeaderBarGroup.ImageSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeHeaderBarGroup_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeHeaderBarGroup.ImageSmall1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1562,9 +1732,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeHeaderBarHeaderGroup_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeHeaderBarHeaderGroup.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeHeaderBarHeaderGroup_ImageSmall {
             get {
                 object obj = ResourceManager.GetObject("modeHeaderBarHeaderGroup.ImageSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeHeaderBarHeaderGroup_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeHeaderBarHeaderGroup.ImageSmall1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1582,9 +1772,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeHeaderGroupTab_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeHeaderGroupTab.ImageSmall1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeStackGroup_ImageLarge {
             get {
                 object obj = ResourceManager.GetObject("modeStackGroup.ImageLarge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeStackGroup_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeStackGroup.ImageLarge1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1602,9 +1812,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeStackGroup_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeStackGroup.ImageSmall1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeStackHeaderGroup_ImageLarge {
             get {
                 object obj = ResourceManager.GetObject("modeStackHeaderGroup.ImageLarge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeStackHeaderGroup_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeStackHeaderGroup.ImageLarge1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1622,6 +1852,16 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeStackHeaderGroup_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeStackHeaderGroup.ImageSmall1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeTabGroup_ImageLarge {
             get {
                 object obj = ResourceManager.GetObject("modeTabGroup.ImageLarge", resourceCulture);
@@ -1632,9 +1872,29 @@ namespace Analogy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modeTabGroup_ImageLarge1 {
+            get {
+                object obj = ResourceManager.GetObject("modeTabGroup.ImageLarge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modeTabGroup_ImageSmall {
             get {
                 object obj = ResourceManager.GetObject("modeTabGroup.ImageSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modeTabGroup_ImageSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("modeTabGroup.ImageSmall1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
