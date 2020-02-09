@@ -90,6 +90,30 @@
     <RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.Syncfusion</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Design">
+      <HintPath>Redist\ComponentFactory.Krypton.Design.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>Redist\ComponentFactory.Krypton.Docking.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>Redist\ComponentFactory.Krypton.Navigator.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>Redist\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>Redist\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>Redist\ComponentFactory.Krypton.Workspace.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
