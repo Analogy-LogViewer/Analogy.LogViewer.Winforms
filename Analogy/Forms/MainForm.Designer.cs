@@ -78,6 +78,7 @@ namespace Analogy
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblError = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslFileCaching = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TmrAutoConnect = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -93,7 +94,6 @@ namespace Analogy
             this.RibbonTabAnalogy,
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2});
-            this.ribbonControlMain.SelectedContext = null;
             this.ribbonControlMain.SelectedTab = this.RibbonTabAnalogy;
             this.ribbonControlMain.Size = new System.Drawing.Size(1083, 165);
             this.ribbonControlMain.TabIndex = 0;
@@ -501,6 +501,7 @@ namespace Analogy
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel tsslblError;
         private ToolStripStatusLabel tsslFileCaching;
+        private Timer TmrAutoConnect;
     }
 }
 

@@ -148,11 +148,11 @@ namespace Analogy
             {
                 ribbonControlMain.SelectedTab = Mapping[UserSettingsManager.UserSettings.LastOpenedDataProvider];
             }
-            ribbonControlMain.SelectedTabItemChanged += (s, arg) =>
+            ribbonControlMain.SelectedTabChanged += (s, arg) =>
             {
-                if (Mapping.ContainsValue(arg.NewSelectedTab))
+                if (Mapping.ContainsValue(ribbonControlMain.SelectedTab))
                 {
-                    Guid id = Mapping.Single(kv => kv.Value == arg.NewSelectedTab).Key;
+                    Guid id = Mapping.Single(kv => kv.Value == ribbonControlMain.SelectedTab).Key;
                     UserSettingsManager.UserSettings.LastOpenedDataProvider = id;
                 }
             };
