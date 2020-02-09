@@ -750,11 +750,12 @@ namespace Analogy
 
 
             //recent bar
-            var recentBar = new ToolStripDropDownButton("Recently Used Files", Resources.RecentlyUse_32x32)
-            {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
-            };
+            var recentButton = new KryptonRibbonGroupButton();
+            recentButton.TextLine1 = "Recently Used";
+            recentButton.TextLine2 = "Files";
+            recentButton.ImageLarge = Resources.RecentlyUse_32x32;
+            var recentBar = new ContextMenuStrip(this.Container);
+            recentButton.ContextMenuStrip = recentBar;
             //local folder
             if (offlineProviders.Any(i => !string.IsNullOrEmpty(i.InitialFolderFullPath) &&
                                           Directory.Exists(i.InitialFolderFullPath)))
@@ -1021,15 +1022,13 @@ namespace Analogy
                 group.Items.Add(localfolder);
                 localfolder.Click += (sender, e) => { OpenOffline(ribbonPage, offlineAnalogy, title, offlineAnalogy.InitialFolderFullPath); };
             }
-
-            //recent bar
-            var recentBar = new ToolStripDropDownButton("Recently Used Files", Resources.RecentlyUse_32x32)
-            {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText,
-                AutoSize = true
-            };
-
+            var recentButton = new KryptonRibbonGroupButton();
+            recentButton.TextLine1 = "Recently Used";
+            recentButton.TextLine2 = "Files";
+            recentButton.ImageLarge = Resources.RecentlyUse_32x32;
+            var recentBar = new ContextMenuStrip(this.Container);
+            recentButton.ContextMenuStrip = recentBar;
+            
             //add Files open buttons
             if (!string.IsNullOrEmpty(offlineAnalogy.FileOpenDialogFilters))
             {
