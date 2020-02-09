@@ -1160,6 +1160,26 @@ namespace Analogy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Windows.Forms.ImageListStreamer.
+        /// </summary>
+        internal static System.Windows.Forms.ImageListStreamer imageListSmall_ImageStream {
+            get {
+                object obj = ResourceManager.GetObject("imageListSmall.ImageStream", resourceCulture);
+                return ((System.Windows.Forms.ImageListStreamer)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Point similar to {X=203,Y=20}.
+        /// </summary>
+        internal static System.Drawing.Point imageListSmall_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("imageListSmall.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap IncreaseFontSize_16x16 {
@@ -1266,6 +1286,26 @@ namespace Analogy.Properties {
             get {
                 object obj = ResourceManager.GetObject("KamaMedical", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Point similar to {X=17,Y=17}.
+        /// </summary>
+        internal static System.Drawing.Point kryptonDockingManager_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("kryptonDockingManager.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Point similar to {X=336,Y=20}.
+        /// </summary>
+        internal static System.Drawing.Point kryptonManager_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("kryptonManager.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
             }
         }
         

@@ -47,7 +47,6 @@
                         | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.richTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.richTextBox.TabIndex = 0;
-            this.richTextBox.Text = resources.GetString("richTextBox.Text");
             // 
             // kryptonPanel
             // 
