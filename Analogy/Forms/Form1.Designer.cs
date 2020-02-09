@@ -71,6 +71,10 @@ namespace Analogy
             this.kryptonDockingManager = new ComponentFactory.Krypton.Docking.KryptonDockingManager();
             this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
             this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
+            this.RibbonTabAnalogy = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupGallery1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGallery();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
@@ -82,11 +86,11 @@ namespace Analogy
             this.kryptonRibbon1.InDesignHelperMode = true;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
             this.kryptonRibbon1.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
+            this.RibbonTabAnalogy,
             this.kryptonRibbonTab1,
             this.kryptonRibbonTab2});
-            this.kryptonRibbon1.SelectedContext = null;
-            this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(812, 115);
+            this.kryptonRibbon1.SelectedTab = this.RibbonTabAnalogy;
+            this.kryptonRibbon1.Size = new System.Drawing.Size(1083, 165);
             this.kryptonRibbon1.TabIndex = 0;
             // 
             // kryptonRibbonTab1
@@ -342,19 +346,21 @@ namespace Analogy
             // 
             this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel.Location = new System.Drawing.Point(0, 115);
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 165);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(3);
-            this.kryptonPanel.Size = new System.Drawing.Size(812, 499);
+            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel.Size = new System.Drawing.Size(1083, 591);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonDockableWorkspace
             // 
             this.kryptonDockableWorkspace.AutoHiddenHost = false;
-            this.kryptonDockableWorkspace.CompactFlags = ((ComponentFactory.Krypton.Workspace.CompactFlags)(((ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptyCells | ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptySequences)
-                  | ComponentFactory.Krypton.Workspace.CompactFlags.PromoteLeafs)));
+            this.kryptonDockableWorkspace.CompactFlags = ((ComponentFactory.Krypton.Workspace.CompactFlags)(((ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptyCells | ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
+            | ComponentFactory.Krypton.Workspace.CompactFlags.PromoteLeafs)));
             this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(3, 3);
+            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 4);
+            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
             // 
             // 
@@ -362,7 +368,7 @@ namespace Analogy
             this.kryptonDockableWorkspace.Root.UniqueName = "5594893E2F2E42885594893E2F2E4288";
             this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
             this.kryptonDockableWorkspace.ShowMaximizeButton = false;
-            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(806, 493);
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1075, 583);
             this.kryptonDockableWorkspace.TabIndex = 0;
             this.kryptonDockableWorkspace.TabStop = true;
             // 
@@ -382,15 +388,30 @@ namespace Analogy
             this.imageListSmall.Images.SetKeyName(0, "document_plain.png");
             this.imageListSmall.Images.SetKeyName(1, "preferences.png");
             this.imageListSmall.Images.SetKeyName(2, "information2.png");
-
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
+            // 
+            // RibbonTabAnalogy
+            // 
+            this.RibbonTabAnalogy.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup8,
+            this.kryptonRibbonGroup9});
+            this.RibbonTabAnalogy.Text = "Analogy";
+            // 
+            // kryptonRibbonGroupGallery1
+            // 
+            this.kryptonRibbonGroupGallery1.ImageList = null;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 614);
+            this.ClientSize = new System.Drawing.Size(1083, 756);
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.kryptonRibbon1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Docking Customized";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -440,6 +461,10 @@ namespace Analogy
         private KryptonRibbonGroup kryptonRibbonGroup7;
         private KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
         private KryptonRibbonGroupButton modeHeaderGroupTab;
+        private KryptonRibbonTab RibbonTabAnalogy;
+        private KryptonRibbonGroup kryptonRibbonGroup8;
+        private KryptonRibbonGroup kryptonRibbonGroup9;
+        private KryptonRibbonGroupGallery kryptonRibbonGroupGallery1;
     }
 }
 
