@@ -336,7 +336,7 @@ namespace Analogy
                 };
                 if (openFileDialog1.ShowDialog(this) == DialogResult.OK)
                 {
-                    OpenOffline(tstitmAnalogy, offlineAnalogy, offlineAnalogy.OptionalTitle, offlineAnalogy.InitialFolderFullPath,
+                    OpenOffline(RibbonTabAnalogy, offlineAnalogy, offlineAnalogy.OptionalTitle, offlineAnalogy.InitialFolderFullPath,
                         openFileDialog1.FileNames);
                     AddRecentFiles(tstitmAnalogy, tsbtnAnalogyRecentlyOpenFiles, offlineAnalogy, offlineAnalogy.OptionalTitle,
                         openFileDialog1.FileNames.ToList());
@@ -430,7 +430,7 @@ namespace Analogy
         {
             if (factory.Title == null) return;
 
-            ToolStripTabItem ribbonPage = new ToolStripTabItem { Text = factory.Title };
+            KryptonRibbonTab ribbonPage = new KryptonRibbonTab { Text = factory.Title };
             ribbonControlMain.Header.AddMainItem(ribbonPage);
             Mapping.Add(factory.FactoryID, ribbonPage);
 
@@ -480,7 +480,7 @@ namespace Analogy
             aboutBtn.Click += (sender, e) => { new AboutDataSourceBox(factory).ShowDialog(this); };
         }
 
-        private void CreateDataSourceRibbonGroup(IAnalogyDataProvidersFactory dataSourceFactory, ToolStripTabItem ribbonPage)
+        private void CreateDataSourceRibbonGroup(IAnalogyDataProvidersFactory dataSourceFactory, KryptonRibbonTab ribbonPage)
         {
             ToolStripEx ribbonPageGroup = new ToolStripEx { Text = dataSourceFactory.Title, AutoSize = true };
             ribbonPage.Panel.Controls.Add(ribbonPageGroup);
@@ -508,7 +508,7 @@ namespace Analogy
             dockingManager1.DockAsDocument(control);
 
         }
-        private void AddRealTimeDataSource(ToolStripTabItem ribbonPage, IAnalogyDataProvidersFactory dataSourceFactory, ToolStripEx group)
+        private void AddRealTimeDataSource(KryptonRibbonTab ribbonPage, IAnalogyDataProvidersFactory dataSourceFactory, ToolStripEx group)
         {
             var realtimes = dataSourceFactory.Items.Where(f => f is IAnalogyRealTimeDataProvider)
                 .Cast<IAnalogyRealTimeDataProvider>().ToList();
@@ -641,7 +641,7 @@ namespace Analogy
             }
         }
 
-        private void AddOfflineDataSource(ToolStripTabItem ribbonPage, IAnalogyDataProvidersFactory factory, ToolStripEx group)
+        private void AddOfflineDataSource(KryptonRibbonTab ribbonPage, IAnalogyDataProvidersFactory factory, ToolStripEx group)
         {
 
             var offlineProviders = factory.Items.Where(f => f is IAnalogyOfflineDataProvider)
@@ -674,7 +674,7 @@ namespace Analogy
 
         }
 
-        private void AddMultiplesOfflineDataSource(ToolStripTabItem ribbonPage,
+        private void AddMultiplesOfflineDataSource(KryptonRibbonTab ribbonPage,
             List<IAnalogyOfflineDataProvider> offlineProviders, string factoryTitle, ToolStripEx group)
         {
             void OpenOffline(string titleOfDataSource, IAnalogyOfflineDataProvider dataProvider, string initialFolder,
@@ -948,16 +948,15 @@ namespace Analogy
             }
         }
 
-        private void OpenOffline(ToolStripTabItem ribbonPage, IAnalogyOfflineDataProvider offlineAnalogy, string titleOfDataSource, string initialFolder, string[] files = null)
+        private void OpenOffline(KryptonRibbonTab ribbonPage, IAnalogyOfflineDataProvider offlineAnalogy, string titleOfDataSource, string initialFolder, string[] files = null)
         {
             offline++;
             UserControl page = new OfflineUCLogs(offlineAnalogy, files, initialFolder);
             page.Tag = ribbonPage;
             page.Text = $"{offlineTitle} #{offline} ({titleOfDataSource})";
             AddToDockingManager(page, page.Text);
-            dockingManager1.ActivateControl(page);
         }
-        private void AddSingleOfflineDataSource(ToolStripTabItem ribbonPage, IAnalogyOfflineDataProvider offlineAnalogy,
+        private void AddSingleOfflineDataSource(KryptonRibbonTab ribbonPage, IAnalogyOfflineDataProvider offlineAnalogy,
            string title, ToolStripEx group, ToolStripEx groupOfflineFileTools)
         {
             void OpenExternalDataSource(string titleOfDataSource, IAnalogyOfflineDataProvider analogy)
@@ -1138,7 +1137,7 @@ namespace Analogy
         }
 
 
-        private void AddSingleRealTimeDataSource(ToolStripTabItem ribbonPage, IAnalogyRealTimeDataProvider realTime, string title,
+        private void AddSingleRealTimeDataSource(KryptonRibbonTab ribbonPage, IAnalogyRealTimeDataProvider realTime, string title,
             ToolStripEx group)
         {
             string text = "Real Time Logs" + (!string.IsNullOrEmpty(realTime.OptionalTitle) ? $" - {realTime.OptionalTitle}" : string.Empty);
@@ -1316,7 +1315,7 @@ namespace Analogy
 
             }
         }
-        private void OpenOfflineLogs(ToolStripTabItem ribbonPage, string[] filenames,
+        private void OpenOfflineLogs(KryptonRibbonTab ribbonPage, string[] filenames,
             IAnalogyOfflineDataProvider dataProvider,
             string title = null)
         {
@@ -1333,7 +1332,7 @@ namespace Analogy
         }
 
 
-        private void AddRecentFiles(ToolStripTabItem ribbonPage, ToolStripDropDownButton bar, IAnalogyOfflineDataProvider offlineAnalogy,
+        private void AddRecentFiles(KryptonRibbonTab ribbonPage, ToolStripDropDownButton bar, IAnalogyOfflineDataProvider offlineAnalogy,
             string title, List<string> files)
         {
 
