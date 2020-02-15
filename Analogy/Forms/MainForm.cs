@@ -519,14 +519,17 @@ namespace Analogy
             }
             else
             {
-                ToolStripDropDownButton realTimeMenu =
-                    new ToolStripDropDownButton("Real Time Logs", Resources.Database_off)
+                ContextMenuStrip menu = new ContextMenuStrip();
+                KryptonRibbonGroupButton realTimeButton =
+                    new KryptonRibbonGroupButton()
                     {
-                        DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                        TextImageRelation = TextImageRelation.ImageAboveText
+                        ImageLarge = Resources.Database_off,
+                        TextLine1= "Real Time Logs",
                     };
-                group.Items.Add(realTimeMenu);
-
+                realTimeButton.ContextMenuStrip = menu;
+                KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+                container.Items.AddRange(new KryptonRibbonGroupItem[] { realTimeButton });
+                group.Items.AddRange(new[]{ container});
                 foreach (var realTime in realtimes)
                 {
                     ToolStripMenuItem realTimeBtn = new ToolStripMenuItem()
@@ -536,7 +539,7 @@ namespace Analogy
                                    ? $" - {realTime.OptionalTitle}"
                                    : string.Empty)
                     };
-                    realTimeMenu.DropDownItems.Add(realTimeBtn);
+                    menu.Items.Add(realTimeBtn);
                     async Task<bool> OpenRealTime()
                     {
                         realTimeBtn.Enabled = false;
@@ -754,7 +757,7 @@ namespace Analogy
             recentButton.TextLine1 = "Recently Used";
             recentButton.TextLine2 = "Files";
             recentButton.ImageLarge = Resources.RecentlyUse_32x32;
-            var recentBar = new ContextMenuStrip(this.Container);
+            var recentBar = new ContextMenuStrip();
             recentButton.ContextMenuStrip = recentBar;
             //local folder
             if (offlineProviders.Any(i => !string.IsNullOrEmpty(i.InitialFolderFullPath) &&
