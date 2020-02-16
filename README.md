@@ -10,7 +10,7 @@ current status:
 - [X] Convert Data Grid Control for messages
 - [X] Covert all User Controls (Ribbons, ToolStrips, Windows Forms etc)
 - [X] Remove any reference to DevExpress assemblies
-- [ ] Fix small related UI bugs post conversion to Syncfusion version
+- [ ] Fix small related UI bugs post conversion to Winforms version
 
 Analogy Log Viewer is multi purpose Log Viewer for Windows Operating systems (with built-in NLog Parser and others).
 
