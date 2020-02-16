@@ -3,7 +3,7 @@
 
 Basic winforms Implementation (no third parties UI libraries usage like DevExpress/Syncfusion)
 The other versions are
-1. DevExpress (V19.1.8) in the repo: https://github.com/Analogy-LogViewer/Analogy.LogViewer
+1. DevExpress (V19.1.9) in the repo: https://github.com/Analogy-LogViewer/Analogy.LogViewer
 2. SyncFusion in the repo: https://github.com/Analogy-LogViewer/Analogy.LogViewer.Syncfusion
 
 current status:
