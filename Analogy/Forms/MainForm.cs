@@ -53,13 +53,12 @@ namespace Analogy
 
         }
 
-        private KryptonPage NewDocument()
+        private KryptonPage NewDocument(Control control,string name)
         {
-            KryptonPage page = NewPage("Document ", 0, new ContentDocument());
+            KryptonPage page = NewPage(name, 0, control);
 
             // Document pages cannot be docked or auto hidden
             page.ClearFlags(KryptonPageFlags.DockingAllowAutoHidden | KryptonPageFlags.DockingAllowDocked);
-
             return page;
         }
 
@@ -80,7 +79,6 @@ namespace Analogy
             p.Text = name + _count;
             p.TextTitle = name + _count;
             p.TextDescription = name + _count;
-            p.ImageSmall = imageListSmall.Images[image];
 
             // Add the control for display inside the page
             content.Dock = DockStyle.Fill;
@@ -97,10 +95,9 @@ namespace Analogy
             kryptonDockingManager.ManageControl(kryptonPanel, w);
             kryptonDockingManager.ManageFloating(this);
 
-            // Add initial docking pages
-            kryptonDockingManager.AddToWorkspace("Workspace", new[] { NewDocument(), NewDocument() });
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Right, new[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
-            kryptonDockingManager.AddDockspace("Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
+
+            // kryptonDockingManager.AddDockspace("Control", DockingEdge.Right, new[] { NewPropertyGrid(), NewInput(), NewPropertyGrid(), NewInput() });
+            // kryptonDockingManager.AddDockspace("Control", DockingEdge.Bottom, new[] { NewInput(), NewPropertyGrid(), NewInput(), NewPropertyGrid() });
 
             UpdateModeButtons();
 
@@ -503,10 +500,10 @@ namespace Analogy
 
         private void AddToDockingManager(Control control, string title)
         {
-            //todo
-            //dockingManager1.SetDockLabel(control, title);
-            //dockingManager1.SetCustomCaptionButtons(control, new CaptionButtonsCollection());
-            //dockingManager1.DockAsDocument(control);
+            var page = NewDocument(control,title);
+           
+            var workspace = kryptonDockingManager.AddToWorkspace("Workspace", new[] { page });
+
 
         }
         private void AddRealTimeDataSource(KryptonRibbonTab ribbonPage, IAnalogyDataProvidersFactory dataSourceFactory, KryptonRibbonGroup group)
@@ -1041,7 +1038,7 @@ namespace Analogy
                 KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
                 container.Items.AddRange(new KryptonRibbonGroupItem[] { localfolder });
                 group.Items.AddRange(new KryptonRibbonGroupContainer[] { container });
-                
+
                 localfolder.Click += (sender, e) => { OpenOffline(ribbonPage, offlineAnalogy, title, offlineAnalogy.InitialFolderFullPath); };
             }
             var recentButton = new KryptonRibbonGroupButton();
@@ -1054,7 +1051,7 @@ namespace Analogy
             KryptonRibbonGroupTriple containerRecent = new KryptonRibbonGroupTriple();
             containerRecent.Items.AddRange(new KryptonRibbonGroupItem[] { recentButton });
             group.Items.AddRange(new KryptonRibbonGroupContainer[] { containerRecent });
-            
+
             //add Files open buttons
             if (!string.IsNullOrEmpty(offlineAnalogy.FileOpenDialogFilters))
             {
@@ -1127,7 +1124,7 @@ namespace Analogy
             containerExternalSources.Items.AddRange(new KryptonRibbonGroupItem[] { externalSources });
             group.Items.AddRange(new KryptonRibbonGroupContainer[] { containerExternalSources });
 
-   
+
             externalSources.Click += (sender, e) => { OpenExternalDataSource(title, offlineAnalogy); };
 
             //add tools
@@ -1181,13 +1178,13 @@ namespace Analogy
             string text = "Real Time Logs" + (!string.IsNullOrEmpty(realTime.OptionalTitle) ? $" - {realTime.OptionalTitle}" : string.Empty);
             var realTimeBtn = new KryptonRibbonGroupButton()
             {
-               TextLine1 = text,
-              ImageLarge = Resources.Database_off
+                TextLine1 = text,
+                ImageLarge = Resources.Database_off
             };
             KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
             container.Items.AddRange(new KryptonRibbonGroupItem[] { realTimeBtn });
             group.Items.AddRange(new KryptonRibbonGroupContainer[] { container });
-          
+
             async Task<bool> OpenRealTime()
             {
                 realTimeBtn.Enabled = false;

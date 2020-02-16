@@ -70,29 +70,34 @@ namespace Analogy
 
         public void SetPath(string eSelectedFolderPath, IAnalogyOfflineDataProvider dataProvider)
         {
-            throw new NotImplementedException();
+            //todo
+          //  throw new NotImplementedException();
         }
 
         public event EventHandler<SelectionEventArgs> FilesSelectionChanged;
 
         public List<string> GetSelection()
-        {
-            throw new NotImplementedException();
+        {//todo
+           // throw new NotImplementedException();
+           return new List<string>();
         }
 
         public void SelectAll()
         {
-            throw new NotImplementedException();
+            //todo
+           // throw new NotImplementedException();
         }
 
         public void SortLastChanged(SortOrder descending)
         {
-            throw new NotImplementedException();
+            //todo;
+            //throw new NotImplementedException();
         }
 
         public void HighlightFile(string dataFile)
         {
-            throw new NotImplementedException();
+            //todo
+            //throw new NotImplementedException();
         }
     }
 
