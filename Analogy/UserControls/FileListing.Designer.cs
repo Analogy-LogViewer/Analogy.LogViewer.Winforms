@@ -43,7 +43,6 @@ namespace Analogy
             this.splcLeft.Panel2.SuspendLayout();
             this.splcLeft.SuspendLayout();
             this.toolStripEx1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkBoxRecursiveLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // splcLeft
@@ -134,7 +133,6 @@ namespace Analogy
             this.splcLeft.ResumeLayout(false);
             this.toolStripEx1.ResumeLayout(false);
             this.toolStripEx1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkBoxRecursiveLoad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
