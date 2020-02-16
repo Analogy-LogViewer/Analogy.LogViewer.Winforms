@@ -7,9 +7,9 @@ The other versions are
 2. SyncFusion in the repo: https://github.com/Analogy-LogViewer/Analogy.LogViewer.Syncfusion
 
 current status:
-- [ ] Convert Data Grid Control for messages
+- [X] Convert Data Grid Control for messages
 - [X] Covert all User Controls (Ribbons, ToolStrips, Windows Forms etc)
-- [X] REmove any reference to DevExpress assemblies
+- [X] Remove any reference to DevExpress assemblies
 - [ ] Fix small related UI bugs post conversion to Syncfusion version
 
 Analogy Log Viewer is multi purpose Log Viewer for Windows Operating systems (with built-in NLog Parser and others).
