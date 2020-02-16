@@ -50,7 +50,7 @@ namespace Analogy
         {
             InitializeComponent();
             AnalogyLogManager.Instance.OnNewError += (s, e) => BeginInvoke(new MethodInvoker(() => { tsslblError.Visible = true; }));
-            
+
         }
 
         private KryptonPage NewDocument()
@@ -113,7 +113,7 @@ namespace Analogy
             if (DesignMode) return;
 
             ribbonControlMain.MinimizedMode = UserSettingsManager.UserSettings.StartupRibbonMinimized;
-            
+
             await FactoriesManager.Instance.AddExternalDataSources();
 
             CreateDataSources();
@@ -448,7 +448,7 @@ namespace Analogy
                 KryptonRibbonGroup groupActionSource = new KryptonRibbonGroup
                 {
                     Tag = actionFactory.Title,
-                   
+
                 };
                 ribbonPage.Groups.Add(groupActionSource);
                 foreach (IAnalogyCustomAction action in actionFactory.Items)
@@ -466,16 +466,17 @@ namespace Analogy
             KryptonRibbonGroup groupInfoSource = new KryptonRibbonGroup
             {
                 TextLine1 = "About",
-               
+
             };
             ribbonPage.Groups.Add(groupInfoSource);
-            ToolStripButton aboutBtn = new ToolStripButton("Data Source Information", Resources.About_32x32)
+            var aboutBtn = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
+                TextLine1 = "Data Source Information",
+                ImageLarge = Resources.About_32x32
             };
-
-            groupInfoSource.Items.Add(aboutBtn);
+            KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+            container.Items.AddRange(new KryptonRibbonGroupItem[] { aboutBtn });
+            groupInfoSource.Items.AddRange(new KryptonRibbonGroupContainer[] { container });
             aboutBtn.Click += (sender, e) => { new AboutDataSourceBox(factory).ShowDialog(this); };
         }
 
@@ -489,14 +490,14 @@ namespace Analogy
 
 
             //add bookmark
-            ToolStripButton bookmarkBtn = new ToolStripButton("Bookmarks", Resources.RichEditBookmark_32x32)
+            var bookmarkBtn = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText,
-                AutoSize = true,
+                TextLine1 = "Bookmarks",
+                ImageLarge = Resources.RichEditBookmark_32x32
             };
-
-            ribbonPageGroup.Items.Add(bookmarkBtn);
+            KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+            container.Items.AddRange(new KryptonRibbonGroupItem[] { bookmarkBtn });
+            ribbonPageGroup.Items.AddRange(new[] { container });
             bookmarkBtn.Click += (sender, e) => { OpenBookmarkLog(); };
         }
 
@@ -524,12 +525,12 @@ namespace Analogy
                     new KryptonRibbonGroupButton()
                     {
                         ImageLarge = Resources.Database_off,
-                        TextLine1= "Real Time Logs",
+                        TextLine1 = "Real Time Logs",
                     };
                 realTimeButton.ContextMenuStrip = menu;
                 KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
                 container.Items.AddRange(new KryptonRibbonGroupItem[] { realTimeButton });
-                group.Items.AddRange(new[]{ container});
+                group.Items.AddRange(new[] { container });
                 foreach (var realTime in realtimes)
                 {
                     ToolStripMenuItem realTimeBtn = new ToolStripMenuItem()
@@ -585,7 +586,7 @@ namespace Analogy
                             realTime.OnDisconnected += OnRealTimeDisconnected;
                             realTime.StartReceiving();
                             onlineDataSourcesMapping.Add(onlineUC, realTime);
-                            
+
                             //todo
                             //dockingManager1.ActivateControl(onlineUC);
                             //void OnXtcLogsOnControlRemoved(object sender, DockVisibilityChangedEventArgs arg)
@@ -659,7 +660,7 @@ namespace Analogy
                     : string.Empty;
                 KryptonRibbonGroup groupOfflineFileTools = new KryptonRibbonGroup { TextLine1 = $"Tools{optionalText}" };
                 AddSingleOfflineDataSource(ribbonPage, offlineAnalogy, factory.Title, group, groupOfflineFileTools);
-               // groupOfflineFileTools.AllowMenuTextAlignment = true;
+                // groupOfflineFileTools.AllowMenuTextAlignment = true;
                 ribbonPage.Groups.Add(groupOfflineFileTools);
 
                 //int width = 0;
@@ -751,24 +752,20 @@ namespace Analogy
                 //dockingManager1.DockVisibilityChanged += OnXtcLogsOnControlRemoved;
             }
 
-
-            //recent bar
-            var recentButton = new KryptonRibbonGroupButton();
-            recentButton.TextLine1 = "Recently Used";
-            recentButton.TextLine2 = "Files";
-            recentButton.ImageLarge = Resources.RecentlyUse_32x32;
-            var recentBar = new ContextMenuStrip();
-            recentButton.ContextMenuStrip = recentBar;
             //local folder
             if (offlineProviders.Any(i => !string.IsNullOrEmpty(i.InitialFolderFullPath) &&
                                           Directory.Exists(i.InitialFolderFullPath)))
             {
-                ToolStripDropDownButton folderBar = new ToolStripDropDownButton("Open Folder", Resources.Open2_32x32)
+                ContextMenuStrip menu = new ContextMenuStrip();
+                KryptonRibbonGroupButton folderBar = new KryptonRibbonGroupButton()
                 {
-                    DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                    TextImageRelation = TextImageRelation.ImageAboveText
+                    TextLine1 = "Open Folder",
+                    ImageLarge = Resources.Open2_32x32,
                 };
-                group.Items.Add(folderBar);
+                folderBar.ContextMenuStrip = menu;
+                KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+                container.Items.AddRange(new KryptonRibbonGroupItem[] { folderBar });
+                group.Items.AddRange(new[] { container });
 
                 foreach (var dataProvider in offlineProviders)
                 {
@@ -784,22 +781,33 @@ namespace Analogy
                                 dataProvider.InitialFolderFullPath);
                         };
 
-                        folderBar.DropDownItems.Add(btn);
+                        menu.Items.Add(btn);
                     }
                 }
             }
 
+            //recent bar
+            var recentButton = new KryptonRibbonGroupButton();
+            recentButton.TextLine1 = "Recently Used";
+            recentButton.TextLine2 = "Files";
+            recentButton.ImageLarge = Resources.RecentlyUse_32x32;
+            var recentBar = new ContextMenuStrip();
+            recentButton.ContextMenuStrip = recentBar;
 
             //add Files open buttons
             if (offlineProviders.Any(i => !string.IsNullOrEmpty(i.FileOpenDialogFilters)))
             {
+                ContextMenuStrip menu = new ContextMenuStrip();
                 //add Open files entry
-                var openFiles = new ToolStripDropDownButton("Open Files", Resources.Article_32x32)
+                var openFiles = new KryptonRibbonGroupButton()
                 {
-                    DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                    TextImageRelation = TextImageRelation.ImageAboveText
+                    TextLine1 = "Open Files",
+                    ImageLarge = Resources.Article_32x32
                 };
-                group.Items.Add(openFiles);
+                openFiles.ContextMenuStrip = menu;
+                KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+                container.Items.AddRange(new KryptonRibbonGroupItem[] { openFiles });
+                group.Items.AddRange(new[] { container });
                 foreach (var dataProvider in offlineProviders)
                 {
 
@@ -822,20 +830,26 @@ namespace Analogy
                                     openFileDialog1.FileNames.ToList());
                             }
                         };
-                        openFiles.DropDownItems.Add(btnOpenFile);
+                        menu.Items.Add(btnOpenFile);
                     }
                 }
 
 
-
+                ContextMenuStrip menu2 = new ContextMenuStrip();
                 //add Open Pooled file entry
-                ToolStripDropDownButton filePoolingBtn =
-                    new ToolStripDropDownButton("File Pooling", Resources.FilePooling_32x32)
+                KryptonRibbonGroupButton filePoolingBtn =
+                    new KryptonRibbonGroupButton
                     {
-                        DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                        TextImageRelation = TextImageRelation.ImageAboveText
+                        TextLine1 = "File Pooling",
+                        ImageLarge = Resources.FilePooling_32x32,
+                        ContextMenuStrip = menu2
                     };
-                group.Items.Add(filePoolingBtn);
+
+                KryptonRibbonGroupTriple container2 = new KryptonRibbonGroupTriple();
+                container2.Items.AddRange(new KryptonRibbonGroupItem[] { openFiles });
+                group.Items.AddRange(new[] { container2 });
+
+
                 foreach (var dataProvider in offlineProviders)
                 {
                     ToolStripMenuItem btnOpenFile = new ToolStripMenuItem { Text = $"{factoryTitle} ({dataProvider.OptionalTitle})" };
@@ -855,13 +869,16 @@ namespace Analogy
                                 new List<string> { openFileDialog1.FileName });
                         }
                     };
-                    filePoolingBtn.DropDownItems.Add(btnOpenFile);
+                    menu2.Items.Add(btnOpenFile);
                 }
             }
 
 
+
+            KryptonRibbonGroupTriple containerRecent = new KryptonRibbonGroupTriple();
+            containerRecent.Items.AddRange(new KryptonRibbonGroupItem[] { recentButton });
+            group.Items.AddRange(new[] { containerRecent });
             //add recent
-            group.Items.Add(recentBar);
             foreach (var dataProvider in offlineProviders)
             {
                 var recents = UserSettingsManager.UserSettings.RecentFiles.Where(itm => itm.ID == dataProvider.ID)
@@ -869,13 +886,16 @@ namespace Analogy
                 AddRecentFiles(ribbonPage, recentBar, dataProvider, dataProvider.OptionalTitle, recents);
             }
 
-            ToolStripDropDownButton externalSources = new ToolStripDropDownButton("Known Locations", Resources.ServerMode_32x32)
+            ContextMenuStrip menu3 = new ContextMenuStrip();
+            KryptonRibbonGroupButton externalSources = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
+                TextLine1 = "Known Locations",
+                ImageLarge = Resources.ServerMode_32x32,
+                ContextMenuStrip = menu3
             };
-
-            group.Items.Add(externalSources);
+            KryptonRibbonGroupTriple container3 = new KryptonRibbonGroupTriple();
+            container3.Items.AddRange(new KryptonRibbonGroupItem[] { externalSources });
+            group.Items.AddRange(new[] { container3 });
             //add client/server  button:
             foreach (var dataProvider in offlineProviders)
             {
@@ -884,74 +904,71 @@ namespace Analogy
                 {
                     OpenExternalDataSource(dataProvider.OptionalTitle, dataProvider);
                 };
-                externalSources.DropDownItems.Add(btnOpenLocation);
+                menu3.Items.Add(btnOpenLocation);
             }
-
+            //todo:add tools
 
             //add tools
+            //ContextMenuStrip menu4 = new ContextMenuStrip();
+            //KryptonRibbonGroupButton groupOfflineFileTools = new KryptonRibbonGroupButton()
+            //{
+            //    TextLine1 = $"Tools for {factoryTitle}",
+            //  };
 
-            KryptonRibbonGroup groupOfflineFileTools = new KryptonRibbonGroup()
-            {
-                TextLine1 = $"Tools for {factoryTitle}",
-              
-            };
-            ribbonPage.Groups.Add(groupOfflineFileTools);
-
-
-            var searchFiles = new ToolStripDropDownButton("Search in Files", Resources.Lookup_Reference_32x32)
-            {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
-            };
-            groupOfflineFileTools.Items.Add(searchFiles);
-            foreach (var dataProvider in offlineProviders)
-            {
-                var btnSearching = new ToolStripMenuItem { Text = $" search in: {factoryTitle} ({dataProvider.OptionalTitle})" };
-                btnSearching.Click += (sender, e) =>
-                {
-                    var search = new SearchForm(dataProvider);
-                    search.Show(this);
-                };
-                searchFiles.DropDownItems.Add(btnSearching);
-            }
+            //var searchFiles = new KryptonRibbonGroupButton()
+            //{
+            //    TextLine1 ="Search in Files",
+            //    ImageLarge = Resources.Lookup_Reference_32x32
+            //};
+            //groupOfflineFileTools.Items.Add(searchFiles);
+            //foreach (var dataProvider in offlineProviders)
+            //{
+            //    var btnSearching = new ToolStripMenuItem { Text = $" search in: {factoryTitle} ({dataProvider.OptionalTitle})" };
+            //    btnSearching.Click += (sender, e) =>
+            //    {
+            //        var search = new SearchForm(dataProvider);
+            //        search.Show(this);
+            //    };
+            //    searchFiles.DropDownItems.Add(btnSearching);
+            //}
 
 
-            var combineFiles = new ToolStripDropDownButton("Combine Files", Resources.Sutotal_32x32)
-            {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
-            };
-            groupOfflineFileTools.Items.Add(combineFiles);
+            //var combineFiles = new ToolStripDropDownButton("Combine Files", Resources.Sutotal_32x32)
+            //{
+            //    DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
+            //    TextImageRelation = TextImageRelation.ImageAboveText
+            //};
+            //groupOfflineFileTools.Items.Add(combineFiles);
 
-            foreach (var dataProvider in offlineProviders)
-            {
-                var btnCombine = new ToolStripMenuItem { Text = $"Combine files for: {factoryTitle} ({dataProvider.OptionalTitle})" };
-                btnCombine.Click += (sender, e) =>
-                {
-                    var combined = new FormCombineFiles(dataProvider);
-                    combined.Show(this);
-                };
-                combineFiles.DropDownItems.Add(btnCombine);
-            }
+            //foreach (var dataProvider in offlineProviders)
+            //{
+            //    var btnCombine = new ToolStripMenuItem { Text = $"Combine files for: {factoryTitle} ({dataProvider.OptionalTitle})" };
+            //    btnCombine.Click += (sender, e) =>
+            //    {
+            //        var combined = new FormCombineFiles(dataProvider);
+            //        combined.Show(this);
+            //    };
+            //    combineFiles.DropDownItems.Add(btnCombine);
+            //}
 
 
 
-            var compareFiles = new ToolStripDropDownButton("Compare Files", Resources.TwoColumns)
-            {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
-            };
-            groupOfflineFileTools.Items.Add(compareFiles);
-            foreach (var dataProvider in offlineProviders)
-            {
-                var btnCombine = new ToolStripMenuItem { Text = $"Compare files for: {factoryTitle} ({dataProvider.OptionalTitle})" };
-                btnCombine.Click += (sender, e) =>
-                {
-                    FileComparerForm compare = new FileComparerForm(dataProvider);
-                    compare.ShowDialog(this);
-                };
-                compareFiles.DropDownItems.Add(btnCombine);
-            }
+            //var compareFiles = new ToolStripDropDownButton("Compare Files", Resources.TwoColumns)
+            //{
+            //    DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
+            //    TextImageRelation = TextImageRelation.ImageAboveText
+            //};
+            //groupOfflineFileTools.Items.Add(compareFiles);
+            //foreach (var dataProvider in offlineProviders)
+            //{
+            //    var btnCombine = new ToolStripMenuItem { Text = $"Compare files for: {factoryTitle} ({dataProvider.OptionalTitle})" };
+            //    btnCombine.Click += (sender, e) =>
+            //    {
+            //        FileComparerForm compare = new FileComparerForm(dataProvider);
+            //        compare.ShowDialog(this);
+            //    };
+            //    compareFiles.DropDownItems.Add(btnCombine);
+            //}
         }
 
         private void OpenOffline(KryptonRibbonTab ribbonPage, IAnalogyOfflineDataProvider offlineAnalogy, string titleOfDataSource, string initialFolder, string[] files = null)
@@ -1016,33 +1033,40 @@ namespace Analogy
             if (!string.IsNullOrEmpty(offlineAnalogy.InitialFolderFullPath) &&
                 Directory.Exists(offlineAnalogy.InitialFolderFullPath))
             {
-                var localfolder = new ToolStripButton("Open Folder", Resources.Open2_32x32)
+                var localfolder = new KryptonRibbonGroupButton()
                 {
-                    DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                    TextImageRelation = TextImageRelation.ImageAboveText,
-                    AutoSize = true
+                    TextLine1 = "Open Folder",
+                    ImageLarge = Resources.Open2_32x32
                 };
-                group.Items.Add(localfolder);
+                KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+                container.Items.AddRange(new KryptonRibbonGroupItem[] { localfolder });
+                group.Items.AddRange(new KryptonRibbonGroupContainer[] { container });
+                
                 localfolder.Click += (sender, e) => { OpenOffline(ribbonPage, offlineAnalogy, title, offlineAnalogy.InitialFolderFullPath); };
             }
             var recentButton = new KryptonRibbonGroupButton();
             recentButton.TextLine1 = "Recently Used";
             recentButton.TextLine2 = "Files";
             recentButton.ImageLarge = Resources.RecentlyUse_32x32;
-            var recentBar = new ContextMenuStrip(this.Container);
+            var recentBar = new ContextMenuStrip();
             recentButton.ContextMenuStrip = recentBar;
+
+            KryptonRibbonGroupTriple containerRecent = new KryptonRibbonGroupTriple();
+            containerRecent.Items.AddRange(new KryptonRibbonGroupItem[] { recentButton });
+            group.Items.AddRange(new KryptonRibbonGroupContainer[] { containerRecent });
             
             //add Files open buttons
             if (!string.IsNullOrEmpty(offlineAnalogy.FileOpenDialogFilters))
             {
                 //add Open files entry
-                var openFiles = new ToolStripButton("Open Files", Resources.Article_32x32)
+                var openFiles = new KryptonRibbonGroupButton()
                 {
-                    DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                    TextImageRelation = TextImageRelation.ImageAboveText,
-                    AutoSize = true
+                    TextLine1 = "Open Files",
+                    ImageLarge = Resources.Article_32x32
                 };
-                group.Items.Add(openFiles);
+                KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+                container.Items.AddRange(new KryptonRibbonGroupItem[] { openFiles });
+                group.Items.AddRange(new KryptonRibbonGroupContainer[] { container });
                 openFiles.Click += (sender, e) =>
                 {
                     OpenFileDialog openFileDialog1 = new OpenFileDialog
@@ -1060,12 +1084,16 @@ namespace Analogy
                 };
 
                 //add Open Pooled file entry
-                var filePoolingBtn = new ToolStripButton("File Pooling", Resources.FilePooling_32x32)
+                var filePoolingBtn = new KryptonRibbonGroupButton()
                 {
-                    DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                    TextImageRelation = TextImageRelation.ImageAboveText
+                    TextLine1 = "File Pooling",
+                    ImageLarge = Resources.FilePooling_32x32
                 };
-                group.Items.Add(filePoolingBtn);
+
+                KryptonRibbonGroupTriple container2 = new KryptonRibbonGroupTriple();
+                container2.Items.AddRange(new KryptonRibbonGroupItem[] { filePoolingBtn });
+                group.Items.AddRange(new KryptonRibbonGroupContainer[] { container2 });
+
                 filePoolingBtn.Click += (sender, e) =>
                 {
                     OpenFileDialog openFileDialog1 = new OpenFileDialog
@@ -1085,41 +1113,41 @@ namespace Analogy
             }
 
             //add recent
-            group.Items.Add(recentBar);
             var recents = UserSettingsManager.UserSettings.RecentFiles.Where(itm => itm.ID == offlineAnalogy.ID)
                 .Select(itm => itm.FileName).ToList();
             AddRecentFiles(ribbonPage, recentBar, offlineAnalogy, title, recents);
 
             //add client/server  button:
-            var externalSources = new ToolStripButton("Known Locations", Resources.ServerMode_32x32)
+            var externalSources = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
+                TextLine1 = "Known Locations",
+                ImageLarge = Resources.ServerMode_32x32
             };
+            KryptonRibbonGroupTriple containerExternalSources = new KryptonRibbonGroupTriple();
+            containerExternalSources.Items.AddRange(new KryptonRibbonGroupItem[] { externalSources });
+            group.Items.AddRange(new KryptonRibbonGroupContainer[] { containerExternalSources });
 
-            group.Items.Add(externalSources);
+   
             externalSources.Click += (sender, e) => { OpenExternalDataSource(title, offlineAnalogy); };
 
             //add tools
-            var searchFiles = new ToolStripButton("Search in Files", Resources.Lookup_Reference_32x32)
+            var searchFiles = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
+                TextLine1 = "Search in Files",
+                ImageLarge = Resources.Lookup_Reference_32x32
             };
-            groupOfflineFileTools.Items.Add(searchFiles);
             searchFiles.Click += (sender, e) =>
             {
                 var search = new SearchForm(offlineAnalogy);
                 search.Show(this);
             };
 
-            var combineFiles = new ToolStripButton("Combine Files", Resources.Sutotal_32x32)
+            var combineFiles = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
+                TextLine1 = "Combine Files",
+                ImageLarge = Resources.Sutotal_32x32
             };
 
-            groupOfflineFileTools.Items.Add(combineFiles);
             combineFiles.Click += (sender, e) =>
             {
                 var combined = new FormCombineFiles(offlineAnalogy);
@@ -1127,18 +1155,23 @@ namespace Analogy
             };
 
 
-            var compareFiles = new ToolStripButton("Compare Files", Resources.TwoColumns)
+            var compareFiles = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText
+                TextLine1 = "Compare Files",
+                ImageLarge = Resources.TwoColumns
             };
 
-            groupOfflineFileTools.Items.Add(compareFiles);
             compareFiles.Click += (sender, e) =>
             {
                 FileComparerForm compare = new FileComparerForm(offlineAnalogy);
                 compare.ShowDialog(this);
             };
+
+
+            KryptonRibbonGroupTriple containerTools = new KryptonRibbonGroupTriple();
+            containerTools.Items.AddRange(new KryptonRibbonGroupItem[] { searchFiles, combineFiles, compareFiles });
+            groupOfflineFileTools.Items.AddRange(new KryptonRibbonGroupContainer[] { containerTools });
+
         }
 
 
@@ -1146,13 +1179,15 @@ namespace Analogy
             KryptonRibbonGroup group)
         {
             string text = "Real Time Logs" + (!string.IsNullOrEmpty(realTime.OptionalTitle) ? $" - {realTime.OptionalTitle}" : string.Empty);
-            var realTimeBtn = new ToolStripButton(text, Resources.Database_off)
+            var realTimeBtn = new KryptonRibbonGroupButton()
             {
-                DisplayStyle = ToolStripItemDisplayStyle.ImageAndText,
-                TextImageRelation = TextImageRelation.ImageAboveText,
-                AutoSize = true,
+               TextLine1 = text,
+              ImageLarge = Resources.Database_off
             };
-            group.Items.Add(realTimeBtn);
+            KryptonRibbonGroupTriple container = new KryptonRibbonGroupTriple();
+            container.Items.AddRange(new KryptonRibbonGroupItem[] { realTimeBtn });
+            group.Items.AddRange(new KryptonRibbonGroupContainer[] { container });
+          
             async Task<bool> OpenRealTime()
             {
                 realTimeBtn.Enabled = false;
@@ -1169,7 +1204,7 @@ namespace Analogy
                 if (canStartReceiving) //connected
                 {
                     online++;
-                    realTimeBtn.Image = Resources.Database_on;
+                    realTimeBtn.ImageLarge = Resources.Database_on;
                     var onlineUC = new OnlineUCLogs(realTime);
 
                     void OnRealTimeOnMessageReady(object sender, AnalogyLogMessageArgs e) =>
@@ -1184,7 +1219,7 @@ namespace Analogy
                             $"Source {title} Disconnected. Reason: {e.DisconnectedReason}",
                             AnalogyLogLevel.AnalogyInformation, AnalogyLogClass.General, title, "Analogy");
                         onlineUC.AppendMessage(disconnected, Environment.MachineName);
-                        realTimeBtn.Image = Resources.Database_off;
+                        realTimeBtn.ImageLarge = Resources.Database_off;
                     }
 
 
