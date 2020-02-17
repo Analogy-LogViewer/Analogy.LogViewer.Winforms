@@ -204,6 +204,7 @@ namespace Analogy
             // 
             this.ucLogs1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucLogs1.DoNotAddToRecentHistory = false;
+            this.ucLogs1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.ucLogs1.ForceNoFileCaching = false;
             this.ucLogs1.Location = new System.Drawing.Point(0, 0);
             this.ucLogs1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

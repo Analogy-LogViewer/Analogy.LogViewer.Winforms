@@ -77,7 +77,6 @@ namespace Analogy
             this.btnLastPage = new System.Windows.Forms.Button();
             this.chkbHighlight = new System.Windows.Forms.CheckBox();
             this.pnlTopFiltering = new System.Windows.Forms.Panel();
-            this.spltFilteringBoth = new System.Windows.Forms.SplitContainer();
             this.pnlFilteringLeft = new System.Windows.Forms.Panel();
             this.spltcDateFiltering = new System.Windows.Forms.SplitContainer();
             this.deOlderThanFilter = new System.Windows.Forms.DateTimePicker();
@@ -199,14 +198,11 @@ namespace Analogy
             this.tsddbExport = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsmiExportExcel = new System.Windows.Forms.ToolStripMenuItem();
             this.tsBDataVisualizer = new System.Windows.Forms.ToolStripButton();
+            this.groupBoxLevels = new System.Windows.Forms.GroupBox();
             this.cmsMessageOperation.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlButtonsHighlight.SuspendLayout();
             this.pnlTopFiltering.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spltFilteringBoth)).BeginInit();
-            this.spltFilteringBoth.Panel1.SuspendLayout();
-            this.spltFilteringBoth.Panel2.SuspendLayout();
-            this.spltFilteringBoth.SuspendLayout();
             this.pnlFilteringLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spltcDateFiltering)).BeginInit();
             this.spltcDateFiltering.Panel1.SuspendLayout();
@@ -243,6 +239,7 @@ namespace Analogy
             this.tabControlMain.SuspendLayout();
             this.tabPageLogs.SuspendLayout();
             this.tsTop.SuspendLayout();
+            this.groupBoxLevels.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmsMessageOperation
@@ -464,7 +461,7 @@ namespace Analogy
             this.panel1.Controls.Add(this.pnlButtonsHighlight);
             this.panel1.Controls.Add(this.chkbHighlight);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 251);
+            this.panel1.Location = new System.Drawing.Point(0, 247);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1269, 26);
@@ -585,38 +582,14 @@ namespace Analogy
             // 
             // pnlTopFiltering
             // 
-            this.pnlTopFiltering.Controls.Add(this.spltFilteringBoth);
+            this.pnlTopFiltering.Controls.Add(this.pnlFilteringLeft);
+            this.pnlTopFiltering.Controls.Add(this.groupBoxLevels);
             this.pnlTopFiltering.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopFiltering.Location = new System.Drawing.Point(0, 0);
             this.pnlTopFiltering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTopFiltering.Name = "pnlTopFiltering";
-            this.pnlTopFiltering.Size = new System.Drawing.Size(1269, 153);
+            this.pnlTopFiltering.Size = new System.Drawing.Size(1269, 175);
             this.pnlTopFiltering.TabIndex = 3;
-            // 
-            // spltFilteringBoth
-            // 
-            this.spltFilteringBoth.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spltFilteringBoth.Location = new System.Drawing.Point(0, 0);
-            this.spltFilteringBoth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.spltFilteringBoth.Name = "spltFilteringBoth";
-            // 
-            // spltFilteringBoth.Panel1
-            // 
-            this.spltFilteringBoth.Panel1.Controls.Add(this.pnlFilteringLeft);
-            // 
-            // spltFilteringBoth.Panel2
-            // 
-            this.spltFilteringBoth.Panel2.Controls.Add(this.rbVerbose);
-            this.spltFilteringBoth.Panel2.Controls.Add(this.rbDebug);
-            this.spltFilteringBoth.Panel2.Controls.Add(this.rbWarning);
-            this.spltFilteringBoth.Panel2.Controls.Add(this.rbErrorCritical);
-            this.spltFilteringBoth.Panel2.Controls.Add(this.rbTrace);
-            this.spltFilteringBoth.Panel2.Controls.Add(this.rbAllLevel);
-            this.spltFilteringBoth.Panel2MinSize = 150;
-            this.spltFilteringBoth.Size = new System.Drawing.Size(1269, 153);
-            this.spltFilteringBoth.SplitterDistance = 1082;
-            this.spltFilteringBoth.SplitterWidth = 3;
-            this.spltFilteringBoth.TabIndex = 19;
             // 
             // pnlFilteringLeft
             // 
@@ -629,7 +602,7 @@ namespace Analogy
             this.pnlFilteringLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlFilteringLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlFilteringLeft.Name = "pnlFilteringLeft";
-            this.pnlFilteringLeft.Size = new System.Drawing.Size(1082, 153);
+            this.pnlFilteringLeft.Size = new System.Drawing.Size(1115, 175);
             this.pnlFilteringLeft.TabIndex = 20;
             // 
             // spltcDateFiltering
@@ -648,7 +621,7 @@ namespace Analogy
             this.spltcDateFiltering.Panel1.Controls.Add(this.chkDateNewerThan);
             this.spltcDateFiltering.Panel1.Controls.Add(this.pictureBox1);
             this.spltcDateFiltering.Panel2Collapsed = true;
-            this.spltcDateFiltering.Size = new System.Drawing.Size(1070, 25);
+            this.spltcDateFiltering.Size = new System.Drawing.Size(1103, 25);
             this.spltcDateFiltering.SplitterDistance = 138;
             this.spltcDateFiltering.SplitterWidth = 3;
             this.spltcDateFiltering.TabIndex = 27;
@@ -726,7 +699,7 @@ namespace Analogy
             this.spltcProcessesModule.Panel1.Controls.Add(this.sbtnUndockPerProcess);
             this.spltcProcessesModule.Panel1.Controls.Add(this.chkbModules);
             this.spltcProcessesModule.Panel2Collapsed = true;
-            this.spltcProcessesModule.Size = new System.Drawing.Size(1070, 25);
+            this.spltcProcessesModule.Size = new System.Drawing.Size(1103, 25);
             this.spltcProcessesModule.SplitterDistance = 138;
             this.spltcProcessesModule.SplitterWidth = 3;
             this.spltcProcessesModule.TabIndex = 26;
@@ -738,7 +711,7 @@ namespace Analogy
             this.cbModule.Location = new System.Drawing.Point(314, 0);
             this.cbModule.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbModule.Name = "cbModule";
-            this.cbModule.Size = new System.Drawing.Size(453, 28);
+            this.cbModule.Size = new System.Drawing.Size(486, 28);
             this.cbModule.TabIndex = 27;
             // 
             // btnModules
@@ -747,7 +720,7 @@ namespace Analogy
             this.btnModules.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnModules.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnModules.Image = ((System.Drawing.Image)(resources.GetObject("btnModules.Image")));
-            this.btnModules.Location = new System.Drawing.Point(767, 0);
+            this.btnModules.Location = new System.Drawing.Point(800, 0);
             this.btnModules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModules.Name = "btnModules";
             this.btnModules.Size = new System.Drawing.Size(26, 25);
@@ -759,7 +732,7 @@ namespace Analogy
             this.sbtnUndockPerProcess.AutoSize = true;
             this.sbtnUndockPerProcess.Dock = System.Windows.Forms.DockStyle.Right;
             this.sbtnUndockPerProcess.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.sbtnUndockPerProcess.Location = new System.Drawing.Point(793, 0);
+            this.sbtnUndockPerProcess.Location = new System.Drawing.Point(826, 0);
             this.sbtnUndockPerProcess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sbtnUndockPerProcess.Name = "sbtnUndockPerProcess";
             this.sbtnUndockPerProcess.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
@@ -794,7 +767,7 @@ namespace Analogy
             this.spltcSources.Panel1.Controls.Add(this.chkbSources);
             this.spltcSources.Panel1.Controls.Add(this.pboxInfoExclude);
             this.spltcSources.Panel2Collapsed = true;
-            this.spltcSources.Size = new System.Drawing.Size(1070, 25);
+            this.spltcSources.Size = new System.Drawing.Size(1103, 25);
             this.spltcSources.SplitterDistance = 138;
             this.spltcSources.SplitterWidth = 3;
             this.spltcSources.TabIndex = 25;
@@ -806,7 +779,7 @@ namespace Analogy
             this.cbSource.Location = new System.Drawing.Point(261, 0);
             this.cbSource.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbSource.Name = "cbSource";
-            this.cbSource.Size = new System.Drawing.Size(783, 28);
+            this.cbSource.Size = new System.Drawing.Size(816, 28);
             this.cbSource.TabIndex = 27;
             // 
             // btnSources
@@ -815,7 +788,7 @@ namespace Analogy
             this.btnSources.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSources.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnSources.Image = ((System.Drawing.Image)(resources.GetObject("btnSources.Image")));
-            this.btnSources.Location = new System.Drawing.Point(1044, 0);
+            this.btnSources.Location = new System.Drawing.Point(1077, 0);
             this.btnSources.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSources.Name = "btnSources";
             this.btnSources.Size = new System.Drawing.Size(26, 25);
@@ -858,7 +831,7 @@ namespace Analogy
             this.spltTextExclude.Panel1.Controls.Add(this.sBtnMostCommon);
             this.spltTextExclude.Panel1.Controls.Add(this.chkExclude);
             this.spltTextExclude.Panel2Collapsed = true;
-            this.spltTextExclude.Size = new System.Drawing.Size(1070, 25);
+            this.spltTextExclude.Size = new System.Drawing.Size(1103, 25);
             this.spltTextExclude.SplitterDistance = 138;
             this.spltTextExclude.SplitterWidth = 3;
             this.spltTextExclude.TabIndex = 24;
@@ -870,7 +843,7 @@ namespace Analogy
             this.cbExclude.Location = new System.Drawing.Point(132, 0);
             this.cbExclude.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbExclude.Name = "cbExclude";
-            this.cbExclude.Size = new System.Drawing.Size(775, 28);
+            this.cbExclude.Size = new System.Drawing.Size(808, 28);
             this.cbExclude.TabIndex = 27;
             // 
             // btnTextExclude
@@ -879,7 +852,7 @@ namespace Analogy
             this.btnTextExclude.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTextExclude.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnTextExclude.Image = ((System.Drawing.Image)(resources.GetObject("btnTextExclude.Image")));
-            this.btnTextExclude.Location = new System.Drawing.Point(907, 0);
+            this.btnTextExclude.Location = new System.Drawing.Point(940, 0);
             this.btnTextExclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTextExclude.Name = "btnTextExclude";
             this.btnTextExclude.Size = new System.Drawing.Size(26, 25);
@@ -890,7 +863,7 @@ namespace Analogy
             this.sBtnMostCommon.AccessibleName = "Button";
             this.sBtnMostCommon.Dock = System.Windows.Forms.DockStyle.Right;
             this.sBtnMostCommon.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.sBtnMostCommon.Location = new System.Drawing.Point(933, 0);
+            this.sBtnMostCommon.Location = new System.Drawing.Point(966, 0);
             this.sBtnMostCommon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sBtnMostCommon.Name = "sBtnMostCommon";
             this.sBtnMostCommon.Size = new System.Drawing.Size(137, 25);
@@ -927,7 +900,7 @@ namespace Analogy
             this.spltText.Panel1.Controls.Add(this.pboxInfo);
             this.spltText.Panel1.Controls.Add(this.sbtnPreDefinedFilters);
             this.spltText.Panel2Collapsed = true;
-            this.spltText.Size = new System.Drawing.Size(1070, 25);
+            this.spltText.Size = new System.Drawing.Size(1103, 25);
             this.spltText.SplitterDistance = 138;
             this.spltText.SplitterWidth = 3;
             this.spltText.TabIndex = 22;
@@ -939,7 +912,7 @@ namespace Analogy
             this.cbInclude.Location = new System.Drawing.Point(135, 0);
             this.cbInclude.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cbInclude.Name = "cbInclude";
-            this.cbInclude.Size = new System.Drawing.Size(883, 28);
+            this.cbInclude.Size = new System.Drawing.Size(916, 28);
             this.cbInclude.TabIndex = 26;
             // 
             // btnTextInclude
@@ -948,7 +921,7 @@ namespace Analogy
             this.btnTextInclude.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTextInclude.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnTextInclude.Image = ((System.Drawing.Image)(resources.GetObject("btnTextInclude.Image")));
-            this.btnTextInclude.Location = new System.Drawing.Point(1018, 0);
+            this.btnTextInclude.Location = new System.Drawing.Point(1051, 0);
             this.btnTextInclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTextInclude.Name = "btnTextInclude";
             this.btnTextInclude.Size = new System.Drawing.Size(26, 25);
@@ -985,7 +958,7 @@ namespace Analogy
             this.sbtnPreDefinedFilters.Dock = System.Windows.Forms.DockStyle.Right;
             this.sbtnPreDefinedFilters.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.sbtnPreDefinedFilters.Image = global::Analogy.Properties.Resources.SingleMasterFilter_16x16;
-            this.sbtnPreDefinedFilters.Location = new System.Drawing.Point(1044, 0);
+            this.sbtnPreDefinedFilters.Location = new System.Drawing.Point(1077, 0);
             this.sbtnPreDefinedFilters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sbtnPreDefinedFilters.Name = "sbtnPreDefinedFilters";
             this.sbtnPreDefinedFilters.Size = new System.Drawing.Size(26, 25);
@@ -994,56 +967,62 @@ namespace Analogy
             // 
             // rbVerbose
             // 
+            this.rbVerbose.AutoSize = true;
             this.rbVerbose.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbVerbose.Location = new System.Drawing.Point(0, 100);
+            this.rbVerbose.Location = new System.Drawing.Point(3, 143);
             this.rbVerbose.Name = "rbVerbose";
-            this.rbVerbose.Size = new System.Drawing.Size(184, 20);
+            this.rbVerbose.Size = new System.Drawing.Size(148, 24);
             this.rbVerbose.TabIndex = 28;
             this.rbVerbose.Text = "Verbose";
             // 
             // rbDebug
             // 
+            this.rbDebug.AutoSize = true;
             this.rbDebug.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbDebug.Location = new System.Drawing.Point(0, 80);
+            this.rbDebug.Location = new System.Drawing.Point(3, 119);
             this.rbDebug.Name = "rbDebug";
-            this.rbDebug.Size = new System.Drawing.Size(184, 20);
+            this.rbDebug.Size = new System.Drawing.Size(148, 24);
             this.rbDebug.TabIndex = 27;
             this.rbDebug.Text = "Debug";
             // 
             // rbWarning
             // 
+            this.rbWarning.AutoSize = true;
             this.rbWarning.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbWarning.Location = new System.Drawing.Point(0, 60);
+            this.rbWarning.Location = new System.Drawing.Point(3, 95);
             this.rbWarning.Name = "rbWarning";
-            this.rbWarning.Size = new System.Drawing.Size(184, 20);
+            this.rbWarning.Size = new System.Drawing.Size(148, 24);
             this.rbWarning.TabIndex = 26;
             this.rbWarning.Text = "Warning";
             // 
             // rbErrorCritical
             // 
+            this.rbErrorCritical.AutoSize = true;
             this.rbErrorCritical.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbErrorCritical.Location = new System.Drawing.Point(0, 40);
+            this.rbErrorCritical.Location = new System.Drawing.Point(3, 71);
             this.rbErrorCritical.Name = "rbErrorCritical";
-            this.rbErrorCritical.Size = new System.Drawing.Size(184, 20);
+            this.rbErrorCritical.Size = new System.Drawing.Size(148, 24);
             this.rbErrorCritical.TabIndex = 25;
             this.rbErrorCritical.Text = "Errors + Critical";
             // 
             // rbTrace
             // 
+            this.rbTrace.AutoSize = true;
             this.rbTrace.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbTrace.Location = new System.Drawing.Point(0, 20);
+            this.rbTrace.Location = new System.Drawing.Point(3, 47);
             this.rbTrace.Name = "rbTrace";
-            this.rbTrace.Size = new System.Drawing.Size(184, 20);
+            this.rbTrace.Size = new System.Drawing.Size(148, 24);
             this.rbTrace.TabIndex = 24;
             this.rbTrace.Text = "Trace";
             // 
             // rbAllLevel
             // 
+            this.rbAllLevel.AutoSize = true;
             this.rbAllLevel.Checked = true;
             this.rbAllLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbAllLevel.Location = new System.Drawing.Point(0, 0);
+            this.rbAllLevel.Location = new System.Drawing.Point(3, 23);
             this.rbAllLevel.Name = "rbAllLevel";
-            this.rbAllLevel.Size = new System.Drawing.Size(184, 20);
+            this.rbAllLevel.Size = new System.Drawing.Size(148, 24);
             this.rbAllLevel.TabIndex = 23;
             this.rbAllLevel.TabStop = true;
             this.rbAllLevel.Text = "All";
@@ -1055,11 +1034,11 @@ namespace Analogy
             this.tbMessageInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbMessageInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.tbMessageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.tbMessageInfo.Location = new System.Drawing.Point(0, 27);
+            this.tbMessageInfo.Location = new System.Drawing.Point(0, 31);
             this.tbMessageInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbMessageInfo.Name = "tbMessageInfo";
             this.tbMessageInfo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.tbMessageInfo.Size = new System.Drawing.Size(1261, 185);
+            this.tbMessageInfo.Size = new System.Drawing.Size(1261, 181);
             this.tbMessageInfo.TabIndex = 14;
             this.tbMessageInfo.Text = "";
             // 
@@ -1072,7 +1051,8 @@ namespace Analogy
             this.tsBtnMessageInfoCopy});
             this.tsMessageInfo.Location = new System.Drawing.Point(0, 0);
             this.tsMessageInfo.Name = "tsMessageInfo";
-            this.tsMessageInfo.Size = new System.Drawing.Size(1261, 27);
+            this.tsMessageInfo.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.tsMessageInfo.Size = new System.Drawing.Size(1261, 31);
             this.tsMessageInfo.TabIndex = 4;
             // 
             // tsBtnMessageInfoCopy
@@ -1080,7 +1060,7 @@ namespace Analogy
             this.tsBtnMessageInfoCopy.Image = global::Analogy.Properties.Resources.Copy_16x16;
             this.tsBtnMessageInfoCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnMessageInfoCopy.Name = "tsBtnMessageInfoCopy";
-            this.tsBtnMessageInfoCopy.Size = new System.Drawing.Size(67, 24);
+            this.tsBtnMessageInfoCopy.Size = new System.Drawing.Size(67, 28);
             this.tsBtnMessageInfoCopy.Text = "Copy";
             // 
             // sfDataGridBookmarks
@@ -1117,42 +1097,42 @@ namespace Analogy
             this.dataGridViewTextBoxColumn14.HeaderText = "Data Source/File Name";
             this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 183;
+            this.dataGridViewTextBoxColumn14.Width = 196;
             // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.HeaderText = "Date";
             this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 67;
+            this.dataGridViewTextBoxColumn15.Width = 70;
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.HeaderText = "Time Differenace";
             this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 145;
+            this.dataGridViewTextBoxColumn16.Width = 154;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.HeaderText = "Text";
             this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 64;
+            this.dataGridViewTextBoxColumn17.Width = 66;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.HeaderText = "Source";
             this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 82;
+            this.dataGridViewTextBoxColumn18.Width = 85;
             // 
             // dataGridViewTextBoxColumn19
             // 
             this.dataGridViewTextBoxColumn19.HeaderText = "Level";
             this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 71;
+            this.dataGridViewTextBoxColumn19.Width = 73;
             // 
             // dataGridViewTextBoxColumn20
             // 
@@ -1166,41 +1146,42 @@ namespace Analogy
             this.dataGridViewTextBoxColumn21.HeaderText = "Category";
             this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 94;
+            this.dataGridViewTextBoxColumn21.Width = 101;
             // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.HeaderText = "User";
             this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.Width = 67;
+            this.dataGridViewTextBoxColumn22.Width = 69;
             // 
             // dataGridViewTextBoxColumn23
             // 
             this.dataGridViewTextBoxColumn23.HeaderText = "Module";
             this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.Width = 83;
+            this.dataGridViewTextBoxColumn23.Width = 91;
             // 
             // dataGridViewTextBoxColumn24
             // 
             this.dataGridViewTextBoxColumn24.HeaderText = "Object";
             this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 78;
+            this.dataGridViewTextBoxColumn24.Width = 82;
             // 
             // dataGridViewTextBoxColumn25
             // 
             this.dataGridViewTextBoxColumn25.HeaderText = "Process ID";
             this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.Width = 105;
+            this.dataGridViewTextBoxColumn25.Width = 108;
             // 
             // dataGridViewTextBoxColumn26
             // 
             this.dataGridViewTextBoxColumn26.HeaderText = "Thread ID";
             this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.Width = 105;
             // 
             // tsBookmark
             // 
@@ -1332,7 +1313,7 @@ namespace Analogy
             // 
             this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.splitContainerMain.Location = new System.Drawing.Point(0, 27);
+            this.splitContainerMain.Location = new System.Drawing.Point(0, 31);
             this.splitContainerMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainerMain.Name = "splitContainerMain";
             this.splitContainerMain.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -1348,8 +1329,8 @@ namespace Analogy
             // 
             this.splitContainerMain.Panel2.Controls.Add(this.tcBottom);
             this.splitContainerMain.Panel2.Text = "Panel2";
-            this.splitContainerMain.Size = new System.Drawing.Size(1269, 535);
-            this.splitContainerMain.SplitterDistance = 277;
+            this.splitContainerMain.Size = new System.Drawing.Size(1269, 531);
+            this.splitContainerMain.SplitterDistance = 273;
             this.splitContainerMain.SplitterWidth = 13;
             this.splitContainerMain.TabIndex = 21;
             this.splitContainerMain.Text = "splitContainerControl1";
@@ -1358,9 +1339,9 @@ namespace Analogy
             // 
             this.pnlMessages.Controls.Add(this.sfDataGridMain);
             this.pnlMessages.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMessages.Location = new System.Drawing.Point(0, 153);
+            this.pnlMessages.Location = new System.Drawing.Point(0, 175);
             this.pnlMessages.Name = "pnlMessages";
-            this.pnlMessages.Size = new System.Drawing.Size(1269, 98);
+            this.pnlMessages.Size = new System.Drawing.Size(1269, 72);
             this.pnlMessages.TabIndex = 7;
             // 
             // sfDataGridMain
@@ -1390,7 +1371,7 @@ namespace Analogy
             this.sfDataGridMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridMain.Name = "sfDataGridMain";
             this.sfDataGridMain.RowHeadersWidth = 51;
-            this.sfDataGridMain.Size = new System.Drawing.Size(1269, 98);
+            this.sfDataGridMain.Size = new System.Drawing.Size(1269, 72);
             this.sfDataGridMain.TabIndex = 5;
             this.sfDataGridMain.Text = "sfDataGridMain";
             this.sfDataGridMain.StyleChanged += new System.EventHandler(this.sfDataGridMain_StyleChanged);
@@ -1400,42 +1381,42 @@ namespace Analogy
             this.dataGridViewTextBoxColumn1.HeaderText = "Data Source/File Name";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 183;
+            this.dataGridViewTextBoxColumn1.Width = 196;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Date";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 67;
+            this.dataGridViewTextBoxColumn2.Width = 70;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Time Differenace";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 145;
+            this.dataGridViewTextBoxColumn3.Width = 154;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "Text";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 64;
+            this.dataGridViewTextBoxColumn4.Width = 66;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.HeaderText = "Source";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 82;
+            this.dataGridViewTextBoxColumn5.Width = 85;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "Level";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 71;
+            this.dataGridViewTextBoxColumn6.Width = 73;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -1449,41 +1430,42 @@ namespace Analogy
             this.dataGridViewTextBoxColumn8.HeaderText = "Category";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 94;
+            this.dataGridViewTextBoxColumn8.Width = 101;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.HeaderText = "User";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 67;
+            this.dataGridViewTextBoxColumn9.Width = 69;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.HeaderText = "Module";
             this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 83;
+            this.dataGridViewTextBoxColumn10.Width = 91;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.HeaderText = "Object";
             this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 78;
+            this.dataGridViewTextBoxColumn11.Width = 82;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.HeaderText = "Process ID";
             this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 105;
+            this.dataGridViewTextBoxColumn12.Width = 108;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.HeaderText = "Thread ID";
             this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 105;
             // 
             // tcBottom
             // 
@@ -1727,7 +1709,7 @@ namespace Analogy
             this.tsTop.Location = new System.Drawing.Point(0, 0);
             this.tsTop.Name = "tsTop";
             this.tsTop.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tsTop.Size = new System.Drawing.Size(1269, 27);
+            this.tsTop.Size = new System.Drawing.Size(1269, 31);
             this.tsTop.TabIndex = 5;
             // 
             // tsTopClear
@@ -1735,7 +1717,7 @@ namespace Analogy
             this.tsTopClear.Image = global::Analogy.Properties.Resources.Delete_16x16;
             this.tsTopClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsTopClear.Name = "tsTopClear";
-            this.tsTopClear.Size = new System.Drawing.Size(96, 24);
+            this.tsTopClear.Size = new System.Drawing.Size(96, 28);
             this.tsTopClear.Text = "Clear Log";
             // 
             // tsddbSave
@@ -1746,7 +1728,7 @@ namespace Analogy
             this.tsddbSave.Image = global::Analogy.Properties.Resources.Save_16x16;
             this.tsddbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsddbSave.Name = "tsddbSave";
-            this.tsddbSave.Size = new System.Drawing.Size(103, 24);
+            this.tsddbSave.Size = new System.Drawing.Size(103, 28);
             this.tsddbSave.Text = "Save Log";
             // 
             // tsmiSaveFullLog
@@ -1799,7 +1781,7 @@ namespace Analogy
             this.tsddbUndock.Image = global::Analogy.Properties.Resources.FullscreenBlue16;
             this.tsddbUndock.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsddbUndock.Name = "tsddbUndock";
-            this.tsddbUndock.Size = new System.Drawing.Size(129, 24);
+            this.tsddbUndock.Size = new System.Drawing.Size(129, 28);
             this.tsddbUndock.Text = "Undock View";
             // 
             // tsmiUndockView
@@ -1819,7 +1801,7 @@ namespace Analogy
             this.tsbScreenshot.Image = global::Analogy.Properties.Resources.Icon_6;
             this.tsbScreenshot.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbScreenshot.Name = "tsbScreenshot";
-            this.tsbScreenshot.Size = new System.Drawing.Size(138, 24);
+            this.tsbScreenshot.Size = new System.Drawing.Size(138, 28);
             this.tsbScreenshot.Text = "Take Screenshot";
             // 
             // tsddbExport
@@ -1829,7 +1811,7 @@ namespace Analogy
             this.tsddbExport.Image = global::Analogy.Properties.Resources.Export_16x16;
             this.tsddbExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsddbExport.Name = "tsddbExport";
-            this.tsddbExport.Size = new System.Drawing.Size(86, 24);
+            this.tsddbExport.Size = new System.Drawing.Size(86, 28);
             this.tsddbExport.Text = "Export";
             // 
             // tsmiExportExcel
@@ -1849,6 +1831,22 @@ namespace Analogy
             this.tsBDataVisualizer.Text = "Data Visualizer";
             this.tsBDataVisualizer.Visible = false;
             // 
+            // groupBoxLevels
+            // 
+            this.groupBoxLevels.Controls.Add(this.rbVerbose);
+            this.groupBoxLevels.Controls.Add(this.rbDebug);
+            this.groupBoxLevels.Controls.Add(this.rbWarning);
+            this.groupBoxLevels.Controls.Add(this.rbErrorCritical);
+            this.groupBoxLevels.Controls.Add(this.rbTrace);
+            this.groupBoxLevels.Controls.Add(this.rbAllLevel);
+            this.groupBoxLevels.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBoxLevels.Location = new System.Drawing.Point(1115, 0);
+            this.groupBoxLevels.Name = "groupBoxLevels";
+            this.groupBoxLevels.Size = new System.Drawing.Size(154, 175);
+            this.groupBoxLevels.TabIndex = 28;
+            this.groupBoxLevels.TabStop = false;
+            this.groupBoxLevels.Text = "Log Levels";
+            // 
             // UCLogs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1865,10 +1863,6 @@ namespace Analogy
             this.panel1.PerformLayout();
             this.pnlButtonsHighlight.ResumeLayout(false);
             this.pnlTopFiltering.ResumeLayout(false);
-            this.spltFilteringBoth.Panel1.ResumeLayout(false);
-            this.spltFilteringBoth.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.spltFilteringBoth)).EndInit();
-            this.spltFilteringBoth.ResumeLayout(false);
             this.pnlFilteringLeft.ResumeLayout(false);
             this.spltcDateFiltering.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spltcDateFiltering)).EndInit();
@@ -1915,6 +1909,8 @@ namespace Analogy
             this.tabPageLogs.PerformLayout();
             this.tsTop.ResumeLayout(false);
             this.tsTop.PerformLayout();
+            this.groupBoxLevels.ResumeLayout(false);
+            this.groupBoxLevels.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1946,7 +1942,6 @@ namespace Analogy
         private Panel pnlBottom;
         private ToolStripMenuItem tsmiTimeDiff;
         private ToolStripSeparator toolStripSeparator4;
-        private SplitContainer spltFilteringBoth;
         private Panel pnlFilteringLeft;
         private Button sBtnMostCommon;
         private ToolStripSeparator toolStripSeparator1;
@@ -2077,5 +2072,6 @@ namespace Analogy
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private GroupBox groupBoxLevels;
     }
 }
