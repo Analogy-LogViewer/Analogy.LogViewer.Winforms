@@ -946,10 +946,10 @@ namespace Analogy
                     lockSlim.EnterWriteLock();
                     try
                     {
-                        sfDataGridMain.BeginEdit(true);
+                        //sfDataGridMain.BeginEdit(true);
                         _messageData.AcceptChanges();
                         RefreshUIMessagesCount();
-                        sfDataGridMain.EndEdit();
+                        //sfDataGridMain.EndEdit();
                     }
                     finally
                     {

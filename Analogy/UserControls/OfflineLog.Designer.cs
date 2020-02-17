@@ -69,6 +69,7 @@ namespace Analogy
             // spltMain
             // 
             this.spltMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.spltMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.spltMain.Location = new System.Drawing.Point(0, 0);
             this.spltMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spltMain.Name = "spltMain";
@@ -81,7 +82,7 @@ namespace Analogy
             // 
             this.spltMain.Panel2.Controls.Add(this.ucLogs1);
             this.spltMain.Size = new System.Drawing.Size(1387, 700);
-            this.spltMain.SplitterDistance = 437;
+            this.spltMain.SplitterDistance = 409;
             this.spltMain.TabIndex = 5;
             // 
             // splcLeft
@@ -102,7 +103,7 @@ namespace Analogy
             this.splcLeft.Panel2.Controls.Add(this.toolStripEx2);
             this.splcLeft.Panel2.Controls.Add(this.checkBoxSelectionMode);
             this.splcLeft.Panel2.Controls.Add(this.checkBoxRecursiveLoad);
-            this.splcLeft.Size = new System.Drawing.Size(437, 700);
+            this.splcLeft.Size = new System.Drawing.Size(409, 700);
             this.splcLeft.SplitterDistance = 225;
             this.splcLeft.TabIndex = 4;
             // 
@@ -113,18 +114,20 @@ namespace Analogy
             this.folderTreeViewUC1.Location = new System.Drawing.Point(0, 0);
             this.folderTreeViewUC1.Margin = new System.Windows.Forms.Padding(4);
             this.folderTreeViewUC1.Name = "folderTreeViewUC1";
-            this.folderTreeViewUC1.Size = new System.Drawing.Size(437, 225);
+            this.folderTreeViewUC1.Size = new System.Drawing.Size(409, 225);
             this.folderTreeViewUC1.TabIndex = 0;
             // 
             // fileListing
             // 
+            this.fileListing.DataProvider = null;
             this.fileListing.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fileListing.Location = new System.Drawing.Point(0, 65);
             this.fileListing.Margin = new System.Windows.Forms.Padding(4);
             this.fileListing.Name = "fileListing";
             this.fileListing.Padding = new System.Windows.Forms.Padding(10);
-            this.fileListing.Size = new System.Drawing.Size(437, 406);
+            this.fileListing.Size = new System.Drawing.Size(409, 406);
             this.fileListing.TabIndex = 16;
+            this.fileListing.ZipFilesOnly = false;
             // 
             // toolStripEx2
             // 
@@ -138,7 +141,7 @@ namespace Analogy
             this.toolStripEx2.Location = new System.Drawing.Point(0, 38);
             this.toolStripEx2.Name = "toolStripEx2";
             this.toolStripEx2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripEx2.Size = new System.Drawing.Size(437, 27);
+            this.toolStripEx2.Size = new System.Drawing.Size(409, 27);
             this.toolStripEx2.TabIndex = 13;
             this.toolStripEx2.Text = "toolStripEx2";
             // 
@@ -182,7 +185,7 @@ namespace Analogy
             this.checkBoxSelectionMode.Dock = System.Windows.Forms.DockStyle.Top;
             this.checkBoxSelectionMode.Location = new System.Drawing.Point(0, 19);
             this.checkBoxSelectionMode.Name = "checkBoxSelectionMode";
-            this.checkBoxSelectionMode.Size = new System.Drawing.Size(437, 19);
+            this.checkBoxSelectionMode.Size = new System.Drawing.Size(409, 19);
             this.checkBoxSelectionMode.TabIndex = 15;
             this.checkBoxSelectionMode.Text = "Clear log between selection";
             // 
@@ -193,7 +196,7 @@ namespace Analogy
             this.checkBoxRecursiveLoad.Dock = System.Windows.Forms.DockStyle.Top;
             this.checkBoxRecursiveLoad.Location = new System.Drawing.Point(0, 0);
             this.checkBoxRecursiveLoad.Name = "checkBoxRecursiveLoad";
-            this.checkBoxRecursiveLoad.Size = new System.Drawing.Size(437, 19);
+            this.checkBoxRecursiveLoad.Size = new System.Drawing.Size(409, 19);
             this.checkBoxRecursiveLoad.TabIndex = 14;
             this.checkBoxRecursiveLoad.Text = "Load Recursive Files";
             // 
@@ -206,7 +209,7 @@ namespace Analogy
             this.ucLogs1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucLogs1.Name = "ucLogs1";
             this.ucLogs1.OnlineMode = false;
-            this.ucLogs1.Size = new System.Drawing.Size(946, 700);
+            this.ucLogs1.Size = new System.Drawing.Size(974, 700);
             this.ucLogs1.TabIndex = 0;
             // 
             // imageList
