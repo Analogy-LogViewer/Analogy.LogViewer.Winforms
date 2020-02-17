@@ -552,7 +552,6 @@ namespace Analogy
             Tip.SetToolTip(pboxInfo, "Use & or + for AND operations. Use | for OR operations");
             Tip.SetToolTip(pboxInfoExclude, "Use , to separate values. to exclude source or module prefix it with -");
 
-            spltFilteringBoth.SplitterDistance = spltFilteringBoth.Width - 150;
             pnlFilteringLeft.Dock = DockStyle.Fill;
             cbInclude.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbExclude.AutoCompleteMode = AutoCompleteMode.SuggestAppend;

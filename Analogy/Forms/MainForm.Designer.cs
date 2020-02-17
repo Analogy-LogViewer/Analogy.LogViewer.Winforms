@@ -129,7 +129,8 @@ namespace Analogy
             this.kryptonRibbonTab2,
             this.krtTheme,
             this.krtSettings});
-            this.ribbonControlMain.SelectedTab = this.RibbonTabAnalogy;
+            this.ribbonControlMain.SelectedContext = null;
+            this.ribbonControlMain.SelectedTab = this.kryptonRibbonTab2;
             this.ribbonControlMain.Size = new System.Drawing.Size(1083, 135);
             this.ribbonControlMain.TabIndex = 0;
             // 
@@ -257,6 +258,7 @@ namespace Analogy
             this.kryptonRibbonGroup7});
             this.kryptonRibbonTab1.KeyTip = "C";
             this.kryptonRibbonTab1.Text = "Cell Modes";
+            this.kryptonRibbonTab1.Visible = false;
             // 
             // kryptonRibbonGroup2
             // 
@@ -433,6 +435,7 @@ namespace Analogy
             this.kryptonRibbonGroup6});
             this.kryptonRibbonTab2.KeyTip = "A";
             this.kryptonRibbonTab2.Text = "Actions";
+            this.kryptonRibbonTab2.Visible = false;
             // 
             // kryptonRibbonGroup1
             // 
