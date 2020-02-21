@@ -40,8 +40,13 @@ namespace Analogy
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.toolStripTop = new System.Windows.Forms.ToolStrip();
             this.tsBtnRootDrive = new System.Windows.Forms.ToolStripButton();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel2.SuspendLayout();
             this.toolStripTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -84,12 +89,13 @@ namespace Analogy
             // 
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "Error_16x16.png");
-            this.imageList.Images.SetKeyName(1, "Warning_16x16.png");
-            this.imageList.Images.SetKeyName(2, "");
-            this.imageList.Images.SetKeyName(3, "folder32x32.gif");
-            this.imageList.Images.SetKeyName(4, "Error_32x32.png");
-            this.imageList.Images.SetKeyName(5, "Warning_32x32.png");
+            this.imageList.Images.SetKeyName(0, "folder32x32.gif");
+            this.imageList.Images.SetKeyName(1, "FilePooling_16x16.png");
+            this.imageList.Images.SetKeyName(2, "Error_16x16.png");
+            this.imageList.Images.SetKeyName(3, "Warning_16x16.png");
+            this.imageList.Images.SetKeyName(4, "");
+            this.imageList.Images.SetKeyName(5, "Error_32x32.png");
+            this.imageList.Images.SetKeyName(6, "Warning_32x32.png");
             // 
             // toolStripTop
             // 
@@ -100,7 +106,7 @@ namespace Analogy
             this.toolStripTop.Location = new System.Drawing.Point(0, 23);
             this.toolStripTop.Name = "toolStripTop";
             this.toolStripTop.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripTop.Size = new System.Drawing.Size(444, 27);
+            this.toolStripTop.Size = new System.Drawing.Size(444, 31);
             this.toolStripTop.TabIndex = 7;
             this.toolStripTop.Text = "toolStripEx1";
             // 
@@ -109,13 +115,39 @@ namespace Analogy
             this.tsBtnRootDrive.Image = global::Analogy.Properties.Resources.ServerMode_32x32;
             this.tsBtnRootDrive.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRootDrive.Name = "tsBtnRootDrive";
-            this.tsBtnRootDrive.Size = new System.Drawing.Size(104, 24);
+            this.tsBtnRootDrive.Size = new System.Drawing.Size(104, 28);
             this.tsBtnRootDrive.Text = "Root Drive";
+            // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.ImageIndex = 0;
+            this.treeView1.ImageList = this.imageList;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.SelectedImageIndex = 0;
+            this.treeView1.Size = new System.Drawing.Size(444, 257);
+            this.treeView1.TabIndex = 8;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 54);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.treeView1);
+            this.splitContainer1.Panel2Collapsed = true;
+            this.splitContainer1.Size = new System.Drawing.Size(444, 257);
+            this.splitContainer1.SplitterDistance = 148;
+            this.splitContainer1.TabIndex = 9;
             // 
             // FolderTreeViewUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStripTop);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
@@ -126,6 +158,9 @@ namespace Analogy
             this.panel2.PerformLayout();
             this.toolStripTop.ResumeLayout(false);
             this.toolStripTop.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,5 +174,7 @@ namespace Analogy
         private Button btnOpenFolder;
         private ToolStrip toolStripTop;
         private ToolStripButton tsBtnRootDrive;
+        private TreeView treeView1;
+        private SplitContainer splitContainer1;
     }
 }

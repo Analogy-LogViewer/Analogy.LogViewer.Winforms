@@ -45,6 +45,11 @@ namespace Analogy
             this.kryptonRibbonGroupTriple15 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.contextMenuStripRecentFiles = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.kryptonContextMenu1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenu();
+            this.kryptonContextMenuItems1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems();
+            this.kryptonContextMenuItem1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem();
+            this.kryptonContextMenuCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton();
+            this.kryptonContextMenuRadioButton1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton();
             this.kryptonRibbonGroupButton8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
@@ -130,8 +135,8 @@ namespace Analogy
             this.krtTheme,
             this.krtSettings});
             this.ribbonControlMain.SelectedContext = null;
-            this.ribbonControlMain.SelectedTab = this.kryptonRibbonTab2;
-            this.ribbonControlMain.Size = new System.Drawing.Size(1083, 135);
+            this.ribbonControlMain.SelectedTab = this.RibbonTabAnalogy;
+            this.ribbonControlMain.Size = new System.Drawing.Size(1218, 135);
             this.ribbonControlMain.TabIndex = 0;
             // 
             // RibbonTabAnalogy
@@ -182,6 +187,7 @@ namespace Analogy
             this.kryptonRibbonGroupButton7.ContextMenuStrip = this.contextMenuStripRecentFiles;
             this.kryptonRibbonGroupButton7.ImageLarge = global::Analogy.Properties.Resources.RecentlyUse_32x32;
             this.kryptonRibbonGroupButton7.ImageSmall = global::Analogy.Properties.Resources.RecentlyUse_16x16;
+            this.kryptonRibbonGroupButton7.KryptonContextMenu = this.kryptonContextMenu1;
             this.kryptonRibbonGroupButton7.TextLine1 = "Recently Used";
             this.kryptonRibbonGroupButton7.TextLine2 = "Files";
             // 
@@ -191,6 +197,31 @@ namespace Analogy
             this.contextMenuStripRecentFiles.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripRecentFiles.Name = "contextMenuStripRecentFiles";
             this.contextMenuStripRecentFiles.Size = new System.Drawing.Size(61, 4);
+            // 
+            // kryptonContextMenu1
+            // 
+            this.kryptonContextMenu1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItems1});
+            // 
+            // kryptonContextMenuItems1
+            // 
+            this.kryptonContextMenuItems1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItem1});
+            // 
+            // kryptonContextMenuItem1
+            // 
+            this.kryptonContextMenuItem1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuCheckButton1,
+            this.kryptonContextMenuRadioButton1});
+            this.kryptonContextMenuItem1.Text = "Menu Item";
+            // 
+            // kryptonContextMenuCheckButton1
+            // 
+            this.kryptonContextMenuCheckButton1.Text = "CheckButton";
+            // 
+            // kryptonContextMenuRadioButton1
+            // 
+            this.kryptonContextMenuRadioButton1.ExtraText = "";
             // 
             // kryptonRibbonGroupButton8
             // 
@@ -610,10 +641,10 @@ namespace Analogy
             this.kryptonPanel.Controls.Add(this.kryptonDockableWorkspace);
             this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel.Location = new System.Drawing.Point(0, 135);
-            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonPanel.Name = "kryptonPanel";
-            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4);
-            this.kryptonPanel.Size = new System.Drawing.Size(1083, 595);
+            this.kryptonPanel.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonPanel.Size = new System.Drawing.Size(1218, 784);
             this.kryptonPanel.TabIndex = 1;
             // 
             // kryptonDockableWorkspace
@@ -622,8 +653,8 @@ namespace Analogy
             this.kryptonDockableWorkspace.CompactFlags = ((ComponentFactory.Krypton.Workspace.CompactFlags)(((ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptyCells | ComponentFactory.Krypton.Workspace.CompactFlags.RemoveEmptySequences) 
             | ComponentFactory.Krypton.Workspace.CompactFlags.PromoteLeafs)));
             this.kryptonDockableWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 4);
-            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonDockableWorkspace.Location = new System.Drawing.Point(4, 5);
+            this.kryptonDockableWorkspace.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonDockableWorkspace.Name = "kryptonDockableWorkspace";
             // 
             // 
@@ -631,7 +662,7 @@ namespace Analogy
             this.kryptonDockableWorkspace.Root.UniqueName = "5594893E2F2E42885594893E2F2E4288";
             this.kryptonDockableWorkspace.Root.WorkspaceControl = this.kryptonDockableWorkspace;
             this.kryptonDockableWorkspace.ShowMaximizeButton = false;
-            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1075, 587);
+            this.kryptonDockableWorkspace.Size = new System.Drawing.Size(1210, 774);
             this.kryptonDockableWorkspace.TabIndex = 0;
             this.kryptonDockableWorkspace.TabStop = true;
             // 
@@ -656,9 +687,10 @@ namespace Analogy
             this.tsslFileCaching,
             this.tsslMemoryUsage,
             this.tsslIdleMessage});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 730);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 919);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1083, 26);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1218, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -698,13 +730,14 @@ namespace Analogy
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 756);
+            this.ClientSize = new System.Drawing.Size(1218, 945);
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.ribbonControlMain);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
             this.Text = "Analogy";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -799,6 +832,11 @@ namespace Analogy
         private ContextMenuStrip contextMenuStripRecentFiles;
         private ToolStripStatusLabel tsslMemoryUsage;
         private ToolStripStatusLabel tsslIdleMessage;
+        private KryptonContextMenu kryptonContextMenu1;
+        private KryptonContextMenuItems kryptonContextMenuItems1;
+        private KryptonContextMenuItem kryptonContextMenuItem1;
+        private KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
+        private KryptonContextMenuRadioButton kryptonContextMenuRadioButton1;
     }
 }
 

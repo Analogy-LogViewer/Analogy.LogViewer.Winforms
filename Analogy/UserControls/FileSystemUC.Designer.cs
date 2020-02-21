@@ -31,19 +31,13 @@ namespace Analogy
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.splcLeft = new System.Windows.Forms.SplitContainer();
             this.tvFolderUC = new Analogy.FolderTreeViewUC();
-            this.lBoxFiles = new System.Windows.Forms.ListBox();
-            this.toolStripEx1 = new System.Windows.Forms.ToolStrip();
-            this.btnOpen = new System.Windows.Forms.ToolStripButton();
-            this.checkBoxRecursiveLoad = new System.Windows.Forms.CheckBox();
+            this.fileListing1 = new Analogy.FileListing();
             ((System.ComponentModel.ISupportInitialize)(this.splcLeft)).BeginInit();
             this.splcLeft.Panel1.SuspendLayout();
             this.splcLeft.Panel2.SuspendLayout();
             this.splcLeft.SuspendLayout();
-            this.toolStripEx1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkBoxRecursiveLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // splcLeft
@@ -60,11 +54,9 @@ namespace Analogy
             // 
             // splcLeft.Panel2
             // 
-            this.splcLeft.Panel2.Controls.Add(this.lBoxFiles);
-            this.splcLeft.Panel2.Controls.Add(this.toolStripEx1);
-            this.splcLeft.Panel2.Controls.Add(this.checkBoxRecursiveLoad);
-            this.splcLeft.Size = new System.Drawing.Size(523, 426);
-            this.splcLeft.SplitterDistance = 201;
+            this.splcLeft.Panel2.Controls.Add(this.fileListing1);
+            this.splcLeft.Size = new System.Drawing.Size(523, 450);
+            this.splcLeft.SplitterDistance = 212;
             this.splcLeft.TabIndex = 5;
             // 
             // tvFolderUC
@@ -72,52 +64,21 @@ namespace Analogy
             this.tvFolderUC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvFolderUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.tvFolderUC.Location = new System.Drawing.Point(0, 0);
-            this.tvFolderUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tvFolderUC.Margin = new System.Windows.Forms.Padding(4);
             this.tvFolderUC.Name = "tvFolderUC";
-            this.tvFolderUC.Size = new System.Drawing.Size(523, 201);
+            this.tvFolderUC.Size = new System.Drawing.Size(523, 212);
             this.tvFolderUC.TabIndex = 0;
             // 
-            // lBoxFiles
+            // fileListing1
             // 
-            this.lBoxFiles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lBoxFiles.FormattingEnabled = true;
-            this.lBoxFiles.ItemHeight = 16;
-            this.lBoxFiles.Location = new System.Drawing.Point(0, 46);
-            this.lBoxFiles.Name = "lBoxFiles";
-            this.lBoxFiles.Size = new System.Drawing.Size(523, 175);
-            this.lBoxFiles.TabIndex = 9;
-            // 
-            // toolStripEx1
-            // 
-            this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnOpen});
-            this.toolStripEx1.Location = new System.Drawing.Point(0, 19);
-            this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripEx1.Size = new System.Drawing.Size(523, 27);
-            this.toolStripEx1.TabIndex = 10;
-            this.toolStripEx1.Text = "toolStripEx1";
-            // 
-            // btnOpen
-            // 
-            this.btnOpen.Image = global::Analogy.Properties.Resources.Open2_32x32;
-            this.btnOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(69, 24);
-            this.btnOpen.Text = "Open";
-            // 
-            // checkBoxRecursiveLoad
-            // 
-            this.checkBoxRecursiveLoad.Checked = true;
-            this.checkBoxRecursiveLoad.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxRecursiveLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkBoxRecursiveLoad.Location = new System.Drawing.Point(0, 0);
-            this.checkBoxRecursiveLoad.Name = "checkBoxRecursiveLoad";
-            this.checkBoxRecursiveLoad.Size = new System.Drawing.Size(523, 19);
-            this.checkBoxRecursiveLoad.TabIndex = 12;
-            this.checkBoxRecursiveLoad.Text = "Load Recursive Files";
+            this.fileListing1.DataProvider = null;
+            this.fileListing1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fileListing1.Location = new System.Drawing.Point(0, 0);
+            this.fileListing1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.fileListing1.Name = "fileListing1";
+            this.fileListing1.Size = new System.Drawing.Size(523, 234);
+            this.fileListing1.TabIndex = 0;
+            this.fileListing1.ZipFilesOnly = false;
             // 
             // FileSystemUC
             // 
@@ -129,14 +90,9 @@ namespace Analogy
             this.Size = new System.Drawing.Size(523, 450);
             this.splcLeft.Panel1.ResumeLayout(false);
             this.splcLeft.Panel2.ResumeLayout(false);
-            this.splcLeft.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splcLeft)).EndInit();
             this.splcLeft.ResumeLayout(false);
-            this.toolStripEx1.ResumeLayout(false);
-            this.toolStripEx1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkBoxRecursiveLoad)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -144,9 +100,6 @@ namespace Analogy
 
         private SplitContainer splcLeft;
         private FolderTreeViewUC tvFolderUC;
-        private ListBox lBoxFiles;
-        private ToolStrip toolStripEx1;
-        private ToolStripButton btnOpen;
-        private CheckBox checkBoxRecursiveLoad;
+        private FileListing fileListing1;
     }
 }

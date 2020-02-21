@@ -18,20 +18,13 @@ namespace Analogy
         public IAnalogyOfflineDataProvider DataProvider
         {
             get => _dataProvider;
-            set
-            {
-                _dataProvider = value;
-                if (value != null)
-                {
-                    tvFolderUC.SetFolder(value.InitialFolderFullPath, _dataProvider);
-                }
-            }
+            set => _dataProvider = value;
         }
 
         public FileListing()
         {
             InitializeComponent();
-            tvFolderUC.FolderChanged += TvFolderUC_FolderChanged;
+            //tvFolderUC.FolderChanged += TvFolderUC_FolderChanged;
             btnOpen.Click += (s, e) =>
             {
                 if (lBoxFiles.SelectedItem != null)
@@ -98,6 +91,18 @@ namespace Analogy
         {
             //todo
             //throw new NotImplementedException();
+        }
+
+        public void FolderChanged(string selectedFolderPath)
+        {
+            lBoxFiles.SelectedIndexChanged -= lBoxFiles_SelectedIndexChanged;
+            DirectoryInfo dirInfo = new DirectoryInfo(selectedFolderPath);
+            bool recursive = checkBoxRecursiveLoad.Checked;
+            List<FileInfo> fileInfos = (ZipFilesOnly ? dirInfo.GetFiles("*.zip").ToList() : DataProvider.GetSupportedFiles(dirInfo, recursive)).OrderByDescending(f => f.LastWriteTime).ToList();
+            lBoxFiles.DisplayMember = recursive ? "FullName" : "Name";
+            lBoxFiles.DataSource = fileInfos;
+            lBoxFiles.SelectedIndexChanged += lBoxFiles_SelectedIndexChanged;
+            SelectionChangedNotify();
         }
     }
 

@@ -79,8 +79,9 @@ namespace Analogy
             p.Text = name + _count;
             p.TextTitle = name + _count;
             p.TextDescription = name + _count;
-
+            p.Font = this.Font;
             // Add the control for display inside the page
+            content.Font = this.Font;
             content.Dock = DockStyle.Fill;
             p.Controls.Add(content);
 
@@ -501,7 +502,6 @@ namespace Analogy
         private void AddToDockingManager(Control control, string title)
         {
             var page = NewDocument(control,title);
-           
             var workspace = kryptonDockingManager.AddToWorkspace("Workspace", new[] { page });
 
 

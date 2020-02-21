@@ -105,6 +105,7 @@ namespace Analogy
             this.chkbIncludeText = new System.Windows.Forms.CheckBox();
             this.pboxInfo = new System.Windows.Forms.PictureBox();
             this.sbtnPreDefinedFilters = new System.Windows.Forms.Button();
+            this.groupBoxLevels = new System.Windows.Forms.GroupBox();
             this.rbVerbose = new System.Windows.Forms.RadioButton();
             this.rbDebug = new System.Windows.Forms.RadioButton();
             this.rbWarning = new System.Windows.Forms.RadioButton();
@@ -185,7 +186,6 @@ namespace Analogy
             this.tsddbExport = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsmiExportExcel = new System.Windows.Forms.ToolStripMenuItem();
             this.tsBDataVisualizer = new System.Windows.Forms.ToolStripButton();
-            this.groupBoxLevels = new System.Windows.Forms.GroupBox();
             this.cmsMessageOperation.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlButtonsHighlight.SuspendLayout();
@@ -209,6 +209,7 @@ namespace Analogy
             this.spltText.Panel1.SuspendLayout();
             this.spltText.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxInfo)).BeginInit();
+            this.groupBoxLevels.SuspendLayout();
             this.tsMessageInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGridBookmarks)).BeginInit();
             this.tsBookmark.SuspendLayout();
@@ -226,7 +227,6 @@ namespace Analogy
             this.tabControlMain.SuspendLayout();
             this.tabPageLogs.SuspendLayout();
             this.tsTop.SuspendLayout();
-            this.groupBoxLevels.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmsMessageOperation
@@ -448,10 +448,10 @@ namespace Analogy
             this.panel1.Controls.Add(this.pnlButtonsHighlight);
             this.panel1.Controls.Add(this.chkbHighlight);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 247);
+            this.panel1.Location = new System.Drawing.Point(0, 368);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1269, 26);
+            this.panel1.Size = new System.Drawing.Size(1429, 32);
             this.panel1.TabIndex = 4;
             // 
             // cbHighlights
@@ -459,9 +459,9 @@ namespace Analogy
             this.cbHighlights.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbHighlights.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHighlights.Location = new System.Drawing.Point(226, 0);
-            this.cbHighlights.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cbHighlights.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cbHighlights.Name = "cbHighlights";
-            this.cbHighlights.Size = new System.Drawing.Size(364, 28);
+            this.cbHighlights.Size = new System.Drawing.Size(439, 28);
             this.cbHighlights.TabIndex = 44;
             // 
             // sbtnMoreHighlight
@@ -469,10 +469,10 @@ namespace Analogy
             this.sbtnMoreHighlight.AccessibleName = "Button";
             this.sbtnMoreHighlight.Dock = System.Windows.Forms.DockStyle.Right;
             this.sbtnMoreHighlight.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.sbtnMoreHighlight.Location = new System.Drawing.Point(590, 0);
-            this.sbtnMoreHighlight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sbtnMoreHighlight.Location = new System.Drawing.Point(665, 0);
+            this.sbtnMoreHighlight.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.sbtnMoreHighlight.Name = "sbtnMoreHighlight";
-            this.sbtnMoreHighlight.Size = new System.Drawing.Size(95, 26);
+            this.sbtnMoreHighlight.Size = new System.Drawing.Size(107, 32);
             this.sbtnMoreHighlight.TabIndex = 43;
             this.sbtnMoreHighlight.Text = "More ...";
             this.sbtnMoreHighlight.Click += new System.EventHandler(this.sbtnMoreHighlight_Click);
@@ -485,10 +485,10 @@ namespace Analogy
             this.pnlButtonsHighlight.Controls.Add(this.btnPageNext);
             this.pnlButtonsHighlight.Controls.Add(this.btnLastPage);
             this.pnlButtonsHighlight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlButtonsHighlight.Location = new System.Drawing.Point(685, 0);
+            this.pnlButtonsHighlight.Location = new System.Drawing.Point(772, 0);
             this.pnlButtonsHighlight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlButtonsHighlight.Name = "pnlButtonsHighlight";
-            this.pnlButtonsHighlight.Size = new System.Drawing.Size(584, 26);
+            this.pnlButtonsHighlight.Size = new System.Drawing.Size(657, 32);
             this.pnlButtonsHighlight.TabIndex = 12;
             // 
             // btnPageFirst
@@ -496,10 +496,10 @@ namespace Analogy
             this.btnPageFirst.AccessibleName = "Button";
             this.btnPageFirst.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnPageFirst.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.btnPageFirst.Location = new System.Drawing.Point(27, 0);
-            this.btnPageFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPageFirst.Location = new System.Drawing.Point(30, 0);
+            this.btnPageFirst.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnPageFirst.Name = "btnPageFirst";
-            this.btnPageFirst.Size = new System.Drawing.Size(99, 26);
+            this.btnPageFirst.Size = new System.Drawing.Size(111, 32);
             this.btnPageFirst.TabIndex = 42;
             this.btnPageFirst.Text = "First Page ";
             this.btnPageFirst.Click += new System.EventHandler(this.btnPageFirst_Click);
@@ -509,10 +509,10 @@ namespace Analogy
             this.btnPagePrevious.AccessibleName = "Button";
             this.btnPagePrevious.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnPagePrevious.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.btnPagePrevious.Location = new System.Drawing.Point(126, 0);
-            this.btnPagePrevious.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPagePrevious.Location = new System.Drawing.Point(142, 0);
+            this.btnPagePrevious.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnPagePrevious.Name = "btnPagePrevious";
-            this.btnPagePrevious.Size = new System.Drawing.Size(146, 26);
+            this.btnPagePrevious.Size = new System.Drawing.Size(164, 32);
             this.btnPagePrevious.TabIndex = 43;
             this.btnPagePrevious.Text = "previous page";
             this.btnPagePrevious.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -521,9 +521,9 @@ namespace Analogy
             // lblPageNumber
             // 
             this.lblPageNumber.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblPageNumber.Location = new System.Drawing.Point(272, 0);
+            this.lblPageNumber.Location = new System.Drawing.Point(306, 0);
             this.lblPageNumber.Name = "lblPageNumber";
-            this.lblPageNumber.Size = new System.Drawing.Size(118, 26);
+            this.lblPageNumber.Size = new System.Drawing.Size(133, 32);
             this.lblPageNumber.TabIndex = 6;
             this.lblPageNumber.Text = "Page 1 / 1";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -533,10 +533,10 @@ namespace Analogy
             this.btnPageNext.AccessibleName = "Button";
             this.btnPageNext.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnPageNext.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.btnPageNext.Location = new System.Drawing.Point(390, 0);
-            this.btnPageNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPageNext.Location = new System.Drawing.Point(439, 0);
+            this.btnPageNext.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnPageNext.Name = "btnPageNext";
-            this.btnPageNext.Size = new System.Drawing.Size(99, 26);
+            this.btnPageNext.Size = new System.Drawing.Size(111, 32);
             this.btnPageNext.TabIndex = 45;
             this.btnPageNext.Text = "Next Page";
             this.btnPageNext.Click += new System.EventHandler(this.btnPageNext_Click);
@@ -546,10 +546,10 @@ namespace Analogy
             this.btnLastPage.AccessibleName = "Button";
             this.btnLastPage.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnLastPage.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.btnLastPage.Location = new System.Drawing.Point(489, 0);
-            this.btnLastPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLastPage.Location = new System.Drawing.Point(550, 0);
+            this.btnLastPage.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnLastPage.Name = "btnLastPage";
-            this.btnLastPage.Size = new System.Drawing.Size(95, 26);
+            this.btnLastPage.Size = new System.Drawing.Size(107, 32);
             this.btnLastPage.TabIndex = 44;
             this.btnLastPage.Text = "Last Page";
             this.btnLastPage.Click += new System.EventHandler(this.btnLastPage_Click);
@@ -561,7 +561,7 @@ namespace Analogy
             this.chkbHighlight.Location = new System.Drawing.Point(0, 0);
             this.chkbHighlight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkbHighlight.Name = "chkbHighlight";
-            this.chkbHighlight.Size = new System.Drawing.Size(226, 26);
+            this.chkbHighlight.Size = new System.Drawing.Size(226, 32);
             this.chkbHighlight.TabIndex = 11;
             this.chkbHighlight.Text = "Highlight lines that contains:";
             this.chkbHighlight.UseVisualStyleBackColor = true;
@@ -575,7 +575,7 @@ namespace Analogy
             this.pnlTopFiltering.Location = new System.Drawing.Point(0, 0);
             this.pnlTopFiltering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTopFiltering.Name = "pnlTopFiltering";
-            this.pnlTopFiltering.Size = new System.Drawing.Size(1269, 175);
+            this.pnlTopFiltering.Size = new System.Drawing.Size(1429, 192);
             this.pnlTopFiltering.TabIndex = 3;
             // 
             // pnlFilteringLeft
@@ -589,14 +589,14 @@ namespace Analogy
             this.pnlFilteringLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlFilteringLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlFilteringLeft.Name = "pnlFilteringLeft";
-            this.pnlFilteringLeft.Size = new System.Drawing.Size(1115, 175);
+            this.pnlFilteringLeft.Size = new System.Drawing.Size(1256, 192);
             this.pnlFilteringLeft.TabIndex = 20;
             // 
             // spltcDateFiltering
             // 
             this.spltcDateFiltering.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spltcDateFiltering.Location = new System.Drawing.Point(3, 124);
+            this.spltcDateFiltering.Location = new System.Drawing.Point(3, 155);
             this.spltcDateFiltering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spltcDateFiltering.Name = "spltcDateFiltering";
             // 
@@ -608,7 +608,7 @@ namespace Analogy
             this.spltcDateFiltering.Panel1.Controls.Add(this.chkDateNewerThan);
             this.spltcDateFiltering.Panel1.Controls.Add(this.pictureBox1);
             this.spltcDateFiltering.Panel2Collapsed = true;
-            this.spltcDateFiltering.Size = new System.Drawing.Size(1103, 25);
+            this.spltcDateFiltering.Size = new System.Drawing.Size(1243, 31);
             this.spltcDateFiltering.SplitterDistance = 138;
             this.spltcDateFiltering.SplitterWidth = 3;
             this.spltcDateFiltering.TabIndex = 27;
@@ -619,19 +619,20 @@ namespace Analogy
             this.deOlderThanFilter.CustomFormat = "yyyy.MM.dd HH:mm:ss";
             this.deOlderThanFilter.Dock = System.Windows.Forms.DockStyle.Left;
             this.deOlderThanFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.deOlderThanFilter.Location = new System.Drawing.Point(662, 0);
+            this.deOlderThanFilter.Location = new System.Drawing.Point(744, 0);
+            this.deOlderThanFilter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deOlderThanFilter.Name = "deOlderThanFilter";
-            this.deOlderThanFilter.Size = new System.Drawing.Size(269, 27);
+            this.deOlderThanFilter.Size = new System.Drawing.Size(302, 27);
             this.deOlderThanFilter.TabIndex = 28;
             // 
             // chkDateOlderThan
             // 
             this.chkDateOlderThan.Dock = System.Windows.Forms.DockStyle.Left;
-            this.chkDateOlderThan.Location = new System.Drawing.Point(534, 0);
+            this.chkDateOlderThan.Location = new System.Drawing.Point(600, 0);
             this.chkDateOlderThan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkDateOlderThan.Name = "chkDateOlderThan";
-            this.chkDateOlderThan.Padding = new System.Windows.Forms.Padding(46, 0, 0, 0);
-            this.chkDateOlderThan.Size = new System.Drawing.Size(128, 25);
+            this.chkDateOlderThan.Padding = new System.Windows.Forms.Padding(52, 0, 0, 0);
+            this.chkDateOlderThan.Size = new System.Drawing.Size(144, 31);
             this.chkDateOlderThan.TabIndex = 26;
             this.chkDateOlderThan.Text = "And:";
             this.chkDateOlderThan.UseVisualStyleBackColor = true;
@@ -643,18 +644,19 @@ namespace Analogy
             this.deNewerThanFilter.CustomFormat = "yyyy.MM.dd HH:mm:ss";
             this.deNewerThanFilter.Dock = System.Windows.Forms.DockStyle.Left;
             this.deNewerThanFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.deNewerThanFilter.Location = new System.Drawing.Point(265, 0);
+            this.deNewerThanFilter.Location = new System.Drawing.Point(298, 0);
+            this.deNewerThanFilter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deNewerThanFilter.Name = "deNewerThanFilter";
-            this.deNewerThanFilter.Size = new System.Drawing.Size(269, 27);
+            this.deNewerThanFilter.Size = new System.Drawing.Size(302, 27);
             this.deNewerThanFilter.TabIndex = 27;
             // 
             // chkDateNewerThan
             // 
             this.chkDateNewerThan.Dock = System.Windows.Forms.DockStyle.Left;
-            this.chkDateNewerThan.Location = new System.Drawing.Point(22, 0);
+            this.chkDateNewerThan.Location = new System.Drawing.Point(25, 0);
             this.chkDateNewerThan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkDateNewerThan.Name = "chkDateNewerThan";
-            this.chkDateNewerThan.Size = new System.Drawing.Size(243, 25);
+            this.chkDateNewerThan.Size = new System.Drawing.Size(273, 31);
             this.chkDateNewerThan.TabIndex = 23;
             this.chkDateNewerThan.Text = "Time between:";
             this.chkDateNewerThan.UseVisualStyleBackColor = true;
@@ -667,7 +669,7 @@ namespace Analogy
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(25, 31);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
@@ -675,7 +677,7 @@ namespace Analogy
             // 
             this.spltcProcessesModule.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spltcProcessesModule.Location = new System.Drawing.Point(8, 94);
+            this.spltcProcessesModule.Location = new System.Drawing.Point(9, 118);
             this.spltcProcessesModule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spltcProcessesModule.Name = "spltcProcessesModule";
             // 
@@ -686,7 +688,7 @@ namespace Analogy
             this.spltcProcessesModule.Panel1.Controls.Add(this.sbtnUndockPerProcess);
             this.spltcProcessesModule.Panel1.Controls.Add(this.chkbModules);
             this.spltcProcessesModule.Panel2Collapsed = true;
-            this.spltcProcessesModule.Size = new System.Drawing.Size(1103, 25);
+            this.spltcProcessesModule.Size = new System.Drawing.Size(1243, 31);
             this.spltcProcessesModule.SplitterDistance = 138;
             this.spltcProcessesModule.SplitterWidth = 3;
             this.spltcProcessesModule.TabIndex = 26;
@@ -695,10 +697,10 @@ namespace Analogy
             // 
             this.cbModule.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbModule.Location = new System.Drawing.Point(314, 0);
-            this.cbModule.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cbModule.Location = new System.Drawing.Point(353, 0);
+            this.cbModule.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cbModule.Name = "cbModule";
-            this.cbModule.Size = new System.Drawing.Size(486, 28);
+            this.cbModule.Size = new System.Drawing.Size(549, 28);
             this.cbModule.TabIndex = 27;
             // 
             // btnModules
@@ -707,10 +709,10 @@ namespace Analogy
             this.btnModules.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnModules.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnModules.Image = ((System.Drawing.Image)(resources.GetObject("btnModules.Image")));
-            this.btnModules.Location = new System.Drawing.Point(800, 0);
+            this.btnModules.Location = new System.Drawing.Point(902, 0);
             this.btnModules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(26, 25);
+            this.btnModules.Size = new System.Drawing.Size(29, 31);
             this.btnModules.TabIndex = 24;
             // 
             // sbtnUndockPerProcess
@@ -719,11 +721,11 @@ namespace Analogy
             this.sbtnUndockPerProcess.AutoSize = true;
             this.sbtnUndockPerProcess.Dock = System.Windows.Forms.DockStyle.Right;
             this.sbtnUndockPerProcess.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.sbtnUndockPerProcess.Location = new System.Drawing.Point(826, 0);
+            this.sbtnUndockPerProcess.Location = new System.Drawing.Point(931, 0);
             this.sbtnUndockPerProcess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sbtnUndockPerProcess.Name = "sbtnUndockPerProcess";
-            this.sbtnUndockPerProcess.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.sbtnUndockPerProcess.Size = new System.Drawing.Size(277, 25);
+            this.sbtnUndockPerProcess.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
+            this.sbtnUndockPerProcess.Size = new System.Drawing.Size(312, 31);
             this.sbtnUndockPerProcess.TabIndex = 24;
             this.sbtnUndockPerProcess.Text = "Split view per Process/Module";
             this.sbtnUndockPerProcess.Click += new System.EventHandler(this.sbtnUndockPerProcess_Click);
@@ -734,7 +736,7 @@ namespace Analogy
             this.chkbModules.Location = new System.Drawing.Point(0, 0);
             this.chkbModules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkbModules.Name = "chkbModules";
-            this.chkbModules.Size = new System.Drawing.Size(314, 25);
+            this.chkbModules.Size = new System.Drawing.Size(353, 31);
             this.chkbModules.TabIndex = 25;
             this.chkbModules.Text = "Include/Exclude Processes/Modules:";
             this.chkbModules.UseVisualStyleBackColor = true;
@@ -743,7 +745,7 @@ namespace Analogy
             // 
             this.spltcSources.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spltcSources.Location = new System.Drawing.Point(8, 65);
+            this.spltcSources.Location = new System.Drawing.Point(9, 81);
             this.spltcSources.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spltcSources.Name = "spltcSources";
             // 
@@ -754,7 +756,7 @@ namespace Analogy
             this.spltcSources.Panel1.Controls.Add(this.chkbSources);
             this.spltcSources.Panel1.Controls.Add(this.pboxInfoExclude);
             this.spltcSources.Panel2Collapsed = true;
-            this.spltcSources.Size = new System.Drawing.Size(1103, 25);
+            this.spltcSources.Size = new System.Drawing.Size(1243, 31);
             this.spltcSources.SplitterDistance = 138;
             this.spltcSources.SplitterWidth = 3;
             this.spltcSources.TabIndex = 25;
@@ -763,10 +765,10 @@ namespace Analogy
             // 
             this.cbSource.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSource.Location = new System.Drawing.Point(261, 0);
-            this.cbSource.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cbSource.Location = new System.Drawing.Point(294, 0);
+            this.cbSource.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cbSource.Name = "cbSource";
-            this.cbSource.Size = new System.Drawing.Size(816, 28);
+            this.cbSource.Size = new System.Drawing.Size(920, 28);
             this.cbSource.TabIndex = 27;
             // 
             // btnSources
@@ -775,19 +777,19 @@ namespace Analogy
             this.btnSources.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSources.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnSources.Image = ((System.Drawing.Image)(resources.GetObject("btnSources.Image")));
-            this.btnSources.Location = new System.Drawing.Point(1077, 0);
+            this.btnSources.Location = new System.Drawing.Point(1214, 0);
             this.btnSources.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSources.Name = "btnSources";
-            this.btnSources.Size = new System.Drawing.Size(26, 25);
+            this.btnSources.Size = new System.Drawing.Size(29, 31);
             this.btnSources.TabIndex = 24;
             // 
             // chkbSources
             // 
             this.chkbSources.Dock = System.Windows.Forms.DockStyle.Left;
-            this.chkbSources.Location = new System.Drawing.Point(22, 0);
+            this.chkbSources.Location = new System.Drawing.Point(25, 0);
             this.chkbSources.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkbSources.Name = "chkbSources";
-            this.chkbSources.Size = new System.Drawing.Size(239, 25);
+            this.chkbSources.Size = new System.Drawing.Size(269, 31);
             this.chkbSources.TabIndex = 23;
             this.chkbSources.Text = "Include/Exclude Sources:";
             this.chkbSources.UseVisualStyleBackColor = true;
@@ -799,7 +801,7 @@ namespace Analogy
             this.pboxInfoExclude.Location = new System.Drawing.Point(0, 0);
             this.pboxInfoExclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pboxInfoExclude.Name = "pboxInfoExclude";
-            this.pboxInfoExclude.Size = new System.Drawing.Size(22, 25);
+            this.pboxInfoExclude.Size = new System.Drawing.Size(25, 31);
             this.pboxInfoExclude.TabIndex = 15;
             this.pboxInfoExclude.TabStop = false;
             // 
@@ -807,7 +809,7 @@ namespace Analogy
             // 
             this.spltTextExclude.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spltTextExclude.Location = new System.Drawing.Point(8, 37);
+            this.spltTextExclude.Location = new System.Drawing.Point(9, 46);
             this.spltTextExclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spltTextExclude.Name = "spltTextExclude";
             // 
@@ -818,7 +820,7 @@ namespace Analogy
             this.spltTextExclude.Panel1.Controls.Add(this.sBtnMostCommon);
             this.spltTextExclude.Panel1.Controls.Add(this.chkExclude);
             this.spltTextExclude.Panel2Collapsed = true;
-            this.spltTextExclude.Size = new System.Drawing.Size(1103, 25);
+            this.spltTextExclude.Size = new System.Drawing.Size(1243, 31);
             this.spltTextExclude.SplitterDistance = 138;
             this.spltTextExclude.SplitterWidth = 3;
             this.spltTextExclude.TabIndex = 24;
@@ -828,9 +830,9 @@ namespace Analogy
             this.cbExclude.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbExclude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbExclude.Location = new System.Drawing.Point(132, 0);
-            this.cbExclude.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cbExclude.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cbExclude.Name = "cbExclude";
-            this.cbExclude.Size = new System.Drawing.Size(808, 28);
+            this.cbExclude.Size = new System.Drawing.Size(928, 28);
             this.cbExclude.TabIndex = 27;
             // 
             // btnTextExclude
@@ -839,10 +841,10 @@ namespace Analogy
             this.btnTextExclude.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTextExclude.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnTextExclude.Image = ((System.Drawing.Image)(resources.GetObject("btnTextExclude.Image")));
-            this.btnTextExclude.Location = new System.Drawing.Point(940, 0);
+            this.btnTextExclude.Location = new System.Drawing.Point(1060, 0);
             this.btnTextExclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTextExclude.Name = "btnTextExclude";
-            this.btnTextExclude.Size = new System.Drawing.Size(26, 25);
+            this.btnTextExclude.Size = new System.Drawing.Size(29, 31);
             this.btnTextExclude.TabIndex = 20;
             // 
             // sBtnMostCommon
@@ -850,10 +852,10 @@ namespace Analogy
             this.sBtnMostCommon.AccessibleName = "Button";
             this.sBtnMostCommon.Dock = System.Windows.Forms.DockStyle.Right;
             this.sBtnMostCommon.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.sBtnMostCommon.Location = new System.Drawing.Point(966, 0);
+            this.sBtnMostCommon.Location = new System.Drawing.Point(1089, 0);
             this.sBtnMostCommon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sBtnMostCommon.Name = "sBtnMostCommon";
-            this.sBtnMostCommon.Size = new System.Drawing.Size(137, 25);
+            this.sBtnMostCommon.Size = new System.Drawing.Size(154, 31);
             this.sBtnMostCommon.TabIndex = 8;
             this.sBtnMostCommon.Text = "Most Common";
             this.sBtnMostCommon.Click += new System.EventHandler(this.sBtnMostCommon_Click);
@@ -865,7 +867,7 @@ namespace Analogy
             this.chkExclude.Location = new System.Drawing.Point(0, 0);
             this.chkExclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkExclude.Name = "chkExclude";
-            this.chkExclude.Size = new System.Drawing.Size(132, 25);
+            this.chkExclude.Size = new System.Drawing.Size(132, 31);
             this.chkExclude.TabIndex = 10;
             this.chkExclude.Text = "Exclude Text:   ";
             this.chkExclude.UseVisualStyleBackColor = true;
@@ -875,7 +877,7 @@ namespace Analogy
             // 
             this.spltText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spltText.Location = new System.Drawing.Point(8, 7);
+            this.spltText.Location = new System.Drawing.Point(9, 9);
             this.spltText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spltText.Name = "spltText";
             // 
@@ -887,7 +889,7 @@ namespace Analogy
             this.spltText.Panel1.Controls.Add(this.pboxInfo);
             this.spltText.Panel1.Controls.Add(this.sbtnPreDefinedFilters);
             this.spltText.Panel2Collapsed = true;
-            this.spltText.Size = new System.Drawing.Size(1103, 25);
+            this.spltText.Size = new System.Drawing.Size(1243, 31);
             this.spltText.SplitterDistance = 138;
             this.spltText.SplitterWidth = 3;
             this.spltText.TabIndex = 22;
@@ -896,10 +898,10 @@ namespace Analogy
             // 
             this.cbInclude.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbInclude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbInclude.Location = new System.Drawing.Point(135, 0);
-            this.cbInclude.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cbInclude.Location = new System.Drawing.Point(137, 0);
+            this.cbInclude.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.cbInclude.Name = "cbInclude";
-            this.cbInclude.Size = new System.Drawing.Size(916, 28);
+            this.cbInclude.Size = new System.Drawing.Size(1048, 28);
             this.cbInclude.TabIndex = 26;
             // 
             // btnTextInclude
@@ -908,20 +910,20 @@ namespace Analogy
             this.btnTextInclude.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTextInclude.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.btnTextInclude.Image = ((System.Drawing.Image)(resources.GetObject("btnTextInclude.Image")));
-            this.btnTextInclude.Location = new System.Drawing.Point(1051, 0);
+            this.btnTextInclude.Location = new System.Drawing.Point(1185, 0);
             this.btnTextInclude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTextInclude.Name = "btnTextInclude";
-            this.btnTextInclude.Size = new System.Drawing.Size(26, 25);
+            this.btnTextInclude.Size = new System.Drawing.Size(29, 31);
             this.btnTextInclude.TabIndex = 20;
             // 
             // chkbIncludeText
             // 
             this.chkbIncludeText.AutoSize = true;
             this.chkbIncludeText.Dock = System.Windows.Forms.DockStyle.Left;
-            this.chkbIncludeText.Location = new System.Drawing.Point(18, 0);
+            this.chkbIncludeText.Location = new System.Drawing.Point(20, 0);
             this.chkbIncludeText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkbIncludeText.Name = "chkbIncludeText";
-            this.chkbIncludeText.Size = new System.Drawing.Size(117, 25);
+            this.chkbIncludeText.Size = new System.Drawing.Size(117, 31);
             this.chkbIncludeText.TabIndex = 9;
             this.chkbIncludeText.Text = "Include Text:";
             this.chkbIncludeText.UseVisualStyleBackColor = true;
@@ -935,7 +937,7 @@ namespace Analogy
             this.pboxInfo.Location = new System.Drawing.Point(0, 0);
             this.pboxInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pboxInfo.Name = "pboxInfo";
-            this.pboxInfo.Size = new System.Drawing.Size(18, 25);
+            this.pboxInfo.Size = new System.Drawing.Size(20, 31);
             this.pboxInfo.TabIndex = 12;
             this.pboxInfo.TabStop = false;
             // 
@@ -945,20 +947,39 @@ namespace Analogy
             this.sbtnPreDefinedFilters.Dock = System.Windows.Forms.DockStyle.Right;
             this.sbtnPreDefinedFilters.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.sbtnPreDefinedFilters.Image = global::Analogy.Properties.Resources.SingleMasterFilter_16x16;
-            this.sbtnPreDefinedFilters.Location = new System.Drawing.Point(1077, 0);
+            this.sbtnPreDefinedFilters.Location = new System.Drawing.Point(1214, 0);
             this.sbtnPreDefinedFilters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sbtnPreDefinedFilters.Name = "sbtnPreDefinedFilters";
-            this.sbtnPreDefinedFilters.Size = new System.Drawing.Size(26, 25);
+            this.sbtnPreDefinedFilters.Size = new System.Drawing.Size(29, 31);
             this.sbtnPreDefinedFilters.TabIndex = 21;
             this.sbtnPreDefinedFilters.Click += new System.EventHandler(this.sbtnPreDefinedFilters_Click);
+            // 
+            // groupBoxLevels
+            // 
+            this.groupBoxLevels.Controls.Add(this.rbVerbose);
+            this.groupBoxLevels.Controls.Add(this.rbDebug);
+            this.groupBoxLevels.Controls.Add(this.rbWarning);
+            this.groupBoxLevels.Controls.Add(this.rbErrorCritical);
+            this.groupBoxLevels.Controls.Add(this.rbTrace);
+            this.groupBoxLevels.Controls.Add(this.rbAllLevel);
+            this.groupBoxLevels.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBoxLevels.Location = new System.Drawing.Point(1256, 0);
+            this.groupBoxLevels.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBoxLevels.Name = "groupBoxLevels";
+            this.groupBoxLevels.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBoxLevels.Size = new System.Drawing.Size(173, 192);
+            this.groupBoxLevels.TabIndex = 28;
+            this.groupBoxLevels.TabStop = false;
+            this.groupBoxLevels.Text = "Log Levels";
             // 
             // rbVerbose
             // 
             this.rbVerbose.AutoSize = true;
             this.rbVerbose.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbVerbose.Location = new System.Drawing.Point(3, 143);
+            this.rbVerbose.Location = new System.Drawing.Point(3, 144);
+            this.rbVerbose.Margin = new System.Windows.Forms.Padding(0);
             this.rbVerbose.Name = "rbVerbose";
-            this.rbVerbose.Size = new System.Drawing.Size(148, 24);
+            this.rbVerbose.Size = new System.Drawing.Size(167, 24);
             this.rbVerbose.TabIndex = 28;
             this.rbVerbose.Text = "Verbose";
             // 
@@ -966,9 +987,10 @@ namespace Analogy
             // 
             this.rbDebug.AutoSize = true;
             this.rbDebug.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbDebug.Location = new System.Drawing.Point(3, 119);
+            this.rbDebug.Location = new System.Drawing.Point(3, 120);
+            this.rbDebug.Margin = new System.Windows.Forms.Padding(0);
             this.rbDebug.Name = "rbDebug";
-            this.rbDebug.Size = new System.Drawing.Size(148, 24);
+            this.rbDebug.Size = new System.Drawing.Size(167, 24);
             this.rbDebug.TabIndex = 27;
             this.rbDebug.Text = "Debug";
             // 
@@ -976,9 +998,10 @@ namespace Analogy
             // 
             this.rbWarning.AutoSize = true;
             this.rbWarning.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbWarning.Location = new System.Drawing.Point(3, 95);
+            this.rbWarning.Location = new System.Drawing.Point(3, 96);
+            this.rbWarning.Margin = new System.Windows.Forms.Padding(0);
             this.rbWarning.Name = "rbWarning";
-            this.rbWarning.Size = new System.Drawing.Size(148, 24);
+            this.rbWarning.Size = new System.Drawing.Size(167, 24);
             this.rbWarning.TabIndex = 26;
             this.rbWarning.Text = "Warning";
             // 
@@ -986,9 +1009,10 @@ namespace Analogy
             // 
             this.rbErrorCritical.AutoSize = true;
             this.rbErrorCritical.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbErrorCritical.Location = new System.Drawing.Point(3, 71);
+            this.rbErrorCritical.Location = new System.Drawing.Point(3, 72);
+            this.rbErrorCritical.Margin = new System.Windows.Forms.Padding(0);
             this.rbErrorCritical.Name = "rbErrorCritical";
-            this.rbErrorCritical.Size = new System.Drawing.Size(148, 24);
+            this.rbErrorCritical.Size = new System.Drawing.Size(167, 24);
             this.rbErrorCritical.TabIndex = 25;
             this.rbErrorCritical.Text = "Errors + Critical";
             // 
@@ -996,9 +1020,10 @@ namespace Analogy
             // 
             this.rbTrace.AutoSize = true;
             this.rbTrace.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbTrace.Location = new System.Drawing.Point(3, 47);
+            this.rbTrace.Location = new System.Drawing.Point(3, 48);
+            this.rbTrace.Margin = new System.Windows.Forms.Padding(0);
             this.rbTrace.Name = "rbTrace";
-            this.rbTrace.Size = new System.Drawing.Size(148, 24);
+            this.rbTrace.Size = new System.Drawing.Size(167, 24);
             this.rbTrace.TabIndex = 24;
             this.rbTrace.Text = "Trace";
             // 
@@ -1007,9 +1032,10 @@ namespace Analogy
             this.rbAllLevel.AutoSize = true;
             this.rbAllLevel.Checked = true;
             this.rbAllLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbAllLevel.Location = new System.Drawing.Point(3, 23);
+            this.rbAllLevel.Location = new System.Drawing.Point(3, 24);
+            this.rbAllLevel.Margin = new System.Windows.Forms.Padding(0);
             this.rbAllLevel.Name = "rbAllLevel";
-            this.rbAllLevel.Size = new System.Drawing.Size(148, 24);
+            this.rbAllLevel.Size = new System.Drawing.Size(167, 24);
             this.rbAllLevel.TabIndex = 23;
             this.rbAllLevel.TabStop = true;
             this.rbAllLevel.Text = "All";
@@ -1025,7 +1051,7 @@ namespace Analogy
             this.tbMessageInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbMessageInfo.Name = "tbMessageInfo";
             this.tbMessageInfo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.tbMessageInfo.Size = new System.Drawing.Size(1261, 181);
+            this.tbMessageInfo.Size = new System.Drawing.Size(1421, 199);
             this.tbMessageInfo.TabIndex = 14;
             this.tbMessageInfo.Text = "";
             // 
@@ -1039,7 +1065,7 @@ namespace Analogy
             this.tsMessageInfo.Location = new System.Drawing.Point(0, 0);
             this.tsMessageInfo.Name = "tsMessageInfo";
             this.tsMessageInfo.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tsMessageInfo.Size = new System.Drawing.Size(1261, 31);
+            this.tsMessageInfo.Size = new System.Drawing.Size(1421, 31);
             this.tsMessageInfo.TabIndex = 4;
             // 
             // tsBtnMessageInfoCopy
@@ -1047,7 +1073,7 @@ namespace Analogy
             this.tsBtnMessageInfoCopy.Image = global::Analogy.Properties.Resources.Copy_16x16;
             this.tsBtnMessageInfoCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnMessageInfoCopy.Name = "tsBtnMessageInfoCopy";
-            this.tsBtnMessageInfoCopy.Size = new System.Drawing.Size(67, 28);
+            this.tsBtnMessageInfoCopy.Size = new System.Drawing.Size(67, 24);
             this.tsBtnMessageInfoCopy.Text = "Copy";
             // 
             // sfDataGridBookmarks
@@ -1075,7 +1101,7 @@ namespace Analogy
             this.sfDataGridBookmarks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridBookmarks.Name = "sfDataGridBookmarks";
             this.sfDataGridBookmarks.RowHeadersWidth = 51;
-            this.sfDataGridBookmarks.Size = new System.Drawing.Size(1261, 189);
+            this.sfDataGridBookmarks.Size = new System.Drawing.Size(1420, 269);
             this.sfDataGridBookmarks.TabIndex = 6;
             this.sfDataGridBookmarks.Text = "Bookmarks";
             // 
@@ -1181,7 +1207,7 @@ namespace Analogy
             this.tsBtnBookmarkGoToOriginal});
             this.tsBookmark.Location = new System.Drawing.Point(0, 0);
             this.tsBookmark.Name = "tsBookmark";
-            this.tsBookmark.Size = new System.Drawing.Size(1261, 27);
+            this.tsBookmark.Size = new System.Drawing.Size(1420, 27);
             this.tsBookmark.TabIndex = 5;
             // 
             // tsBtnBookmarkCopySingle
@@ -1189,7 +1215,7 @@ namespace Analogy
             this.tsBtnBookmarkCopySingle.Image = global::Analogy.Properties.Resources.Copy_16x16;
             this.tsBtnBookmarkCopySingle.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkCopySingle.Name = "tsBtnBookmarkCopySingle";
-            this.tsBtnBookmarkCopySingle.Size = new System.Drawing.Size(190, 24);
+            this.tsBtnBookmarkCopySingle.Size = new System.Drawing.Size(190, 28);
             this.tsBtnBookmarkCopySingle.Text = "Copy Selected Message";
             // 
             // tsBtnBookmarkCopyAll
@@ -1197,7 +1223,7 @@ namespace Analogy
             this.tsBtnBookmarkCopyAll.Image = global::Analogy.Properties.Resources.Copy_16x16;
             this.tsBtnBookmarkCopyAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkCopyAll.Name = "tsBtnBookmarkCopyAll";
-            this.tsBtnBookmarkCopyAll.Size = new System.Drawing.Size(202, 24);
+            this.tsBtnBookmarkCopyAll.Size = new System.Drawing.Size(202, 28);
             this.tsBtnBookmarkCopyAll.Text = "Copy all messages in grid";
             // 
             // tsBtnBookmarkClear
@@ -1205,7 +1231,7 @@ namespace Analogy
             this.tsBtnBookmarkClear.Image = global::Analogy.Properties.Resources.Clear_16x16;
             this.tsBtnBookmarkClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkClear.Name = "tsBtnBookmarkClear";
-            this.tsBtnBookmarkClear.Size = new System.Drawing.Size(144, 24);
+            this.tsBtnBookmarkClear.Size = new System.Drawing.Size(144, 28);
             this.tsBtnBookmarkClear.Text = "Clear Bookmarks";
             // 
             // tsBtnBookmarkGoToOriginal
@@ -1213,7 +1239,7 @@ namespace Analogy
             this.tsBtnBookmarkGoToOriginal.Image = global::Analogy.Properties.Resources.Stop_32x32;
             this.tsBtnBookmarkGoToOriginal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkGoToOriginal.Name = "tsBtnBookmarkGoToOriginal";
-            this.tsBtnBookmarkGoToOriginal.Size = new System.Drawing.Size(134, 24);
+            this.tsBtnBookmarkGoToOriginal.Size = new System.Drawing.Size(134, 28);
             this.tsBtnBookmarkGoToOriginal.Text = "Go To Message";
             // 
             // imageListBottom
@@ -1231,7 +1257,7 @@ namespace Analogy
             this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.progressBar1.MarqueeAnimationSpeed = 1;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(777, 23);
+            this.progressBar1.Size = new System.Drawing.Size(909, 29);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar1.TabIndex = 1;
             this.progressBar1.Visible = false;
@@ -1249,10 +1275,10 @@ namespace Analogy
             this.pnlBottom.Controls.Add(this.lblTotalMessages);
             this.pnlBottom.Controls.Add(this.btnCancel);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 562);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 710);
             this.pnlBottom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(1269, 23);
+            this.pnlBottom.Size = new System.Drawing.Size(1429, 29);
             this.pnlBottom.TabIndex = 3;
             // 
             // lblTotalMessagesAlert
@@ -1287,11 +1313,11 @@ namespace Analogy
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(1048, 0);
+            this.btnCancel.Location = new System.Drawing.Point(1180, 0);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.btnCancel.Size = new System.Drawing.Size(221, 23);
+            this.btnCancel.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
+            this.btnCancel.Size = new System.Drawing.Size(249, 29);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel Processing";
             this.btnCancel.Visible = false;
@@ -1316,9 +1342,9 @@ namespace Analogy
             // 
             this.splitContainerMain.Panel2.Controls.Add(this.tcBottom);
             this.splitContainerMain.Panel2.Text = "Panel2";
-            this.splitContainerMain.Size = new System.Drawing.Size(1269, 531);
-            this.splitContainerMain.SplitterDistance = 273;
-            this.splitContainerMain.SplitterWidth = 13;
+            this.splitContainerMain.Size = new System.Drawing.Size(1429, 679);
+            this.splitContainerMain.SplitterDistance = 400;
+            this.splitContainerMain.SplitterWidth = 16;
             this.splitContainerMain.TabIndex = 21;
             this.splitContainerMain.Text = "splitContainerControl1";
             // 
@@ -1326,9 +1352,10 @@ namespace Analogy
             // 
             this.pnlMessages.Controls.Add(this.sfDataGridMain);
             this.pnlMessages.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMessages.Location = new System.Drawing.Point(0, 175);
+            this.pnlMessages.Location = new System.Drawing.Point(0, 192);
+            this.pnlMessages.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlMessages.Name = "pnlMessages";
-            this.pnlMessages.Size = new System.Drawing.Size(1269, 72);
+            this.pnlMessages.Size = new System.Drawing.Size(1429, 176);
             this.pnlMessages.TabIndex = 7;
             // 
             // sfDataGridMain
@@ -1336,6 +1363,7 @@ namespace Analogy
             this.sfDataGridMain.AccessibleName = "Table";
             this.sfDataGridMain.AllowUserToAddRows = false;
             this.sfDataGridMain.AllowUserToDeleteRows = false;
+            this.sfDataGridMain.AllowUserToOrderColumns = true;
             this.sfDataGridMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.sfDataGridMain.ColumnHeadersHeight = 29;
             this.sfDataGridMain.ContextMenuStrip = this.cmsMessageOperation;
@@ -1344,7 +1372,7 @@ namespace Analogy
             this.sfDataGridMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridMain.Name = "sfDataGridMain";
             this.sfDataGridMain.RowHeadersWidth = 51;
-            this.sfDataGridMain.Size = new System.Drawing.Size(1269, 72);
+            this.sfDataGridMain.Size = new System.Drawing.Size(1429, 176);
             this.sfDataGridMain.TabIndex = 5;
             this.sfDataGridMain.Text = "sfDataGridMain";
             this.sfDataGridMain.StyleChanged += new System.EventHandler(this.sfDataGridMain_StyleChanged);
@@ -1355,9 +1383,10 @@ namespace Analogy
             this.tcBottom.Controls.Add(this.tabPageBookmarks);
             this.tcBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcBottom.Location = new System.Drawing.Point(0, 0);
+            this.tcBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tcBottom.Name = "tcBottom";
             this.tcBottom.SelectedIndex = 0;
-            this.tcBottom.Size = new System.Drawing.Size(1269, 245);
+            this.tcBottom.Size = new System.Drawing.Size(1429, 263);
             this.tcBottom.TabIndex = 7;
             // 
             // tabPageMessageInfo
@@ -1365,8 +1394,9 @@ namespace Analogy
             this.tabPageMessageInfo.Controls.Add(this.tbMessageInfo);
             this.tabPageMessageInfo.Controls.Add(this.tsMessageInfo);
             this.tabPageMessageInfo.Location = new System.Drawing.Point(4, 29);
+            this.tabPageMessageInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageMessageInfo.Name = "tabPageMessageInfo";
-            this.tabPageMessageInfo.Size = new System.Drawing.Size(1261, 212);
+            this.tabPageMessageInfo.Size = new System.Drawing.Size(1421, 230);
             this.tabPageMessageInfo.TabIndex = 1;
             this.tabPageMessageInfo.Text = "Message Info";
             // 
@@ -1374,9 +1404,10 @@ namespace Analogy
             // 
             this.tabPageBookmarks.Controls.Add(this.sfDataGridBookmarks);
             this.tabPageBookmarks.Controls.Add(this.tsBookmark);
-            this.tabPageBookmarks.Location = new System.Drawing.Point(4, 25);
+            this.tabPageBookmarks.Location = new System.Drawing.Point(4, 29);
+            this.tabPageBookmarks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageBookmarks.Name = "tabPageBookmarks";
-            this.tabPageBookmarks.Size = new System.Drawing.Size(1261, 216);
+            this.tabPageBookmarks.Size = new System.Drawing.Size(1420, 296);
             this.tabPageBookmarks.TabIndex = 2;
             this.tabPageBookmarks.Text = "Bookmarks";
             // 
@@ -1560,9 +1591,10 @@ namespace Analogy
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
+            this.tabControlMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(1277, 618);
+            this.tabControlMain.Size = new System.Drawing.Size(1437, 772);
             this.tabControlMain.TabIndex = 27;
             // 
             // tabPageLogs
@@ -1571,8 +1603,9 @@ namespace Analogy
             this.tabPageLogs.Controls.Add(this.pnlBottom);
             this.tabPageLogs.Controls.Add(this.tsTop);
             this.tabPageLogs.Location = new System.Drawing.Point(4, 29);
+            this.tabPageLogs.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageLogs.Name = "tabPageLogs";
-            this.tabPageLogs.Size = new System.Drawing.Size(1269, 585);
+            this.tabPageLogs.Size = new System.Drawing.Size(1429, 739);
             this.tabPageLogs.TabIndex = 1;
             this.tabPageLogs.Text = "Logs";
             // 
@@ -1591,7 +1624,7 @@ namespace Analogy
             this.tsTop.Location = new System.Drawing.Point(0, 0);
             this.tsTop.Name = "tsTop";
             this.tsTop.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tsTop.Size = new System.Drawing.Size(1269, 31);
+            this.tsTop.Size = new System.Drawing.Size(1429, 31);
             this.tsTop.TabIndex = 5;
             // 
             // tsTopClear
@@ -1599,7 +1632,7 @@ namespace Analogy
             this.tsTopClear.Image = global::Analogy.Properties.Resources.Delete_16x16;
             this.tsTopClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsTopClear.Name = "tsTopClear";
-            this.tsTopClear.Size = new System.Drawing.Size(96, 28);
+            this.tsTopClear.Size = new System.Drawing.Size(96, 24);
             this.tsTopClear.Text = "Clear Log";
             // 
             // tsddbSave
@@ -1610,7 +1643,7 @@ namespace Analogy
             this.tsddbSave.Image = global::Analogy.Properties.Resources.Save_16x16;
             this.tsddbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsddbSave.Name = "tsddbSave";
-            this.tsddbSave.Size = new System.Drawing.Size(103, 28);
+            this.tsddbSave.Size = new System.Drawing.Size(103, 24);
             this.tsddbSave.Text = "Save Log";
             // 
             // tsmiSaveFullLog
@@ -1663,7 +1696,7 @@ namespace Analogy
             this.tsddbUndock.Image = global::Analogy.Properties.Resources.FullscreenBlue16;
             this.tsddbUndock.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsddbUndock.Name = "tsddbUndock";
-            this.tsddbUndock.Size = new System.Drawing.Size(129, 28);
+            this.tsddbUndock.Size = new System.Drawing.Size(129, 24);
             this.tsddbUndock.Text = "Undock View";
             // 
             // tsmiUndockView
@@ -1683,7 +1716,7 @@ namespace Analogy
             this.tsbScreenshot.Image = global::Analogy.Properties.Resources.Icon_6;
             this.tsbScreenshot.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbScreenshot.Name = "tsbScreenshot";
-            this.tsbScreenshot.Size = new System.Drawing.Size(138, 28);
+            this.tsbScreenshot.Size = new System.Drawing.Size(138, 24);
             this.tsbScreenshot.Text = "Take Screenshot";
             // 
             // tsddbExport
@@ -1693,7 +1726,7 @@ namespace Analogy
             this.tsddbExport.Image = global::Analogy.Properties.Resources.Export_16x16;
             this.tsddbExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsddbExport.Name = "tsddbExport";
-            this.tsddbExport.Size = new System.Drawing.Size(86, 28);
+            this.tsddbExport.Size = new System.Drawing.Size(86, 24);
             this.tsddbExport.Text = "Export";
             // 
             // tsmiExportExcel
@@ -1713,30 +1746,15 @@ namespace Analogy
             this.tsBDataVisualizer.Text = "Data Visualizer";
             this.tsBDataVisualizer.Visible = false;
             // 
-            // groupBoxLevels
-            // 
-            this.groupBoxLevels.Controls.Add(this.rbVerbose);
-            this.groupBoxLevels.Controls.Add(this.rbDebug);
-            this.groupBoxLevels.Controls.Add(this.rbWarning);
-            this.groupBoxLevels.Controls.Add(this.rbErrorCritical);
-            this.groupBoxLevels.Controls.Add(this.rbTrace);
-            this.groupBoxLevels.Controls.Add(this.rbAllLevel);
-            this.groupBoxLevels.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBoxLevels.Location = new System.Drawing.Point(1115, 0);
-            this.groupBoxLevels.Name = "groupBoxLevels";
-            this.groupBoxLevels.Size = new System.Drawing.Size(154, 175);
-            this.groupBoxLevels.TabIndex = 28;
-            this.groupBoxLevels.TabStop = false;
-            this.groupBoxLevels.Text = "Log Levels";
-            // 
             // UCLogs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControlMain);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCLogs";
-            this.Size = new System.Drawing.Size(1277, 618);
+            this.Size = new System.Drawing.Size(1437, 772);
             this.Load += new System.EventHandler(this.UCLogs_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.UCLogs_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.UCLogs_DragEnter);
@@ -1767,6 +1785,8 @@ namespace Analogy
             ((System.ComponentModel.ISupportInitialize)(this.spltText)).EndInit();
             this.spltText.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pboxInfo)).EndInit();
+            this.groupBoxLevels.ResumeLayout(false);
+            this.groupBoxLevels.PerformLayout();
             this.tsMessageInfo.ResumeLayout(false);
             this.tsMessageInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGridBookmarks)).EndInit();
@@ -1791,8 +1811,6 @@ namespace Analogy
             this.tabPageLogs.PerformLayout();
             this.tsTop.ResumeLayout(false);
             this.tsTop.PerformLayout();
-            this.groupBoxLevels.ResumeLayout(false);
-            this.groupBoxLevels.PerformLayout();
             this.ResumeLayout(false);
 
         }

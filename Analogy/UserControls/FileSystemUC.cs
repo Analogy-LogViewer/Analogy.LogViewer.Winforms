@@ -32,41 +32,18 @@ namespace Analogy
         {
             InitializeComponent();
             tvFolderUC.FolderChanged += TvFolderUC_FolderChanged;
-            btnOpen.Click += (s, e) =>
-            {
-                if (lBoxFiles.SelectedItem != null)
-                {
-                    var filename = (lBoxFiles.SelectedItem as FileInfo)?.FullName;
-                    if (filename == null || !File.Exists(filename)) return;
-                    Process.Start("explorer.exe", "/select, \"" + filename + "\"");
-                }
-            };
+            
         }
 
         private void TvFolderUC_FolderChanged(object sender, FolderSelectionEventArgs e)
         {
-            lBoxFiles.SelectedIndexChanged -= lBoxFiles_SelectedIndexChanged;
-            DirectoryInfo dirInfo = new DirectoryInfo(e.SelectedFolderPath);
-            bool recursive = checkBoxRecursiveLoad.Checked;
-            List<FileInfo> fileInfos = (ZipFilesOnly ? dirInfo.GetFiles("*.zip").ToList() : DataProvider.GetSupportedFiles(dirInfo, recursive)).OrderByDescending(f => f.LastWriteTime).ToList();
-            lBoxFiles.DisplayMember = recursive ? "FullName" : "Name";
-            lBoxFiles.DataSource = fileInfos;
-            lBoxFiles.SelectedIndexChanged += lBoxFiles_SelectedIndexChanged;
-            SelectionChangedNotify();
+            fileListing1.FolderChanged(e.SelectedFolderPath);
+           
 
         }
-        private void lBoxFiles_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SelectionChangedNotify();
-        }
 
-        private void SelectionChangedNotify()
-        {
-            SelectionChanged?.Invoke(this,
-                new SelectionEventArgs(lBoxFiles.SelectedItems.Cast<FileInfo>().Select(f => f.FullName).ToList()));
-        }
-        public List<string> GetSelectedFileNames() =>
-            lBoxFiles.SelectedItems.Cast<FileInfo>().Select(f => f.FullName).ToList();
+        public List<string> GetSelectedFileNames() => fileListing1.GetSelectedFileNames();
+
 
     }
 

@@ -107,9 +107,9 @@ namespace Analogy
             this.listBoxClearHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxClearHistory.FormattingEnabled = true;
             this.listBoxClearHistory.ItemHeight = 16;
-            this.listBoxClearHistory.Location = new System.Drawing.Point(0, 27);
+            this.listBoxClearHistory.Location = new System.Drawing.Point(0, 31);
             this.listBoxClearHistory.Name = "listBoxClearHistory";
-            this.listBoxClearHistory.Size = new System.Drawing.Size(202, 673);
+            this.listBoxClearHistory.Size = new System.Drawing.Size(202, 669);
             this.listBoxClearHistory.TabIndex = 5;
             // 
             // toolStripEx1
@@ -122,7 +122,7 @@ namespace Analogy
             this.toolStripEx1.Location = new System.Drawing.Point(0, 0);
             this.toolStripEx1.Name = "toolStripEx1";
             this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStripEx1.Size = new System.Drawing.Size(202, 27);
+            this.toolStripEx1.Size = new System.Drawing.Size(202, 31);
             this.toolStripEx1.TabIndex = 6;
             this.toolStripEx1.Text = "toolStripEx1";
             // 
@@ -131,7 +131,7 @@ namespace Analogy
             this.btnClear.Image = global::Analogy.Properties.Resources.Clear_32x32;
             this.btnClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(67, 24);
+            this.btnClear.Size = new System.Drawing.Size(67, 28);
             this.btnClear.Text = "Clear";
             // 
             // btnHide
@@ -139,13 +139,14 @@ namespace Analogy
             this.btnHide.Image = global::Analogy.Properties.Resources.Prev_32x32;
             this.btnHide.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(65, 24);
+            this.btnHide.Size = new System.Drawing.Size(65, 28);
             this.btnHide.Text = "Hide";
             // 
             // ucLogs1
             // 
             this.ucLogs1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucLogs1.DoNotAddToRecentHistory = false;
+            this.ucLogs1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.ucLogs1.ForceNoFileCaching = false;
             this.ucLogs1.Location = new System.Drawing.Point(0, 0);
             this.ucLogs1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
