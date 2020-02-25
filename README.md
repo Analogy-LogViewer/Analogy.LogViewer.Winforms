@@ -41,20 +41,9 @@ After successfull build any custom data source assemblies should be placed at th
 
 Detailed Documentation will be added to the Wiki page.
 
-- Syncfusion User Controls:
-in order to compile this code [Syncfusion](https://www.syncfusion.com/) assemblies are required (winforms package only).
-
 # Data Providers
-The following  custom data providers exists:
-- [Confluent's Apache Kafka .NET client Producer and consumer to Analogy](https://github.com/LiorBanai/Analogy.LogViewer.KafkaProvider)
-- [NLog Parser with layout customization](https://github.com/Analogy-LogViewer/Analogy.LogViewer.NLog)
-- Windows event logs
-- [IIS log Parser](https://github.com/Analogy-LogViewer/Analogy.LogViewer.IISLogParser)
-- [RSS Reader](https://github.com/Analogy-LogViewer/Analogy.LogViewer.RSSReader)
 
-
-Data providers settings are managed in their own user setting windows
-![Data Providers settings screen](Assets/AnalogyDataProviders.jpg)
+List of data providers exist at the overview repository: https://github.com/Analogy-LogViewer/Overview
 
 # Usage
 
