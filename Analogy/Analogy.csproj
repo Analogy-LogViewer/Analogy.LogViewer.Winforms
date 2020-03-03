@@ -564,11 +564,11 @@
   <ItemGroup>
     <PackageReference Include="Analogy.DataProviders.Extensions" Version="1.0.4" />
     <PackageReference Include="Analogy.LogViewer.Example" Version="1.1.0" />
-    <PackageReference Include="Analogy.LogViewer.IISLogsProvider" Version="1.0.2" />
+    <PackageReference Include="Analogy.LogViewer.IISLogsProvider" Version="1.1.0" />
     <PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.1.8" />
-    <PackageReference Include="Analogy.LogViewer.NLogProvider" Version="1.0.4.1" />
+    <PackageReference Include="Analogy.LogViewer.NLogProvider" Version="1.0.5" />
     <PackageReference Include="Analogy.LogViewer.PlainTextParser" Version="1.0.5" />
-    <PackageReference Include="Analogy.LogViewer.RSSReader" Version="1.0.2" />
+    <PackageReference Include="Analogy.LogViewer.RSSReader" Version="1.1.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
