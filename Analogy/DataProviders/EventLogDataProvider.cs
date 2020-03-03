@@ -1,15 +1,13 @@
-﻿using System;
+﻿using Analogy.DataProviders;
+using Analogy.Interfaces;
+using Analogy.Interfaces.Factories;
+using Analogy.LogLoaders;
+using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Analogy.DataProviders;
-using Analogy.Interfaces;
-using Analogy.Interfaces.Factories;
-using Analogy.LogLoaders;
-using Analogy.Properties;
 
 namespace Analogy.DataSources
 {
@@ -20,7 +18,7 @@ namespace Analogy.DataSources
 
         public Guid FactoryID { get; } = ID;
         public string Title { get; } = "Windows Event logs";
-        public IAnalogyDataProvidersFactory DataProviders { get; }=new EventLogDataProviders();
+        public IAnalogyDataProvidersFactory DataProviders { get; } = new EventLogDataProviders();
         public IAnalogyCustomActionsFactory Actions { get; } = new EmptyActionsFactory();
         public IEnumerable<IAnalogyChangeLog> ChangeLog { get; } = CommonChangeLog.GetChangeLog();
         public IEnumerable<string> Contributors { get; } = new List<string> { "Lior Banai" };
@@ -54,8 +52,7 @@ namespace Analogy.DataSources
 
         public string InitialFolderFullPath { get; } =
             Path.Combine(Environment.ExpandEnvironmentVariables("%SystemRoot%"), "System32", "Winevt", "Logs");
-        public Image OptionalOpenFolderImage { get; } = Resources.OperatingSystem_16x16;
-        public Image OptionalOpenFilesImage { get; } = Resources.OperatingSystem_16x16;
+        public bool DisableFilePoolingOption { get; } = false;
 
         public async Task<IEnumerable<AnalogyLogMessage>> Process(string fileName, CancellationToken token, ILogMessageCreatedHandler messagesHandler)
         {
