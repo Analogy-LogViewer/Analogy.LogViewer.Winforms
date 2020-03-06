@@ -81,7 +81,7 @@ namespace Analogy
             // spltMain.Panel2
             // 
             this.spltMain.Panel2.Controls.Add(this.ucLogs1);
-            this.spltMain.Size = new System.Drawing.Size(1387, 700);
+            this.spltMain.Size = new System.Drawing.Size(1345, 700);
             this.spltMain.SplitterDistance = 409;
             this.spltMain.TabIndex = 5;
             // 
@@ -210,7 +210,7 @@ namespace Analogy
             this.ucLogs1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucLogs1.Name = "ucLogs1";
             this.ucLogs1.OnlineMode = false;
-            this.ucLogs1.Size = new System.Drawing.Size(974, 700);
+            this.ucLogs1.Size = new System.Drawing.Size(932, 700);
             this.ucLogs1.TabIndex = 0;
             // 
             // imageList
@@ -257,7 +257,7 @@ namespace Analogy
             this.Controls.Add(this.tsPrimary);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "OfflineUCLogs";
-            this.Size = new System.Drawing.Size(1387, 700);
+            this.Size = new System.Drawing.Size(1345, 700);
             this.Load += new System.EventHandler(this.OfflineUCLogs_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.AnalogyUCLogs_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.AnalogyUCLogs_DragEnter);

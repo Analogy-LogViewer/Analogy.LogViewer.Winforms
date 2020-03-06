@@ -448,7 +448,7 @@ namespace Analogy
             this.panel1.Controls.Add(this.pnlButtonsHighlight);
             this.panel1.Controls.Add(this.chkbHighlight);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 368);
+            this.panel1.Location = new System.Drawing.Point(0, 360);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1429, 32);
@@ -496,7 +496,7 @@ namespace Analogy
             this.btnPageFirst.AccessibleName = "Button";
             this.btnPageFirst.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnPageFirst.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.btnPageFirst.Location = new System.Drawing.Point(30, 0);
+            this.btnPageFirst.Location = new System.Drawing.Point(31, 0);
             this.btnPageFirst.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnPageFirst.Name = "btnPageFirst";
             this.btnPageFirst.Size = new System.Drawing.Size(111, 32);
@@ -619,7 +619,7 @@ namespace Analogy
             this.deOlderThanFilter.CustomFormat = "yyyy.MM.dd HH:mm:ss";
             this.deOlderThanFilter.Dock = System.Windows.Forms.DockStyle.Left;
             this.deOlderThanFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.deOlderThanFilter.Location = new System.Drawing.Point(744, 0);
+            this.deOlderThanFilter.Location = new System.Drawing.Point(575, 0);
             this.deOlderThanFilter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deOlderThanFilter.Name = "deOlderThanFilter";
             this.deOlderThanFilter.Size = new System.Drawing.Size(302, 27);
@@ -628,11 +628,11 @@ namespace Analogy
             // chkDateOlderThan
             // 
             this.chkDateOlderThan.Dock = System.Windows.Forms.DockStyle.Left;
-            this.chkDateOlderThan.Location = new System.Drawing.Point(600, 0);
+            this.chkDateOlderThan.Location = new System.Drawing.Point(478, 0);
             this.chkDateOlderThan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkDateOlderThan.Name = "chkDateOlderThan";
-            this.chkDateOlderThan.Padding = new System.Windows.Forms.Padding(52, 0, 0, 0);
-            this.chkDateOlderThan.Size = new System.Drawing.Size(144, 31);
+            this.chkDateOlderThan.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.chkDateOlderThan.Size = new System.Drawing.Size(97, 31);
             this.chkDateOlderThan.TabIndex = 26;
             this.chkDateOlderThan.Text = "And:";
             this.chkDateOlderThan.UseVisualStyleBackColor = true;
@@ -644,7 +644,7 @@ namespace Analogy
             this.deNewerThanFilter.CustomFormat = "yyyy.MM.dd HH:mm:ss";
             this.deNewerThanFilter.Dock = System.Windows.Forms.DockStyle.Left;
             this.deNewerThanFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.deNewerThanFilter.Location = new System.Drawing.Point(298, 0);
+            this.deNewerThanFilter.Location = new System.Drawing.Point(176, 0);
             this.deNewerThanFilter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deNewerThanFilter.Name = "deNewerThanFilter";
             this.deNewerThanFilter.Size = new System.Drawing.Size(302, 27);
@@ -656,7 +656,7 @@ namespace Analogy
             this.chkDateNewerThan.Location = new System.Drawing.Point(25, 0);
             this.chkDateNewerThan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkDateNewerThan.Name = "chkDateNewerThan";
-            this.chkDateNewerThan.Size = new System.Drawing.Size(273, 31);
+            this.chkDateNewerThan.Size = new System.Drawing.Size(151, 31);
             this.chkDateNewerThan.TabIndex = 23;
             this.chkDateNewerThan.Text = "Time between:";
             this.chkDateNewerThan.UseVisualStyleBackColor = true;
@@ -1047,11 +1047,11 @@ namespace Analogy
             this.tbMessageInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbMessageInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.tbMessageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.tbMessageInfo.Location = new System.Drawing.Point(0, 31);
+            this.tbMessageInfo.Location = new System.Drawing.Point(0, 27);
             this.tbMessageInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbMessageInfo.Name = "tbMessageInfo";
             this.tbMessageInfo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.tbMessageInfo.Size = new System.Drawing.Size(1421, 199);
+            this.tbMessageInfo.Size = new System.Drawing.Size(1421, 215);
             this.tbMessageInfo.TabIndex = 14;
             this.tbMessageInfo.Text = "";
             // 
@@ -1065,7 +1065,7 @@ namespace Analogy
             this.tsMessageInfo.Location = new System.Drawing.Point(0, 0);
             this.tsMessageInfo.Name = "tsMessageInfo";
             this.tsMessageInfo.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tsMessageInfo.Size = new System.Drawing.Size(1421, 31);
+            this.tsMessageInfo.Size = new System.Drawing.Size(1421, 27);
             this.tsMessageInfo.TabIndex = 4;
             // 
             // tsBtnMessageInfoCopy
@@ -1097,11 +1097,11 @@ namespace Analogy
             this.dataGridViewTextBoxColumn26});
             this.sfDataGridBookmarks.ContextMenuStrip = this.cmsMessageOperation;
             this.sfDataGridBookmarks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sfDataGridBookmarks.Location = new System.Drawing.Point(0, 27);
+            this.sfDataGridBookmarks.Location = new System.Drawing.Point(0, 31);
             this.sfDataGridBookmarks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridBookmarks.Name = "sfDataGridBookmarks";
             this.sfDataGridBookmarks.RowHeadersWidth = 51;
-            this.sfDataGridBookmarks.Size = new System.Drawing.Size(1420, 269);
+            this.sfDataGridBookmarks.Size = new System.Drawing.Size(1421, 211);
             this.sfDataGridBookmarks.TabIndex = 6;
             this.sfDataGridBookmarks.Text = "Bookmarks";
             // 
@@ -1207,7 +1207,7 @@ namespace Analogy
             this.tsBtnBookmarkGoToOriginal});
             this.tsBookmark.Location = new System.Drawing.Point(0, 0);
             this.tsBookmark.Name = "tsBookmark";
-            this.tsBookmark.Size = new System.Drawing.Size(1420, 27);
+            this.tsBookmark.Size = new System.Drawing.Size(1421, 31);
             this.tsBookmark.TabIndex = 5;
             // 
             // tsBtnBookmarkCopySingle
@@ -1215,7 +1215,7 @@ namespace Analogy
             this.tsBtnBookmarkCopySingle.Image = global::Analogy.Properties.Resources.Copy_16x16;
             this.tsBtnBookmarkCopySingle.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkCopySingle.Name = "tsBtnBookmarkCopySingle";
-            this.tsBtnBookmarkCopySingle.Size = new System.Drawing.Size(190, 28);
+            this.tsBtnBookmarkCopySingle.Size = new System.Drawing.Size(190, 24);
             this.tsBtnBookmarkCopySingle.Text = "Copy Selected Message";
             // 
             // tsBtnBookmarkCopyAll
@@ -1223,7 +1223,7 @@ namespace Analogy
             this.tsBtnBookmarkCopyAll.Image = global::Analogy.Properties.Resources.Copy_16x16;
             this.tsBtnBookmarkCopyAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkCopyAll.Name = "tsBtnBookmarkCopyAll";
-            this.tsBtnBookmarkCopyAll.Size = new System.Drawing.Size(202, 28);
+            this.tsBtnBookmarkCopyAll.Size = new System.Drawing.Size(202, 24);
             this.tsBtnBookmarkCopyAll.Text = "Copy all messages in grid";
             // 
             // tsBtnBookmarkClear
@@ -1231,7 +1231,7 @@ namespace Analogy
             this.tsBtnBookmarkClear.Image = global::Analogy.Properties.Resources.Clear_16x16;
             this.tsBtnBookmarkClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkClear.Name = "tsBtnBookmarkClear";
-            this.tsBtnBookmarkClear.Size = new System.Drawing.Size(144, 28);
+            this.tsBtnBookmarkClear.Size = new System.Drawing.Size(144, 24);
             this.tsBtnBookmarkClear.Text = "Clear Bookmarks";
             // 
             // tsBtnBookmarkGoToOriginal
@@ -1239,7 +1239,7 @@ namespace Analogy
             this.tsBtnBookmarkGoToOriginal.Image = global::Analogy.Properties.Resources.Stop_32x32;
             this.tsBtnBookmarkGoToOriginal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBookmarkGoToOriginal.Name = "tsBtnBookmarkGoToOriginal";
-            this.tsBtnBookmarkGoToOriginal.Size = new System.Drawing.Size(134, 28);
+            this.tsBtnBookmarkGoToOriginal.Size = new System.Drawing.Size(134, 24);
             this.tsBtnBookmarkGoToOriginal.Text = "Go To Message";
             // 
             // imageListBottom
@@ -1326,7 +1326,7 @@ namespace Analogy
             // 
             this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.splitContainerMain.Location = new System.Drawing.Point(0, 31);
+            this.splitContainerMain.Location = new System.Drawing.Point(0, 27);
             this.splitContainerMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainerMain.Name = "splitContainerMain";
             this.splitContainerMain.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -1342,8 +1342,8 @@ namespace Analogy
             // 
             this.splitContainerMain.Panel2.Controls.Add(this.tcBottom);
             this.splitContainerMain.Panel2.Text = "Panel2";
-            this.splitContainerMain.Size = new System.Drawing.Size(1429, 679);
-            this.splitContainerMain.SplitterDistance = 400;
+            this.splitContainerMain.Size = new System.Drawing.Size(1429, 683);
+            this.splitContainerMain.SplitterDistance = 392;
             this.splitContainerMain.SplitterWidth = 16;
             this.splitContainerMain.TabIndex = 21;
             this.splitContainerMain.Text = "splitContainerControl1";
@@ -1355,7 +1355,7 @@ namespace Analogy
             this.pnlMessages.Location = new System.Drawing.Point(0, 192);
             this.pnlMessages.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlMessages.Name = "pnlMessages";
-            this.pnlMessages.Size = new System.Drawing.Size(1429, 176);
+            this.pnlMessages.Size = new System.Drawing.Size(1429, 168);
             this.pnlMessages.TabIndex = 7;
             // 
             // sfDataGridMain
@@ -1372,7 +1372,7 @@ namespace Analogy
             this.sfDataGridMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfDataGridMain.Name = "sfDataGridMain";
             this.sfDataGridMain.RowHeadersWidth = 51;
-            this.sfDataGridMain.Size = new System.Drawing.Size(1429, 176);
+            this.sfDataGridMain.Size = new System.Drawing.Size(1429, 168);
             this.sfDataGridMain.TabIndex = 5;
             this.sfDataGridMain.Text = "sfDataGridMain";
             this.sfDataGridMain.StyleChanged += new System.EventHandler(this.sfDataGridMain_StyleChanged);
@@ -1386,7 +1386,7 @@ namespace Analogy
             this.tcBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tcBottom.Name = "tcBottom";
             this.tcBottom.SelectedIndex = 0;
-            this.tcBottom.Size = new System.Drawing.Size(1429, 263);
+            this.tcBottom.Size = new System.Drawing.Size(1429, 275);
             this.tcBottom.TabIndex = 7;
             // 
             // tabPageMessageInfo
@@ -1396,7 +1396,7 @@ namespace Analogy
             this.tabPageMessageInfo.Location = new System.Drawing.Point(4, 29);
             this.tabPageMessageInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageMessageInfo.Name = "tabPageMessageInfo";
-            this.tabPageMessageInfo.Size = new System.Drawing.Size(1421, 230);
+            this.tabPageMessageInfo.Size = new System.Drawing.Size(1421, 242);
             this.tabPageMessageInfo.TabIndex = 1;
             this.tabPageMessageInfo.Text = "Message Info";
             // 
@@ -1407,7 +1407,7 @@ namespace Analogy
             this.tabPageBookmarks.Location = new System.Drawing.Point(4, 29);
             this.tabPageBookmarks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageBookmarks.Name = "tabPageBookmarks";
-            this.tabPageBookmarks.Size = new System.Drawing.Size(1420, 296);
+            this.tabPageBookmarks.Size = new System.Drawing.Size(1421, 242);
             this.tabPageBookmarks.TabIndex = 2;
             this.tabPageBookmarks.Text = "Bookmarks";
             // 
@@ -1624,7 +1624,7 @@ namespace Analogy
             this.tsTop.Location = new System.Drawing.Point(0, 0);
             this.tsTop.Name = "tsTop";
             this.tsTop.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tsTop.Size = new System.Drawing.Size(1429, 31);
+            this.tsTop.Size = new System.Drawing.Size(1429, 27);
             this.tsTop.TabIndex = 5;
             // 
             // tsTopClear
@@ -1748,8 +1748,7 @@ namespace Analogy
             // 
             // UCLogs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.tabControlMain);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
